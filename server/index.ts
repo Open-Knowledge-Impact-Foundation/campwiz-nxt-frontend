@@ -100,6 +100,10 @@ export const getRawAPIPath = async function (path: string): Promise<string> {
 async function fetchAPIFromBackendSingleWithErrorHandling<T>(path: string, req?: RequestInit): Promise<ResponseSingle<T> | ResponseError> {
     try {
         const res = await fetchFromBackend(`${API_PATH}${path}`, req)
+        if (!res.ok) {
+            const errorText = await res.text();
+            throw new Error(`HTTP error! status: ${res.status}, message: ${errorText}`);
+        }
         const r = await res.json();
         if (res.ok) {
             return r
