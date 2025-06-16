@@ -1,0 +1,55 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"home": {
+		"welcome": "{{name}}님, 환영합니다",
+		"logout": "로그아웃",
+		"dashboard": "대시보드",
+		"login": "로그인"
+	},
+	"settings": {
+		"title": "설정",
+		"language": "언어",
+		"darkMode": "다크 모드",
+		"save": "저장",
+		"cancel": "취소"
+	},
+	"login": {
+		"title": "시작하기",
+		"loginWithWikimedia": "위키미디어로 로그인"
+	},
+	"round": {
+		"status": {
+			"PAUSED": "일시 중단됨",
+			"COMPLETED": "완료"
+		},
+		"submissions": "제출"
+	},
+	"footer": {
+		"manual": "매뉴얼",
+		"privacy": "개인정보"
+	},
+	"close": "닫기",
+	"previous": "이전",
+	"next": "다음",
+	"evaluation": {
+		"modifytable": {
+			"name": "이름",
+			"preview": "미리 보기"
+		}
+	},
+	"languages": {
+		"en": "English (영어)",
+		"bn": "벵골어 (বাংলা)",
+		"ar": "아랍어 (العربية)",
+		"es": "스페인어 (Español)",
+		"fr": "프랑스어 (Français)",
+		"de": "독일어 (Deutsch)",
+		"ko": "한국어",
+		"pt": "포르투갈어 (Português)",
+		"ta": "타밀어 (தமிழ்)"
+	}
+}

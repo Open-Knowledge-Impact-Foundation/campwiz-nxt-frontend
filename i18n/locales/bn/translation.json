@@ -1,90 +1,96 @@
 {
-  "title": "CampWiz NXT",
-  "home": {
-    "welcome": "স্বাগতম {{name}}",
-    "subtitle": "পর্যালোচনার অভিজ্ঞতাকে নতুন স্তরে নিয়ে যাই",
-    "publicRunningCampaigns": "উন্মুক্ত চলমান প্রতিযোগিতা",
-    "yourCampaigns": "আপনার প্রতিযোগিতা",
-    "logout": "প্রস্থান",
-    "dashboard": "ড্যাশবোর্ড",
-    "doc": "নথি",
-    "login": "প্রবেশ"
-  },
-  "settings": {
-    "title": "সেটিংস",
-    "language": "ভাষা",
-    "darkMode": "Dark Mode",
-    "lightMode": "Light Mode",
-    "save": "সংরক্ষণ",
-    "cancel": "বাতিল",
-    "theme": "থিম",
-    "helpTranslation": "Please Help us translate to your language at <0>TranslateWiki</0>"
-  },
-  "login": {
-    "title": "চলুন শুরু করি",
-    "loginWithWikimedia": "উইকিমিডিয়ার দিয়ে প্রবেশ করুন",
-    "afterLoginRedirect": "এই প্রক্রিয়ার পরে আপনাকে নিম্নলিখিত পৃষ্ঠায় পুনঃনির্দেশিত করা হবে:"
-  },
-  "campaign": {
-    "createCampaign": "প্রতিযোগিতা তৈরি করুন",
-    "goToCampaign": "Go to Campaign",
-    "showAllCampaigns": "সব প্রতিযোগিতা দেখুন"
-  },
-  "round": {
-    "status": {
-      "ACTIVE": "চলমান",
-      "PAUSED": "স্থগিত",
-      "COMPLETED": "সম্পন্ন",
-      "ARCHIVED": "সংগ্রহশালায় জমা",
-      "IMPORTING": "আমদানি হচ্ছে",
-      "DISTRIBUTING": "বণ্টন হচ্ছে"
-    },
-    "submissions": "জমা",
-    "assignments": "এসাইনমেন্ট",
-    "evaluatedOutOf": "{{total}}টির মধ্যে {{evaluated}}টি মূল্যায়িত"
-  },
-  "footer": {
-    "campwizNxtTeam": "Campwiz NXT দল",
-    "manual": "ব্যবহার নির্দেশিকা",
-    "terms": "শর্তাবলী",
-    "privacy": "গোপনীয়তা",
-    "reportBug": "বাগ রিপোর্ট করুন",
-    "translate": "Translate"
-  },
-  "error": {
-    "noAssignedCampaigns": "কোনও প্রতিযোগিতা নেই"
-  },
-  "close": "বন্ধ করুন",
-  "previous": "Previous",
-  "next": "Next",
-  "evaluation": {
-    "modifytable": {
-      "name": "Name",
-      "score": "Score",
-      "preview": "Preview",
-      "action": "Action"
-    }
-  },
-  "languages": {
-    "en": "ইংরেজি (English)",
-    "bn": "বাংলা",
-    "ar": "আরবি (العربية)",
-    "hi": "হিন্দি (हिन्दी)",
-    "es": "স্প্যানিশ (Español)",
-    "fr": "ফরাসি (Français)",
-    "de": "জার্মান (Deutsch)",
-    "it": "ইতালীয় (Italiano)",
-    "ja": "জাপানি (日本語)",
-    "ko": "কোরিয়ান (한국어)",
-    "pt": "পোর্তুগিজ (Português)",
-    "ru": "রাশিয়ান (Русский)",
-    "zh": "চীনা (中文)",
-    "kn": "Kannada (ಕನ್ನಡ)",
-    "mr": "Marathi (मराठी)",
-    "ta": "Tamil (தமிழ்)",
-    "ml": "Malayalam (മലയാളം)",
-    "ur": "Urdu (اردو)",
-    "gu": "Gujarati (ગુજરાતી)",
-    "pa": "Punjabi (ਪੰਜਾਬੀ)"
-  }
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar",
+			"আফতাবুজ্জামান"
+		]
+	},
+	"title": "ক্যাম্পউইজ এনএক্সটি",
+	"home": {
+		"welcome": "স্বাগতম {{name}}",
+		"subtitle": "পর্যালোচনার অভিজ্ঞতাকে নতুন স্তরে নিয়ে যাই",
+		"publicRunningCampaigns": "উন্মুক্ত চলমান প্রতিযোগিতা",
+		"yourCampaigns": "আপনার প্রতিযোগিতা",
+		"logout": "প্রস্থান",
+		"dashboard": "ড্যাশবোর্ড",
+		"doc": "নথি",
+		"login": "প্রবেশ করুন"
+	},
+	"settings": {
+		"title": "সেটিংস",
+		"language": "ভাষা",
+		"darkMode": "অন্ধকার মোড",
+		"lightMode": "উজ্জ্বল মোড",
+		"save": "সংরক্ষণ",
+		"cancel": "বাতিল",
+		"theme": "থিম",
+		"helpTranslation": "অনুগ্রহপূর্বক আমাদেরকে <0>TranslateWiki</0>তে অনুবাদ করে সহযোগিতা করুন"
+	},
+	"login": {
+		"title": "চলুন শুরু করি",
+		"loginWithWikimedia": "উইকিমিডিয়া দিয়ে প্রবেশ করুন",
+		"afterLoginRedirect": "এই প্রক্রিয়ার পরে আপনাকে নিম্নলিখিত পৃষ্ঠায় পুনঃনির্দেশিত করা হবে:"
+	},
+	"campaign": {
+		"createCampaign": "প্রতিযোগিতা তৈরি করুন",
+		"goToCampaign": "প্রতিযোগিতায় চলুন",
+		"showAllCampaigns": "সব প্রতিযোগিতা দেখুন"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "চলমান",
+			"PAUSED": "স্থগিত",
+			"COMPLETED": "সম্পন্ন",
+			"ARCHIVED": "সংগ্রহশালায় জমা",
+			"IMPORTING": "আমদানি হচ্ছে",
+			"DISTRIBUTING": "বণ্টন হচ্ছে"
+		},
+		"submissions": "জমা",
+		"assignments": "অ্যাসাইনমেন্ট",
+		"evaluatedOutOf": "{{total}}টির মধ্যে {{evaluated}}টি মূল্যায়িত"
+	},
+	"footer": {
+		"campwizNxtTeam": "Campwiz NXT দল",
+		"manual": "ব্যবহার নির্দেশিকা",
+		"terms": "শর্তাবলী",
+		"privacy": "গোপনীয়তা",
+		"reportBug": "বাগ রিপোর্ট করুন",
+		"translate": "অনুবাদ"
+	},
+	"error": {
+		"noAssignedCampaigns": "কোনও প্রতিযোগিতা নেই"
+	},
+	"close": "বন্ধ করুন",
+	"previous": "পূর্ববর্তী",
+	"next": "পরবর্তী",
+	"evaluation": {
+		"modifytable": {
+			"name": "নাম",
+			"score": "স্কোর",
+			"preview": "প্রাকদর্শন",
+			"action": "কার্য"
+		}
+	},
+	"languages": {
+		"en": "ইংরেজি (English)",
+		"bn": "বাংলা",
+		"ar": "আরবি (العربية)",
+		"hi": "হিন্দি (हिन्दी)",
+		"es": "স্পেনীয় (Español)",
+		"fr": "ফরাসি (Français)",
+		"de": "জার্মান (Deutsch)",
+		"it": "ইতালীয় (Italiano)",
+		"ja": "জাপানি (日本語)",
+		"ko": "কোরীয় (한국어)",
+		"pt": "পর্তুগিজ (Português)",
+		"ru": "রুশ (Русский)",
+		"zh": "চীনা (中文)",
+		"kn": "কন্নড় (ಕನ್ನಡ)",
+		"mr": "মারাঠি (मराठी)",
+		"ta": "তামিল (தமிழ்)",
+		"ml": "মালয়ালম (മലയാളം)",
+		"ur": "উর্দু (اردو)",
+		"gu": "গুজরাটি (ગુજરાતી)",
+		"pa": "পাঞ্জাবি (ਪੰਜਾਬੀ)"
+	}
 }

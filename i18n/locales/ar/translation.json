@@ -1,0 +1,95 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "مرحبًا {{name}}",
+		"subtitle": "نأخذ تجربة التحكيم إلى مستوى آخر",
+		"publicRunningCampaigns": "المسابقات العامة الجارية",
+		"yourCampaigns": "مسابقاتك",
+		"logout": "تسجيل الخروج",
+		"dashboard": "لوحة التحكم",
+		"doc": "الوثائق",
+		"login": "تسجيل الدخول"
+	},
+	"settings": {
+		"title": "الإعدادات",
+		"language": "اللغة",
+		"darkMode": "الوضع الداكن",
+		"lightMode": "الوضع الفاتح",
+		"save": "حفظ",
+		"cancel": "إلغاء",
+		"theme": "السمة",
+		"helpTranslation": "من فضلك ساعدنا في الترجمة إلى لغتك في <0>TranslateWiki</0>"
+	},
+	"login": {
+		"title": "لنبدأ",
+		"loginWithWikimedia": "تسجيل الدخول باستخدام ويكيميديا",
+		"afterLoginRedirect": " بعد هذه العملية، سيتم توجيهك مرة أخرى إلى الصفحة التالية:"
+	},
+	"campaign": {
+		"createCampaign": "إنشاء مسابقة",
+		"goToCampaign": "الذهاب إلى المسابقة",
+		"showAllCampaigns": "عرض جميع المسابقات"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "نشطة",
+			"PAUSED": "متوقفة مؤقتًا",
+			"COMPLETED": "مكتملة",
+			"ARCHIVED": "مؤرشفة",
+			"IMPORTING": "جارٍ الاستيراد",
+			"DISTRIBUTING": "توزيع"
+		},
+		"submissions": "المشاركات",
+		"assignments": "المهام",
+		"evaluatedOutOf": "{{evaluated}} تم تقييمها من أصل {{total}}"
+	},
+	"footer": {
+		"campwizNxtTeam": "فريق CampWiz NXT",
+		"manual": "الدليل",
+		"terms": "الشروط",
+		"privacy": "الخصوصية",
+		"reportBug": "الإبلاغ عن خلل",
+		"translate": "ترجم"
+	},
+	"error": {
+		"noAssignedCampaigns": "لا توجد مسابقات مخصصة"
+	},
+	"close": "إغلاق",
+	"previous": "السابق",
+	"next": "التالي",
+	"evaluation": {
+		"modifytable": {
+			"name": "الاسم",
+			"score": "Score",
+			"preview": "معاينة",
+			"action": "فعل"
+		}
+	},
+	"languages": {
+		"en": "الإنجليزية (English)",
+		"bn": "البنغالية (বাংলা)",
+		"ar": "العربية (العربية)",
+		"hi": "الهندية (हिन्दी)",
+		"es": "الإسبانية (Español)",
+		"fr": "الفرنسية (Français)",
+		"de": "الألمانية (Deutsch)",
+		"it": "الإيطالية (Italiano)",
+		"ja": "اليابانية (日本語)",
+		"ko": "الكورية (한국어)",
+		"pt": "البرتغالية (Português)",
+		"ru": "الروسية (Русский)",
+		"zh": "الصينية (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
+		"ta": "Tamil (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "Urdu (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+	}
+}

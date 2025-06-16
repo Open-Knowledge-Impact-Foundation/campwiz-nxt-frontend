@@ -1,0 +1,94 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar",
+			"Prnhdl"
+		]
+	},
+	"title": "ಕ್ಯಾಂಪ್‌ವಿಜ್ NXT",
+	"home": {
+		"welcome": "ಸ್ವಾಗತ {{name}}",
+		"subtitle": "ನ್ಯಾಯಾಧಿಕಾರ ಅನುಭವವನ್ನು ಮತ್ತೊಂದು ಮಟ್ಟಕ್ಕೆ ತರುವಿಕೆ",
+		"publicRunningCampaigns": "ಸಾರ್ವಜನಿಕ ನಡೆಯುತ್ತಿರುವ ಸ್ಪರ್ಧೆಗಳು",
+		"yourCampaigns": "ನಿಮ್ಮ ಸ್ಪರ್ಧೆಗಳು",
+		"logout": "ಲಾಗ್ ಔಟ್",
+		"dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+		"doc": "ದಾಖಲೆ",
+		"login": "ಲಾಗಿನ್"
+	},
+	"settings": {
+		"title": "ಸೆಟ್ಟಿಂಗ್ಗಳು",
+		"language": "ಭಾಷೆ",
+		"darkMode": "ಡಾರ್ಕ್ ಮೋಡ್",
+		"lightMode": "ಲೈಟ್ ಮೋಡ್",
+		"save": "ಉಳಿಸಿ",
+		"cancel": "ರದ್ದುಮಾಡು",
+		"theme": "ಥೀಮ್",
+		"helpTranslation": "ದಯವಿಟ್ಟು <0>TranslateWiki</0> ನಲ್ಲಿ ನಿಮ್ಮ ಭಾಷೆಗೆ ಭಾಷಾಂತರಿಸಲು ನಮಗೆ ಸಹಾಯ ಮಾಡಿ</0>"
+	},
+	"login": {
+		"title": "ಆರಂಭಿಸೋಣ",
+		"loginWithWikimedia": "ವಿಕಿಮೀಡಿಯಾದೊಂದಿಗೆ ಲಾಗಿನ್ ಆಗಿ",
+		"afterLoginRedirect": "ಈ ಪ್ರಕ್ರಿಯೆಯ ನಂತರ, ನೀಮ್ಮನ್ನು ಕೆಳಗಿನ ಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿಸಲಾಗುತ್ತದೆ:"
+	},
+	"campaign": {
+		"createCampaign": "ಸ್ಪರ್ಧೆ ರಚಿಸಿ",
+		"goToCampaign": "ಸ್ಪರ್ಧೆಗೆ ಹೋಗಿ",
+		"showAllCampaigns": "ಎಲ್ಲಾ ಸ್ಪರ್ಧೆಗಳನ್ನು ತೋರಿಸಿ"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "ಸಕ್ರಿಯ",
+			"PAUSED": "ಸ್ಥಗಿತಗೊಂಡಿದೆ",
+			"COMPLETED": "ಸಂಪೂರ್ಣಗೊಂಡಿದೆ",
+			"ARCHIVED": "ಸಂಗ್ರಹಿಸಲಾಗಿದೆ"
+		},
+		"submissions": "ಸಲ್ಲಿಕೆಗಳು",
+		"assignments": "ಹೊಂದಿಕೆಗಳು",
+		"evaluatedOutOf": "{{total}} ಮದ್ಯಿಂದ {{evaluated}} ಮೌಲ್ಯಮಾಪನಗೊಂಡಿವೆ"
+	},
+	"footer": {
+		"campwizNxtTeam": "ಕ್ಯಾಂಪ್‌ವಿಜ್ NXT ತಂಡ",
+		"manual": "ಮ್ಯಾನುಯಲ್",
+		"terms": "ನಿಯಮಗಳು",
+		"privacy": "ಗೌಪ್ಯತೆ",
+		"reportBug": "ದೋಷ ವರದಿ ಮಾಡಿ",
+		"translate": "Translate"
+	},
+	"error": {
+		"noAssignedCampaigns": "ಹೊಂದಿಕೆಯಾಗದ ಸ್ಪರ್ಧೆಗಳು ಇಲ್ಲ"
+	},
+	"close": "ಮುಚ್ಚಿ",
+	"previous": "Previous",
+	"next": "Next",
+	"evaluation": {
+		"modifytable": {
+			"name": "ಹೆಸರು",
+			"score": "Score",
+			"preview": "Preview",
+			"action": "Action"
+		}
+	},
+	"languages": {
+		"en": "ಇಂಗ್ಲಿಷ್ (English)",
+		"bn": "ಬಂಗಾಳಿ (বাংলা)",
+		"ar": "ಅರೇಬಿಕ್ (العربية)",
+		"hi": "ಹಿಂದಿ (हिन्दी)",
+		"es": "ಸ್ಪ್ಯಾನಿಷ್ (Español)",
+		"fr": "ಫ್ರೆಂಚ್ (Français)",
+		"de": "ಜರ್ಮನ್ (Deutsch)",
+		"it": "ಇಟಾಲಿಯನ್ (Italiano)",
+		"ja": "ಜಪಾನೀಸ್ (日本語)",
+		"ko": "ಕೊರಿಯನ್ (한국어)",
+		"pt": "ಪೋರ್ಚುಗೀಸ್ (Português)",
+		"ru": "ರಷ್ಯನ್ (Русский)",
+		"zh": "ಚೀನೀಸ್ (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "ಮರಾಠಿ (मराठी)",
+		"ta": "Tamil (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "ಉರ್ದು (اردو)",
+		"gu": "ಗುಜರಾತಿ (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+	}
+}

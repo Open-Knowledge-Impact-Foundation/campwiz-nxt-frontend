@@ -1,0 +1,50 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar",
+			"Saraiki"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"yourCampaigns": "تہاݙیاں مہماں",
+		"logout": "لاگ آؤٹ",
+		"dashboard": "ڈیش بورڈ",
+		"login": "لاگ ان"
+	},
+	"settings": {
+		"title": "ترتیباں",
+		"language": "زبان",
+		"darkMode": "شوخ انداز",
+		"lightMode": "سوجھل انداز",
+		"save": "بچاؤ",
+		"cancel": "منسوخ",
+		"theme": "تھیم"
+	},
+	"footer": {
+		"manual": "دستی",
+		"terms": "شرطاں",
+		"privacy": "رازداری",
+		"reportBug": "بڳ دی رپورٹ کرو",
+		"translate": "ترجمہ کرو"
+	},
+	"close": "بند کرو",
+	"previous": "پچھلا",
+	"next": "اڳلا",
+	"evaluation": {
+		"modifytable": {
+			"name": "ناں",
+			"score": "سکور",
+			"preview": "پیشگی ݙکھالا",
+			"action": "عمل"
+		}
+	},
+	"languages": {
+		"bn": "بنگالی (বাংলা)",
+		"hi": "ہندی (हिन्दी)",
+		"mr": "میراٹھی (मराठी)",
+		"ta": "تامل (தமிழ்)",
+		"ur": "اردو",
+		"pa": "پنجابی (ਪੰਜਾਬੀ)"
+	}
+}

@@ -1,0 +1,91 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "வரவேற்கிறோம் {{name}}",
+		"subtitle": "நியாயமன்ற அனுபவத்தை இன்னொரு நிலைக்கு கொண்டு செல்",
+		"publicRunningCampaigns": "பொதுத் தேர்வில் உள்ள போட்டிகள்",
+		"yourCampaigns": "உங்கள் போட்டிகள்",
+		"logout": "வெளியேறு",
+		"dashboard": "டாஷ்போர்டு",
+		"doc": "ஆவணம்",
+		"login": "உள்நுழை"
+	},
+	"settings": {
+		"title": "அமைப்புகள்",
+		"language": "மொழி",
+		"darkMode": "இருண்ட முறை",
+		"lightMode": "ஒளி முறை",
+		"save": "சேமி",
+		"cancel": "ரத்துசெய்",
+		"theme": "தீம்",
+		"helpTranslation": "Please Help us translate to your language at {{link}}"
+	},
+	"login": {
+		"title": "தொடங்குவோம்",
+		"loginWithWikimedia": "விக்கிமீடியா மூலம் உள்நுழை",
+		"afterLoginRedirect": "இந்த செயல்முறைக்குப் பிறகு, நீங்கள் பின்வரும் பக்கத்திற்கு திருப்பிச் செல்லப்படுவீர்கள்:"
+	},
+	"campaign": {
+		"createCampaign": "போட்டி உருவாக்கு",
+		"goToCampaign": "போட்டிக்கு செல்லவும்",
+		"showAllCampaigns": "எல்லா போட்டிகளையும் காண்பி"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "செயலில் உள்ளது",
+			"PAUSED": "நிறுத்தப்பட்டுள்ளது",
+			"COMPLETED": "நிறைவடைந்தது",
+			"ARCHIVED": "ஆவணப்படுத்தப்பட்டது"
+		},
+		"submissions": "சமர்ப்பிப்புகள்",
+		"assignments": "பணிகள்",
+		"evaluatedOutOf": "{{evaluated}} மதிப்பாய்வுகளைப் பெற்றது {{total}} இல் இருந்து"
+	},
+	"footer": {
+		"campwizNxtTeam": "Campwiz NXT குழு",
+		"manual": "மானுவல்",
+		"terms": "விதிமுறைகள்",
+		"privacy": "தனியுரிமை",
+		"reportBug": "பிழையை அறிக்கை செய்யவும்",
+		"translate": "Translate"
+	},
+	"error": {
+		"noAssignedCampaigns": "ஒதுக்கப்பட்ட போட்டிகள் எதுவும் இல்லை"
+	},
+	"close": "மூடு",
+	"previous": "Previous",
+	"next": "Next",
+	"evaluation": {
+		"modifytable": {
+			"name": "Name",
+			"score": "Score",
+			"preview": "Preview",
+			"action": "Action"
+		}
+	},
+	"languages": {
+		"en": "ஆங்கிலம் (English)",
+		"bn": "பெங்காலி (বাংলা)",
+		"ar": "அரபு (العربية)",
+		"hi": "இந்தி (हिन्दी)",
+		"es": "ஸ்பானிஷ் (Español)",
+		"fr": "பிரஞ்சு (Français)",
+		"de": "ஜெர்மன் (Deutsch)",
+		"it": "இத்தாலியன் (Italiano)",
+		"ja": "ஜப்பானீஸ் (日本語)",
+		"ko": "கொரியன் (한국어)",
+		"pt": "போர்ச்சுகீஸ் (Português)",
+		"ru": "ரஷ்யன் (Русский)",
+		"zh": "சீன (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
+		"ta": "Tamil (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "Urdu (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+	}
+}

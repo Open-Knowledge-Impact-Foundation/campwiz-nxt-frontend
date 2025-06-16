@@ -1,0 +1,80 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"Nokib Sarkar"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "Benvenuto {{name}}",
+		"yourCampaigns": "Le tue campagne",
+		"logout": "Esci",
+		"login": "Entra"
+	},
+	"settings": {
+		"title": "Impostazioni",
+		"language": "Lingua",
+		"save": "Salva",
+		"cancel": "Annulla",
+		"theme": "Tema",
+		"helpTranslation": "Aiutaci a tradurre nella tua lingua su <0>TranslateWiki</0>"
+	},
+	"login": {
+		"title": "Cominciamo",
+		"loginWithWikimedia": "Accedi con Wikimedia",
+		"afterLoginRedirect": "Dopo questo processo verrai reindirizzato alla pagina seguente:"
+	},
+	"campaign": {
+		"createCampaign": "Crea campagna",
+		"goToCampaign": "Vai alla campagna",
+		"showAllCampaigns": "Mostra tutte le campagne"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "Attivo",
+			"COMPLETED": "Completato",
+			"ARCHIVED": "Archiviato"
+		}
+	},
+	"footer": {
+		"manual": "Manuale",
+		"terms": "Termini",
+		"privacy": "Privacy",
+		"reportBug": "Segnala un errore",
+		"translate": "Traduci"
+	},
+	"close": "Chiudi",
+	"previous": "Precedente",
+	"next": "Successivo",
+	"evaluation": {
+		"modifytable": {
+			"name": "Nome",
+			"score": "Punteggio",
+			"preview": "Anteprima",
+			"action": "Azione"
+		}
+	},
+	"languages": {
+		"en": "Inglese",
+		"bn": "Bengalese (বাংলা)",
+		"ar": "Arabo (العربية)",
+		"hi": "Hindi (हिन्दी)",
+		"es": "Spagnolo (Español)",
+		"fr": "Francese (Français)",
+		"de": "Tedesco (Deutsch)",
+		"it": "Italiano (Italiano)",
+		"ja": "Giapponese (日本語)",
+		"ko": "Coreano (한국어)",
+		"pt": "Portoghese (Português)",
+		"ru": "Russo (Русский)",
+		"zh": "Cinese (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
+		"ta": "Tamil (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "Urdu (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+	}
+}

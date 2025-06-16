@@ -1,106 +1,95 @@
 {
-  "title": "CampWiz NXT",
-  "home": {
-    "welcome": "A short welcome phrase like Welcome <code><nowiki>{{name}}</nowiki></code>. In this case, <code><nowiki>{{name}}</nowiki></code> is a placeholder for the user's name. If the user is not logged in, it will be empty.",
-    "subtitle": "The translation of our slogan \"Taking jury experience to another level\"",
-    "publicRunningCampaigns": "Anyone can participate in those campaigns which are public. This label would be shown in the home page",
-    "yourCampaigns": "The campaigns that are asigned to you. Technically, you are either a jury, or co-ordinator of those campaigns. This label would be shown in the home page",
-    "logout": "Logout",
-    "dashboard": "The dashboard where only admin or project leads can go to manage campaigns, This would be placed on a button so try to keep it short and one word",
-    "doc": "The button for the link of documentation page",
-    "login": "Login"
-  },
-  "settings": {
-    "title": "Settings",
-    "language": "Language",
-    "darkMode": "Dark Mode",
-    "lightMode": "Light Mode",
-    "save": "Save",
-    "cancel": "Cancel",
-    "theme": "Theme",
-    "helpTranslation": "A request for users to help translate the application to their language. This label would be shown in the home page. The <0>TranslateWiki</0> is a link to the TranslateWiki website where users can contribute translations. You can change the text between the <0> and </0> tags to whatever you want in order to make it more suitable for your language. For example, you can change it to <0>TranslateWiki</0> or <0>TranslateWiki.org</0> or <0>TranslateWiki.net</0> or <0>TranslateWiki.com</0>. The <0> and </0> tags are used to create a link in the text."
-  },
-  "login": {
-    "title": "A proposal to Login",
-    "loginWithWikimedia": "Login with Wikimedia",
-    "afterLoginRedirect": " After this process, you will be redirected back to the following page:"
-  },
-  "campaign": {
-    "createCampaign": "Create Campaign",
-    "goToCampaign": "Go to Campaign",
-    "showAllCampaigns": "Show All Campaigns"
-  },
-  "round": {
-    "status": {
-      "ACTIVE": "Active",
-      "PAUSED": "Status indicating that the campaign or the round is not currrently running, but can be resumed",
-      "COMPLETED": "Status indicating that the campaign or the round is completed and no further actions are needed",
-      "ARCHIVED": "Status indicating that the campaign or the round has been archived or sealed and no other actions can be taken",
-      "IMPORTING": "Status indicating that submissions (image/audio/video) are being imported into the campaign. This status is used when the campaign is created and the submissions are being imported from various sources like Wikimedia Commons, or other sources. This status is used to indicate that the campaign is not yet ready for evaluation and the submissions are being imported.",
-      "DISTRIBUTING": "Status indicating that the submissions are being distributed to the juries for evaluation. This status is used when the campaign is created and the submissions are being distributed to the juries for evaluation. This status is used to indicate that the campaign is not yet ready for evaluation and the submissions are being distributed."
-    },
-    "submissions": "The image, video, audio or any other type of file that is submitted by the participants of the campaign. This label would be shown in the home page",
-    "assignments": "Each jury would be assigned a number of submissions to evaluate. This label would be shown in the home page",
-    "evaluatedOutOf": "<code><nowiki>{{evaluated}}</nowiki></code> evaluated out of <code><nowiki>{{total}}</nowiki></code>. Here <code><nowiki>{{evaluated}}</nowiki></code> and <code><nowiki>{{total}}</nowiki></code> are placeholders for the number of evaluated submissions and the total number of submissions respectively. This label would be shown in the home page"
-  },
-  "footer": {
-    "campwizNxtTeam": "Campwiz NXT Team",
-    "manual": "The page where the user can find instructions on how to use the application. This label would be shown in the home page",
-    "terms": "Terms of Service",
-    "privacy": "Privacy Policy",
-    "reportBug": "A label for the link to the bug report page. This label would be shown in the home page",
-    "translate": "Translate"
-  },
-  "error": {
-    "noAssignedCampaigns": "The error message that would be shown when the user has campaigns found in which the person is assigned as a jury or co-ordinator. This label would be shown in the home page"
-  },
-  "close": "Label for a generic close button. For example, the user can click on the close to close a modal or a dialog box",
-  "previous": "Label for a generic previous button. For example, the user can click on the previous to go back to the previous page",
-  "next": "Label for a generic next button. For example, the user can click on the next to go to the next page",
-  "evaluation": {
-    "modifytable": {
-      "name": "Label for the name of the submission.",
-      "score": "Label for the score of the submission.",
-      "preview": "Label for a button in the modify table that allows the user to preview the submission. For example, the user can click on the preview to see the submission",
-      "action": "Label for list of Action the user can take on this assignment. For example, the user can click on the preview to see the submission, or click on the edit to change the score of the submission"
-    }
-  },
-  "languages": {
-    "en": "English (English). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is English, it should be \"<Translation of the name English in your language> (English)\"",
-    "bn": "Bengali (বাংলা). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Bengali, it should be \"<Translation of the name Bengali in your language> (বাংলা)\"",
-    "ar": "Arabic (العربية). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Arabic, it should be \"<Translation of the name Arabic in your language> (العربية)\"",
-    "hi": "Hindi (हिन्दी). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Hindi, it should be \"<Translation of the name Hindi in your language> (हिन्दी)\"",
-    "es": "Spanish (Español). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Spanish, it should be \"<Translation of the name Spanish in your language> (Español)\"",
-    "fr": "French (Français). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is French, it should be \"<Translation of the name French in your language> (Français)\"",
-    "de": "German (Deutsch). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is German, it should be \"<Translation of the name German in your language> (Deutsch)\"",
-    "it": "Italian (Italiano). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Italian, it should be \"<Translation of the name Italian in your language> (Italiano)\"",
-    "ja": "Japanese (日本語). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Japanese, it should be \"<Translation of the name Japanese in your language> (日本語)\"",
-    "ko": "Korean (한국어). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Korean, it should be \"<Translation of the name Korean in your language> (한국어)\"",
-    "pt": "Portuguese (Português). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Portuguese, it should be \"<Translation of the name Portuguese in your language> (Português)\"",
-    "ru": "Russian (Русский). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Russian, it should be \"<Translation of the name Russian in your language> (Русский)\"",
-    "zh": "Chinese (中文). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Chinese, it should be \"<Translation of the name Chinese in your language> (中文)\"",
-    "kn": "Kannada (ಕನ್ನಡ). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Kannada, it should be \"<Translation of the name Kannada in your language> (ಕನ್ನಡ)\"",
-    "mr": "Marathi (मराठी). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Marathi, it should be \"<Translation of the name Marathi in your language> (मराठी)\"",
-    "ta": "Tamil (தமிழ்). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Tamil, it should be \"<Translation of the name Tamil in your language> (தமிழ்)\"",
-    "ml": "Malayalam (മലയാളം). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Malayalam, it should be \"<Translation of the name Malayalam in your language> (മലയാളം)\"",
-    "ur": "Urdu (اردو). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Urdu, it should be \"<Translation of the name Urdu in your language> (اردو)\"",
-    "gu": "Gujarati (ગુજરાતી). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Gujarati, it should be \"<Translation of the name Gujarati in your language> (ગુજરાતી)\"",
-    "pa": "Punjabi (ਪੰਜਾਬੀ). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Punjabi, it should be \"<Translation of the name Punjabi in your language> (ਪੰਜਾਬੀ)\"",
-    "tr": "Turkish (Türkçe). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Turkish, it should be \"<Translation of the name Turkish in your language> (Türkçe)\"",
-    "uk": "Ukrainian (Українська). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Ukrainian, it should be \"<Translation of the name Ukrainian in your language> (Українська)\"",
-    "vi": "Vietnamese (Tiếng Việt). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Vietnamese, it should be \"<Translation of the name Vietnamese in your language> (Tiếng Việt)\"",
-    "pl": "Polish (Polski). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Polish, it should be \"<Translation of the name Polish in your language> (Polski)\"",
-    "ca": "Catalan (Català). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Catalan, it should be \"<Translation of the name Catalan in your language> (Català)\"",
-    "he": "Hebrew (עברית). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Hebrew, it should be \"<Translation of the name Hebrew in your language> (עברית)\"",
-    "fa": "Persian (فارسی). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Persian, it should be \"<Translation of the name Persian in your language> (فارسی)\"",
-    "sw": "Swahili (Kiswahili). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Swahili, it should be \"<Translation of the name Swahili in your language> (Kiswahili)\"",
-    "te": "Telugu (తెలుగు). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Telugu, it should be \"<Translation of the name Telugu in your language> (తెలుగు)\"",
-    "as": "Assamese (অসমীয়া). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Assamese, it should be \"<Translation of the name Assamese in your language> (অসমীয়া)\"",
-    "or": "Odia (ଓଡ଼ିଆ). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Odia, it should be \"<Translation of the name Odia in your language> (ଓଡ଼ିଆ)\"",
-    "si": "Sinhala (සිංහල). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Sinhala, it should be \"<Translation of the name Sinhala in your language> (සිංහල)\"",
-    "ha": "Hausa (هَوُسَ). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Hausa, it should be \"<Translation of the name Hausa in your language> (هَوُسَ)\"",
-    "arz": "Egyptian Arabic (مَصرِيّ). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Egyptian Arabic, it should be \"<Translation of the name Egyptian Arabic in your language> (مَصرِيّ)\"",
-    "skr": "Saraiki (سرائیکی). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Saraiki, it should be \"<Translation of the name Saraiki in your language> (سرائیکی)\"",
-    "sd": "Sindhi (سنڌي). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Sindhi, it should be \"<Translation of the name Sindhi in your language> (سنڌي)\""
-  }
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "A short welcome phrase like Welcome <code><nowiki>{{name}}</nowiki></code>. In this case, <code><nowiki>{{name}}</nowiki></code> is a placeholder for the user's name. If the user is not logged in, it will be empty.",
+		"subtitle": "The translation of our slogan \"Taking jury experience to another level\"",
+		"publicRunningCampaigns": "Anyone can participate in those campaigns which are public. This label would be shown in the home page",
+		"yourCampaigns": "The campaigns that are asigned to you. Technically, you are either a jury, or co-ordinator of those campaigns. This label would be shown in the home page",
+		"logout": "Logout",
+		"dashboard": "The dashboard where only admin or project leads can go to manage campaigns, This would be placed on a button so try to keep it short and one word",
+		"doc": "The button for the link of documentation page",
+		"login": "Login"
+	},
+	"settings": {
+		"title": "Settings",
+		"language": "Language",
+		"darkMode": "Dark Mode",
+		"lightMode": "Light Mode",
+		"save": "Save",
+		"cancel": "Cancel",
+		"theme": "Theme",
+		"helpTranslation": "A request for users to help translate the application to their language. This label would be shown in the home page. The <code><0>TranslateWiki</0></code> is a link to the TranslateWiki website where users can contribute translations. Please keep  <code><0>TranslateWiki</0></code> as it is."
+	},
+	"login": {
+		"title": "A proposal to Login",
+		"loginWithWikimedia": "Login with Wikimedia",
+		"afterLoginRedirect": " After this process, you will be redirected back to the following page:"
+	},
+	"campaign": {
+		"createCampaign": "Create Campaign",
+		"goToCampaign": "Go to Campaign",
+		"showAllCampaigns": "Show All Campaigns"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "Active",
+			"PAUSED": "Status indicating that the campaign or the round is not currrently running, but can be resumed",
+			"COMPLETED": "Status indicating that the campaign or the round is completed and no further actions are needed",
+			"ARCHIVED": "Status indicating that the campaign or the round has been archived or sealed and no other actions can be taken",
+			"IMPORTING": "Status indicating that submissions (image/audio/video) are being imported into the campaign. This status is used when the campaign is created and the submissions are being imported from various sources like Wikimedia Commons, or other sources. This status is used to indicate that the campaign is not yet ready for evaluation and the submissions are being imported.",
+			"DISTRIBUTING": "Status indicating that the submissions are being distributed to the juries for evaluation. This status is used when the campaign is created and the submissions are being distributed to the juries for evaluation. This status is used to indicate that the campaign is not yet ready for evaluation and the submissions are being distributed."
+		},
+		"submissions": "The image, video, audio or any other type of file that is submitted by the participants of the campaign. This label would be shown in the home page",
+		"assignments": "Each jury would be assigned a number of submissions to evaluate. This label would be shown in the home page",
+		"evaluatedOutOf": "<code><nowiki>{{evaluated}}</nowiki></code> evaluated out of <code><nowiki>{{total}}</nowiki></code>. Here <code><nowiki>{{evaluated}}</nowiki></code> and <code><nowiki>{{total}}</nowiki></code> are placeholders for the number of evaluated submissions and the total number of submissions respectively. This label would be shown in the home page."
+	},
+	"footer": {
+		"campwizNxtTeam": "Name of our Team who is behind this tool",
+		"manual": "The page where the user can find instructions on how to use the application. This label would be shown in the home page",
+		"terms": "The text that links to the terms of service. Should not be capitalized.\n{{Identical|Term}}",
+		"privacy": "Privacy Policy",
+		"reportBug": "A label for the link to the bug report page. This label would be shown in the home page",
+		"translate": "Translate"
+	},
+	"error": {
+		"noAssignedCampaigns": "The error message that would be shown when the user has campaigns found in which the person is assigned as a jury or co-ordinator. This label would be shown in the home page"
+	},
+	"close": "Label for a generic close button. For example, the user can click on the close to close a modal or a dialog box",
+	"previous": "Label for a generic previous button. For example, the user can click on the previous to go back to the previous page",
+	"next": "Label for a generic next button. For example, the user can click on the next to go to the next page",
+	"evaluation": {
+		"modifytable": {
+			"name": "Label for the name of the submission.",
+			"score": "Label for the score of the submission.",
+			"preview": "Label for a button in the modify table that allows the user to preview the submission. For example, the user can click on the preview to see the submission",
+			"action": "Label for list of Action the user can take on this assignment. For example, the user can click on the preview to see the submission, or click on the edit to change the score of the submission"
+		}
+	},
+	"languages": {
+		"en": "English (English). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is English, it should be \"<Translation of the name English in your language> (English)\"",
+		"bn": "Bengali (বাংলা). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Bengali, it should be \"<Translation of the name Bengali in your language> (বাংলা)\"",
+		"ar": "Arabic (العربية). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Arabic, it should be \"<Translation of the name Arabic in your language> (العربية)\"",
+		"hi": "Hindi (हिन्दी). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Hindi, it should be \"<Translation of the name Hindi in your language> (हिन्दी)\"",
+		"es": "Spanish (Español). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Spanish, it should be \"<Translation of the name Spanish in your language> (Español)\"",
+		"fr": "French (Français). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is French, it should be \"<Translation of the name French in your language> (Français)\"",
+		"de": "German (Deutsch). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is German, it should be \"<Translation of the name German in your language> (Deutsch)\"",
+		"it": "Italian (Italiano). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Italian, it should be \"<Translation of the name Italian in your language> (Italiano)\"",
+		"ja": "Japanese (日本語). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Japanese, it should be \"<Translation of the name Japanese in your language> (日本語)\"",
+		"ko": "Korean (한국어). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Korean, it should be \"<Translation of the name Korean in your language> (한국어)\"",
+		"pt": "Portuguese (Português). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Portuguese, it should be \"<Translation of the name Portuguese in your language> (Português)\"",
+		"ru": "Russian (Русский). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Russian, it should be \"<Translation of the name Russian in your language> (Русский)\"",
+		"zh": "Chinese (中文). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Chinese, it should be \"<Translation of the name Chinese in your language> (中文)\"",
+		"kn": "Kannada (ಕನ್ನಡ). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Kannada, it should be \"<Translation of the name Kannada in your language> (ಕನ್ನಡ)\"",
+		"mr": "Marathi (मराठी). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Marathi, it should be \"<Translation of the name Marathi in your language> (मराठी)\"",
+		"ta": "Tamil (தமிழ்). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Tamil, it should be \"<Translation of the name Tamil in your language> (தமிழ்)\"",
+		"ml": "Malayalam (മലയാളം). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Malayalam, it should be \"<Translation of the name Malayalam in your language> (മലയാളം)\"",
+		"ur": "Urdu (اردو). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Urdu, it should be \"<Translation of the name Urdu in your language> (اردو)\"",
+		"gu": "Gujarati (ગુજરાતી). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Gujarati, it should be \"<Translation of the name Gujarati in your language> (ગુજરાતી)\"",
+		"pa": "Punjabi (ਪੰਜਾਬੀ). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Punjabi, it should be \"<Translation of the name Punjabi in your language> (ਪੰਜਾਬੀ)\""
+	}
 }

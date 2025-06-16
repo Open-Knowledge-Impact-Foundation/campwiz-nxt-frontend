@@ -1,0 +1,95 @@
+{
+	"@metadata": {
+		"authors": [
+			"Borichèt"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "Bin-ëvnù {{name}}",
+		"subtitle": "Porté l'esperiensa ëd na giurìa a n'àutr livel",
+		"publicRunningCampaigns": "Campagne Pùbliche Duverte",
+		"yourCampaigns": "Soe Campagne",
+		"logout": "Seurte dal sistema",
+		"dashboard": "Cruscòt",
+		"doc": "Doc",
+		"login": "Intré ant ël sistema"
+	},
+	"settings": {
+		"title": "Paràmeter",
+		"language": "Lenga",
+		"darkMode": "Meud sombr",
+		"lightMode": "Meud ciàir",
+		"save": "Argistré",
+		"cancel": "Anulé",
+		"theme": "Tema",
+		"helpTranslation": "Për piasì, ch'an giuta a volté an soa lenga a <0>TranslateWiki</0>"
+	},
+	"login": {
+		"title": "Ancaminoma!",
+		"loginWithWikimedia": "Intré ant ël sistema con Wikimedia",
+		"afterLoginRedirect": " Apress ëd process, a sarà ridiressionà vers la costa pàgina-sì:"
+	},
+	"campaign": {
+		"createCampaign": "Creé la campagna",
+		"goToCampaign": "Andé a la campagna",
+		"showAllCampaigns": "Smon-e tute le campagna"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "Ativa",
+			"PAUSED": "An pòsa",
+			"COMPLETED": "Livrà",
+			"ARCHIVED": "Archivià",
+			"IMPORTING": "An camin ch'as ampòrta",
+			"DISTRIBUTING": "An camin ch'as distribuiss"
+		},
+		"submissions": "Spedission",
+		"assignments": "Assignassion",
+		"evaluatedOutOf": "{{evaluated}} valutà su {{total}}"
+	},
+	"footer": {
+		"campwizNxtTeam": "Echip ëd Campwiz NXT",
+		"manual": "Manual",
+		"terms": "Condission",
+		"privacy": "Confidensialità",
+		"reportBug": "Signalé un givo",
+		"translate": "Volté"
+	},
+	"error": {
+		"noAssignedCampaigns": "Gnun-e campagne assignà"
+	},
+	"close": "Saré",
+	"previous": "Prima",
+	"next": "Apress",
+	"evaluation": {
+		"modifytable": {
+			"name": "Nòm",
+			"score": "Pontegg",
+			"preview": "Previsualisé",
+			"action": "Assion"
+		}
+	},
+	"languages": {
+		"en": "Anglèis",
+		"bn": "Bengalèis (বাংলা)",
+		"ar": "Àrabo (العربية)",
+		"hi": "Hindi (हिन्दी)",
+		"es": "Spagneul (Español)",
+		"fr": "Fransèis (Français)",
+		"de": "Alman (Deutsch)",
+		"it": "Italian (Italiano)",
+		"ja": "Giaponèis (日本語)",
+		"ko": "Corean (한국어)",
+		"pt": "Portughèis (Português)",
+		"ru": "Russi (Русский)",
+		"zh": "Cinèis (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
+		"ta": "Tamil (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "Urdu (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+	}
+}

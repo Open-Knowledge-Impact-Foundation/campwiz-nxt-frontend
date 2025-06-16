@@ -1,0 +1,95 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "Добре дојдовте, {{name}}",
+		"subtitle": "Ново искуство на жирирање",
+		"publicRunningCampaigns": "Тековни јавни походи",
+		"yourCampaigns": "Ваши походи",
+		"logout": "Одјава",
+		"dashboard": "Управувачница",
+		"doc": "Док",
+		"login": "Најава"
+	},
+	"settings": {
+		"title": "Нагодувања",
+		"language": "Јазик",
+		"darkMode": "Темен изглед",
+		"lightMode": "Светол изглед",
+		"save": "Зачувај",
+		"cancel": "Откажи",
+		"theme": "Изглед",
+		"helpTranslation": "Помогнете ни да ја преведеме алаткава на вашиот јазик на <0>TranslateWiki</0>"
+	},
+	"login": {
+		"title": "Да почнеме",
+		"loginWithWikimedia": "Најава со Википедија",
+		"afterLoginRedirect": "По оваа постапка, ќе бидете пренасочени назад кон следнава страница:"
+	},
+	"campaign": {
+		"createCampaign": "Создај поход",
+		"goToCampaign": "Оди на походот",
+		"showAllCampaigns": "Сите походи"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "Активно",
+			"PAUSED": "Запрено",
+			"COMPLETED": "Завршено",
+			"ARCHIVED": "Архивирано",
+			"IMPORTING": "Се увезува",
+			"DISTRIBUTING": "Се распределува"
+		},
+		"submissions": "Поднесоци",
+		"assignments": "Задачи",
+		"evaluatedOutOf": "Оценети {{evaluated}} од вкупно {{total}}"
+	},
+	"footer": {
+		"campwizNxtTeam": "Екипата на Campwiz NXT",
+		"manual": "Прирачник",
+		"terms": "Услови",
+		"privacy": "Лични податоци",
+		"reportBug": "Пријавете грешка",
+		"translate": "Преведи"
+	},
+	"error": {
+		"noAssignedCampaigns": "Нема доделени походи"
+	},
+	"close": "Затвори",
+	"previous": "Претходно",
+	"next": "Следно",
+	"evaluation": {
+		"modifytable": {
+			"name": "Назив",
+			"score": "Оценка",
+			"preview": "Преглед",
+			"action": "Дејство"
+		}
+	},
+	"languages": {
+		"en": "англиски (English)",
+		"bn": "бенгалски (বাংলা)",
+		"ar": "арапски (العربية)",
+		"hi": "хинди (हिन्दी)",
+		"es": "шпански (español)",
+		"fr": "француски (français)",
+		"de": "германски (Deutsch)",
+		"it": "италијански (italiano)",
+		"ja": "јапонски (日本語)",
+		"ko": "корејски (한국어)",
+		"pt": "португалски (português)",
+		"ru": "руски (русский)",
+		"zh": "кинески (中文)",
+		"kn": "канадски (ಕನ್ನಡ)",
+		"mr": "маратски (मराठी)",
+		"ta": "тамилски (தமிழ்)",
+		"ml": "малајалски (മലയാളം)",
+		"ur": "урду (اردو)",
+		"gu": "гуџаратски (ગુજરાતી)",
+		"pa": "пенџапски (ਪੰਜਾਬੀ)"
+	}
+}

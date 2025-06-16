@@ -1,0 +1,75 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar",
+			"Volvox"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "Wëllkomm {{name}}",
+		"yourCampaigns": "Är Campagnen",
+		"logout": "Ausloggen",
+		"login": "Aloggen"
+	},
+	"settings": {
+		"title": "Astellungen",
+		"language": "Sprooch",
+		"darkMode": "Däischtere Modus",
+		"lightMode": "Helle Modus",
+		"save": "Späicheren",
+		"cancel": "Ofbriechen",
+		"theme": "Faarfschema"
+	},
+	"login": {
+		"loginWithWikimedia": "Mat Wikimedia aloggen"
+	},
+	"campaign": {
+		"createCampaign": "Campagne uleeën",
+		"showAllCampaigns": "All Campagnë weisen"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "Aktiv",
+			"PAUSED": "Pauséiert",
+			"COMPLETED": "Fäerdeg",
+			"ARCHIVED": "Archivéiert"
+		}
+	},
+	"footer": {
+		"manual": "Handbuch",
+		"reportBug": "E Feeler mellen",
+		"translate": "Iwwersetzen"
+	},
+	"close": "Zoumaachen",
+	"previous": "Vireg",
+	"next": "Nächst",
+	"evaluation": {
+		"modifytable": {
+			"name": "Numm",
+			"action": "Aktioun"
+		}
+	},
+	"languages": {
+		"en": "Englesch (English)",
+		"bn": "Bengalesch (বাংলা)",
+		"ar": "Arabesch (العربية)",
+		"hi": "Hindi (हिन्दी)",
+		"es": "Spuenesch (Español)",
+		"fr": "Franséisch (Français)",
+		"de": "Däitsch (Deutsch)",
+		"it": "Italieenesch (Italiano)",
+		"ja": "Japanesch (日本語)",
+		"ko": "Koreanesch (한국어)",
+		"pt": "Portugisesch (Português)",
+		"ru": "Russesch (Русский)",
+		"zh": "Chineesesch (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
+		"ta": "Tamilesch (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "Urdu (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+	}
+}

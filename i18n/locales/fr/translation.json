@@ -1,0 +1,95 @@
+{
+	"@metadata": {
+		"authors": [
+			"Derugon"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "Bienvenue {{name}}",
+		"subtitle": "Élève l’expérience du jury vers un tout autre niveau",
+		"publicRunningCampaigns": "Campagnes Publiques Ouvertes",
+		"yourCampaigns": "Vos Campagnes",
+		"logout": "Se déconnecter",
+		"dashboard": "Tableau de bord",
+		"doc": "Doc",
+		"login": "Se connecter"
+	},
+	"settings": {
+		"title": "Paramètres",
+		"language": "Langue",
+		"darkMode": "Mode sombre",
+		"lightMode": "Mode clair",
+		"save": "Enregistrer",
+		"cancel": "Annuler",
+		"theme": "Thème",
+		"helpTranslation": "N’hésitez pas à nous aider à traduire dans votre langue sur <0>TranslateWiki</0>"
+	},
+	"login": {
+		"title": "Commençons !",
+		"loginWithWikimedia": "Se connecter avec Wikimédia",
+		"afterLoginRedirect": "Après ce processus, vous serez redirigé vers la page suivante :"
+	},
+	"campaign": {
+		"createCampaign": "Créer la campagne",
+		"goToCampaign": "Accéder à la campagne",
+		"showAllCampaigns": "Afficher toutes les campagnes"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "Active",
+			"PAUSED": "En pause",
+			"COMPLETED": "Terminée",
+			"ARCHIVED": "Archivée",
+			"IMPORTING": "Importation en cours",
+			"DISTRIBUTING": "Distribution en cours"
+		},
+		"submissions": "Soumissions",
+		"assignments": "Affectations",
+		"evaluatedOutOf": "{{evaluated}} évalué(s) sur {{total}}"
+	},
+	"footer": {
+		"campwizNxtTeam": "Équipe de Campwiz NXT",
+		"manual": "Manuel",
+		"terms": "Conditions",
+		"privacy": "Confidentialité",
+		"reportBug": "Signaler une anomalie",
+		"translate": "Traduire"
+	},
+	"error": {
+		"noAssignedCampaigns": "Aucune campagne attribuée"
+	},
+	"close": "Fermer",
+	"previous": "Précédent",
+	"next": "Suivant",
+	"evaluation": {
+		"modifytable": {
+			"name": "Nom",
+			"score": "Score",
+			"preview": "Prévisualiser",
+			"action": "Action"
+		}
+	},
+	"languages": {
+		"en": "Anglais (English)",
+		"bn": "Bengali (বাংলা)",
+		"ar": "Arabe (عربية)",
+		"hi": "Hindi (हिन्दी)",
+		"es": "Espagnol (Español)",
+		"fr": "Français",
+		"de": "Allemand (Deutsch)",
+		"it": "Italien (Italiano)",
+		"ja": "Japonais (日本語)",
+		"ko": "Coréen (한국어)",
+		"pt": "Portugais (Português)",
+		"ru": "Russe (Русский)",
+		"zh": "Chinois (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
+		"ta": "Tamoul (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "Ourdou (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Pendjabi (ਪੰਜਾਬੀ)"
+	}
+}
