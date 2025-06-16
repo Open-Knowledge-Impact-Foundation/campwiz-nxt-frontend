@@ -22,7 +22,7 @@
     "@mui/icons-material": "^6.4.6",
     "@mui/material": "^6.4.6",
     "@mui/material-nextjs": "^7.1.1",
-    "@mui/x-date-pickers": "^8.5.1",
+    "@mui/x-date-pickers": "^8.5.2",
     "@next/bundle-analyzer": "^15.3.3",
     "@noxfed/lottie-webpack-loader": "^1.0.1",
     "@sentry/nextjs": "^9.27.0",
