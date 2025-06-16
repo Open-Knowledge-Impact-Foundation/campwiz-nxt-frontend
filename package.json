@@ -21,7 +21,7 @@
     "@lottiefiles/dotlottie-react": "^0.13.5",
     "@mui/icons-material": "^6.4.6",
     "@mui/material": "^6.4.6",
-    "@mui/material-nextjs": "^7.1.0",
+    "@mui/material-nextjs": "^7.1.1",
     "@mui/x-date-pickers": "^8.5.1",
     "@next/bundle-analyzer": "^15.3.3",
     "@noxfed/lottie-webpack-loader": "^1.0.1",
