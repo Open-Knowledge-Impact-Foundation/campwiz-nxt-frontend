@@ -18,6 +18,7 @@ import ChangeStatusButton from './ChangeStatusButton';
 import DeleteButton from './DeleteButton';
 import AddAsJuryButton from './AddAsJury';
 import { updateroundStatus } from './updateStatus';
+import { TFunction } from 'i18next';
 
 const CreateRoundButton = ({ onClick }: { onClick: () => void }) => (
     <Button
@@ -78,7 +79,7 @@ const MarkAsCompleteButton = ({ latestRound, setAction, refresh }: { latestRound
 }
 
 
-const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refresh, isCoordinator }: { latestRound: Round | null, campaign: Campaign, action: SelectedRoundActionStatus, setAction: (action: SelectedRoundActionStatus) => void, isJury: boolean, judgableLink: string, refresh: () => void, isCoordinator: boolean }) => {
+const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refresh, isCoordinator, t }: { t: TFunction, latestRound: Round | null, campaign: Campaign, action: SelectedRoundActionStatus, setAction: (action: SelectedRoundActionStatus) => void, isJury: boolean, judgableLink: string, refresh: () => void, isCoordinator: boolean }) => {
     // if no round is avaliable, return a create round button
     const buttons: React.ReactNode[] = []
     // if (campaign.status !== RoundStatus.ACTIVE)
@@ -92,7 +93,7 @@ const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refr
                     color="primary"
                     sx={{ m: 1, px: 3, borderRadius: 3 }}
                 >
-                    Evaluation Area
+                    {t('round.evaluationArea')}
                 </Button>
             </Link>)
         else if (latestRound.isPublicJury) {

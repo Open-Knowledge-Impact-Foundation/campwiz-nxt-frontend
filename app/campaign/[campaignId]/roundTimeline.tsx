@@ -46,6 +46,7 @@ function RoundTimeline({ rounds, campaign, session, isCoordinator, isArchived }:
                 judgableLink={`/round/${currentRound?.roundId}/submission/evaluate`}
                 refresh={refresh}
                 isCoordinator={isCoordinator}
+                t={t}
             />}
             <React.Suspense fallback={<LinearProgress />}>
                 {selectedRoundAction === SelectedRoundActionStatus.creating && <RoundCreate campaignId={campaign.campaignId} onAfterCreationSuccess={(round) => {
