@@ -20,7 +20,7 @@ const LoginComponent = ({ isMobile }: { isMobile: boolean }) => {
     const searchParams = useSearchParams()
     const next = searchParams.get('next');
     const baseURI = typeof window !== 'undefined' ? location.origin : '';
-    const pathName = searchParams.get('pathName') || '/user/callback';
+    const pathName = searchParams.get('pathName') || '/user/login';
     const [clicked, setClicked] = useState(false);
     const [error, setError] = useState<Error | null>(null);
     const { t } = useTranslation()

@@ -1,20 +1,20 @@
+"use server";
 import Footer from "@/components/home/Footer";
 import Header from "@/components/home/Header";
-import fetchAPIFromBackendSingleWithErrorHandling from "@/server";
+import fetchAPIFromBackendSingleWithErrorHandling, { fetchAPIFromBackendListWithErrorHandling } from "@/server";
 import { Campaign } from "@/types";
-import { headers } from "next/headers";
+import { Submission } from "@/types/submission";
 import { redirect } from "next/navigation";
-const redirectForLogin = async () => {
-    const headerList = await headers()
-    for (const [key, value] of headerList.entries()) {
-        console.log(`${key}: ${value}`);
-    }
+import CategorizerPage from "./_page";
+
+const redirectForLogin = (campaignId: string) => {
     const qs = new URLSearchParams({
-        next: '/campaign/[campaignId]/categorizer',
+        next: '/campaign/' + campaignId + '/categorizer',
         pathName: '/user/login/write'
     });
     return redirect(`/user/login?${qs.toString()}`);
 }
+
 const Categorizer = async ({ params }: { params: Promise<{ campaignId: string }> }) => {
     const { campaignId } = await params;
     const qs = new URLSearchParams();
@@ -30,11 +30,24 @@ const Categorizer = async ({ params }: { params: Promise<{ campaignId: string }>
         return <p>Error : {campaignResponse.detail}</p>;
     }
     const campaign = campaignResponse.data;
-    return redirectForLogin()
+    const submissionResponse = await fetchAPIFromBackendListWithErrorHandling<Submission>(`/category/uncategorized/${campaignId}`);
+    if (!submissionResponse) {
+        return <p>Error fetching uncategorized submissions.</p>;
+    }
+    if ('detail' in submissionResponse) {
+        if (submissionResponse.detail.startsWith('noAuth-')) {
+            return redirectForLogin(campaignId);
+        }
+        return <p>Error : {submissionResponse.detail}</p>;
+    }
+    const uncategorizedSubmissions = submissionResponse.data;
+    if (uncategorizedSubmissions.length === 0) {
+        return <p>No uncategorized submissions found for this campaign.</p>;
+    }
     return (
         <div>
             <Header returnTo={`/campaign/${campaign.campaignId}`} />
-            {/* <CategorizerPage campaign={campaign} /> */}
+            <CategorizerPage campaign={campaign} initialSubmissionList={uncategorizedSubmissions} />
             <Footer />
         </div>
     );

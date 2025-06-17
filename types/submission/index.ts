@@ -47,3 +47,11 @@ export type EvaluationListResponseWithCurrentStats = ResponseList<Evaluation> & 
     totalEvaluatedCount: number
     totalAssignmentCount: number
 };
+
+export type Category = {
+    name: string
+    fixed: boolean
+}
+export type SubmissionWithCategories = Submission & {
+    categories: Category[]
+}

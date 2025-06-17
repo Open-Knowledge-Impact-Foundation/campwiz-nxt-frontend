@@ -1,0 +1,141 @@
+"use client";
+
+import fetchAPIFromBackendSingleWithErrorHandling from "@/server";
+import { Campaign } from "@/types";
+import { Category, Submission, SubmissionWithCategories } from "@/types/submission";
+import { Autocomplete, Button, Chip, TextField } from "@mui/material";
+import Image from "next/image";
+import React, { useState } from "react";
+import useSWR from "swr";
+import { updateSubmissionCategories } from "./k";
+const getSummary = (categories: Category[]) => {
+    let summary = 'Added via [[Commons:CampWiz|CampWiz]] categorizer:\n';
+    if (categories.length === 0) {
+        return "No categories selected.";
+    }
+    for (const category of categories) {
+        if (category.fixed) {
+            continue; // Skip fixed categories
+        } else {
+            summary += `+ ${category.name}\n`;
+        }
+    }
+    return summary;
+}
+const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, totalSubmissions }: { submission: Submission; cursor: number; setCursor: (cursor: number) => void; totalSubmissions: number; }) => {
+    const handleSubmit = async (submissionId: string, categories: string[], summary: string) => {
+        const response = await updateSubmissionCategories(submissionId, categories, summary);
+        console.log("Submission updated:", response);
+    }
+    const [description, setDescription] = useState<string>(initialSubmission.description || '');
+    const [categories, setCategories] = useState<Category[]>([]);
+    const [submission, setSubmission] = useState<SubmissionWithCategories | Submission>(initialSubmission);
+    const { isLoading, error } = useSWR(`/category/${initialSubmission.submissionId}`, fetchAPIFromBackendSingleWithErrorHandling<SubmissionWithCategories>, {
+        onSuccess: (data) => {
+            if (data && 'data' in data && data.data) {
+                const submissionWithCategories = data.data as SubmissionWithCategories;
+                setDescription(submissionWithCategories.description || '');
+                setCategories(submissionWithCategories.categories || []);
+                setSubmission(submissionWithCategories);
+            }
+        },
+        onError: (err) => {
+            console.error("Error fetching submission categories:", err);
+        },
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
+        keepPreviousData: true,
+    })
+    if (isLoading) {
+        return <p>Loading submission details...</p>;
+    }
+    if (error) {
+        return <p>Error loading submission details: {error.message}</p>;
+    }
+    if (!('categories' in submission)) {
+        return <p>Categories not loaded for this submission.</p>;
+    }
+    return (
+        <div className="text-center w-full flex flex-row justify-around items-center flex-wrap">
+            <div><p>Title: {submission.title}</p>
+                <Image
+                    src={submission.thumburl}
+                    alt={submission.title}
+                    style={{ maxWidth: '100%', height: 'auto' }}
+                    width={submission.thumbwidth}
+                    height={submission.thumbheight}
+                />
+            </div>
+            <div>
+                <p>Description: {initialSubmission.description}</p>
+                <TextField
+                    label="Description"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    multiline
+                    rows={4}
+                    variant="outlined"
+                    sx={{
+                        m: 1
+                    }}
+                />
+                <Autocomplete
+                    multiple
+                    id="fixed-tags-demo"
+                    value={categories}
+                    onChange={(event, newValue) => {
+                        setCategories(newValue);
+                    }}
+                    size="small"
+                    options={submission.categories}
+                    getOptionLabel={(option) => option.name}
+                    renderTags={(value, getTagProps) =>
+                        value.map((option, index) => (
+                            <Chip
+                                label={option.name}
+                                {...getTagProps({ index })}
+                                disabled={option.fixed}
+                                key={index}
+                            />
+                        ))
+                    }
+                    style={{ width: 500 }}
+                    renderInput={(params) => (
+                        <TextField {...params} label="Fixed tag" placeholder="Favorites" />
+                    )}
+                />
+
+                <Button onClick={() => setCursor(Math.max(cursor - 1, 0))} disabled={cursor === 0} variant="contained" color="primary">Previous</Button>
+                <Button onClick={() => setCursor(Math.min(cursor + 1, totalSubmissions - 1))} disabled={cursor >= totalSubmissions - 1} variant="contained" color="primary">Next</Button>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={() => handleSubmit(submission.submissionId, categories.map(c => c.name), getSummary(categories))}
+                    sx={{ m: 1 }}
+                >
+                    Submit Categories
+                </Button>
+                <p>Submission {cursor + 1} of {totalSubmissions}</p>
+            </div>
+        </div>
+    );
+}
+
+const CategorizerPage = ({ campaign, initialSubmissionList }: { campaign: Campaign, initialSubmissionList: Submission[] }) => {
+    const [submissions, setSubmissions] = useState<Submission[]>(initialSubmissionList);
+    const [cursor, setCursor] = useState<number>(0);
+    const currentSubmission = submissions?.[cursor] ?? null;
+
+    if (!currentSubmission) {
+        return <p>No submissions to categorize.</p>;
+    }
+    console.log("CategorizerPage", setSubmissions);
+    return (
+        <div>
+            <h1>{campaign.name}</h1>
+            <p>This is the categorizer page for the campaign.</p>
+            <SingleSubmission submission={currentSubmission} cursor={cursor} setCursor={setCursor} totalSubmissions={submissions.length} />
+        </div>
+    );
+}
+export default CategorizerPage;
