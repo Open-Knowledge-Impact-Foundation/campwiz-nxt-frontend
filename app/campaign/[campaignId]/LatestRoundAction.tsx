@@ -19,6 +19,7 @@ import DeleteButton from './DeleteButton';
 import AddAsJuryButton from './AddAsJury';
 import { updateroundStatus } from './updateStatus';
 import { TFunction } from 'i18next';
+import { useTranslation } from '@/i18n/client';
 
 const CreateRoundButton = ({ onClick }: { onClick: () => void }) => (
     <Button
@@ -77,9 +78,33 @@ const MarkAsCompleteButton = ({ latestRound, setAction, refresh }: { latestRound
         onClick={markAsComplete}
     />
 }
+const GoTOCategorizerButton = ({ roundId, categorizerAvailable }: { roundId: string, categorizerAvailable?: boolean }) => {
+    if (!categorizerAvailable)
+        return null;
+    return (
+        <Link href={`/round/${roundId}/categorizer`}>
+            <Button
+                startIcon={<EditIcon />}
+                variant="contained"
+                color="primary"
+                sx={{ m: 1, px: 3, borderRadius: 3 }}
+            >
+                Categorizer
+            </Button>
+        </Link>
+    )
+}
 
-
-const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refresh, isCoordinator, t }: { t: TFunction, latestRound: Round | null, campaign: Campaign, action: SelectedRoundActionStatus, setAction: (action: SelectedRoundActionStatus) => void, isJury: boolean, judgableLink: string, refresh: () => void, isCoordinator: boolean }) => {
+const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refresh, isCoordinator, categorizerAvailable }: {
+    latestRound: Round | null,
+    campaign: Campaign,
+    action: SelectedRoundActionStatus,
+    setAction: (action: SelectedRoundActionStatus) => void, isJury: boolean, judgableLink: string,
+    refresh: () => void,
+    isCoordinator: boolean,
+    categorizerAvailable?: boolean
+}) => {
+    const { t } = useTranslation();
     // if no round is avaliable, return a create round button
     const buttons: React.ReactNode[] = []
     // if (campaign.status !== RoundStatus.ACTIVE)
@@ -98,6 +123,9 @@ const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refr
             </Link>)
         else if (latestRound.isPublicJury) {
             buttons.push(<AddAsJuryButton roundId={latestRound.roundId} refresh={refresh} />)
+        }
+        if (categorizerAvailable) {
+            buttons.push(<GoTOCategorizerButton roundId={latestRound.roundId} categorizerAvailable={categorizerAvailable} />)
         }
     }
     if (isCoordinator) {
