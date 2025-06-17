@@ -18,7 +18,6 @@ import ChangeStatusButton from './ChangeStatusButton';
 import DeleteButton from './DeleteButton';
 import AddAsJuryButton from './AddAsJury';
 import { updateroundStatus } from './updateStatus';
-import { TFunction } from 'i18next';
 import { useTranslation } from '@/i18n/client';
 
 const CreateRoundButton = ({ onClick }: { onClick: () => void }) => (
