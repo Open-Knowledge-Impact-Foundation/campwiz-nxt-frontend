@@ -20,6 +20,7 @@ const LoginComponent = ({ isMobile }: { isMobile: boolean }) => {
     const searchParams = useSearchParams()
     const next = searchParams.get('next');
     const baseURI = typeof window !== 'undefined' ? location.origin : '';
+    const pathName = searchParams.get('pathName') || '/user/callback';
     const [clicked, setClicked] = useState(false);
     const [error, setError] = useState<Error | null>(null);
     const { t } = useTranslation()
@@ -72,7 +73,7 @@ const LoginComponent = ({ isMobile }: { isMobile: boolean }) => {
             <Button
                 onClick={() => {
                     setError(null);
-                    loginInitiateActionClient(baseURI, next).catch((e) => {
+                    loginInitiateActionClient(baseURI, next, pathName).catch((e) => {
                         console.error(e);
                         setClicked(false);
                         setError(e);
