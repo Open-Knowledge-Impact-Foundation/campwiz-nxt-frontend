@@ -42,7 +42,8 @@
         "submissions": "Submissions",
         "assignments": "Assignments",
         "evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}",
-        "evaluationArea": "Evaluation Area"
+        "evaluationArea": "Evaluation Area",
+        "categorizer": "Categorizer"
     },
     "footer": {
         "campwizNxtTeam": "Campwiz NXT Team",

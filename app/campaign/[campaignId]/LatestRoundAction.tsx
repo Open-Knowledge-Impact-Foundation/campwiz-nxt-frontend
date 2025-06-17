@@ -17,6 +17,7 @@ import ExportToCSVButton from './ExportButton';
 import ChangeStatusButton from './ChangeStatusButton';
 import DeleteButton from './DeleteButton';
 import AddAsJuryButton from './AddAsJury';
+import CategoryIcon from '@mui/icons-material/Category';
 import { updateroundStatus } from './updateStatus';
 import { useTranslation } from '@/i18n/client';
 
@@ -77,22 +78,7 @@ const MarkAsCompleteButton = ({ latestRound, setAction, refresh }: { latestRound
         onClick={markAsComplete}
     />
 }
-const GoTOCategorizerButton = ({ roundId, categorizerAvailable }: { roundId: string, categorizerAvailable?: boolean }) => {
-    if (!categorizerAvailable)
-        return null;
-    return (
-        <Link href={`/round/${roundId}/categorizer`}>
-            <Button
-                startIcon={<EditIcon />}
-                variant="contained"
-                color="primary"
-                sx={{ m: 1, px: 3, borderRadius: 3 }}
-            >
-                Categorizer
-            </Button>
-        </Link>
-    )
-}
+
 
 const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refresh, isCoordinator, categorizerAvailable }: {
     latestRound: Round | null,
@@ -124,7 +110,16 @@ const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refr
             buttons.push(<AddAsJuryButton roundId={latestRound.roundId} refresh={refresh} />)
         }
         if (categorizerAvailable) {
-            buttons.push(<GoTOCategorizerButton roundId={latestRound.roundId} categorizerAvailable={categorizerAvailable} />)
+            buttons.push(<Link href={`/campaign/${latestRound.campaignId}/categorizer`}>
+                <Button
+                    startIcon={<CategoryIcon />}
+                    variant="contained"
+                    color="primary"
+                    sx={{ m: 1, px: 3, borderRadius: 3 }}
+                >
+                    {t('round.categorizer')}
+                </Button>
+            </Link>)
         }
     }
     if (isCoordinator) {
