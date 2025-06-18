@@ -17,7 +17,9 @@ import ExportToCSVButton from './ExportButton';
 import ChangeStatusButton from './ChangeStatusButton';
 import DeleteButton from './DeleteButton';
 import AddAsJuryButton from './AddAsJury';
+import CategoryIcon from '@mui/icons-material/Category';
 import { updateroundStatus } from './updateStatus';
+import { useTranslation } from '@/i18n/client';
 
 const CreateRoundButton = ({ onClick }: { onClick: () => void }) => (
     <Button
@@ -78,7 +80,16 @@ const MarkAsCompleteButton = ({ latestRound, setAction, refresh }: { latestRound
 }
 
 
-const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refresh, isCoordinator }: { latestRound: Round | null, campaign: Campaign, action: SelectedRoundActionStatus, setAction: (action: SelectedRoundActionStatus) => void, isJury: boolean, judgableLink: string, refresh: () => void, isCoordinator: boolean }) => {
+const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refresh, isCoordinator, categorizerAvailable }: {
+    latestRound: Round | null,
+    campaign: Campaign,
+    action: SelectedRoundActionStatus,
+    setAction: (action: SelectedRoundActionStatus) => void, isJury: boolean, judgableLink: string,
+    refresh: () => void,
+    isCoordinator: boolean,
+    categorizerAvailable?: boolean
+}) => {
+    const { t } = useTranslation();
     // if no round is avaliable, return a create round button
     const buttons: React.ReactNode[] = []
     // if (campaign.status !== RoundStatus.ACTIVE)
@@ -92,11 +103,23 @@ const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refr
                     color="primary"
                     sx={{ m: 1, px: 3, borderRadius: 3 }}
                 >
-                    Evaluation Area
+                    {t('round.evaluationArea')}
                 </Button>
             </Link>)
         else if (latestRound.isPublicJury) {
             buttons.push(<AddAsJuryButton roundId={latestRound.roundId} refresh={refresh} />)
+        }
+        if (categorizerAvailable) {
+            buttons.push(<Link href={`/campaign/${latestRound.campaignId}/categorizer`}>
+                <Button
+                    startIcon={<CategoryIcon />}
+                    variant="contained"
+                    color="primary"
+                    sx={{ m: 1, px: 3, borderRadius: 3 }}
+                >
+                    {t('round.categorizer')}
+                </Button>
+            </Link>)
         }
     }
     if (isCoordinator) {

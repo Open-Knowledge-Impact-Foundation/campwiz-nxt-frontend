@@ -5,7 +5,7 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from "@mui/material/Box";
 import Status, { getStatusColor, RoundStatusIcon } from "@/components/round/Status";
-import { Campaign } from "@/types";
+import { Campaign, CampaignType } from "@/types";
 import { Session } from "@/types/user/session";
 import ImportFromRoundDialog from "./round/import/round/_page";
 import LatestRoundActions from "./LatestRoundAction";
@@ -37,6 +37,7 @@ function RoundTimeline({ rounds, campaign, session, isCoordinator, isArchived }:
     const [currentRound, setCurrentRound] = React.useState<Round | null>(rounds.length > 0 ? rounds[0] : null);
     const isUserEligibleToVote = currentRound !== null && currentRound.jury !== null && session !== null && Object.values(currentRound.jury).includes(session.username);
     const [selectedRoundAction, setSelectedRoundAction] = React.useState<SelectedRoundActionStatus>(SelectedRoundActionStatus.none);
+    const categorizerAvailable = campaign.campaignType === CampaignType.Category
     return (
         <Box sx={{ ml: 1 }} component="div">
             {!isArchived && <LatestRoundActions
@@ -46,6 +47,7 @@ function RoundTimeline({ rounds, campaign, session, isCoordinator, isArchived }:
                 judgableLink={`/round/${currentRound?.roundId}/submission/evaluate`}
                 refresh={refresh}
                 isCoordinator={isCoordinator}
+                categorizerAvailable={categorizerAvailable}
             />}
             <React.Suspense fallback={<LinearProgress />}>
                 {selectedRoundAction === SelectedRoundActionStatus.creating && <RoundCreate campaignId={campaign.campaignId} onAfterCreationSuccess={(round) => {

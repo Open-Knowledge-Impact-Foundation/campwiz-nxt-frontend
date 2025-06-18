@@ -13,7 +13,15 @@ export interface Role {
     type: string
     userId: string
 }
+export enum CampaignType {
+    Category = 'categorization',
+    Commons = 'commons',
+    Wikidata = 'wikidata',
+    Wikipedia = 'wikipedia',
+    Reference = 'reference',
+}
 export interface Campaign {
+    campaignType: CampaignType
     projectId: string
     campaignId: string
     createdAt: string

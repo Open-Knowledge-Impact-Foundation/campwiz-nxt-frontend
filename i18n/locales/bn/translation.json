@@ -47,7 +47,9 @@
 		},
 		"submissions": "জমা",
 		"assignments": "অ্যাসাইনমেন্ট",
-		"evaluatedOutOf": "{{total}}টির মধ্যে {{evaluated}}টি মূল্যায়িত"
+		"evaluatedOutOf": "{{total}}টির মধ্যে {{evaluated}}টি মূল্যায়িত",
+		"evaluationArea": "মূল্যায়নক্ষেত্র",
+		"categorizer": "শ্রেণীবিভাজক"
 	},
 	"footer": {
 		"campwizNxtTeam": "Campwiz NXT দল",

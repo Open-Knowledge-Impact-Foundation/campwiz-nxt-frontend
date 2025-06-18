@@ -46,7 +46,9 @@
 		},
 		"submissions": "The image, video, audio or any other type of file that is submitted by the participants of the campaign. This label would be shown in the home page",
 		"assignments": "Each jury would be assigned a number of submissions to evaluate. This label would be shown in the home page",
-		"evaluatedOutOf": "<code><nowiki>{{evaluated}}</nowiki></code> evaluated out of <code><nowiki>{{total}}</nowiki></code>. Here <code><nowiki>{{evaluated}}</nowiki></code> and <code><nowiki>{{total}}</nowiki></code> are placeholders for the number of evaluated submissions and the total number of submissions respectively. This label would be shown in the home page."
+		"evaluatedOutOf": "<code><nowiki>{{evaluated}}</nowiki></code> evaluated out of <code><nowiki>{{total}}</nowiki></code>. Here <code><nowiki>{{evaluated}}</nowiki></code> and <code><nowiki>{{total}}</nowiki></code> are placeholders for the number of evaluated submissions and the total number of submissions respectively. This label would be shown in the home page.",
+		"evaluationArea": "A Button to go the page where the juries can evaluate the submissions. This label would be shown in the round page",
+		"categorizer": "A Button to go the page where the juries can categorize the submissions. This label would be shown in the round page"
 	},
 	"footer": {
 		"campwizNxtTeam": "Name of our Team who is behind this tool",
