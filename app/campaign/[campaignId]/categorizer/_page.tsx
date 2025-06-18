@@ -3,7 +3,7 @@
 import fetchAPIFromBackendSingleWithErrorHandling from "@/server";
 import { Campaign } from "@/types";
 import { Category, Submission, SubmissionWithCategories } from "@/types/submission";
-import { Autocomplete, Button, Chip, TextField } from "@mui/material";
+import { Autocomplete, Button, Chip, LinearProgress, TextField } from "@mui/material";
 import Image from "next/image";
 import React, { useState } from "react";
 import useSWR from "swr";
@@ -22,28 +22,41 @@ const getSummary = (categories: Category[]) => {
     }
     return summary;
 }
-const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, totalSubmissions }: { submission: Submission; cursor: number; setCursor: (cursor: number) => void; totalSubmissions: number; }) => {
+type SingleSubmissionProps = {
+    submission: Submission;
+    cursor: number;
+    setCursor: (cursor: number) => void;
+    totalSubmissions: number;
+}
+const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, totalSubmissions }: SingleSubmissionProps) => {
+    const [loading, setLoading] = useState<boolean>(false);
     const handleSubmit = async (submissionId: string, categories: string[], summary: string) => {
-        const response = await updateSubmissionCategories(submissionId, categories, summary);
-        console.log("Submission updated:", response);
-        if (!response || 'detail' in response) {
-            console.error("Error updating submission categories:", response);
-            return;
-        }
-        if (cursor >= totalSubmissions - 1) {
-            document.location.reload(); // Reload the page if we are at the last submission
-        } else {
-            setCursor(Math.min(cursor + 1, totalSubmissions - 1)); // Move to next submission
+        setLoading(true);
+        try {
+            const response = await updateSubmissionCategories(submissionId, categories, summary);
+            if (!response || 'detail' in response) {
+                console.error("Error updating submission categories:", response);
+                return;
+            }
+            if (cursor >= totalSubmissions - 1) {
+                document.location.reload(); // Reload the page if we are at the last submission
+            } else {
+                setCursor(Math.min(cursor + 1, totalSubmissions - 1)); // Move to next submission
+            }
+        } catch (e) {
+            console.error(e)
+        } finally {
+            setLoading(false)
         }
     }
-    const [description, setDescription] = useState<string>(initialSubmission.description || '');
+    // const [description, setDescription] = useState<string>(initialSubmission.description || '');
     const [categories, setCategories] = useState<Category[]>([]);
     const [submission, setSubmission] = useState<SubmissionWithCategories | Submission>(initialSubmission);
     const { isLoading, error } = useSWR(`/category/${initialSubmission.submissionId}`, fetchAPIFromBackendSingleWithErrorHandling<SubmissionWithCategories>, {
         onSuccess: (data) => {
             if (data && 'data' in data && data.data) {
                 const submissionWithCategories = data.data as SubmissionWithCategories;
-                setDescription(submissionWithCategories.description || '');
+                // setDescription(submissionWithCategories.description || '');
                 setCategories(submissionWithCategories.categories || []);
                 setSubmission(submissionWithCategories);
             }
@@ -56,7 +69,7 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
         keepPreviousData: true,
     })
     if (isLoading) {
-        return <p>Loading submission details...</p>;
+        return <LinearProgress className="w-full" />;
     }
     if (error) {
         return <p>Error loading submission details: {error.message}</p>;
@@ -78,7 +91,7 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
             </div>
             <div>
                 <p>Description: {initialSubmission.description}</p>
-                <TextField
+                {/* <TextField
                     label="Description"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
@@ -88,7 +101,7 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
                     sx={{
                         m: 1
                     }}
-                />
+                /> */}
                 <Autocomplete
                     multiple
                     id="campwiz-categories"
@@ -97,7 +110,8 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
                         const nonFixedCategories = newValue.filter(c => !c.fixed);
                         const uniqueCategories = Array.from(new Set(nonFixedCategories.map(c => c.name)))
                             .map(name => nonFixedCategories.find(c => c.name === name) || { name, fixed: false });
-                        newValue = [...fixedCategories, ...uniqueCategories];
+
+                        newValue = [...fixedCategories, ...uniqueCategories].toSorted((a, b) => a.name.localeCompare(b.name));
                         setCategories(newValue);
                     }}
                     size="small"
@@ -120,37 +134,48 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
                         <TextField {...params} label="Categories" placeholder="Select categories" variant="outlined" />
                     )}
                 />
-
-                <Button onClick={() => setCursor(Math.max(cursor - 1, 0))} disabled={cursor === 0} variant="contained" color="primary">Previous</Button>
-                <Button onClick={() => setCursor(Math.min(cursor + 1, totalSubmissions - 1))} disabled={cursor >= totalSubmissions - 1} variant="contained" color="primary">Skip</Button>
-                <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={() => handleSubmit(submission.submissionId, categories.map(c => c.name), getSummary(categories))}
-                    sx={{ m: 1 }}
-                >
-                    Submit Categories
-                </Button>
+                <div className="flex flex-row justify-between items-center">
+                    <Button
+                        onClick={() => setCursor(Math.max(cursor - 1, 0))}
+                        loading={loading}
+                        disabled={cursor === 0 || loading} variant="contained" color="primary">Previous</Button>
+                    <Button
+                        disabled={cursor >= totalSubmissions - 1 || loading}
+                        loading={loading}
+                        onClick={() => setCursor(Math.min(cursor + 1, totalSubmissions - 1))}
+                        variant="contained" color="primary">Skip</Button>
+                    <Button
+                        variant="contained"
+                        color="primary"
+                        onClick={() => handleSubmit(submission.submissionId, categories.map(c => c.name), getSummary(categories))}
+                        sx={{ m: 1 }}
+                        disabled={loading}
+                        loading={loading}
+                    >
+                        Submit Categories
+                    </Button>
+                </div>
                 <p>Submission {cursor + 1} of {totalSubmissions}</p>
             </div>
         </div>
     );
 }
 
-const CategorizerPage = ({ campaign, initialSubmissionList }: { campaign: Campaign, initialSubmissionList: Submission[] }) => {
-    const [submissions, setSubmissions] = useState<Submission[]>(initialSubmissionList);
+const CategorizerPage = ({ campaign, submissions }: { campaign: Campaign, submissions: Submission[] }) => {
     const [cursor, setCursor] = useState<number>(0);
     const currentSubmission = submissions?.[cursor] ?? null;
-
     if (!currentSubmission) {
         return <p>No submissions to categorize.</p>;
     }
-    console.log("CategorizerPage", setSubmissions);
     return (
-        <div>
+        <div className="text-center">
             <h1>{campaign.name}</h1>
-            <p>This is the categorizer page for the campaign.</p>
-            <SingleSubmission submission={currentSubmission} cursor={cursor} setCursor={setCursor} totalSubmissions={submissions.length} />
+            <SingleSubmission
+                submission={currentSubmission}
+                cursor={cursor}
+                setCursor={setCursor}
+                totalSubmissions={submissions.length}
+            />
         </div>
     );
 }

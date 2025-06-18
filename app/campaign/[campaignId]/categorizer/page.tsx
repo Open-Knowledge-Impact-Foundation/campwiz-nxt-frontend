@@ -50,7 +50,7 @@ const Categorizer = async ({ params }: { params: Promise<{ campaignId: string }>
     return (
         <div>
             <Header returnTo={`/campaign/${campaign.campaignId}`} />
-            <CategorizerPage campaign={campaign} initialSubmissionList={uncategorizedSubmissions} />
+            <CategorizerPage campaign={campaign} submissions={uncategorizedSubmissions} />
             <Footer />
         </div>
     );
