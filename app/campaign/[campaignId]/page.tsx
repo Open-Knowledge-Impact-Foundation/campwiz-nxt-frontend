@@ -1,7 +1,7 @@
 "use server";
 import fetchAPIFromBackendSingleWithErrorHandling from "@/server";
 import fetchSession from "@/server/session";
-import { Campaign, CampaignType, WikimediaUsername } from "@/types";
+import { Campaign, WikimediaUsername } from "@/types";
 import { Chip, Paper, Typography } from "@mui/material";
 import RoundTimeline from "./roundTimeline";
 import DateRangeIcon from '@mui/icons-material/DateRange'
@@ -75,12 +75,12 @@ const CampaignViewPage = async ({ params }: CampaignViewPageProps) => {
                 <Description description={campaign.rules} label="Rules" Icon={RuleIcon} />
                 <CoordinatorList coordinators={campaign.coordinators} />
                 <br />
-                {campaign.campaignType === CampaignType.Commons &&
-                    <RoundTimeline rounds={campaign.rounds} campaign={campaign} session={session}
-                        isCoordinator={campaign.coordinators?.includes(session?.username || '') === true}
-                        isArchived={isArchived}
-                    />
-                }
+                {/* {campaign.campaignType === CampaignType.Commons && */}
+                <RoundTimeline rounds={campaign.rounds} campaign={campaign} session={session}
+                    isCoordinator={campaign.coordinators?.includes(session?.username || '') === true}
+                    isArchived={isArchived}
+                />
+                {/* } */}
             </Paper >
             <Footer />
         </>

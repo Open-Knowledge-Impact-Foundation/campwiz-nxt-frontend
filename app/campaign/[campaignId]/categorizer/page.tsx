@@ -2,7 +2,7 @@
 import Footer from "@/components/home/Footer";
 import Header from "@/components/home/Header";
 import fetchAPIFromBackendSingleWithErrorHandling, { fetchAPIFromBackendListWithErrorHandling } from "@/server";
-import { Campaign } from "@/types";
+import { Campaign, CampaignType } from "@/types";
 import { Submission } from "@/types/submission";
 import { redirect } from "next/navigation";
 import CategorizerPage from "./_page";
@@ -30,6 +30,9 @@ const Categorizer = async ({ params }: { params: Promise<{ campaignId: string }>
         return <p>Error : {campaignResponse.detail}</p>;
     }
     const campaign = campaignResponse.data;
+    if (campaign.campaignType !== CampaignType.Category) {
+        return <p>This page is only for campaigns which has enabled categorization.</p>;
+    }
     const submissionResponse = await fetchAPIFromBackendListWithErrorHandling<Submission>(`/category/uncategorized/${campaignId}`);
     if (!submissionResponse) {
         return <p>Error fetching uncategorized submissions.</p>;

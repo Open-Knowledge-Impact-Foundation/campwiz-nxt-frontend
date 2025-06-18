@@ -14,7 +14,7 @@ export interface Role {
     userId: string
 }
 export enum CampaignType {
-    Category = 'category',
+    Category = 'categorization',
     Commons = 'commons',
     Wikidata = 'wikidata',
     Wikipedia = 'wikipedia',

@@ -26,6 +26,15 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
     const handleSubmit = async (submissionId: string, categories: string[], summary: string) => {
         const response = await updateSubmissionCategories(submissionId, categories, summary);
         console.log("Submission updated:", response);
+        if (!response || 'detail' in response) {
+            console.error("Error updating submission categories:", response);
+            return;
+        }
+        if (cursor >= totalSubmissions - 1) {
+            document.location.reload(); // Reload the page if we are at the last submission
+        } else {
+            setCursor(Math.min(cursor + 1, totalSubmissions - 1)); // Move to next submission
+        }
     }
     const [description, setDescription] = useState<string>(initialSubmission.description || '');
     const [categories, setCategories] = useState<Category[]>([]);
@@ -55,6 +64,7 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
     if (!('categories' in submission)) {
         return <p>Categories not loaded for this submission.</p>;
     }
+    const fixedCategories = categories.filter(c => c.fixed); // Filter out fixed categories
     return (
         <div className="text-center w-full flex flex-row justify-around items-center flex-wrap">
             <div><p>Title: {submission.title}</p>
@@ -81,9 +91,13 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
                 />
                 <Autocomplete
                     multiple
-                    id="fixed-tags-demo"
+                    id="campwiz-categories"
                     value={categories}
                     onChange={(event, newValue) => {
+                        const nonFixedCategories = newValue.filter(c => !c.fixed);
+                        const uniqueCategories = Array.from(new Set(nonFixedCategories.map(c => c.name)))
+                            .map(name => nonFixedCategories.find(c => c.name === name) || { name, fixed: false });
+                        newValue = [...fixedCategories, ...uniqueCategories];
                         setCategories(newValue);
                     }}
                     size="small"
@@ -96,17 +110,19 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
                                 {...getTagProps({ index })}
                                 disabled={option.fixed}
                                 key={index}
+                                size="small"
                             />
                         ))
                     }
-                    style={{ width: 500 }}
+
+                    className="max-w-fit"
                     renderInput={(params) => (
-                        <TextField {...params} label="Fixed tag" placeholder="Favorites" />
+                        <TextField {...params} label="Categories" placeholder="Select categories" variant="outlined" />
                     )}
                 />
 
                 <Button onClick={() => setCursor(Math.max(cursor - 1, 0))} disabled={cursor === 0} variant="contained" color="primary">Previous</Button>
-                <Button onClick={() => setCursor(Math.min(cursor + 1, totalSubmissions - 1))} disabled={cursor >= totalSubmissions - 1} variant="contained" color="primary">Next</Button>
+                <Button onClick={() => setCursor(Math.min(cursor + 1, totalSubmissions - 1))} disabled={cursor >= totalSubmissions - 1} variant="contained" color="primary">Skip</Button>
                 <Button
                     variant="contained"
                     color="primary"
