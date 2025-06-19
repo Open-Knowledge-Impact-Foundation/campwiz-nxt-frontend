@@ -67,6 +67,7 @@
     "close": "Close",
     "previous": "Previous",
     "next": "Next",
+    "return": "Return",
     "evaluation": {
         "modifytable": {
             "name": "Name",

@@ -84,6 +84,7 @@
 		"no": "Label for a button that allows the user to reject the submission. For example, the user can click on the no to reject the submission",
 		"yes": "Label for a button that allows the user to accept the submission. For example, the user can click on the yes to accept the submission"
 	},
+	"return": "Label for a button that allows the user to return to the previous page. For example, the user can click on the return to go back to the previous page. This button might also take users to the home page if they are not in a specific page. Please keep it short and one word.",
 	"submission": {
 		"title": "Title",
 		"description": "Description",

@@ -65,6 +65,7 @@
 	"close": "বন্ধ করুন",
 	"previous": "পূর্ববর্তী",
 	"next": "পরবর্তী",
+	"return": "ফিরে যান",
 	"evaluation": {
 		"modifytable": {
 			"name": "নাম",
