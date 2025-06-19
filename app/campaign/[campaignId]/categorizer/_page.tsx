@@ -115,6 +115,7 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
     );
     return (
         <div className="text-center w-full flex flex-col justify-around items-center flex-wrap">
+            {loading && <LinearProgress className="w-full" />}
             <p className="mb-3 p-2 block wrap-normal">
                 <b className="font-bold">Title: </b>
                 <MuiLink
