@@ -59,7 +59,10 @@
         "categoriesNotLoaded": "Categories are not loaded yet",
         "campaignNotFound": "Campaign not found",
         "campaignCategoriesNotSupported": "Campaign categories are not supported",
-        "noSubmissionAvailableForCategorization": "No submission available for categorization"
+        "noSubmissionAvailableForCategorization": "No submission available for categorization",
+        "noCategoriesSelected": "No categories selected",
+        "noCategoriesAvailable": "No categories available",
+        "noSubmissions": "No submissions available"
     },
     "close": "Close",
     "previous": "Previous",
@@ -87,10 +90,7 @@
         "cancel": "Cancel",
         "skip": "Skip",
         "next": "Next",
-        "previous": "Previous",
-        "noCategoriesSelected": "No categories selected",
-        "noCategoriesAvailable": "No categories available",
-        "noSubmissions": "No submissions available"
+        "previous": "Previous"
     },
     "languages": {
         "en": "English",

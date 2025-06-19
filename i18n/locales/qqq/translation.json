@@ -59,7 +59,15 @@
 		"translate": "Translate"
 	},
 	"error": {
-		"noAssignedCampaigns": "The error message that would be shown when the user has campaigns found in which the person is assigned as a jury or co-ordinator. This label would be shown in the home page"
+		"noAssignedCampaigns": "The error message that would be shown when the user has campaigns found in which the person is assigned as a jury or co-ordinator. This label would be shown in the home page",
+		"loadingSubmissionDetails": "Could not load submission details: <code><nowiki>{{error}}</nowiki></code>. Here <code><nowiki>{{error}}</nowiki></code> is a placeholder for the error message. This error would be shown when submission details could not be fetched from the backend. This label would be shown in the submission details page",
+		"categoriesNotLoaded": "Categories are not loaded yet.<br/> This error would be shown when the categories are not loaded yet in the categorization page. This label would be shown in the categorization page",
+		"campaignNotFound": "Campaign not found. This error would be shown when the campaign is not found in the backend. This label would be shown in the campaign page",
+		"campaignCategoriesNotSupported": "Campaign categories are not supported. This error would be shown when the campaign does not support categories. This label would be shown in the campaign page",
+		"noSubmissionAvailableForCategorization": "No submission available for categorization. This error would be shown when there are no submissions available for categorization. This label would be shown in the categorization page",
+		"noCategoriesSelected": "No categories selected. This error would be shown when the user tries to save the submission without selecting any categories. This label would be shown in the categorization page",
+		"noCategoriesAvailable": "No categories available. This error would be shown when there are no categories available for selection. This label would be shown in the categorization page",
+		"noSubmissions": "No submissions available. This error would be shown when there are no submissions available for evaluation or categorization. This label would be shown in the evaluation page"
 	},
 	"close": "Label for a generic close button. For example, the user can click on the close to close a modal or a dialog box",
 	"previous": "Label for a generic previous button. For example, the user can click on the previous to go back to the previous page",
@@ -75,6 +83,19 @@
 		"edit": "Label for a button that allows the user to modify vote or score of the submission. For example, the user can click on the edit to change the score of the submission",
 		"no": "Label for a button that allows the user to reject the submission. For example, the user can click on the no to reject the submission",
 		"yes": "Label for a button that allows the user to accept the submission. For example, the user can click on the yes to accept the submission"
+	},
+	"submission": {
+		"title": "Title",
+		"description": "Description",
+		"author": "Author",
+		"viewOnCommons": "View on Commons",
+		"categories": "Categories",
+		"selectCategories": "Select Categories",
+		"save": "Save",
+		"cancel": "Cancel",
+		"skip": "Skip",
+		"next": "Next",
+		"previous": "Previous"
 	},
 	"languages": {
 		"en": "English (English). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is English, it should be \"<Translation of the name English in your language> (English)\"",
