@@ -5,6 +5,8 @@ import IconButtton from "@mui/material/IconButton";
 import { usePathname } from "next/navigation";
 import { useMediaQuery } from "@mui/material";
 import Link from "next/link";
+import { useTranslation } from "@/i18n/client";
+import { TFunction } from "i18next";
 type ReturnButtonProps = {
     disabled?: boolean
     sx?: ButtonProps['sx'],
@@ -12,7 +14,7 @@ type ReturnButtonProps = {
     alwaysBig?: boolean,
     to?: string
 }
-const B = ({ onClick, isSmall, alwaysBig, sx, disabled }: { onClick?: () => void, isSmall: boolean, alwaysBig: boolean, sx?: ButtonProps['sx'], disabled?: boolean }) => (
+const B = ({ onClick, isSmall, alwaysBig, sx, disabled, t }: { onClick?: () => void, isSmall: boolean, alwaysBig: boolean, sx?: ButtonProps['sx'], disabled?: boolean, t: TFunction }) => (
     !isSmall || alwaysBig ? (
         <Button
             onClick={onClick}
@@ -22,7 +24,7 @@ const B = ({ onClick, isSmall, alwaysBig, sx, disabled }: { onClick?: () => void
             sx={sx}
             disabled={disabled}
         >
-            {!isSmall && 'Return'}
+            {!isSmall && t('return')}
         </Button>
     ) : (
         <IconButtton
@@ -39,6 +41,7 @@ const B = ({ onClick, isSmall, alwaysBig, sx, disabled }: { onClick?: () => void
 const ReturnButton = ({ disabled, sx, hiddenIn, alwaysBig = false, to }: ReturnButtonProps) => {
     const pathName = usePathname()
     const isSmall = useMediaQuery(theme => theme.breakpoints.down('sm'));
+    const { t } = useTranslation()
     if (hiddenIn) {
         for (const path of hiddenIn) {
             const r = new RegExp(path)
@@ -56,7 +59,7 @@ const ReturnButton = ({ disabled, sx, hiddenIn, alwaysBig = false, to }: ReturnB
         }
     }
     return to ? <Link href={to}>
-        <B isSmall={isSmall} alwaysBig={alwaysBig} sx={sx} disabled={disabled} />
-    </Link> : <B onClick={onClick} isSmall={isSmall} alwaysBig={alwaysBig} sx={sx} disabled={disabled} />
+        <B isSmall={isSmall} alwaysBig={alwaysBig} sx={sx} disabled={disabled} t={t} />
+    </Link> : <B onClick={onClick} isSmall={isSmall} alwaysBig={alwaysBig} sx={sx} disabled={disabled} t={t} />
 }
 export default ReturnButton
