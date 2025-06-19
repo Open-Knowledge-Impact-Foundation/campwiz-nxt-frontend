@@ -1,3 +1,4 @@
+[Messages Translated](https://translatewiki.net/wiki/Special:MessageGroupStats?group=wikimedia-tools-campwiz-frontend&messages=&suppressempty=1)
 # CampWiz Frontend Server
 This is CampWiz Frontend Server. It is responsible for the frontend of the CampWiz application. It is built using Next.js and TypeScript as well as TailWindcss and MaterialUI for styling. It is a monorepo that contains the frontend server and the shared components library.
 ## Getting Started
