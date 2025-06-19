@@ -1,13 +1,18 @@
 "use client";
 
 import fetchAPIFromBackendSingleWithErrorHandling from "@/server";
-import { Campaign } from "@/types";
+import { Campaign, CampaignType } from "@/types";
 import { Category, Submission, SubmissionWithCategories } from "@/types/submission";
 import { Autocomplete, Button, Chip, LinearProgress, TextField } from "@mui/material";
 import Image from "next/image";
 import React, { useState } from "react";
 import useSWR from "swr";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackwardIcon from '@mui/icons-material/ArrowBack';
+import SaveIcon from '@mui/icons-material/Save';
 import { updateSubmissionCategories } from "./k";
+import Link from "next/link";
+import MuiLink from "@mui/material/Link";
 const getSummary = (categories: Category[]) => {
     let summary = 'Added via [[Commons:CampWiz|CampWiz]] categorizer:\n';
     if (categories.length === 0) {
@@ -27,6 +32,30 @@ type SingleSubmissionProps = {
     cursor: number;
     setCursor: (cursor: number) => void;
     totalSubmissions: number;
+}
+
+const getHeightWidth = (currentHeight: number, currentWidth: number, maxHeight: number, maxWidth: number) => {
+    if (currentHeight > maxHeight || currentWidth > maxWidth) {
+        const heightRatio = currentHeight / maxHeight;
+        const widthRatio = currentWidth / maxWidth;
+        const ratio = Math.max(heightRatio, widthRatio);
+        currentHeight = currentHeight / ratio;
+        currentWidth = currentWidth / ratio;
+    }
+    if (currentHeight < 100) {
+        currentHeight = 100; // Minimum height
+    }
+    if (currentWidth < 100) {
+        currentWidth = 100; // Minimum width
+    }
+    if (currentHeight > maxHeight) {
+        currentHeight = maxHeight; // Cap height
+    }
+    if (currentWidth > maxWidth) {
+        currentWidth = maxWidth; // Cap width
+    }
+    // Round to two decimal places
+    return [currentHeight, currentWidth].map(r => Math.round(r * 100) / 100);
 }
 const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, totalSubmissions }: SingleSubmissionProps) => {
     const [loading, setLoading] = useState<boolean>(false);
@@ -78,85 +107,101 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
         return <p>Categories not loaded for this submission.</p>;
     }
     const fixedCategories = categories.filter(c => c.fixed); // Filter out fixed categories
+    const [thumbheight, thumbwidth] = getHeightWidth(
+        submission.thumbheight,
+        submission.thumbwidth,
+        500, // Max height
+        Math.min(window.innerWidth, 500) // Max width
+    );
     return (
-        <div className="text-center w-full flex flex-row justify-around items-center flex-wrap">
-            <div><p>Title: {submission.title}</p>
+        <div className="text-center w-full flex flex-col justify-around items-center flex-wrap">
+            <p className="mb-3 p-2 block wrap-normal">
+                <b className="font-bold">Title: </b>
+                <MuiLink
+                    href={`https://commons.wikimedia.org/wiki/File:${submission.title}`}
+                    className="text-blue-500 hover:underline"
+                    target="_blank"
+                    component={Link}
+                    title="Click to view on Commons"
+
+                >
+                    {submission.title} ⇱
+                </MuiLink>
+            </p>
+            <div className="flex flex-col md:flex-row gap-4">
                 <Image
                     src={submission.thumburl}
                     alt={submission.title}
                     style={{ maxWidth: '100%', height: 'auto' }}
-                    width={submission.thumbwidth}
-                    height={submission.thumbheight}
+                    width={thumbwidth}
+                    height={thumbheight}
                 />
-            </div>
-            <div>
-                <p>Description: {initialSubmission.description}</p>
-                {/* <TextField
-                    label="Description"
-                    value={description}
-                    onChange={(e) => setDescription(e.target.value)}
-                    multiline
-                    rows={4}
-                    variant="outlined"
-                    sx={{
-                        m: 1
-                    }}
-                /> */}
-                <Autocomplete
-                    multiple
-                    id="campwiz-categories"
-                    value={categories}
-                    onChange={(event, newValue) => {
-                        const nonFixedCategories = newValue.filter(c => !c.fixed);
-                        const uniqueCategories = Array.from(new Set(nonFixedCategories.map(c => c.name)))
-                            .map(name => nonFixedCategories.find(c => c.name === name) || { name, fixed: false });
+                <div className="max-full md:max-w-96 flex flex-col justify-between items-start">
+                    <p className="mb-3 p-2">
+                        <b className="font-bold">Description:</b> {initialSubmission.description}
+                    </p>
+                    <div>
+                        <Autocomplete
+                            multiple
+                            id="campwiz-categories"
+                            value={categories}
+                            onChange={(event, newValue) => {
+                                const nonFixedCategories = newValue.filter(c => !c.fixed);
+                                const uniqueCategories = Array.from(new Set(nonFixedCategories.map(c => c.name)))
+                                    .map(name => nonFixedCategories.find(c => c.name === name) || { name, fixed: false });
 
-                        newValue = [...fixedCategories, ...uniqueCategories].toSorted((a, b) => a.name.localeCompare(b.name));
-                        setCategories(newValue);
-                    }}
-                    size="small"
-                    options={submission.categories}
-                    getOptionLabel={(option) => option.name}
-                    renderTags={(value, getTagProps) =>
-                        value.map((option, index) => (
-                            <Chip
-                                label={option.name}
-                                {...getTagProps({ index })}
-                                disabled={option.fixed}
-                                key={index}
-                                size="small"
-                            />
-                        ))
-                    }
+                                newValue = [...fixedCategories, ...uniqueCategories].toSorted((a, b) => a.name.localeCompare(b.name));
+                                setCategories(newValue);
+                            }}
+                            size="small"
+                            options={submission.categories}
+                            getOptionLabel={(option) => option.name}
+                            renderTags={(value, getTagProps) =>
+                                value.map((option, index) => (
+                                    <Chip
+                                        label={option.name}
+                                        {...getTagProps({ index })}
+                                        disabled={option.fixed}
+                                        key={index}
+                                        size="small"
+                                    />
+                                ))
+                            }
 
-                    className="max-w-fit"
-                    renderInput={(params) => (
-                        <TextField {...params} label="Categories" placeholder="Select categories" variant="outlined" />
-                    )}
-                />
-                <div className="flex flex-row justify-between items-center">
-                    <Button
-                        onClick={() => setCursor(Math.max(cursor - 1, 0))}
-                        loading={loading}
-                        disabled={cursor === 0 || loading} variant="contained" color="primary">Previous</Button>
-                    <Button
-                        disabled={cursor >= totalSubmissions - 1 || loading}
-                        loading={loading}
-                        onClick={() => setCursor(Math.min(cursor + 1, totalSubmissions - 1))}
-                        variant="contained" color="primary">Skip</Button>
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        onClick={() => handleSubmit(submission.submissionId, categories.map(c => c.name), getSummary(categories))}
-                        sx={{ m: 1 }}
-                        disabled={loading}
-                        loading={loading}
-                    >
-                        Submit Categories
-                    </Button>
+                            className="max-w-fit"
+                            renderInput={(params) => (
+                                <TextField {...params} label="Categories" placeholder="Select categories" variant="outlined" />
+                            )}
+                        />
+                        <div className="flex flex-row justify-between items-center p-2">
+                            <Button
+                                onClick={() => setCursor(Math.max(cursor - 1, 0))}
+                                loading={loading}
+                                startIcon={<ArrowBackwardIcon />}
+                                disabled={cursor === 0 || loading} variant="contained" color="primary">Previous</Button>
+                            <Button
+                                disabled={cursor >= totalSubmissions - 1 || loading}
+                                loading={loading}
+                                startIcon={<ArrowForwardIcon />}
+                                onClick={() => setCursor(Math.min(cursor + 1, totalSubmissions - 1))}
+                                variant="contained" color="primary">Skip</Button>
+                            <Button
+                                variant="contained"
+                                color="success"
+                                onClick={() => handleSubmit(submission.submissionId, categories.map(c => c.name), getSummary(categories))}
+                                sx={{ m: 1 }}
+                                disabled={loading}
+                                loading={loading}
+                                startIcon={<SaveIcon />}
+                            >
+                                Save
+                            </Button>
+                        </div>
+                        <p>Submission {cursor + 1} of {totalSubmissions}</p>
+                    </div>
                 </div>
-                <p>Submission {cursor + 1} of {totalSubmissions}</p>
             </div>
+
         </div>
     );
 }
@@ -164,12 +209,20 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
 const CategorizerPage = ({ campaign, submissions }: { campaign: Campaign, submissions: Submission[] }) => {
     const [cursor, setCursor] = useState<number>(0);
     const currentSubmission = submissions?.[cursor] ?? null;
+    if (!campaign) {
+        return <p>Campaign not found.</p>;
+    }
+    if (!submissions || submissions.length === 0) {
+        return <p>No submissions available for categorization.</p>;
+    }
+    if (campaign.campaignType != CampaignType.Category) {
+        return <p>This campaign does not support categorization.</p>;
+    }
     if (!currentSubmission) {
         return <p>No submissions to categorize.</p>;
     }
     return (
         <div className="text-center">
-            <h1>{campaign.name}</h1>
             <SingleSubmission
                 submission={currentSubmission}
                 cursor={cursor}
