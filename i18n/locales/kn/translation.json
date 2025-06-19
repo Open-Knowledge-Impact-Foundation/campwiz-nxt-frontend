@@ -59,16 +59,6 @@
 		"noAssignedCampaigns": "ಹೊಂದಿಕೆಯಾಗದ ಸ್ಪರ್ಧೆಗಳು ಇಲ್ಲ"
 	},
 	"close": "ಮುಚ್ಚಿ",
-	"previous": "Previous",
-	"next": "Next",
-	"evaluation": {
-		"modifytable": {
-			"name": "ಹೆಸರು",
-			"score": "Score",
-			"preview": "Preview",
-			"action": "Action"
-		}
-	},
 	"languages": {
 		"en": "ಇಂಗ್ಲಿಷ್ (English)",
 		"bn": "ಬಂಗಾಳಿ (বাংলা)",
@@ -83,12 +73,12 @@
 		"pt": "ಪೋರ್ಚುಗೀಸ್ (Português)",
 		"ru": "ರಷ್ಯನ್ (Русский)",
 		"zh": "ಚೀನೀಸ್ (中文)",
-		"kn": "Kannada (ಕನ್ನಡ)",
+		"kn": "ಕನ್ನಡ (ಕನ್ನಡ)",
 		"mr": "ಮರಾಠಿ (मराठी)",
-		"ta": "Tamil (தமிழ்)",
-		"ml": "Malayalam (മലയാളം)",
+		"ta": "ತಮಿಳು (தமிழ்)",
+		"ml": "ಮಲಯಾಳಂ (മലയാളം)",
 		"ur": "ಉರ್ದು (اردو)",
 		"gu": "ಗುಜರಾತಿ (ગુજરાતી)",
-		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+		"pa": "ಪಂಜಾಬಿ (ਪੰਜਾਬੀ)"
 	}
 }

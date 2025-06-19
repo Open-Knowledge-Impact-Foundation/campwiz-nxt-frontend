@@ -112,6 +112,12 @@
         "ml": "Malayalam (മലയാളം)",
         "ur": "Urdu (اردو)",
         "gu": "Gujarati (ગુજરાતી)",
-        "pa": "Punjabi (ਪੰਜਾਬੀ)"
+        "pa": "Punjabi (ਪੰਜਾਬੀ)",
+        "te": "Telugu (తెలుగు)",
+        "ps": "Pashto (پښتو)",
+        "skr-arab": "Saraiki (سرائیکی)",
+        "skr-latn": "Saraiki (Latin)",
+        "pms": "Piedmontese (Piemontèis)",
+        "mk": "Macedonian (Македонски)"
     }
 }
