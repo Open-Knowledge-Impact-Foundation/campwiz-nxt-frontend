@@ -1,0 +1,51 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar",
+			"Къарачайлы"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "{{name}} хош кел",
+		"subtitle": "Жюри сынамны башха дараджагъа чыгъар",
+		"publicRunningCampaigns": "Этиулени бардырыуда Публик Компанияла",
+		"yourCampaigns": "Компанияларынг",
+		"logout": "Чыкъ",
+		"login": "Кириу"
+	},
+	"settings": {
+		"title": "Джарашдырыўла",
+		"language": "Тил",
+		"save": "Сакъландыр",
+		"cancel": "Ызына ал",
+		"theme": "Тема"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "Актив",
+			"PAUSED": "Туракълатылды",
+			"COMPLETED": "Тамамланды",
+			"ARCHIVED": "Архив"
+		}
+	},
+	"footer": {
+		"terms": "шартла",
+		"privacy": "Ташалыкъ",
+		"reportBug": "Халатны юсюнден билдир",
+		"translate": "Кёчюр"
+	},
+	"close": "Джаб",
+	"previous": "Аллындагъы",
+	"next": "Эндиги",
+	"evaluation": {
+		"modifytable": {
+			"name": "Ат",
+			"preview": "Ал къарау",
+			"action": "Этиу"
+		}
+	},
+	"languages": {
+		"en": "Ингилизча"
+	}
+}

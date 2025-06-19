@@ -46,7 +46,9 @@
 		},
 		"submissions": "Spedission",
 		"assignments": "Assignassion",
-		"evaluatedOutOf": "{{evaluated}} valutà su {{total}}"
+		"evaluatedOutOf": "{{evaluated}} valutà su {{total}}",
+		"evaluationArea": "Spassi ëd valutassion",
+		"categorizer": "Spassi ëd categorisassion"
 	},
 	"footer": {
 		"campwizNxtTeam": "Echip ëd Campwiz NXT",

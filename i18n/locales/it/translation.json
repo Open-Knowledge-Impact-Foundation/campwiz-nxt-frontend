@@ -44,16 +44,40 @@
 		"reportBug": "Segnala un errore",
 		"translate": "Traduci"
 	},
+	"error": {
+		"categoriesNotLoaded": "Le categorie non sono ancora state caricate",
+		"campaignNotFound": "Campagna non trovata",
+		"noCategoriesSelected": "Nessuna categoria selezionata",
+		"noCategoriesAvailable": "Nessuna categoria disponibile"
+	},
 	"close": "Chiudi",
 	"previous": "Precedente",
 	"next": "Successivo",
+	"return": "Ritorna",
 	"evaluation": {
 		"modifytable": {
 			"name": "Nome",
 			"score": "Punteggio",
 			"preview": "Anteprima",
 			"action": "Azione"
-		}
+		},
+		"skip": "Salta",
+		"edit": "Modifica voti",
+		"yes": "Sì",
+		"no": "No"
+	},
+	"submission": {
+		"title": "Titolo",
+		"description": "Descrizione",
+		"author": "Autore",
+		"viewOnCommons": "Vedi su Commons",
+		"categories": "Categorie",
+		"selectCategories": "Seleziona categorie",
+		"save": "Salva",
+		"cancel": "Annulla",
+		"skip": "Salta",
+		"next": "Successivo",
+		"previous": "Precedente"
 	},
 	"languages": {
 		"en": "Inglese",
@@ -75,6 +99,12 @@
 		"ml": "Malayalam (മലയാളം)",
 		"ur": "Urdu (اردو)",
 		"gu": "Gujarati (ગુજરાતી)",
-		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+		"pa": "Punjabi (ਪੰਜਾਬੀ)",
+		"te": "Telugu (తెలుగు)",
+		"ps": "Pashto (پښتو)",
+		"skr-arab": "Saraiki (سرائیکی)",
+		"skr-latn": "Saraiki (latino)",
+		"pms": "Piemontese (Piemontèis)",
+		"mk": "Macedone (Македонски)"
 	}
 }

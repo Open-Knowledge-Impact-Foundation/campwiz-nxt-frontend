@@ -1,0 +1,62 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar"
+		]
+	},
+	"title": "קעמפוויז ען-עקס-טי",
+	"home": {
+		"welcome": "ברוכים הבאים {{name}}",
+		"subtitle": "נעמען זשורי דערפאַרונג צו אן אנדער מדרגה",
+		"publicRunningCampaigns": "עפנטלעכע לויפן קאמפיינס",
+		"yourCampaigns": "אייערע קאמפיינס",
+		"logout": "אַרויסלאָגירן",
+		"dashboard": "מיין איבערזיכט־טאוול",
+		"doc": "דאָק",
+		"login": "אַרײַנלאגירן"
+	},
+	"settings": {
+		"title": "איינשטעלונגען",
+		"language": "שפּראַך",
+		"darkMode": "טונקעלער מאָדע",
+		"lightMode": "נאכטמאדע",
+		"save": "אויפֿהיטן",
+		"cancel": "אַנולירן",
+		"theme": "טעמע",
+		"helpTranslation": "ביטע העלפט אונדז איבערזעצן צו אייער שפראך ביי <0>TranslateWiki</0>"
+	},
+	"login": {
+		"title": "לאמיר אנפאנגען",
+		"loginWithWikimedia": "אַרײַנלאגירן צו וויקיפעדיע",
+		"afterLoginRedirect": "נאך דעם פראצעדור, וועט איר ווערן צוריקגעפירט צו דער פאלגנדער בלאט:"
+	},
+	"campaign": {
+		"createCampaign": "שאַפֿן קאַמפּיין",
+		"goToCampaign": "גיי צו קאמפיין",
+		"showAllCampaigns": "ווייזן אַלע קאַמפּיינז"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "אקטיוו",
+			"PAUSED": "פּויזע",
+			"COMPLETED": "פארטיק!",
+			"ARCHIVED": "אַרכיווירט"
+		},
+		"submissions": "סאַבמישאַנז",
+		"assignments": "אויפגאַבעס",
+		"evaluatedOutOf": "{{evaluated}} עוואַלויִרט פֿון {{total}}"
+	},
+	"footer": {
+		"campwizNxtTeam": "קעמפוויז NXT מאַנשאַפֿט",
+		"manual": "האַנטלעך",
+		"terms": "זמן",
+		"privacy": "פריוואטקייט",
+		"reportBug": "מעלדן אַ באַג",
+		"translate": "פֿאַרטײַטשן"
+	},
+	"error": {
+		"noAssignedCampaigns": "קיין צוגעטיילטע קאמפיינס נישט"
+	},
+	"close": "פארמאכן",
+	"previous": "פֿריערדיקער"
+}

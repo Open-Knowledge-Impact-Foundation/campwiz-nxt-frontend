@@ -2,13 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Nokib Sarkar",
-			"Omotecho"
+			"Nortix"
 		]
 	},
-	"title": "キャンプウィズNXT",
+	"title": "CampWiz NXT",
 	"home": {
-		"welcome": "{{name}} さん、ようこそ",
-		"subtitle": "Taking jury experience to another level",
+		"welcome": "Willkommen {{name}}",
+		"subtitle": "Jury-Erfahrung auf ein neues Niveau bringen",
 		"publicRunningCampaigns": "Public Running Campaigns",
 		"yourCampaigns": "Your Campaigns",
 		"logout": "Logout",
@@ -24,7 +24,7 @@
 		"save": "Save",
 		"cancel": "Cancel",
 		"theme": "Theme",
-		"helpTranslation": "<0>TranslateWiki</0> であなたの言語への翻訳にご協力ください"
+		"helpTranslation": "Bitte helfen Sie uns bei der Übersetzung in Ihre Sprache unter <0>TranslateWiki</0>"
 	},
 	"login": {
 		"title": "Let's get started",
@@ -42,11 +42,14 @@
 			"PAUSED": "Paused",
 			"COMPLETED": "Completed",
 			"ARCHIVED": "Archived",
-			"IMPORTING": "取り込み"
+			"IMPORTING": "Importieren",
+			"DISTRIBUTING": "Verteilen"
 		},
 		"submissions": "Submissions",
 		"assignments": "Assignments",
-		"evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}"
+		"evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}",
+		"evaluationArea": "Auswertungsbereich",
+		"categorizer": "Kategorisierer"
 	},
 	"footer": {
 		"campwizNxtTeam": "Campwiz NXT Team",

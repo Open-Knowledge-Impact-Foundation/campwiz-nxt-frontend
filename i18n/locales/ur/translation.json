@@ -1,0 +1,118 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "خوش آمدید {{name}}",
+		"subtitle": "جیوری کے تجربے کو ایک نئی سطح پر لے جانا",
+		"publicRunningCampaigns": "عوامی جاری مقابلے",
+		"yourCampaigns": "آپ کے مقابلے",
+		"logout": "لاگ آؤٹ",
+		"dashboard": "ڈیش بورڈ",
+		"doc": "دستاویزات",
+		"login": "لاگ ان"
+	},
+	"settings": {
+		"title": "ترتیبات",
+		"language": "زبان",
+		"darkMode": "تاریک وضع",
+		"lightMode": "روشن وضع",
+		"save": "محفوظ کریں",
+		"cancel": "منسوخ کریں",
+		"theme": "تھیم",
+		"helpTranslation": "براہ کرم <0>TranslateWiki</0> پر اپنی زبان میں ترجمہ کرنے میں ہماری مدد کریں۔"
+	},
+	"login": {
+		"title": "آئیے شروعات کرتے ہیں",
+		"loginWithWikimedia": "ویکی میڈیا کے ساتھ لاگ ان کریں",
+		"afterLoginRedirect": " اس عمل کے بعد، آپ کو درج ذیل صفحے پر واپس بھیج دیا جائے گا:"
+	},
+	"campaign": {
+		"createCampaign": "مقابلہ بنائیں",
+		"goToCampaign": "مقابلے پر جائیں",
+		"showAllCampaigns": "تمام مقابلے دکھائیں"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "فعال",
+			"PAUSED": "عارضی طور پر رکا ہوا",
+			"COMPLETED": "مکمل ہوا",
+			"ARCHIVED": "محفوظ شدہ",
+			"IMPORTING": "درآمد کر رہا ہے"
+		},
+		"submissions": "جمع کرائیں",
+		"assignments": "تفویضات",
+		"evaluatedOutOf": "{{total}} میں سے {{evaluated}} کی جانچ کی گئی",
+		"evaluationArea": "تشخیص کا علاقہ"
+	},
+	"footer": {
+		"campwizNxtTeam": "CampWiz NXT ٹیم",
+		"manual": "رہنمائی",
+		"terms": "شرائط",
+		"privacy": "رازداری",
+		"reportBug": "خرابی کی اطلاع دیں",
+		"translate": "Translate"
+	},
+	"error": {
+		"noAssignedCampaigns": "کوئی مختص کردہ مقابلے نہیں"
+	},
+	"close": "بند کریں",
+	"previous": "Previous",
+	"next": "Next",
+	"return": "واپس آ جائیں",
+	"evaluation": {
+		"modifytable": {
+			"name": "Name",
+			"score": "Score",
+			"preview": "Preview",
+			"action": "Action"
+		},
+		"skip": "چھوڑیں",
+		"edit": "اہم نکات میں ترمیم کریں",
+		"yes": "ہاں",
+		"no": "نہیں"
+	},
+	"submission": {
+		"title": "عنوان",
+		"description": "وضاحت",
+		"author": "مصنف",
+		"viewOnCommons": "کامنز پر دیکھیں",
+		"categories": "زمرہ جات",
+		"selectCategories": "کيٹگری کو منتخب کرو",
+		"save": "محفوظ کریں",
+		"cancel": "منسوخ کریں",
+		"skip": "چھوڑیں",
+		"next": "اگلا",
+		"previous": "پچھلا"
+	},
+	"languages": {
+		"en": "انگریزی (English)",
+		"bn": "بنگالی (বাংলা)",
+		"ar": "عربی (العربية)",
+		"hi": "ہندی (हिन्दी)",
+		"es": "ہسپانوی (Español)",
+		"fr": "فرانسیسی (Français)",
+		"de": "جرمن (Deutsch)",
+		"it": "اطالوی (Italiano)",
+		"ja": "جاپانی (日本語)",
+		"ko": "کوریائی (한국어)",
+		"pt": "پرتگالی (Português)",
+		"ru": "روسی (Русский)",
+		"zh": "چینی (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
+		"ta": "Tamil (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "Urdu (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)",
+		"te": "تیلگو (తెలుగు)",
+		"ps": "پشتو (پشتو)",
+		"skr-arab": "سرائیکی (سرائیکی)",
+		"skr-latn": "سرائیکی (لاطینی)",
+		"mk": "مقدونیائی (Македонски)"
+	}
+}

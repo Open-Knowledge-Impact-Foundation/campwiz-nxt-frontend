@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Derugon"
+			"Derugon",
+			"Gomoko",
+			"Nokib Sarkar"
 		]
 	},
 	"title": "CampWiz NXT",
@@ -46,7 +48,9 @@
 		},
 		"submissions": "Soumissions",
 		"assignments": "Affectations",
-		"evaluatedOutOf": "{{evaluated}} évalué(s) sur {{total}}"
+		"evaluatedOutOf": "{{evaluated}} évalué(s) sur {{total}}",
+		"evaluationArea": "Espace d’évaluation",
+		"categorizer": "Espace de catégorisation"
 	},
 	"footer": {
 		"campwizNxtTeam": "Équipe de Campwiz NXT",
@@ -57,18 +61,44 @@
 		"translate": "Traduire"
 	},
 	"error": {
-		"noAssignedCampaigns": "Aucune campagne attribuée"
+		"noAssignedCampaigns": "Aucune campagne attribuée",
+		"loadingSubmissionDetails": "Impossible de charger les détails de la soumission : {{error}}",
+		"categoriesNotLoaded": "Les catégories ne sont pas encore chargées",
+		"campaignNotFound": "Campagne non trouvée",
+		"campaignCategoriesNotSupported": "Les catégories de campagne ne sont pas supportées",
+		"noSubmissionAvailableForCategorization": "Aucune soumission disponible pour catégorisation",
+		"noCategoriesSelected": "Aucune catégorie sélectionnée",
+		"noCategoriesAvailable": "Aucune catégorie disponible",
+		"noSubmissions": "Aucune soumission disponible"
 	},
 	"close": "Fermer",
 	"previous": "Précédent",
 	"next": "Suivant",
+	"return": "Retour",
 	"evaluation": {
 		"modifytable": {
 			"name": "Nom",
 			"score": "Score",
 			"preview": "Prévisualiser",
 			"action": "Action"
-		}
+		},
+		"skip": "Sauter",
+		"edit": "Modifier les notes",
+		"yes": "Oui",
+		"no": "Non"
+	},
+	"submission": {
+		"title": "Titre",
+		"description": "Description",
+		"author": "Auteur",
+		"viewOnCommons": "Afficher sur Commons",
+		"categories": "Catégories",
+		"selectCategories": "Sélectionner les catégories",
+		"save": "Enregistrer",
+		"cancel": "Annuler",
+		"skip": "Sauter",
+		"next": "Suivant",
+		"previous": "Précédent"
 	},
 	"languages": {
 		"en": "Anglais (English)",
@@ -90,6 +120,12 @@
 		"ml": "Malayalam (മലയാളം)",
 		"ur": "Ourdou (اردو)",
 		"gu": "Gujarati (ગુજરાતી)",
-		"pa": "Pendjabi (ਪੰਜਾਬੀ)"
+		"pa": "Pendjabi (ਪੰਜਾਬੀ)",
+		"te": "Télougou (తెలుగు)",
+		"ps": "Pachtoune (پښتو)",
+		"skr-arab": "Saraiki (سرائیکی)",
+		"skr-latn": "Saraiki (Latin)",
+		"pms": "Piémontais (Piemontèis)",
+		"mk": "Macédonien (Македонски)"
 	}
 }

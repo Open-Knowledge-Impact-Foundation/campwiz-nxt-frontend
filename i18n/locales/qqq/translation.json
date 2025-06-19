@@ -72,6 +72,7 @@
 	"close": "Label for a generic close button. For example, the user can click on the close to close a modal or a dialog box",
 	"previous": "Label for a generic previous button. For example, the user can click on the previous to go back to the previous page",
 	"next": "Label for a generic next button. For example, the user can click on the next to go to the next page",
+	"return": "Label for a button that allows the user to return to the previous page. For example, the user can click on the return to go back to the previous page. This button might also take users to the home page if they are not in a specific page. Please keep it short and one word.",
 	"evaluation": {
 		"modifytable": {
 			"name": "Label for the name of the submission.",
@@ -81,10 +82,9 @@
 		},
 		"skip": "Label for a button that allows the user to skip the submission. For example, the user can click on the skip to skip the submission and go to the next submission",
 		"edit": "Label for a button that allows the user to modify vote or score of the submission. For example, the user can click on the edit to change the score of the submission",
-		"no": "Label for a button that allows the user to reject the submission. For example, the user can click on the no to reject the submission",
-		"yes": "Label for a button that allows the user to accept the submission. For example, the user can click on the yes to accept the submission"
+		"yes": "Label for a button that allows the user to accept the submission. For example, the user can click on the yes to accept the submission",
+		"no": "Label for a button that allows the user to reject the submission. For example, the user can click on the no to reject the submission"
 	},
-	"return": "Label for a button that allows the user to return to the previous page. For example, the user can click on the return to go back to the previous page. This button might also take users to the home page if they are not in a specific page. Please keep it short and one word.",
 	"submission": {
 		"title": "Title",
 		"description": "Description",

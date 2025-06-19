@@ -60,7 +60,15 @@
 		"translate": "অনুবাদ"
 	},
 	"error": {
-		"noAssignedCampaigns": "কোনও প্রতিযোগিতা নেই"
+		"noAssignedCampaigns": "কোনও প্রতিযোগিতা নেই",
+		"loadingSubmissionDetails": "জমা দেওয়ার বিবরণ লোড করা যায়নি: {{error}}",
+		"categoriesNotLoaded": "বিষয়শ্রেনীগুলো এখনও লোড করা হয়নি",
+		"campaignNotFound": "প্র্তিযোগিতা পাওয়া যায়নি",
+		"campaignCategoriesNotSupported": "প্রতিযোগিতাটিতে বিষয়শ্রেনী এখনো চালু হয় নি",
+		"noSubmissionAvailableForCategorization": "শ্রেণীবদ্ধকরণের জন্য কোনও ছবি পাওয়া যায় নি",
+		"noCategoriesSelected": "কোনও শ্রেনী নির্বাচন করা হয়নি",
+		"noCategoriesAvailable": "কোন বিষয়শ্রেণী পাওয়া যায় নি",
+		"noSubmissions": "কোনও জমা পাওয়া যায় নি"
 	},
 	"close": "বন্ধ করুন",
 	"previous": "পূর্ববর্তী",
@@ -72,7 +80,24 @@
 			"score": "স্কোর",
 			"preview": "প্রাকদর্শন",
 			"action": "কার্য"
-		}
+		},
+		"skip": "এড়িয়ে যান",
+		"edit": "ভোট পরিবর্তন করুন",
+		"yes": "হ্যাঁ",
+		"no": "না"
+	},
+	"submission": {
+		"title": "শিরোনাম",
+		"description": "বিবরণ",
+		"author": "প্রণেতা",
+		"viewOnCommons": "কমন্সে দেখুন",
+		"categories": "বিষয়শ্রেণীসমূহ",
+		"selectCategories": "বিষয়শ্রেণী নির্বাচন",
+		"save": "সংরক্ষণ",
+		"cancel": "বাতিল",
+		"skip": "এড়িয়ে যান",
+		"next": "পরবর্তী",
+		"previous": "পূর্ববর্তী"
 	},
 	"languages": {
 		"en": "ইংরেজি (English)",

@@ -1,13 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nokib Sarkar",
-			"Omotecho"
+			"Nokib Sarkar"
 		]
 	},
-	"title": "キャンプウィズNXT",
+	"title": "CampWiz NXT",
 	"home": {
-		"welcome": "{{name}} さん、ようこそ",
+		"welcome": "Welcome {{name}}",
 		"subtitle": "Taking jury experience to another level",
 		"publicRunningCampaigns": "Public Running Campaigns",
 		"yourCampaigns": "Your Campaigns",
@@ -24,7 +23,7 @@
 		"save": "Save",
 		"cancel": "Cancel",
 		"theme": "Theme",
-		"helpTranslation": "<0>TranslateWiki</0> であなたの言語への翻訳にご協力ください"
+		"helpTranslation": "Ayúdenos a traducir a su idioma en <0>TranslateWiki</0>"
 	},
 	"login": {
 		"title": "Let's get started",
@@ -41,8 +40,7 @@
 			"ACTIVE": "Active",
 			"PAUSED": "Paused",
 			"COMPLETED": "Completed",
-			"ARCHIVED": "Archived",
-			"IMPORTING": "取り込み"
+			"ARCHIVED": "Archived"
 		},
 		"submissions": "Submissions",
 		"assignments": "Assignments",
@@ -54,7 +52,7 @@
 		"terms": "Terms",
 		"privacy": "Privacy",
 		"reportBug": "Report a bug",
-		"translate": "Translate"
+		"translate": "Traducir"
 	},
 	"error": {
 		"noAssignedCampaigns": "No assigned campaigns"

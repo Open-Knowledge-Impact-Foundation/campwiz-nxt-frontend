@@ -67,7 +67,20 @@
 			"score": "स्कोर",
 			"preview": "पूर्वावलोकन",
 			"action": "कार्य"
-		}
+		},
+		"skip": "छोड़ें",
+		"yes": "हाँ",
+		"no": "नहीं"
+	},
+	"submission": {
+		"title": "शीर्षक",
+		"description": "विवरण",
+		"author": "लेखक",
+		"categories": "श्रेणियाँ",
+		"save": "सहेजें",
+		"cancel": "रद्द करें",
+		"skip": "छोड़ें",
+		"next": "अगला"
 	},
 	"languages": {
 		"en": "अंग्रेज़ी (English)",

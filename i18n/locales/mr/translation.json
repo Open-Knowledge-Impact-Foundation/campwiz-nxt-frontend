@@ -1,0 +1,93 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "स्वागत {{name}}",
+		"subtitle": "ज्युरी अनुभव एक नव्या पातळीवर",
+		"publicRunningCampaigns": "सार्वजनिक चालू स्पर्धा",
+		"yourCampaigns": "तुमच्या स्पर्धा",
+		"logout": "बाहेर पडा",
+		"dashboard": "डॅशबोर्ड",
+		"doc": "दस्तऐवज",
+		"login": "लॉगिन"
+	},
+	"settings": {
+		"title": "सेटिंग्ज",
+		"language": "भाषा",
+		"darkMode": "गडद मोड",
+		"lightMode": "हलका मोड",
+		"save": "जतन करा",
+		"cancel": "रद्द करा",
+		"theme": "थीम",
+		"helpTranslation": "कृपया <0>TranslateWiki</0> वर तुमच्या भाषेत भाषांतर करण्यास आम्हाला मदत करा"
+	},
+	"login": {
+		"title": "चला सुरुवात करूया",
+		"loginWithWikimedia": "Wikimedia सह लॉगिन करा",
+		"afterLoginRedirect": " या प्रक्रियेनंतर, तुम्हाला पुढील पानावर परत नेले जाईल:"
+	},
+	"campaign": {
+		"createCampaign": "स्पर्धा तयार करा",
+		"goToCampaign": "स्पर्धेकडे जा",
+		"showAllCampaigns": "सर्व स्पर्धा दाखवा"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "सक्रिय",
+			"PAUSED": "थांबवले",
+			"COMPLETED": "पूर्ण",
+			"ARCHIVED": "जतन केले"
+		},
+		"submissions": "सबमिशन्स",
+		"assignments": "नेमणुका",
+		"evaluatedOutOf": "{{total}} पैकी {{evaluated}} चे मूल्यमापन झाले"
+	},
+	"footer": {
+		"campwizNxtTeam": "CampWiz NXT टीम",
+		"manual": "मार्गदर्शक",
+		"terms": "अटी व शर्ती",
+		"privacy": "गोपनीयता",
+		"reportBug": "बग अहवाल द्या",
+		"translate": "Translate"
+	},
+	"error": {
+		"noAssignedCampaigns": "कोणत्याही स्पर्धा नेमण्यात आलेल्या नाहीत"
+	},
+	"close": "बंद करा",
+	"previous": "Previous",
+	"next": "Next",
+	"evaluation": {
+		"modifytable": {
+			"name": "Name",
+			"score": "Score",
+			"preview": "Preview",
+			"action": "Action"
+		}
+	},
+	"languages": {
+		"en": "इंग्रजी (English)",
+		"bn": "बंगाली (বাংলা)",
+		"ar": "अरेबिक (العربية)",
+		"hi": "हिंदी (हिन्दी)",
+		"es": "स्पॅनिश (Español)",
+		"fr": "फ्रेंच (Français)",
+		"de": "जर्मन (Deutsch)",
+		"it": "इटालियन (Italiano)",
+		"ja": "जपानी (日本語)",
+		"ko": "कोरियन (한국어)",
+		"pt": "पोर्तुगीज (Português)",
+		"ru": "रशियन (Русский)",
+		"zh": "चिनी (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
+		"ta": "Tamil (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "Urdu (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+	}
+}

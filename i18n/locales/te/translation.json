@@ -4,17 +4,58 @@
 			"Rajadvamshi"
 		]
 	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "Welcome {{name}}",
+		"subtitle": "Taking jury experience to another level",
+		"publicRunningCampaigns": "Public Running Campaigns",
+		"yourCampaigns": "Your Campaigns",
+		"logout": "Logout",
+		"dashboard": "Dashboard",
+		"doc": "Doc",
+		"login": "Login"
+	},
 	"settings": {
 		"title": "అమరికలు",
 		"language": "భాష",
+		"darkMode": "Dark Mode",
+		"lightMode": "Light Mode",
 		"save": "దాచు",
 		"cancel": "రద్దు",
-		"theme": "నేపథ్యం"
+		"theme": "నేపథ్యం",
+		"helpTranslation": "Please Help us translate to your language at {{link}}"
+	},
+	"login": {
+		"title": "Let's get started",
+		"loginWithWikimedia": "Login with Wikimedia",
+		"afterLoginRedirect": " After this process, you will be redirected back to the following page:"
+	},
+	"campaign": {
+		"createCampaign": "Create Campaign",
+		"goToCampaign": "Go to Campaign",
+		"showAllCampaigns": "Show All Campaigns"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "Active",
+			"PAUSED": "Paused",
+			"COMPLETED": "Completed",
+			"ARCHIVED": "Archived"
+		},
+		"submissions": "Submissions",
+		"assignments": "Assignments",
+		"evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}"
 	},
 	"footer": {
+		"campwizNxtTeam": "Campwiz NXT Team",
 		"manual": "మానవిక",
 		"terms": "నియమాలు",
+		"privacy": "Privacy",
+		"reportBug": "Report a bug",
 		"translate": "అనువాదం"
+	},
+	"error": {
+		"noAssignedCampaigns": "No assigned campaigns"
 	},
 	"close": "మూయు",
 	"previous": "మునుపటి",
@@ -22,12 +63,18 @@
 	"evaluation": {
 		"modifytable": {
 			"name": "పేరు",
-			"preview": "మునుజూపు"
+			"score": "Score",
+			"preview": "మునుజూపు",
+			"action": "Action"
 		}
 	},
 	"languages": {
+		"en": "English",
 		"bn": "బెంగాలీ (বাংলা)",
 		"ar": "అరబీ (العربية)",
+		"hi": "Hindi (हिन्दी)",
+		"es": "Spanish (Español)",
+		"fr": "French (Français)",
 		"de": "జర్మన్ (డచ్)",
 		"it": "ఇటాలియన్ (ఇటాలియానో)",
 		"ja": "జపనీస్ (日本語)",
@@ -36,7 +83,9 @@
 		"ru": "Russian (Русский)",
 		"zh": "చినీ (中文)",
 		"kn": "కన్నడ (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
 		"ta": "తమిళం (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
 		"ur": "ఉర్దూ (اردو)",
 		"gu": "గుజరాతీ (ગુજરાતી)",
 		"pa": "పంజాబీ (ਪੰਜਾਬੀ)"
