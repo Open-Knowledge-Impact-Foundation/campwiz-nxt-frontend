@@ -129,7 +129,7 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
                     title={t('submission.viewOnCommons')}
 
                 >
-                    {submission.title} ⇱
+                    {submission.title.replaceAll("_", " ")} ⇱
                 </MuiLink>
             </p>
             <div className="flex flex-col md:flex-row gap-4">
