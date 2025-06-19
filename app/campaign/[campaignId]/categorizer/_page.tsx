@@ -13,10 +13,12 @@ import SaveIcon from '@mui/icons-material/Save';
 import { updateSubmissionCategories } from "./k";
 import Link from "next/link";
 import MuiLink from "@mui/material/Link";
-const getSummary = (categories: Category[]) => {
+import { useTranslation } from "@/i18n/client";
+import { TFunction } from "i18next";
+const getSummary = (t: TFunction, categories: Category[]) => {
     let summary = 'Added via [[Commons:CampWiz|CampWiz]] categorizer:\n';
     if (categories.length === 0) {
-        return "No categories selected.";
+        return t('submission.noCategoriesSelected');
     }
     for (const category of categories) {
         if (category.fixed) {
@@ -32,6 +34,7 @@ type SingleSubmissionProps = {
     cursor: number;
     setCursor: (cursor: number) => void;
     totalSubmissions: number;
+    t: TFunction
 }
 
 const getHeightWidth = (currentHeight: number, currentWidth: number, maxHeight: number, maxWidth: number) => {
@@ -57,7 +60,7 @@ const getHeightWidth = (currentHeight: number, currentWidth: number, maxHeight: 
     // Round to two decimal places
     return [currentHeight, currentWidth].map(r => Math.round(r * 100) / 100);
 }
-const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, totalSubmissions }: SingleSubmissionProps) => {
+const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, totalSubmissions, t }: SingleSubmissionProps) => {
     const [loading, setLoading] = useState<boolean>(false);
     const handleSubmit = async (submissionId: string, categories: string[], summary: string) => {
         setLoading(true);
@@ -101,10 +104,10 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
         return <LinearProgress className="w-full" />;
     }
     if (error) {
-        return <p>Error loading submission details: {error.message}</p>;
+        return <p>{t('error.loadingSubmissionDetails', { error: error.message })}</p>;
     }
     if (!('categories' in submission)) {
-        return <p>Categories not loaded for this submission.</p>;
+        return <p>{t('error.categoriesNotLoaded')}</p>;
     }
     const fixedCategories = categories.filter(c => c.fixed); // Filter out fixed categories
     const [thumbheight, thumbwidth] = getHeightWidth(
@@ -117,13 +120,13 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
         <div className="text-center w-full flex flex-col justify-around items-center flex-wrap">
             {loading && <LinearProgress className="w-full" />}
             <p className="mb-3 p-2 block wrap-normal">
-                <b className="font-bold">Title: </b>
+                <b className="font-bold">{t('submission.title')}: </b>
                 <MuiLink
                     href={`https://commons.wikimedia.org/wiki/File:${submission.title}`}
                     className="text-blue-500 hover:underline"
                     target="_blank"
                     component={Link}
-                    title="Click to view on Commons"
+                    title={t('submission.viewOnCommons')}
 
                 >
                     {submission.title} ⇱
@@ -139,7 +142,7 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
                 />
                 <div className="max-full md:max-w-96 flex flex-col justify-between items-start">
                     <p className="mb-3 p-2">
-                        <b className="font-bold">Description:</b> {initialSubmission.description}
+                        <b className="font-bold">{t('submission.description')}: </b> {initialSubmission.description}
                     </p>
                     <div>
                         <Autocomplete
@@ -171,7 +174,7 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
 
                             className="max-w-fit"
                             renderInput={(params) => (
-                                <TextField {...params} label="Categories" placeholder="Select categories" variant="outlined" />
+                                <TextField {...params} label={t('submission.categories')} placeholder={t('submission.selectCategories')} variant="outlined" />
                             )}
                         />
                         <div className="flex flex-row justify-between items-center p-2">
@@ -179,26 +182,25 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
                                 onClick={() => setCursor(Math.max(cursor - 1, 0))}
                                 loading={loading}
                                 startIcon={<ArrowBackwardIcon />}
-                                disabled={cursor === 0 || loading} variant="contained" color="primary">Previous</Button>
+                                disabled={cursor === 0 || loading} variant="contained" color="primary">{t('submission.previous')}</Button>
                             <Button
                                 disabled={cursor >= totalSubmissions - 1 || loading}
                                 loading={loading}
                                 startIcon={<ArrowForwardIcon />}
                                 onClick={() => setCursor(Math.min(cursor + 1, totalSubmissions - 1))}
-                                variant="contained" color="primary">Skip</Button>
+                                variant="contained" color="primary">{t('submission.skip')}</Button>
                             <Button
                                 variant="contained"
                                 color="success"
-                                onClick={() => handleSubmit(submission.submissionId, categories.map(c => c.name), getSummary(categories))}
+                                onClick={() => handleSubmit(submission.submissionId, categories.map(c => c.name), getSummary(t, categories))}
                                 sx={{ m: 1 }}
                                 disabled={loading}
                                 loading={loading}
                                 startIcon={<SaveIcon />}
                             >
-                                Save
+                                {t('submission.save')}
                             </Button>
                         </div>
-                        <p>Submission {cursor + 1} of {totalSubmissions}</p>
                     </div>
                 </div>
             </div>
@@ -210,17 +212,18 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
 const CategorizerPage = ({ campaign, submissions }: { campaign: Campaign, submissions: Submission[] }) => {
     const [cursor, setCursor] = useState<number>(0);
     const currentSubmission = submissions?.[cursor] ?? null;
+    const { t } = useTranslation();
     if (!campaign) {
-        return <p>Campaign not found.</p>;
+        return <p>{t('error.campaignNotFound')}</p>;
     }
     if (!submissions || submissions.length === 0) {
-        return <p>No submissions available for categorization.</p>;
+        return <p>{t('error.noSubmissionAvailableForCategorization')}</p>;
     }
     if (campaign.campaignType != CampaignType.Category) {
-        return <p>This campaign does not support categorization.</p>;
+        return <p>{t('error.campaignCategoriesNotSupported')}</p>;
     }
     if (!currentSubmission) {
-        return <p>No submissions to categorize.</p>;
+        return <p>{t('error.noSubmissions')}</p>;
     }
     return (
         <div className="text-center">
@@ -229,6 +232,7 @@ const CategorizerPage = ({ campaign, submissions }: { campaign: Campaign, submis
                 cursor={cursor}
                 setCursor={setCursor}
                 totalSubmissions={submissions.length}
+                t={t}
             />
         </div>
     );

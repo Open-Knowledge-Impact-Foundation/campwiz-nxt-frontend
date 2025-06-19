@@ -54,7 +54,12 @@
         "translate": "Translate"
     },
     "error": {
-        "noAssignedCampaigns": "No assigned campaigns"
+        "noAssignedCampaigns": "No assigned campaigns",
+        "loadingSubmissionDetails": "Could not load submission details: {{error}}",
+        "categoriesNotLoaded": "Categories are not loaded yet",
+        "campaignNotFound": "Campaign not found",
+        "campaignCategoriesNotSupported": "Campaign categories are not supported",
+        "noSubmissionAvailableForCategorization": "No submission available for categorization"
     },
     "close": "Close",
     "previous": "Previous",
@@ -65,7 +70,27 @@
             "score": "Score",
             "preview": "Preview",
             "action": "Action"
-        }
+        },
+        "skip": "Skip",
+        "edit": "Modify Votes",
+        "yes": "Yes",
+        "no": "No"
+    },
+    "submission": {
+        "title": "Title",
+        "description": "Description",
+        "author": "Author",
+        "viewOnCommons": "View on Commons",
+        "categories": "Categories",
+        "selectCategories": "Select Categories",
+        "save": "Save",
+        "cancel": "Cancel",
+        "skip": "Skip",
+        "next": "Next",
+        "previous": "Previous",
+        "noCategoriesSelected": "No categories selected",
+        "noCategoriesAvailable": "No categories available",
+        "noSubmissions": "No submissions available"
     },
     "languages": {
         "en": "English",

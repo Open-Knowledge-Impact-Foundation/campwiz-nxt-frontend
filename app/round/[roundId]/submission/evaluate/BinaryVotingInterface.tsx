@@ -12,6 +12,7 @@ import Button from '@mui/material/Button'
 import type { VotingInterfaceProps } from './VotingInterface';
 import { Typography } from '@mui/material';
 import Link from 'next/link';
+import { useTranslation } from '@/i18n/client';
 const BinaryVotingInterface = ({ goNext, goPrevious, submitScore, onSkip, saving, evaluation, noPrevious = false, noNext = false, assignmnetCount, evaluationCount, showProgress }: VotingInterfaceProps) => {
     const [currentScore, setCurrentScore] = React.useState<number | null>(evaluation.score)
     useEffect(() => {
@@ -22,6 +23,7 @@ const BinaryVotingInterface = ({ goNext, goPrevious, submitScore, onSkip, saving
     const DislikeButton = createRef<HTMLButtonElement>();
     const previousButton = createRef<HTMLButtonElement>();
     const OkIcon = currentScore === 100 ? CheckCircleIcon : CheckCircleOutlineIcon;
+    const { t } = useTranslation()
     return (
         <>
             {/* <Typography variant="h4" sx={{ fontFamily: 'Lora, serif', color: 'primary.main', textAlign: 'left', m: 1, display: 'block', width: '100%', fontSize: { xs: 24, }, fontWeight: 'bold' }}>
@@ -41,16 +43,15 @@ const BinaryVotingInterface = ({ goNext, goPrevious, submitScore, onSkip, saving
                 tabIndex={0}
             >
 
-                <IconButton color="primary" size="large" onClick={goPrevious} disabled={saving || noPrevious} loading={saving} sx={{ fontSize: 5 }} title='Previous'
-
+                <IconButton color="primary" size="large" onClick={goPrevious} disabled={saving || noPrevious} loading={saving} sx={{ fontSize: 5 }} title={t('previous')}
                     ref={previousButton}>
                     <SkipPreviousIcon fontSize='large' sx={{ fontSize: 50 }} />
                 </IconButton>
-                <IconButton color="primary" size="large" onClick={() => { setCurrentScore(0); submitScore(0); }} disabled={saving} loading={saving} sx={{ fontSize: 5 }} title='No'
+                <IconButton color="primary" size="large" onClick={() => { setCurrentScore(0); submitScore(0); }} disabled={saving} loading={saving} sx={{ fontSize: 5 }} title={t('evaluation.no')}
                     ref={DislikeButton}>
                     <Image src={currentScore === 0 ? CrossIcon.src : CrossOutlinedICON.src} alt="no" width={50} height={50} />
                 </IconButton>
-                <IconButton color="primary" size="large" onClick={() => { setCurrentScore(100); submitScore(100); }} disabled={saving} loading={saving} sx={{ fontSize: 5 }} title='Yes'
+                <IconButton color="primary" size="large" onClick={() => { setCurrentScore(100); submitScore(100); }} disabled={saving} loading={saving} sx={{ fontSize: 5 }} title={t('evaluation.yes')}
                     ref={LikeButton}>
                     <OkIcon sx={{ fontSize: 45, color: 'green' }} />
                 </IconButton>
@@ -67,8 +68,11 @@ const BinaryVotingInterface = ({ goNext, goPrevious, submitScore, onSkip, saving
                     }} disabled={saving || noNext}
                     ref={skipButton}
                     loading={saving} sx={{ fontSize: 20, px: 2, mx: 1, borderRadius: 4 }}
-                    title='Skip' endIcon={null}>
-                    Skip <SkipNextIcon fontSize='large' sx={{ fontSize: 40 }} />
+                    title={t('evaluation.skip')}
+
+                    endIcon={null}>
+                    {t('evaluation.skip')}
+                    <SkipNextIcon fontSize='large' sx={{ fontSize: 40 }} />
                 </Button>
             </div>
             {showProgress &&
@@ -76,7 +80,7 @@ const BinaryVotingInterface = ({ goNext, goPrevious, submitScore, onSkip, saving
                     {evaluationCount} out of {assignmnetCount} completed
                     <br />
                     <Link href={`/round/${evaluation.roundId}/submission/evaluated`} className='text-blue-500 hover:underline'>
-                        Modify Votes
+                        {t('evaluation.edit')}
                     </Link>
                 </Typography>
             }

@@ -70,7 +70,11 @@
 			"score": "Label for the score of the submission.",
 			"preview": "Label for a button in the modify table that allows the user to preview the submission. For example, the user can click on the preview to see the submission",
 			"action": "Label for list of Action the user can take on this assignment. For example, the user can click on the preview to see the submission, or click on the edit to change the score of the submission"
-		}
+		},
+		"skip": "Label for a button that allows the user to skip the submission. For example, the user can click on the skip to skip the submission and go to the next submission",
+		"edit": "Label for a button that allows the user to modify vote or score of the submission. For example, the user can click on the edit to change the score of the submission",
+		"no": "Label for a button that allows the user to reject the submission. For example, the user can click on the no to reject the submission",
+		"yes": "Label for a button that allows the user to accept the submission. For example, the user can click on the yes to accept the submission"
 	},
 	"languages": {
 		"en": "English (English). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is English, it should be \"<Translation of the name English in your language> (English)\"",
