@@ -153,7 +153,6 @@ const SingleSubmission = ({ submission: initialSubmission, cursor, setCursor, to
                                 const nonFixedCategories = newValue.filter(c => !c.fixed);
                                 const uniqueCategories = Array.from(new Set(nonFixedCategories.map(c => c.name)))
                                     .map(name => nonFixedCategories.find(c => c.name === name) || { name, fixed: false });
-
                                 newValue = [...fixedCategories, ...uniqueCategories].toSorted((a, b) => a.name.localeCompare(b.name));
                                 setCategories(newValue);
                             }}

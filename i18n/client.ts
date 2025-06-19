@@ -19,10 +19,12 @@ i18next
         ...getOptions(),
         lng: undefined, // let detect the language on client side
         detection: {
-            order: ['path', 'htmlTag', 'cookie', 'navigator'],
+            order: ['cookie', 'path', 'htmlTag', 'navigator'],
         },
-        preload: runsOnServerSide ? languages : []
-    })
+        preload: runsOnServerSide ? languages : [],
+        partialBundledLanguages: true,
+        lowerCaseLng: true,
+    });
 
 export function useTranslation<Ns extends FlatNamespace, KPrefix extends KeyPrefix<FallbackNs<Ns>> = undefined>(
     lng?: string,
