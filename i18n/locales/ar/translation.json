@@ -7,7 +7,7 @@
 	},
 	"title": "CampWiz NXT",
 	"home": {
-		"welcome": "السلام عليكم {{name}}",
+		"welcome": "السلام عليكم {{name}}\u061c",
 		"subtitle": "نأخذ تجربة التحكيم إلى مستوى آخر",
 		"publicRunningCampaigns": "المسابقات العامة الجارية",
 		"yourCampaigns": "مسابقاتك",
