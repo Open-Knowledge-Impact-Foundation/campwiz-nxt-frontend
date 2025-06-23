@@ -1,5 +1,5 @@
 await(async function () {
-    const campaignID = 'c2axs9qvs10cg'
+    const campaignID = 'c2gmo95m5p7nk'
     const url = 'https://campwiz-backend.toolforge.org/api/v2/campaign/' + campaignID + '?includeRounds=true&includeRoundRoles=true&includeRoles=true'
     const res = await fetch(url, {
         credentials: 'include',
