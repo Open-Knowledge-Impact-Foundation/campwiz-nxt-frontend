@@ -6,88 +6,127 @@
 	},
 	"title": "CampWiz NXT",
 	"home": {
-		"welcome": "Welcome {{name}}",
-		"subtitle": "Taking jury experience to another level",
-		"publicRunningCampaigns": "Public Running Campaigns",
-		"yourCampaigns": "Your Campaigns",
-		"logout": "Logout",
-		"dashboard": "Dashboard",
-		"doc": "Doc",
-		"login": "Login"
+		"welcome": "Bienvenido {{name}}",
+		"subtitle": "Llevando la experiencia del jurado a otro nivel",
+		"publicRunningCampaigns": "Campañas públicas en marcha",
+		"yourCampaigns": "Tus campañas",
+		"logout": "Salir",
+		"dashboard": "Panel de control",
+		"doc": "Muelle",
+		"login": "Iniciar sesión"
 	},
 	"settings": {
-		"title": "Settings",
-		"language": "Language",
-		"darkMode": "Dark Mode",
-		"lightMode": "Light Mode",
-		"save": "Save",
-		"cancel": "Cancel",
-		"theme": "Theme",
+		"title": "Configuración",
+		"language": "Idioma",
+		"darkMode": "Modo oscuro",
+		"lightMode": "Modo nocturno",
+		"save": "Guardar",
+		"cancel": "Cancelar",
+		"theme": "Tema",
 		"helpTranslation": "Ayúdenos a traducir a su idioma en <0>TranslateWiki</0>"
 	},
 	"login": {
-		"title": "Let's get started",
-		"loginWithWikimedia": "Login with Wikimedia",
-		"afterLoginRedirect": " After this process, you will be redirected back to the following page:"
+		"title": "Comencemos",
+		"loginWithWikimedia": "Iniciar sesión con Wikipedia",
+		"afterLoginRedirect": "Después de este proceso, serás redirigido nuevamente a la siguiente página:"
 	},
 	"campaign": {
-		"createCampaign": "Create Campaign",
-		"goToCampaign": "Go to Campaign",
-		"showAllCampaigns": "Show All Campaigns"
+		"createCampaign": "Crear campaña",
+		"goToCampaign": "Ve a Campaña",
+		"showAllCampaigns": "Mostrar todas las campañas"
 	},
 	"round": {
 		"status": {
-			"ACTIVE": "Active",
-			"PAUSED": "Paused",
-			"COMPLETED": "Completed",
-			"ARCHIVED": "Archived"
+			"ACTIVE": "Activo",
+			"PAUSED": "Pausada",
+			"COMPLETED": "Completado",
+			"ARCHIVED": "Archivado",
+			"IMPORTING": "Importando",
+			"DISTRIBUTING": "Distribución"
 		},
-		"submissions": "Submissions",
-		"assignments": "Assignments",
-		"evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}"
+		"submissions": "Envíos",
+		"assignments": "Asignaciones",
+		"evaluatedOutOf": "{{evaluated}} evaluado de {{total}}",
+		"evaluationArea": "Servidor de evaluación",
+		"categorizer": "Categorizar"
 	},
 	"footer": {
-		"campwizNxtTeam": "Campwiz NXT Team",
+		"campwizNxtTeam": "Equipo Campwiz NXT",
 		"manual": "Manual",
-		"terms": "Terms",
-		"privacy": "Privacy",
-		"reportBug": "Report a bug",
+		"terms": "Términos",
+		"privacy": "Privacidad",
+		"reportBug": "Informar de un defecto",
 		"translate": "Traducir"
 	},
 	"error": {
-		"noAssignedCampaigns": "No assigned campaigns"
+		"noAssignedCampaigns": "No hay campañas asignadas",
+		"loadingSubmissionDetails": "No se pudieron cargar los detalles del envío: {{error}}",
+		"categoriesNotLoaded": "Las categorías aún no se han cargado",
+		"campaignNotFound": "Campaña no encontrada",
+		"campaignCategoriesNotSupported": "Las categorías de campaña no son compatibles",
+		"noSubmissionAvailableForCategorization": "No hay envíos disponibles para categorización",
+		"noCategoriesSelected": "No hay categorías seleccionadas",
+		"noCategoriesAvailable": "Ninguna categoría disponible",
+		"noSubmissions": "No hay envíos disponibles"
 	},
-	"close": "Close",
-	"previous": "Previous",
-	"next": "Next",
+	"close": "Cerrar",
+	"previous": "Anterior",
+	"next": "Siguiente",
+	"return": "Volver",
 	"evaluation": {
 		"modifytable": {
-			"name": "Name",
-			"score": "Score",
-			"preview": "Preview",
-			"action": "Action"
-		}
+			"name": "Nombre",
+			"score": "Puntaje",
+			"preview": "Previsualización",
+			"action": "Acción"
+		},
+		"skip": "Omitir",
+		"edit": "Modifica notas",
+		"yes": "Sí",
+		"no": "No"
+	},
+	"submission": {
+		"title": "Título",
+		"description": "Descripción",
+		"author": "Autor",
+		"viewOnCommons": "Ver en Commons",
+		"categories": "Categorías",
+		"selectCategories": "Seleccionar categorías",
+		"save": "Guardar",
+		"cancel": "Cancelar",
+		"skip": "Omitir",
+		"next": "Siguiente",
+		"previous": "Anterior"
 	},
 	"languages": {
-		"en": "English",
+		"en": "Inglés",
 		"bn": "Bengali (বাংলা)",
-		"ar": "Arabic (العربية)",
+		"ar": "Árabe (العربية)",
 		"hi": "Hindi (हिन्दी)",
-		"es": "Spanish (Español)",
-		"fr": "French (Français)",
-		"de": "German (Deutsch)",
+		"es": "Español",
+		"fr": "Francés (Français)",
+		"de": "Alemán (Deutsch)",
 		"it": "Italian (Italiano)",
-		"ja": "Japanese (日本語)",
-		"ko": "Korean (한국어)",
-		"pt": "Portuguese (Português)",
-		"ru": "Russian (Русский)",
-		"zh": "Chinese (中文)",
-		"kn": "Kannada (ಕನ್ನಡ)",
-		"mr": "Marathi (मराठी)",
+		"ja": "Japonés (日本語)",
+		"ko": "Coreano (한국어)",
+		"pt": "Portugués (Portugal)",
+		"ru": "ruso (Русский)",
+		"zh": "Chino (中文)",
+		"kn": "Canarés (ಕನ್ನಡ)",
+		"mr": "Maratí (मराठी)",
 		"ta": "Tamil (தமிழ்)",
 		"ml": "Malayalam (മലയാളം)",
 		"ur": "Urdu (اردو)",
-		"gu": "Gujarati (ગુજરાતી)",
-		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+		"gu": "Guyaratí (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)",
+		"te": "Telugu (తెలుగు)",
+		"ps": "Pashto (پښتو)",
+		"skr-arab": "Saraiki (سرائیکی)",
+		"skr-latn": "Saraiki (latín)",
+		"pms": "Piamontés (Piemontèis)",
+		"mk": "Macedonio (Македонски)",
+		"krc": "Karachay-Balkar (Къарачай-Малкъар)",
+		"xmf": "Mingreliano (მარგალური)",
+		"lb": "Luxemburgués"
 	}
 }

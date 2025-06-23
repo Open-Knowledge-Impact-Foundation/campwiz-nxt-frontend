@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"MoritzMT20",
 			"Nokib Sarkar",
 			"Nortix"
 		]
@@ -8,91 +9,126 @@
 	"title": "CampWiz NXT",
 	"home": {
 		"welcome": "Willkommen {{name}}",
-		"subtitle": "Jury-Erfahrung auf ein neues Niveau bringen",
+		"subtitle": "",
 		"publicRunningCampaigns": "Public Running Campaigns",
 		"yourCampaigns": "Your Campaigns",
-		"logout": "Logout",
+		"logout": "Abmelden",
 		"dashboard": "Dashboard",
-		"doc": "Doc",
-		"login": "Login"
+		"doc": "Dock",
+		"login": "Anmelden"
 	},
 	"settings": {
-		"title": "Settings",
-		"language": "Language",
-		"darkMode": "Dark Mode",
-		"lightMode": "Light Mode",
-		"save": "Save",
-		"cancel": "Cancel",
-		"theme": "Theme",
+		"title": "Einstellungen",
+		"language": "Sprache",
+		"darkMode": "Dunkler Modus",
+		"lightMode": "Lichtmodus",
+		"save": "Speichern",
+		"cancel": "Abbrechen",
+		"theme": "Thema",
 		"helpTranslation": "Bitte helfen Sie uns bei der Übersetzung in Ihre Sprache unter <0>TranslateWiki</0>"
 	},
 	"login": {
 		"title": "Let's get started",
 		"loginWithWikimedia": "Login with Wikimedia",
-		"afterLoginRedirect": " After this process, you will be redirected back to the following page:"
+		"afterLoginRedirect": "Nach diesem Vorgang werden Sie auf die folgende Seite zurückgeleitet:"
 	},
 	"campaign": {
-		"createCampaign": "Create Campaign",
-		"goToCampaign": "Go to Campaign",
-		"showAllCampaigns": "Show All Campaigns"
+		"createCampaign": "Kampagne erstellen",
+		"goToCampaign": "Zur Kampagne",
+		"showAllCampaigns": "Alle Kampagnen anzeigen"
 	},
 	"round": {
 		"status": {
-			"ACTIVE": "Active",
-			"PAUSED": "Paused",
-			"COMPLETED": "Completed",
-			"ARCHIVED": "Archived",
-			"IMPORTING": "Importieren",
-			"DISTRIBUTING": "Verteilen"
+			"ACTIVE": "Aktiv",
+			"PAUSED": "Pausiert",
+			"COMPLETED": "Abgeschlossen",
+			"ARCHIVED": "Archiviert",
+			"IMPORTING": "Importiere",
+			"DISTRIBUTING": "Verbreitung"
 		},
-		"submissions": "Submissions",
-		"assignments": "Assignments",
-		"evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}",
-		"evaluationArea": "Auswertungsbereich",
+		"submissions": "Einreichungen",
+		"assignments": "Zuweisungen",
+		"evaluatedOutOf": "{{evaluated}} ausgewertet von {{total}}",
+		"evaluationArea": "Auswertungsserver",
 		"categorizer": "Kategorisierer"
 	},
 	"footer": {
 		"campwizNxtTeam": "Campwiz NXT Team",
-		"manual": "Manual",
-		"terms": "Terms",
-		"privacy": "Privacy",
-		"reportBug": "Report a bug",
-		"translate": "Translate"
+		"manual": "Manuell",
+		"terms": "Bedingungen",
+		"privacy": "Datenschutz",
+		"reportBug": "Einen Fehler melden",
+		"translate": "Übersetzen"
 	},
 	"error": {
-		"noAssignedCampaigns": "No assigned campaigns"
+		"noAssignedCampaigns": "Keine zugewiesenen Kampagnen",
+		"loadingSubmissionDetails": "Übermittlungsdetails konnten nicht geladen werden: {{error}}",
+		"categoriesNotLoaded": "Kategorien sind noch nicht geladen",
+		"campaignNotFound": "Kampagne nicht gefunden",
+		"campaignCategoriesNotSupported": "Kampagnenkategorien werden nicht unterstützt",
+		"noSubmissionAvailableForCategorization": "Keine Einreichung zur Kategorisierung verfügbar",
+		"noCategoriesSelected": "Keine Kategorien ausgewählt",
+		"noCategoriesAvailable": "Keine Kategorien verfügbar",
+		"noSubmissions": "Keine Einsendungen verfügbar"
 	},
-	"close": "Close",
-	"previous": "Previous",
-	"next": "Next",
+	"close": "Schließen",
+	"previous": "Vorherige",
+	"next": "Nächste",
+	"return": "Zurück",
 	"evaluation": {
 		"modifytable": {
 			"name": "Name",
-			"score": "Score",
-			"preview": "Preview",
-			"action": "Action"
-		}
+			"score": "Ergebnis",
+			"preview": "Vorschau",
+			"action": "Aktion"
+		},
+		"skip": "Überspringen",
+		"edit": "Stimmen bearbeiten",
+		"yes": "Ja",
+		"no": "Nein"
+	},
+	"submission": {
+		"title": "Titel",
+		"description": "Beschreibung",
+		"author": "Autor",
+		"viewOnCommons": "Auf Commons ansehen",
+		"categories": "Kategorien",
+		"selectCategories": "Kategorien auswählen",
+		"save": "Speichern",
+		"cancel": "Abbrechen",
+		"skip": "Überspringen",
+		"next": "Nächste",
+		"previous": "Vorherige"
 	},
 	"languages": {
-		"en": "English",
-		"bn": "Bengali (বাংলা)",
-		"ar": "Arabic (العربية)",
+		"en": "Englisch",
+		"bn": "Bengalisch (বাংলা)",
+		"ar": "Arabisch (العربية)",
 		"hi": "Hindi (हिन्दी)",
-		"es": "Spanish (Español)",
-		"fr": "French (Français)",
-		"de": "German (Deutsch)",
-		"it": "Italian (Italiano)",
-		"ja": "Japanese (日本語)",
-		"ko": "Korean (한국어)",
-		"pt": "Portuguese (Português)",
-		"ru": "Russian (Русский)",
-		"zh": "Chinese (中文)",
+		"es": "Spanisch (Español)",
+		"fr": "Französisch (Français)",
+		"de": "Deutsch",
+		"it": "Italienisch (Italiano)",
+		"ja": "Japanisch (日本語)",
+		"ko": "Koreanisch (한국어)",
+		"pt": "Portugiesisch (Português)",
+		"ru": "Russisch (Русский)",
+		"zh": "Chinesisch (中文)",
 		"kn": "Kannada (ಕನ್ನಡ)",
 		"mr": "Marathi (मराठी)",
 		"ta": "Tamil (தமிழ்)",
 		"ml": "Malayalam (മലയാളം)",
 		"ur": "Urdu (اردو)",
 		"gu": "Gujarati (ગુજરાતી)",
-		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+		"pa": "Punjabi (ਪੰਜਾਬੀ)",
+		"te": "Telugu (తెలుగు)",
+		"ps": "Paschtu (پښتو)",
+		"skr-arab": "Saraiki (سرائیکی)",
+		"skr-latn": "Saraiki (Latein)",
+		"pms": "Piemontesisch (Piemontèis)",
+		"mk": "Mazedonisch (Македонски)",
+		"krc": "Karatschai-Balkar (Къарачай-Малкъар)",
+		"xmf": "Mingrelisch (მარგალური)",
+		"lb": "Luxemburgisch (Lëtzebuergesch)"
 	}
 }

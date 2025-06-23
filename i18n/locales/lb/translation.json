@@ -41,14 +41,35 @@
 		"reportBug": "E Feeler mellen",
 		"translate": "Iwwersetzen"
 	},
+	"error": {
+		"campaignNotFound": "Campagne net fonnt",
+		"campaignCategoriesNotSupported": "Campagnëkategorië ginn net ënnerstëtzt",
+		"noCategoriesAvailable": "Keng Kategorien disponibel"
+	},
 	"close": "Zoumaachen",
 	"previous": "Vireg",
 	"next": "Nächst",
+	"return": "Zréck",
 	"evaluation": {
 		"modifytable": {
 			"name": "Numm",
 			"action": "Aktioun"
-		}
+		},
+		"skip": "Iwwersprangen",
+		"yes": "Jo",
+		"no": "Neen"
+	},
+	"submission": {
+		"title": "Titel",
+		"description": "Beschreiwung",
+		"author": "Auteur",
+		"viewOnCommons": "Op Commons weisen",
+		"categories": "Kategorien",
+		"save": "Späicheren",
+		"cancel": "Ofbriechen",
+		"skip": "Iwwersprangen",
+		"next": "Nächst",
+		"previous": "Vireg"
 	},
 	"languages": {
 		"en": "Englesch (English)",
@@ -70,6 +91,8 @@
 		"ml": "Malayalam (മലയാളം)",
 		"ur": "Urdu (اردو)",
 		"gu": "Gujarati (ગુજરાતી)",
-		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+		"pa": "Punjabi (ਪੰਜਾਬੀ)",
+		"te": "Telugu (తెలుగు)",
+		"lb": "Lëtzebuergesch (Lëtzebuergesch)"
 	}
 }

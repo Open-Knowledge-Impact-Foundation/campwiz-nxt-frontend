@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
+			"Mohammed Qays",
 			"Nokib Sarkar"
 		]
 	},
 	"title": "CampWiz NXT",
 	"home": {
-		"welcome": "السلام عليكم {{name}}\u061c",
+		"welcome": "السلام عليكم {{name}}؜",
 		"subtitle": "نأخذ تجربة التحكيم إلى مستوى آخر",
 		"publicRunningCampaigns": "المسابقات العامة الجارية",
 		"yourCampaigns": "مسابقاتك",
@@ -48,6 +49,7 @@
 		"submissions": "المشاركات",
 		"assignments": "المهام",
 		"evaluatedOutOf": "{{evaluated}} تم تقييمها من أصل {{total}}",
+		"evaluationArea": "منطقة التقييم",
 		"categorizer": "مُصنِّف"
 	},
 	"footer": {
@@ -61,7 +63,7 @@
 	"error": {
 		"noAssignedCampaigns": "لا توجد مسابقات مخصصة",
 		"loadingSubmissionDetails": "تعذر تحميل تفاصيل الإرسال: {{error}}",
-		"categoriesNotLoaded": "لم يتم تحميل الفئات بعد"
+		"categoriesNotLoaded": "لم تُحمّل التصنيفات بعد"
 	},
 	"close": "إغلاق",
 	"previous": "السابق",
@@ -119,6 +121,8 @@
 		"skr-latn": "سارايكي (لاتينية)",
 		"pms": "البييمونتيون (بييمونتي)",
 		"mk": "المقدونية (Македонски)",
-		"krc": "الكراشاي-بالكار (Къарачай-Малкъар)"
+		"krc": "الكراشاي-بالكار (Къарачай-Малкъар)",
+		"xmf": "المينجريلية (მარგალური)",
+		"lb": "اللوكسمبورغية (Letzeburgesch)"
 	}
 }

@@ -54,9 +54,9 @@
 		"campwizNxtTeam": "Name of our Team who is behind this tool",
 		"manual": "The page where the user can find instructions on how to use the application. This label would be shown in the home page",
 		"terms": "The text that links to the terms of service. Should not be capitalized.\n{{Identical|Term}}",
-		"privacy": "Privacy Policy",
+		"privacy": "{{Identical|Privacy}}",
 		"reportBug": "A label for the link to the bug report page. This label would be shown in the home page",
-		"translate": "Translate"
+		"translate": "{{Identical|Translate}}"
 	},
 	"error": {
 		"noAssignedCampaigns": "The error message that would be shown when the user has campaigns found in which the person is assigned as a jury or co-ordinator. This label would be shown in the home page",
@@ -69,14 +69,14 @@
 		"noCategoriesAvailable": "No categories available. This error would be shown when there are no categories available for selection. This label would be shown in the categorization page",
 		"noSubmissions": "No submissions available. This error would be shown when there are no submissions available for evaluation or categorization. This label would be shown in the evaluation page"
 	},
-	"close": "Label for a generic close button. For example, the user can click on the close to close a modal or a dialog box",
-	"previous": "Label for a generic previous button. For example, the user can click on the previous to go back to the previous page",
-	"next": "Label for a generic next button. For example, the user can click on the next to go to the next page",
-	"return": "Label for a button that allows the user to return to the previous page. For example, the user can click on the return to go back to the previous page. This button might also take users to the home page if they are not in a specific page. Please keep it short and one word.",
+	"close": "{{Identical|Close}}\nLabel for a generic close button. For example, the user can click on the close to close a modal or a dialog box",
+	"previous": "{{Identical|Previous}}",
+	"next": "{{Identical|Next}}",
+	"return": "{{identical|Return}}\n\nUsed in:\n\n[https://phabricator.wikimedia.org/source/phabricator/browse/wmf%252Fstable/src//applications/diviner/controller/DivinerAtomController.php$611 DivinerAtomController.php:611]",
 	"evaluation": {
 		"modifytable": {
 			"name": "Label for the name of the submission.",
-			"score": "Label for the score of the submission.",
+			"score": "{{Identical|Score}}",
 			"preview": "Label for a button in the modify table that allows the user to preview the submission. For example, the user can click on the preview to see the submission",
 			"action": "Label for list of Action the user can take on this assignment. For example, the user can click on the preview to see the submission, or click on the edit to change the score of the submission"
 		},
@@ -86,17 +86,17 @@
 		"no": "Label for a button that allows the user to reject the submission. For example, the user can click on the no to reject the submission"
 	},
 	"submission": {
-		"title": "Title",
-		"description": "Description",
-		"author": "Author",
-		"viewOnCommons": "View on Commons",
-		"categories": "Categories",
-		"selectCategories": "Select Categories",
-		"save": "Save",
-		"cancel": "Cancel",
-		"skip": "Skip",
-		"next": "Next",
-		"previous": "Previous"
+		"title": "Title of the submission",
+		"description": "{{Identical|Description}}",
+		"author": "{{Identical|Author}}",
+		"viewOnCommons": "Link to view the file on Commons. The whole phrase is linked.",
+		"categories": "{{Identical|Category}}",
+		"selectCategories": "{{Identical|Select category}}",
+		"save": "{{Identical|Save}}",
+		"cancel": "{{Identical|Cancel}}",
+		"skip": "{{Identical|Skip}}",
+		"next": "{{Identical|Next}}",
+		"previous": "{{Identical|Previous}}"
 	},
 	"languages": {
 		"en": "English (English). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is English, it should be \"<Translation of the name English in your language> (English)\"",

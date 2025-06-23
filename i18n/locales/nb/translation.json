@@ -1,0 +1,110 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby",
+			"Nokib Sarkar"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "Velkommen, {{name}}",
+		"logout": "Logg ut",
+		"dashboard": "Kontrollpanel",
+		"doc": "Dokk",
+		"login": "Logg inn"
+	},
+	"settings": {
+		"title": "Innstillinger",
+		"language": "Språk",
+		"darkMode": "Mørk modus",
+		"lightMode": "Nattmodus",
+		"save": "Lagre",
+		"cancel": "Avbryt",
+		"theme": "Drakt",
+		"helpTranslation": "Vennligst hjelp oss med å oversette til ditt språk på <0>TranslateWiki</0>"
+	},
+	"login": {
+		"title": "La oss sette i gang",
+		"loginWithWikimedia": "Logg inn med Wikipedia"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "Aktiv",
+			"PAUSED": "Satt på pause",
+			"COMPLETED": "Fullført",
+			"ARCHIVED": "Arkivert",
+			"IMPORTING": "Importerer"
+		},
+		"assignments": "Tildelinger"
+	},
+	"footer": {
+		"manual": "Manual",
+		"terms": "Vilkår",
+		"privacy": "Personvern",
+		"reportBug": "Rapporter en feil",
+		"translate": "Oversett"
+	},
+	"error": {
+		"noCategoriesAvailable": "Ingen kategorier tilgjengelig"
+	},
+	"close": "Lukk",
+	"previous": "Forrige",
+	"next": "Neste",
+	"return": "Tilbake",
+	"evaluation": {
+		"modifytable": {
+			"name": "Navn",
+			"score": "Poeng",
+			"preview": "Forhåndsvisning",
+			"action": "Handling"
+		},
+		"skip": "Hopp over",
+		"edit": "Endre merknader",
+		"yes": "Ja",
+		"no": "Nei"
+	},
+	"submission": {
+		"title": "Tittel",
+		"description": "Beskrivelse",
+		"author": "Forfatter",
+		"viewOnCommons": "Se på Commons",
+		"categories": "Kategorier",
+		"selectCategories": "Velg kategorier",
+		"save": "Lagre",
+		"cancel": "Avbryt",
+		"skip": "Hopp over",
+		"next": "Neste",
+		"previous": "Forrige"
+	},
+	"languages": {
+		"en": "Engelsk (English)",
+		"bn": "Bengali (বাংলা)",
+		"ar": "Arabisk (العربية)",
+		"hi": "Hindi (हिन्दी)",
+		"es": "Spansk (Español)",
+		"fr": "Fransk (Français)",
+		"de": "Tysk (Deutsch)",
+		"it": "Italiensk (Italiano)",
+		"ja": "Japansk (日本語)",
+		"ko": "Koreansk (한국어)",
+		"pt": "Portugisisk (Português)",
+		"ru": "Russisk (Русский)",
+		"zh": "Kinesisk (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
+		"ta": "Tamilsk (தமிழ்)",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "Urdu (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Punjabi (Punjabi)",
+		"te": "Telugu (తెలుగు)",
+		"ps": "Pashto (پښتو)",
+		"skr-arab": "Saraiki (سرائیکی)",
+		"skr-latn": "Saraiki (latin)",
+		"pms": "Piemonteisk (Piemontèis)",
+		"mk": "Makedonsk (Македонски)",
+		"krc": "Karachay-Balkar (Къарачай-Малкъар)",
+		"xmf": "Mingrelian (მარგალური)",
+		"lb": "Luxemburgsk (Lëtzebuergesch)"
+	}
+}

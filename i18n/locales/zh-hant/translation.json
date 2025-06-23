@@ -1,0 +1,71 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokib Sarkar"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "歡迎 {{name}}",
+		"subtitle": "將陪審團經驗提升到一個新的水平"
+	},
+	"settings": {
+		"save": "儲存",
+		"cancel": "取消",
+		"theme": "主題"
+	},
+	"login": {
+		"title": "讓我們開始吧",
+		"loginWithWikimedia": "以維基媒體登入"
+	},
+	"campaign": {
+		"createCampaign": "建立活動",
+		"goToCampaign": "前往活動"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "有效",
+			"PAUSED": "暫停",
+			"COMPLETED": "已完成",
+			"ARCHIVED": "已存檔",
+			"IMPORTING": "匯入中...",
+			"DISTRIBUTING": "分布"
+		},
+		"submissions": "提交",
+		"assignments": "分配"
+	},
+	"footer": {
+		"manual": "手動",
+		"terms": "條款",
+		"privacy": "隱私",
+		"reportBug": "回報程式錯誤",
+		"translate": "翻譯"
+	},
+	"close": "關閉",
+	"previous": "上一個",
+	"next": "下一頁",
+	"return": "返回",
+	"evaluation": {
+		"modifytable": {
+			"name": "名稱",
+			"score": "分數",
+			"preview": "預覽",
+			"action": "操作"
+		},
+		"skip": "略過",
+		"edit": "修改註記",
+		"yes": "是",
+		"no": "否"
+	},
+	"submission": {
+		"title": "標題",
+		"description": "描述",
+		"author": "作者",
+		"viewOnCommons": "在共享資源檢視",
+		"categories": "分類",
+		"selectCategories": "選擇分類",
+		"save": "儲存",
+		"cancel": "取消",
+		"skip": "略過"
+	}
+}

@@ -7,6 +7,7 @@
 	},
 	"title": "CampWiz NXT",
 	"home": {
+		"welcome": "ست بسم اللہ {{name}}",
 		"yourCampaigns": "تہاݙیاں مہماں",
 		"logout": "لاگ آؤٹ",
 		"dashboard": "ڈیش بورڈ",
@@ -21,6 +22,18 @@
 		"cancel": "منسوخ",
 		"theme": "تھیم"
 	},
+	"campaign": {
+		"goToCampaign": "مہم تے ون٘ڄو",
+		"showAllCampaigns": "ساریاں مہماں ݙکھاؤ"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "فعال",
+			"PAUSED": "جمب ڳیا",
+			"COMPLETED": "مکمل تھی ڳیا",
+			"ARCHIVED": "آرکائیو تھیا"
+		}
+	},
 	"footer": {
 		"manual": "دستی",
 		"terms": "شرطاں",
@@ -31,6 +44,7 @@
 	"close": "بند کرو",
 	"previous": "پچھلا",
 	"next": "اڳلا",
+	"return": "ولدا واپس",
 	"evaluation": {
 		"modifytable": {
 			"name": "ناں",
@@ -47,6 +61,7 @@
 		"description": "تفصیل",
 		"author": "مصنف",
 		"categories": "ونکیاں",
+		"selectCategories": "ونکیاں چݨو",
 		"save": "بچاؤ",
 		"cancel": "منسوخ",
 		"skip": "چھوڑو",
@@ -54,15 +69,23 @@
 		"previous": "پچھلا"
 	},
 	"languages": {
+		"en": "انگریزی (English)",
 		"bn": "بنگالی (বাংলা)",
+		"ar": "عربی (العربية)",
 		"hi": "ہندی (हिन्दी)",
+		"fr": "فرانسیسی (Français)",
+		"de": "جرمنی (Deutsch)",
+		"ru": "روسی (Русский)",
+		"zh": "چینی (中文)",
 		"mr": "میراٹھی (मराठी)",
 		"ta": "تامل (தமிழ்)",
 		"ur": "اردو",
+		"gu": "گجراتی (ગુજરાતી)",
 		"pa": "پنجابی (ਪੰਜਾਬੀ)",
 		"te": "تیلگو (తెలుగు)",
 		"ps": "پشتو (پښتو)",
 		"skr-arab": "سرائیکی (سرائیکی)",
-		"skr-latn": "سرائیکی (Saraiki)"
+		"skr-latn": "سرائیکی (Saraiki)",
+		"mk": "مقدونی (Македонски)"
 	}
 }

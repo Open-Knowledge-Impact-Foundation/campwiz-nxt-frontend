@@ -7,7 +7,7 @@
 	"title": "CampWiz NXT",
 	"home": {
 		"welcome": "خوش آمدید {{name}}",
-		"subtitle": "جیوری کے تجربے کو ایک نئی سطح پر لے جانا",
+		"subtitle": "جیوری کے تجربے کو ایک اور سطح پر لے جائیں",
 		"publicRunningCampaigns": "عوامی جاری مقابلے",
 		"yourCampaigns": "آپ کے مقابلے",
 		"logout": "لاگ آؤٹ",
@@ -20,8 +20,8 @@
 		"language": "زبان",
 		"darkMode": "تاریک وضع",
 		"lightMode": "روشن وضع",
-		"save": "محفوظ کریں",
-		"cancel": "منسوخ کریں",
+		"save": "محفوظ",
+		"cancel": "منسوخ",
 		"theme": "تھیم",
 		"helpTranslation": "براہ کرم <0>TranslateWiki</0> پر اپنی زبان میں ترجمہ کرنے میں ہماری مدد کریں۔"
 	},
@@ -38,26 +38,36 @@
 	"round": {
 		"status": {
 			"ACTIVE": "فعال",
-			"PAUSED": "عارضی طور پر رکا ہوا",
-			"COMPLETED": "مکمل ہوا",
+			"PAUSED": "روکیں",
+			"COMPLETED": "مکمل",
 			"ARCHIVED": "محفوظ شدہ",
-			"IMPORTING": "درآمد کر رہا ہے"
+			"IMPORTING": "درآمد کر رہا ہے",
+			"DISTRIBUTING": "تقسیم ہو رہا ہے"
 		},
-		"submissions": "جمع کرائیں",
+		"submissions": "گذارشات",
 		"assignments": "تفویضات",
 		"evaluatedOutOf": "{{total}} میں سے {{evaluated}} کی جانچ کی گئی",
-		"evaluationArea": "تشخیص کا علاقہ"
+		"evaluationArea": "تشخیص کا علاقہ",
+		"categorizer": "زمرہ بندی"
 	},
 	"footer": {
 		"campwizNxtTeam": "CampWiz NXT ٹیم",
 		"manual": "رہنمائی",
 		"terms": "شرائط",
-		"privacy": "رازداری",
+		"privacy": "نجی نوعیت",
 		"reportBug": "خرابی کی اطلاع دیں",
-		"translate": "Translate"
+		"translate": "ترجمہ"
 	},
 	"error": {
-		"noAssignedCampaigns": "کوئی مختص کردہ مقابلے نہیں"
+		"noAssignedCampaigns": "کوئی مختص کردہ مقابلے نہیں",
+		"loadingSubmissionDetails": "جمع کی تفصیلات میں لوڈ نہیں ہو سکا: {{error}}",
+		"categoriesNotLoaded": "زمرے ابھی لوڈ نہیں ہوئے ہیں۔",
+		"campaignNotFound": "مقابلہ نہیں ملا",
+		"campaignCategoriesNotSupported": "مہم کے زمرے معاون نہیں ہیں",
+		"noSubmissionAvailableForCategorization": "درجہ بندی کے لیے کوئی جمع نہیں",
+		"noCategoriesSelected": "کوئی زمرہ منتخب نہیں کیا گیا۔",
+		"noCategoriesAvailable": "زمرہ جات میسر نہیں",
+		"noSubmissions": "کوئی گذارشات دستیاب نہیں ہیں۔"
 	},
 	"close": "بند کریں",
 	"previous": "Previous",
@@ -113,6 +123,10 @@
 		"ps": "پشتو (پشتو)",
 		"skr-arab": "سرائیکی (سرائیکی)",
 		"skr-latn": "سرائیکی (لاطینی)",
-		"mk": "مقدونیائی (Македонски)"
+		"pms": "پیڈمونٹیز (Piemontèis)",
+		"mk": "مقدونیائی (Македонски)",
+		"krc": "کاراچے-بالکر (Къарачай-Малкъар)",
+		"xmf": "منگریلین (მარგალური)",
+		"lb": "لکسمبرگش (Lëtzebuergesch)"
 	}
 }

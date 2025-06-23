@@ -59,18 +59,44 @@
 		"translate": "Volté"
 	},
 	"error": {
-		"noAssignedCampaigns": "Gnun-e campagne assignà"
+		"noAssignedCampaigns": "Gnun-e campagne assignà",
+		"loadingSubmissionDetails": "Impossìbil carié ij detaj dla spedission: {{error}}",
+		"categoriesNotLoaded": "Le categorìe a son ancor nen carià",
+		"campaignNotFound": "Campagna nen trovà",
+		"campaignCategoriesNotSupported": "Le categorìe ëd campagna a son nen mantnùe",
+		"noSubmissionAvailableForCategorization": "Gnun-a spedission a l'é disponìbil për la categorisassion",
+		"noCategoriesSelected": "Gnun-a categorìa selessionà",
+		"noCategoriesAvailable": "Gnun-e categorìe disponìbij",
+		"noSubmissions": "Gnun-e spedission disponìbij"
 	},
 	"close": "Saré",
 	"previous": "Prima",
 	"next": "Apress",
+	"return": "André",
 	"evaluation": {
 		"modifytable": {
 			"name": "Nòm",
 			"score": "Pontegg",
 			"preview": "Previsualisé",
 			"action": "Assion"
-		}
+		},
+		"skip": "Sauté",
+		"edit": "Modifiché ij vot",
+		"yes": "É",
+		"no": "Nò"
+	},
+	"submission": {
+		"title": "Tìtol",
+		"description": "Descrission",
+		"author": "Autor",
+		"viewOnCommons": "Smon-e su Commons",
+		"categories": "Categorìe",
+		"selectCategories": "Selession le categorìe",
+		"save": "Argistré",
+		"cancel": "Anulé",
+		"skip": "Sauté",
+		"next": "Apress",
+		"previous": "Precedent"
 	},
 	"languages": {
 		"en": "Anglèis",
@@ -92,6 +118,15 @@
 		"ml": "Malayalam (മലയാളം)",
 		"ur": "Urdu (اردو)",
 		"gu": "Gujarati (ગુજરાતી)",
-		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+		"pa": "Punjabi (ਪੰਜਾਬੀ)",
+		"te": "Telugu (తెలుగు)",
+		"ps": "Paston (پښتو)",
+		"skr-arab": "Saraiki (سرائیکی)",
+		"skr-latn": "Saraiki (Latin)",
+		"pms": "Piemontèis (Piemontèis)",
+		"mk": "Massédon (Македонски)",
+		"krc": "Karachay-Balkar (Къарачай-Малкъар)",
+		"xmf": "Mingrelian (მარგალური)",
+		"lb": "Lussemborghèis (Lëtzebuergesch)"
 	}
 }
