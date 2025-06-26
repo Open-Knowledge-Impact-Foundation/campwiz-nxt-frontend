@@ -52,7 +52,7 @@
         "privacy": "Privacy",
         "reportBug": "Report a bug",
         "translate": "Translate",
-    "copyright": "© 2025 by <0>CampWiz NXT Team</0>"
+        "copyright": "© 2025 by <0>CampWiz NXT Team</0>"
     },
     "error": {
         "noAssignedCampaigns": "No assigned campaigns",
@@ -124,6 +124,7 @@
         "mk": "Macedonian (Македонски)",
         "krc": "Karachay-Balkar (Къарачай-Малкъар)",
         "xmf": "Mingrelian (მარგალური)",
-        "lb": "Luxembourgish (Lëtzebuergesch)"
+        "lb": "Luxembourgish (Lëtzebuergesch)",
+        "zh-hans": "Simplified Chinese (简体中文)"
     }
 }
