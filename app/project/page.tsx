@@ -8,7 +8,9 @@ import fetchAPIFromBackendSingleWithErrorHandling, { fetchAPIFromBackendListWith
 import { Project } from "@/types/project";
 import Header from "@/components/home/Header";
 import Footer from "@/components/home/Footer";
-const NewProjectButton = () => (
+import { uTranslation } from "@/i18n";
+import { TFunction } from "i18next";
+const NewProjectButton = ({ t }: { t: TFunction }) => (
     <Link href="/project/new">
         <Button
             variant="contained"
@@ -26,18 +28,20 @@ const NewProjectButton = () => (
                 },
             }}
         >
-            New Project
+            {t('project.createProject')}
         </Button>
     </Link>
 )
 const ProjectDashboard = async () => {
+
+    const { t } = await uTranslation();
     const session = await fetchSession();
     if (!session) {
-        return <div>Not logged in</div>
+        return <div>{t('error.nonAuthenticated')}</div>
     }
     const ProjectResponse = await fetchAPIFromBackendListWithErrorHandling<Project>('/project?includeRoles=true');
     if (!ProjectResponse) {
-        return <div>Failed to fetch projects</div>
+        return <div>{t('error.loadingProjects')}</div>
     }
     if ('detail' in ProjectResponse) {
         return <div>{ProjectResponse.detail}</div>
@@ -50,7 +54,7 @@ const ProjectDashboard = async () => {
     if (!myProject && projectId !== null) {
         const myProjectResponse = await fetchAPIFromBackendSingleWithErrorHandling<Project>(`/project/${projectId}?includeRoles=true`);
         if (!myProjectResponse) {
-            return <div>Failed to fetch your project</div>
+            return <div>{t('error.loadingMyProject')}</div>
         }
         if ('detail' in myProjectResponse) {
             return <div>{myProjectResponse.detail}</div>
@@ -62,8 +66,8 @@ const ProjectDashboard = async () => {
         <Header returnTo="/" />
         <div>
             <div className="flex flex-row justify-between ">
-                <h1 className="text-2xl font-bold">Project Dashboard</h1>
-                {canAccessOtherProject && <NewProjectButton />}
+                <h1 className="text-2xl font-bold">{t("project.dashboard")}</h1>
+                {canAccessOtherProject && <NewProjectButton t={t} />}
             </div>
             {myProject && <div className="
             flex flex-row flex-wrap
@@ -73,16 +77,17 @@ const ProjectDashboard = async () => {
             rounded-lg
             shadow-sm
         ">
-                <h2 className="text-xl font-bold">My Project</h2>
-                <Suspense fallback={<div>Loading...</div>}>
+                <h2 className="text-xl font-bold">{t('project.myProject')}</h2>
+                <Suspense fallback={<div>{t('project.projectLoading')}</div>}>
                     <SinglProjectChip
                         project={myProject}
+                        t={t}
                     />
                 </Suspense>
             </div>
             }
             {otherProjects.length > 0 && <>
-                <h2 className="text-2xl font-bold block p-2 pl-4 text-center">Other Projects</h2>
+                <h2 className="text-2xl font-bold block p-2 pl-4 text-center">{t('project.otherProjects')}</h2>
                 <div className="
             flex flex-row flex-wrap
             gap-4
@@ -95,6 +100,7 @@ const ProjectDashboard = async () => {
                         <SinglProjectChip
                             key={project.projectId}
                             project={project}
+                            t={t}
                         />
                     ))}
                     {/* </div> */}

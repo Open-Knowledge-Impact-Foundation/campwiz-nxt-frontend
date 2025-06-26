@@ -30,6 +30,16 @@
         "goToCampaign": "Go to Campaign",
         "showAllCampaigns": "Show All Campaigns"
     },
+    "project": {
+        "title": "Projects",
+        "createProject": "New Project",
+        "goToProject": "Go to Project",
+        "showAllProjects": "Show All Projects",
+        "projectLoading": "Loading project details...",
+        "leads": "Project Leads",
+        "dashboard": "Dashboard",
+        "otherProjects": "Other Projects"
+    },
     "round": {
         "status": {
             "ACTIVE": "Active",
@@ -64,7 +74,9 @@
         "noCategoriesSelected": "No categories selected",
         "noCategoriesAvailable": "No categories available",
         "noSubmissions": "No submissions available",
-        "noRunningCampaigns": "No running campaigns"
+        "noRunningCampaigns": "No running campaigns",
+        "loadingMyProject": "Failed to load your project",
+        "loadingProjects": "Failed to load projects"
     },
     "close": "Close",
     "previous": "Previous",

@@ -4,10 +4,12 @@ import { styled } from '@mui/material/styles';
 import Link from "next/link"
 import RightArrowIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Project } from "@/types/project";
+import { TFunction } from "i18next";
 // import Image from "next/image";
 
 type SinglProjectChipProps = {
     project: Project
+    t: TFunction
 }
 const StyledCard = styled(Card)`
   ${({ theme }) => `
@@ -20,7 +22,8 @@ const StyledCard = styled(Card)`
   }
   `}
 `;
-const SinglProjectChip = ({ project }: SinglProjectChipProps) => {
+const SinglProjectChip = ({ project, t }: SinglProjectChipProps) => {
+
     return (
         <StyledCard
             sx={{
@@ -65,7 +68,7 @@ const SinglProjectChip = ({ project }: SinglProjectChipProps) => {
             />
 
             <CardContent>
-                Project Leads:
+                {t('project.leads')}&nbsp;:
                 {
                     project.projectLeads.map((lead, index) => (
                         <Chip key={index} label={lead} sx={{ m: 0.5 }} />
@@ -75,7 +78,7 @@ const SinglProjectChip = ({ project }: SinglProjectChipProps) => {
             <CardActions sx={{ justifyContent: 'space-between' }}>
                 <Link href={`/project/${project.projectId}`} style={{}}>
                     <Button color="primary" endIcon={<RightArrowIcon />} variant="outlined" sx={{ borderRadius: 8, px: 2 }}>
-                        Go to Project
+                        {t('project.goToProject')}
                     </Button>
                 </Link>
             </CardActions>
