@@ -16,12 +16,12 @@ const AssignedCampaigns = ({ limit }: AssignedCampaignProps) => {
     const qs = new URLSearchParams({ limit: String(limit), isClosed: 'false', isHidden: 'true', sortOrder: 'desc' }).toString()
     const showAllQs = new URLSearchParams({ limit: String(20), isClosed: 'false', isHidden: 'true' }).toString()
     const { t } = useTranslation()
-    const { data: publicCampaignResponse, error, isLoading } = useSWR('/campaign/?' + qs.toString(), fetchAPIFromBackendSingleWithErrorHandling<Campaign[]>);
+    const { data: assignedCampaignResponse, error, isLoading } = useSWR('/campaign/?' + qs.toString(), fetchAPIFromBackendSingleWithErrorHandling<Campaign[]>);
     if (isLoading) return <Skeleton variant="rectangular" width='100%' height={200} />
     if (error) return <p>Error : {error.message}</p>
-    if (!publicCampaignResponse)
+    if (!assignedCampaignResponse)
         return null;
-    if ('detail' in publicCampaignResponse)
+    if ('detail' in assignedCampaignResponse)
         return <p>Error : {error}</p>
     return <div className="" style={{
     }}>
@@ -38,13 +38,13 @@ const AssignedCampaigns = ({ limit }: AssignedCampaignProps) => {
             backgroundImage: `url(${PerCampaignBackground.src})`,
             backgroundSize: 'contain',
         }} className="justify-self-auto">
-            {publicCampaignResponse ? <>
-                {(publicCampaignResponse.data || []).map((v, i) => (
+            {assignedCampaignResponse ? <>
+                {(assignedCampaignResponse.data || []).map((v, i) => (
                     <SingleCampaignChip campaign={v} key={i} />
                 ))}
                 <LoadMoreCampaignChip link={"/campaign?" + showAllQs.toString()} labelText={t('campaign.showAllCampaigns')} />
             </> : <div>
-                <p>{t('errors.noAssignedCampaigns')}</p>
+                <p>{t('error.noAssignedCampaigns')}</p>
             </div>}
         </Box>
     </div>

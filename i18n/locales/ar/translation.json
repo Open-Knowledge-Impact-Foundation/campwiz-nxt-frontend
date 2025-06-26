@@ -8,7 +8,7 @@
 	},
 	"title": "CampWiz NXT",
 	"home": {
-		"welcome": "السلام عليكم {{name}}؜",
+		"welcome": "السلام عليكم \u061c\u202a{{name}}\u202c",
 		"subtitle": "نأخذ تجربة التحكيم إلى مستوى آخر",
 		"publicRunningCampaigns": "المسابقات العامة الجارية",
 		"yourCampaigns": "مسابقاتك",
@@ -48,7 +48,7 @@
 		},
 		"submissions": "المشاركات",
 		"assignments": "المهام",
-		"evaluatedOutOf": "{{evaluated}} تم تقييمها من أصل {{total}}",
+		"evaluatedOutOf": "{{evaluated}}\u061c\u202a تم تقييمها من أصل {{total}}",
 		"evaluationArea": "منطقة التقييم",
 		"categorizer": "مُصنِّف"
 	},
@@ -62,8 +62,9 @@
 	},
 	"error": {
 		"noAssignedCampaigns": "لا توجد مسابقات مخصصة",
-		"loadingSubmissionDetails": "تعذر تحميل تفاصيل الإرسال: {{error}}",
-		"categoriesNotLoaded": "لم تُحمّل التصنيفات بعد"
+		"loadingSubmissionDetails": "تعذر تحميل تفاصيل الإرسال: \u061c\u202a{{error}}",
+		"categoriesNotLoaded": "لم تُحمّل التصنيفات بعد",
+		"noRunningCampaigns": "لا توجد مسابقات جارية"
 	},
 	"close": "إغلاق",
 	"previous": "السابق",

@@ -7,7 +7,9 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '@/theme';
 import { CssBaseline, Paper } from "@mui/material";
 import { Roboto, } from 'next/font/google';
+import { uTranslation } from "@/i18n";
 
+// import rtlPlugin from '@mui/stylis-plugin-rtl';
 
 const roboto = Roboto({
   weight: ['400', '500', '700'],
@@ -48,10 +50,12 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { i18n } = await uTranslation();
+  const language = i18n.language;
   return (
-    <html suppressHydrationWarning>
+    <html suppressHydrationWarning dir={i18n.dir(language)}>
       <AppRouterCacheProvider
-        options={{ key: 'css' }}
+        options={{ key: 'css', }}
       >
         <ThemeProvider theme={theme} defaultMode="light">
           <CssBaseline />

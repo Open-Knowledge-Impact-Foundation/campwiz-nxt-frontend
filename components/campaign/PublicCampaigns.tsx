@@ -33,7 +33,7 @@ const PublicRunningCampaigns = ({ limit }: PublicRunningCampaignProps) => {
         <LoadMoreCampaignChip link={"/campaign?" + showAllQQs.toString()} labelText={t('campaign.showAllCampaigns')} />
     </div>
         : <div className="justify-self-auto p-1 mb-2 block text-center">
-            <h3 className="text-2xl font-bold">No Running Campaigns</h3>
+            <h3 className="text-2xl font-bold">{t('error.noRunningCampaigns')}</h3>
         </div>
 }
 export default PublicRunningCampaigns

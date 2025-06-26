@@ -51,7 +51,8 @@
         "terms": "Terms",
         "privacy": "Privacy",
         "reportBug": "Report a bug",
-        "translate": "Translate"
+        "translate": "Translate",
+    "copyright": "© 2025 by <0>CampWiz NXT Team</0>"
     },
     "error": {
         "noAssignedCampaigns": "No assigned campaigns",
@@ -62,7 +63,8 @@
         "noSubmissionAvailableForCategorization": "No submission available for categorization",
         "noCategoriesSelected": "No categories selected",
         "noCategoriesAvailable": "No categories available",
-        "noSubmissions": "No submissions available"
+        "noSubmissions": "No submissions available",
+        "noRunningCampaigns": "No running campaigns"
     },
     "close": "Close",
     "previous": "Previous",
