@@ -47,7 +47,7 @@
 		},
 		"submissions": "Материалла",
 		"assignments": "Джумушла",
-		"evaluatedOutOf": "{{total}}-ден {{evaluated}}-и къыймет кесильди.",
+		"evaluatedOutOf": "{{total}}-ден {{evaluated}}-и къыймат бичилди",
 		"evaluationArea": "Багъа Бичиу Бёлге",
 		"categorizer": "Категориялашдырыучу"
 	},
@@ -126,6 +126,8 @@
 		"skr-latn": "Сараики (Латин)",
 		"pms": "Пьемонтча (Piemontèis)",
 		"mk": "Македонча (Македонски)",
-		"krc": "Къарачай-Малкъар"
+		"krc": "Къарачай-Малкъар",
+		"xmf": "Малгарча (მარგალური)",
+		"lb": "Люксембургча (Lëtzebuergesch)"
 	}
 }

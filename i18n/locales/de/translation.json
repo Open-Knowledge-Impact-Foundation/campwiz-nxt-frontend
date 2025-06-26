@@ -10,8 +10,8 @@
 	"home": {
 		"welcome": "Willkommen {{name}}",
 		"subtitle": "Jury-Erfahrung auf ein neues Niveau bringen",
-		"publicRunningCampaigns": "Public Running Campaigns",
-		"yourCampaigns": "Your Campaigns",
+		"publicRunningCampaigns": "Öffentliche Laufkampagnen",
+		"yourCampaigns": "Deine Kampagnen",
 		"logout": "Abmelden",
 		"dashboard": "Dashboard",
 		"doc": "Dock",
@@ -28,8 +28,8 @@
 		"helpTranslation": "Bitte helfen Sie uns bei der Übersetzung in Ihre Sprache unter <0>TranslateWiki</0>"
 	},
 	"login": {
-		"title": "Let's get started",
-		"loginWithWikimedia": "Login with Wikimedia",
+		"title": "Lasst uns anfangen",
+		"loginWithWikimedia": "Mit Wikimedia anmelden",
 		"afterLoginRedirect": "Nach diesem Vorgang werden Sie auf die folgende Seite zurückgeleitet:"
 	},
 	"campaign": {

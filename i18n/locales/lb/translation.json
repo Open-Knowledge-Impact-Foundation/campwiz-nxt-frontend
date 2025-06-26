@@ -19,7 +19,7 @@
 		"lightMode": "Helle Modus",
 		"save": "Späicheren",
 		"cancel": "Ofbriechen",
-		"theme": "Faarfschema"
+		"theme": "Faarfscheema"
 	},
 	"login": {
 		"loginWithWikimedia": "Mat Wikimedia aloggen"
@@ -93,6 +93,7 @@
 		"gu": "Gujarati (ગુજરાતી)",
 		"pa": "Punjabi (ਪੰਜਾਬੀ)",
 		"te": "Telugu (తెలుగు)",
+		"mk": "Mezedonesch (Македонски)",
 		"lb": "Lëtzebuergesch (Lëtzebuergesch)"
 	}
 }
