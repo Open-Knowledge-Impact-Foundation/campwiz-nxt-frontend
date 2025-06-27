@@ -97,8 +97,14 @@ const LoginComponent = ({ isMobile }: { isMobile: boolean }) => {
                 {clicked && <CircularProgress size={24} sx={{ ml: 1 }} />}
             </Button>
             <Typography variant="body1" sx={{ mt: 2 }}>
-                {t('login.loginDisclaimer')}
-                By clicking the button above, you agree to the <Link style={{ color: 'blue' }} href="/policy/terms">Terms of Service</Link> and <Link style={{ color: 'blue' }} href="/policy/privacy">Privacy Policy</Link>.
+                <Trans
+                    i18nKey={'login.loginDisclaimer'}
+                    t={t}
+                    components={[
+                        <Link key="terms" style={{ color: 'blue' }} href="/policy/terms">Terms of Service</Link>,
+                        <Link key="privacy" style={{ color: 'blue' }} href="/policy/privacy">Privacy Policy</Link>
+                    ]}
+                />
             </Typography>
             {next && <><Typography variant="body2" sx={{ mt: 2 }}>
                 {t('login.afterLoginRedirect')}

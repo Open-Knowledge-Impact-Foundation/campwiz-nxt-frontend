@@ -81,7 +81,6 @@ const ProjectDashboard = async () => {
                 <Suspense fallback={<div>{t('project.projectLoading')}</div>}>
                     <SinglProjectChip
                         project={myProject}
-                        t={t}
                     />
                 </Suspense>
             </div>
@@ -100,7 +99,6 @@ const ProjectDashboard = async () => {
                         <SinglProjectChip
                             key={project.projectId}
                             project={project}
-                            t={t}
                         />
                     ))}
                     {/* </div> */}

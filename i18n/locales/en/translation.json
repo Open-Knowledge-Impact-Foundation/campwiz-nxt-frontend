@@ -23,7 +23,8 @@
     "login": {
         "title": "Let's get started",
         "loginWithWikimedia": "Login with Wikimedia",
-        "afterLoginRedirect": " After this process, you will be redirected back to the following page:"
+        "afterLoginRedirect": " After this process, you will be redirected back to the following page:",
+        "loginDisclaimer": "By logging in, you agree to our <0>Terms of Service</0> and <1>Privacy Policy</1>."
     },
     "campaign": {
         "createCampaign": "Create Campaign",

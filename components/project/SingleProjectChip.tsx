@@ -4,12 +4,10 @@ import { styled } from '@mui/material/styles';
 import Link from "next/link"
 import RightArrowIcon from '@mui/icons-material/KeyboardArrowRight';
 import { Project } from "@/types/project";
-import { TFunction } from "i18next";
-// import Image from "next/image";
+import { useTranslation } from "@/i18n/client";
 
 type SinglProjectChipProps = {
     project: Project
-    t: TFunction
 }
 const StyledCard = styled(Card)`
   ${({ theme }) => `
@@ -22,8 +20,8 @@ const StyledCard = styled(Card)`
   }
   `}
 `;
-const SinglProjectChip = ({ project, t }: SinglProjectChipProps) => {
-
+const SinglProjectChip = ({ project }: SinglProjectChipProps) => {
+    const { t } = useTranslation()
     return (
         <StyledCard
             sx={{
