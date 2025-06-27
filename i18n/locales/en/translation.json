@@ -38,8 +38,9 @@
         "showAllProjects": "Show All Projects",
         "projectLoading": "Loading project details...",
         "leads": "Project Leads",
-        "dashboard": "Dashboard",
-        "otherProjects": "Other Projects"
+        "dashboard": "Project Dashboard",
+        "otherProjects": "Other Projects",
+        "myProject": "My Project"
     },
     "round": {
         "status": {
