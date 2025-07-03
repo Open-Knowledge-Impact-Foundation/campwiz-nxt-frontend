@@ -58,7 +58,8 @@
 		"terms": "الشروط",
 		"privacy": "الخصوصية",
 		"reportBug": "الإبلاغ عن خلل",
-		"translate": "ترجم"
+		"translate": "ترجم",
+		"copyright": "© 2025 بواسطة <0>CampWiz NXT Team</0>"
 	},
 	"error": {
 		"noAssignedCampaigns": "لا توجد مسابقات مخصصة",

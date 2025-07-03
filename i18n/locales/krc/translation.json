@@ -36,6 +36,16 @@
 		"goToCampaign": "Компаниягъа бар",
 		"showAllCampaigns": "Бютеу Компанияланы кёргюз"
 	},
+	"project": {
+		"title": "Проектле",
+		"createProject": "Джангы проект",
+		"goToProject": "Проектге кёч",
+		"showAllProjects": "Бютеу проектлени кёргюз",
+		"projectLoading": "Проектлени юсюнден толу хапар джюкленеди...",
+		"leads": "Проектни башчылары",
+		"dashboard": "Адыр панель",
+		"otherProjects": "Башха проектле"
+	},
 	"round": {
 		"status": {
 			"ACTIVE": "Актив",
@@ -57,7 +67,8 @@
 		"terms": "шартла",
 		"privacy": "Ташалыкъ",
 		"reportBug": "Халатны юсюнден билдир",
-		"translate": "Кёчюр"
+		"translate": "Кёчюр",
+		"copyright": "© 2025 by <0>CampWiz NXT Team</0>"
 	},
 	"error": {
 		"noAssignedCampaigns": "Белгиленнген компанияла джокъдула",
@@ -68,7 +79,10 @@
 		"noSubmissionAvailableForCategorization": "Категориялашдырыу ючюн джараулу материал джокъду",
 		"noCategoriesSelected": "Категорияла сайланмагъандыла",
 		"noCategoriesAvailable": "Джетиширча категория джокъду",
-		"noSubmissions": "Джетиширча материалла джокъдула"
+		"noSubmissions": "Джетиширча материалла джокъдула",
+		"noRunningCampaigns": "Джюртюудеги компанияла",
+		"loadingMyProject": "Проектигизни джюклеуде халат",
+		"loadingProjects": "Проектлени джюклеуде халат"
 	},
 	"close": "Джаб",
 	"previous": "Аллындагъы",
@@ -128,6 +142,8 @@
 		"mk": "Македонча (Македонски)",
 		"krc": "Къарачай-Малкъар",
 		"xmf": "Малгарча (მარგალური)",
-		"lb": "Люксембургча (Lëtzebuergesch)"
+		"lb": "Люксембургча (Lëtzebuergesch)",
+		"zh-hans": "Къысхартылгъан къытайча (简体中文)",
+		"zh-hant": "Адетдеги къытайча (繁體中文)"
 	}
 }

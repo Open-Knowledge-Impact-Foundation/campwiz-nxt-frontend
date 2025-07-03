@@ -8,8 +8,8 @@
 	"title": "CampWiz NXT",
 	"home": {
 		"welcome": "欢迎 {{name}}",
-		"subtitle": "将陪审团经验提升到一个新的水平",
-		"publicRunningCampaigns": "公开跑步活动",
+		"subtitle": "提升陪审团经验到新的水平",
+		"publicRunningCampaigns": "正在开展的公开活动",
 		"yourCampaigns": "您的活动",
 		"logout": "退出",
 		"dashboard": "面板",
@@ -36,6 +36,17 @@
 		"goToCampaign": "前往活动",
 		"showAllCampaigns": "显示所有活动"
 	},
+	"project": {
+		"title": "项目",
+		"createProject": "新建项目",
+		"goToProject": "前往项目",
+		"showAllProjects": "显示所有项目",
+		"projectLoading": "正在加载项目详细信息...",
+		"leads": "项目负责人",
+		"dashboard": "仪表板",
+		"otherProjects": "其他项目",
+		"myProject": "按项目"
+	},
 	"round": {
 		"status": {
 			"ACTIVE": "活跃",
@@ -57,7 +68,8 @@
 		"terms": "条款",
 		"privacy": "隐私",
 		"reportBug": "报告错误",
-		"translate": "翻译"
+		"translate": "翻译",
+		"copyright": "© 2025 <0>CampWiz NXT Team</0> 制作"
 	},
 	"error": {
 		"noAssignedCampaigns": "未被分配任何活动",
@@ -68,7 +80,10 @@
 		"noSubmissionAvailableForCategorization": "没有可供分类的提交内容",
 		"noCategoriesSelected": "未选择任何分类",
 		"noCategoriesAvailable": "无可用分类",
-		"noSubmissions": "无可用提交内容"
+		"noSubmissions": "无可用提交内容",
+		"noRunningCampaigns": "无正在开展的活动",
+		"loadingMyProject": "无法加载您的项目",
+		"loadingProjects": "无法加载项目"
 	},
 	"close": "关闭",
 	"previous": "上一个",
@@ -128,6 +143,8 @@
 		"mk": "马其顿文 (Македонски)",
 		"krc": "卡拉恰伊-巴尔卡尔文 (Къарачай-Малкъар)",
 		"xmf": "明格里利亚文 (მარგალური)",
-		"lb": "卢森堡文 (Lëtzebuergesch)"
+		"lb": "卢森堡文 (Lëtzebuergesch)",
+		"zh-hans": "简体中文",
+		"zh-hant": "繁体中文 (繁體中文)"
 	}
 }

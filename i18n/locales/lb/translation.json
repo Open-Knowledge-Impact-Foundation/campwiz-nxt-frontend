@@ -28,6 +28,14 @@
 		"createCampaign": "Campagne uleeën",
 		"showAllCampaigns": "All Campagnë weisen"
 	},
+	"project": {
+		"title": "Projeten",
+		"createProject": "Neie Projet",
+		"showAllProjects": "All Projete weisen",
+		"projectLoading": "Projetsdetailer lueden…",
+		"otherProjects": "Aner Projeten",
+		"myProject": "Mäi Projet"
+	},
 	"round": {
 		"status": {
 			"ACTIVE": "Aktiv",
@@ -44,7 +52,9 @@
 	"error": {
 		"campaignNotFound": "Campagne net fonnt",
 		"campaignCategoriesNotSupported": "Campagnëkategorië ginn net ënnerstëtzt",
-		"noCategoriesAvailable": "Keng Kategorien disponibel"
+		"noCategoriesAvailable": "Keng Kategorien disponibel",
+		"loadingMyProject": "Äre Projet konnt net geluede ginn",
+		"loadingProjects": "Projete konnten net geluede ginn"
 	},
 	"close": "Zoumaachen",
 	"previous": "Vireg",
@@ -93,7 +103,11 @@
 		"gu": "Gujarati (ગુજરાતી)",
 		"pa": "Punjabi (ਪੰਜਾਬੀ)",
 		"te": "Telugu (తెలుగు)",
+		"ps": "Paschtu (پښتو)",
+		"skr-arab": "Saraiki (سرائیکی)",
 		"mk": "Mezedonesch (Македонски)",
-		"lb": "Lëtzebuergesch (Lëtzebuergesch)"
+		"lb": "Lëtzebuergesch (Lëtzebuergesch)",
+		"zh-hans": "Vereinfacht Chineesesch (简体中文)",
+		"zh-hant": "Traditionellt Chineesesch (繁體中文)"
 	}
 }

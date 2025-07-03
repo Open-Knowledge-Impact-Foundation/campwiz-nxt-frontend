@@ -30,12 +30,24 @@
 	"login": {
 		"title": "Commençons !",
 		"loginWithWikimedia": "Se connecter avec Wikimédia",
-		"afterLoginRedirect": "Après ce processus, vous serez redirigé vers la page suivante :"
+		"afterLoginRedirect": "Après ce processus, vous serez redirigé vers la page suivante :",
+		"loginDisclaimer": "En vous connectant, vous acceptez nos <0>Terms of Service</0> et notre <1>Privacy Policy</1>."
 	},
 	"campaign": {
 		"createCampaign": "Créer la campagne",
 		"goToCampaign": "Accéder à la campagne",
 		"showAllCampaigns": "Afficher toutes les campagnes"
+	},
+	"project": {
+		"title": "Projets",
+		"createProject": "Nouveau projet",
+		"goToProject": "Accéder au projet",
+		"showAllProjects": "Afficher tous les projets",
+		"projectLoading": "Chargement des détails du projet…",
+		"leads": "Responsables du projet",
+		"dashboard": "Tableau de bord du projet",
+		"otherProjects": "Autres projets",
+		"myProject": "Mon projet"
 	},
 	"round": {
 		"status": {
@@ -58,7 +70,8 @@
 		"terms": "Conditions",
 		"privacy": "Confidentialité",
 		"reportBug": "Signaler une anomalie",
-		"translate": "Traduire"
+		"translate": "Traduire",
+		"copyright": "© 2025 par <0>CampWiz NXT Team</0>"
 	},
 	"error": {
 		"noAssignedCampaigns": "Aucune campagne attribuée",
@@ -69,7 +82,10 @@
 		"noSubmissionAvailableForCategorization": "Aucune soumission disponible pour catégorisation",
 		"noCategoriesSelected": "Aucune catégorie sélectionnée",
 		"noCategoriesAvailable": "Aucune catégorie disponible",
-		"noSubmissions": "Aucune soumission disponible"
+		"noSubmissions": "Aucune soumission disponible",
+		"noRunningCampaigns": "Aucune campagne en cours",
+		"loadingMyProject": "Échec du chargement de votre projet",
+		"loadingProjects": "Échec du chargement des projets"
 	},
 	"close": "Fermer",
 	"previous": "Précédent",
@@ -129,6 +145,8 @@
 		"mk": "Macédonien (Македонски)",
 		"krc": "Karachay-Balkar (Къарачай-Малкъар)",
 		"xmf": "Mingrélien (მარგალური)",
-		"lb": "Luxembourgeois (Lëtzebuergesch)"
+		"lb": "Luxembourgeois (Lëtzebuergesch)",
+		"zh-hans": "Chinois simplifié (简体中文)",
+		"zh-hant": "Chinois traditionnel (繁體中文)"
 	}
 }

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Nokib Sarkar",
-			"Omotecho"
+			"Omotecho",
+			"YeBoy371"
 		]
 	},
 	"title": "キャンプウィズNXT",
@@ -10,86 +11,86 @@
 		"welcome": "{{name}} さん、ようこそ",
 		"subtitle": "Taking jury experience to another level",
 		"publicRunningCampaigns": "Public Running Campaigns",
-		"yourCampaigns": "Your Campaigns",
-		"logout": "Logout",
-		"dashboard": "Dashboard",
+		"yourCampaigns": "キャンペーンの件数",
+		"logout": "ログアウト",
+		"dashboard": "ダッシュボード",
 		"doc": "Doc",
-		"login": "Login"
+		"login": "ログイン"
 	},
 	"settings": {
-		"title": "Settings",
-		"language": "Language",
-		"darkMode": "Dark Mode",
-		"lightMode": "Light Mode",
-		"save": "Save",
-		"cancel": "Cancel",
-		"theme": "Theme",
+		"title": "設定",
+		"language": "言語",
+		"darkMode": "ダークモード",
+		"lightMode": "ライトモード",
+		"save": "保存",
+		"cancel": "キャンセル",
+		"theme": "テーマ",
 		"helpTranslation": "<0>TranslateWiki</0> であなたの言語への翻訳にご協力ください"
 	},
 	"login": {
-		"title": "Let's get started",
-		"loginWithWikimedia": "Login with Wikimedia",
-		"afterLoginRedirect": " After this process, you will be redirected back to the following page:"
+		"title": "最初の一歩を踏み出そう",
+		"loginWithWikimedia": "ウィキメディアでログイン",
+		"afterLoginRedirect": " この過程が終了すると、次のページにリダイレクトされます:"
 	},
 	"campaign": {
-		"createCampaign": "Create Campaign",
-		"goToCampaign": "Go to Campaign",
-		"showAllCampaigns": "Show All Campaigns"
+		"createCampaign": "新しい告知の作成",
+		"goToCampaign": "キャンペーンへ移動",
+		"showAllCampaigns": "全キャンペーンを表示"
 	},
 	"round": {
 		"status": {
-			"ACTIVE": "Active",
-			"PAUSED": "Paused",
-			"COMPLETED": "Completed",
-			"ARCHIVED": "Archived",
+			"ACTIVE": "アクティブ",
+			"PAUSED": "一時停止",
+			"COMPLETED": "完了",
+			"ARCHIVED": "アーカイブ済み",
 			"IMPORTING": "取り込み"
 		},
-		"submissions": "Submissions",
-		"assignments": "Assignments",
+		"submissions": "提出",
+		"assignments": "割り当て",
 		"evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}"
 	},
 	"footer": {
-		"campwizNxtTeam": "Campwiz NXT Team",
-		"manual": "Manual",
-		"terms": "Terms",
-		"privacy": "Privacy",
-		"reportBug": "Report a bug",
-		"translate": "Translate"
+		"campwizNxtTeam": "キャンプウィズNXTチーム",
+		"manual": "マニュアル",
+		"terms": "規約",
+		"privacy": "プライバシー",
+		"reportBug": "バグを報告",
+		"translate": "翻訳"
 	},
 	"error": {
-		"noAssignedCampaigns": "No assigned campaigns"
+		"noAssignedCampaigns": "キャンペーンが割り当てられていません"
 	},
-	"close": "Close",
-	"previous": "Previous",
-	"next": "Next",
+	"close": "閉じる",
+	"previous": "前へ",
+	"next": "次へ",
 	"evaluation": {
 		"modifytable": {
-			"name": "Name",
-			"score": "Score",
-			"preview": "Preview",
-			"action": "Action"
+			"name": "名前",
+			"score": "点数",
+			"preview": "プレビュー",
+			"action": "操作"
 		}
 	},
 	"languages": {
-		"en": "English",
-		"bn": "Bengali (বাংলা)",
-		"ar": "Arabic (العربية)",
-		"hi": "Hindi (हिन्दी)",
-		"es": "Spanish (Español)",
-		"fr": "French (Français)",
-		"de": "German (Deutsch)",
-		"it": "Italian (Italiano)",
-		"ja": "Japanese (日本語)",
-		"ko": "Korean (한국어)",
-		"pt": "Portuguese (Português)",
-		"ru": "Russian (Русский)",
-		"zh": "Chinese (中文)",
-		"kn": "Kannada (ಕನ್ನಡ)",
-		"mr": "Marathi (मराठी)",
-		"ta": "Tamil (தமிழ்)",
-		"ml": "Malayalam (മലയാളം)",
-		"ur": "Urdu (اردو)",
-		"gu": "Gujarati (ગુજરાતી)",
-		"pa": "Punjabi (ਪੰਜਾਬੀ)"
+		"en": "英語 (English)",
+		"bn": "ベンガル語 (বাংলা)",
+		"ar": "アラビア語 (العربية)",
+		"hi": "ヒンディー語 (हिन्दी)",
+		"es": "スペイン語 (Español)",
+		"fr": "フランス語 (Français)",
+		"de": "ドイツ語 (Deutsch)",
+		"it": "イタリア語 (Italiano)",
+		"ja": "日本語",
+		"ko": "朝鮮語 (한국어)",
+		"pt": "ポルトガル語 (Português)",
+		"ru": "ロシア語 (Русский)",
+		"zh": "中国語 (中文)",
+		"kn": "カンナダ語 (ಕನ್ನಡ)",
+		"mr": "マラーティー語 (मराठी)",
+		"ta": "タミル語 (தமிழ்)",
+		"ml": "マラヤーラム語 (മലയാളം)",
+		"ur": "ウルドゥー語 (اردو)",
+		"gu": "グジャラート語 (ગુજરાતી)",
+		"pa": "パンジャーブ語 (ਪੰਜਾਬੀ)"
 	}
 }

@@ -28,12 +28,24 @@
 	"login": {
 		"title": "A proposal to Login",
 		"loginWithWikimedia": "Login with Wikimedia",
-		"afterLoginRedirect": " After this process, you will be redirected back to the following page:"
+		"afterLoginRedirect": " After this process, you will be redirected back to the following page:",
+		"loginDisclaimer": "A legal statement. Here <code><0>Terms of Service</0></code> and <code><1>Privacy Policy</1></code> should be kept as it is and would be replaced with the corresponding link."
 	},
 	"campaign": {
 		"createCampaign": "Create Campaign",
 		"goToCampaign": "Go to Campaign",
 		"showAllCampaigns": "Show All Campaigns"
+	},
+	"project": {
+		"title": "A Project is a namespace which would periodically create campaigns. For example, the project responsible for organizing Wiki Loves Folklore 2024, Wiki Loves Folklore 2025 may be called as \"Wiki Loves Folklore\". Usually, projects are named as \"Wiki Loves X\" and the campaigns are named as \"Wiki Loves X in 20XX\" per year. But Exceptions, of course, applies.\n{{Identical|Project}}",
+		"createProject": "A Button to create a new Project. It should be brief and ideally one or two words.",
+		"goToProject": "A Button to go to the dashboard of a corresponding project.",
+		"showAllProjects": "A Button to show all the projects",
+		"projectLoading": "A message indicating that project details are being loaded.",
+		"leads": "Project lead is the person who manages all the things in a project including creating and editing campaign every year (or, multiple campaigns per year).",
+		"dashboard": "A dashboard to manage projects",
+		"otherProjects": "Projects that the user is not associated but can access by virtue of being an admin.",
+		"myProject": "The Project that the current User is associated with. It would be shown in the project dashboard."
 	},
 	"round": {
 		"status": {
@@ -56,7 +68,8 @@
 		"terms": "The text that links to the terms of service. Should not be capitalized.\n{{Identical|Term}}",
 		"privacy": "{{Identical|Privacy}}",
 		"reportBug": "A label for the link to the bug report page. This label would be shown in the home page",
-		"translate": "{{Identical|Translate}}"
+		"translate": "{{Identical|Translate}}",
+		"copyright": "By <0>CampWiz NXT Team</0>"
 	},
 	"error": {
 		"noAssignedCampaigns": "The error message that would be shown when the user has campaigns found in which the person is assigned as a jury or co-ordinator. This label would be shown in the home page",
@@ -67,7 +80,10 @@
 		"noSubmissionAvailableForCategorization": "No submission available for categorization. This error would be shown when there are no submissions available for categorization. This label would be shown in the categorization page",
 		"noCategoriesSelected": "No categories selected. This error would be shown when the user tries to save the submission without selecting any categories. This label would be shown in the categorization page",
 		"noCategoriesAvailable": "No categories available. This error would be shown when there are no categories available for selection. This label would be shown in the categorization page",
-		"noSubmissions": "No submissions available. This error would be shown when there are no submissions available for evaluation or categorization. This label would be shown in the evaluation page"
+		"noSubmissions": "No submissions available. This error would be shown when there are no submissions available for evaluation or categorization. This label would be shown in the evaluation page",
+		"noRunningCampaigns": "A Phrase when no campaigns are running",
+		"loadingMyProject": "An error message indicating that the project associated with the current logged in user could not be loaded due to some error.",
+		"loadingProjects": "An error message indicating the failure to load the list of projects"
 	},
 	"close": "{{Identical|Close}}\nLabel for a generic close button. For example, the user can click on the close to close a modal or a dialog box",
 	"previous": "{{Identical|Previous}}",
@@ -128,7 +144,7 @@
 		"krc": "Karachay-Balkar (Къарачай-Малкъар). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Karachay-Balkar, it should be \"<Translation of the name Karachay-Balkar in your language> (Къарачай-Малкъар)\"",
 		"xmf": "Mingrelian (მარგალური). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Mingrelian, it should be \"<Translation of the name Mingrelian in your language> (მარგალური)\"",
 		"lb": "Luxembourgish (Lëtzebuergesch). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Luxembourgish, it should be \"<Translation of the name Luxembourgish in your language> (Lëtzebuergesch)\"",
-		"zh-hans": "Simplified Chinese (简体中文). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Simplified Chinese, it should be \"<Translation of the name Simplified Chinese in your language> (简体中文)\"",
+		"zh-hans": "For Simple Chinese",
 		"zh-hant": "Traditional Chinese (繁體中文). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Traditional Chinese, it should be \"<Translation of the name Traditional Chinese in your language> (繁體中文)\""
 	}
 }

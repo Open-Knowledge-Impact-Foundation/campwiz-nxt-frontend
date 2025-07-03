@@ -28,12 +28,24 @@
 	"login": {
 		"title": "Ancaminoma!",
 		"loginWithWikimedia": "Intré ant ël sistema con Wikimedia",
-		"afterLoginRedirect": " Apress ëd process, a sarà ridiressionà vers la costa pàgina-sì:"
+		"afterLoginRedirect": " Apress ëd process, a sarà ridiressionà vers la costa pàgina-sì:",
+		"loginDisclaimer": "An rintrand ant ël sistema, chiel a aceta ij nòstri <0>Terms of Service</0> and <1>Privacy Policy</1>."
 	},
 	"campaign": {
 		"createCampaign": "Creé la campagna",
 		"goToCampaign": "Andé a la campagna",
 		"showAllCampaigns": "Smon-e tute le campagna"
+	},
+	"project": {
+		"title": "Proget",
+		"createProject": "Neuv proget",
+		"goToProject": "Andé al proget",
+		"showAllProjects": "Smon-e tuti ij proget",
+		"projectLoading": "Cariament dij detaj dël proget...",
+		"leads": "Cap dël proget",
+		"dashboard": "Cruscòt dël proget",
+		"otherProjects": "Àutri proget",
+		"myProject": "Mè proget"
 	},
 	"round": {
 		"status": {
@@ -56,7 +68,8 @@
 		"terms": "Condission",
 		"privacy": "Confidensialità",
 		"reportBug": "Signalé un givo",
-		"translate": "Volté"
+		"translate": "Volté",
+		"copyright": "© 2025 ëd <0>CampWiz NXT Team</0>"
 	},
 	"error": {
 		"noAssignedCampaigns": "Gnun-e campagne assignà",
@@ -67,7 +80,10 @@
 		"noSubmissionAvailableForCategorization": "Gnun-a spedission a l'é disponìbil për la categorisassion",
 		"noCategoriesSelected": "Gnun-a categorìa selessionà",
 		"noCategoriesAvailable": "Gnun-e categorìe disponìbij",
-		"noSubmissions": "Gnun-e spedission disponìbij"
+		"noSubmissions": "Gnun-e spedission disponìbij",
+		"noRunningCampaigns": "Gnun-e campagne an cors",
+		"loadingMyProject": "Falì a carié sò proget",
+		"loadingProjects": "Falì a carié ij proget"
 	},
 	"close": "Saré",
 	"previous": "Prima",
@@ -127,6 +143,8 @@
 		"mk": "Massédon (Македонски)",
 		"krc": "Karachay-Balkar (Къарачай-Малкъар)",
 		"xmf": "Mingrelian (მარგალური)",
-		"lb": "Lussemborghèis (Lëtzebuergesch)"
+		"lb": "Lussemborghèis (Lëtzebuergesch)",
+		"zh-hans": "Cinèis simplificà (简体中文)",
+		"zh-hant": "Cinèis tradissional (繁體中文)"
 	}
 }

@@ -5,10 +5,12 @@
 			"Okras"
 		]
 	},
+	"title": "CampWiz NXT",
 	"home": {
 		"welcome": "Добро пожаловать на {{name}}",
 		"yourCampaigns": "Ваши кампании",
 		"logout": "Выйти",
+		"dashboard": "Панель инструментов",
 		"login": "Войти"
 	},
 	"settings": {
@@ -24,11 +26,24 @@
 		"title": "Давайте начнём!",
 		"loginWithWikimedia": "Войти через Викимедиа"
 	},
+	"campaign": {
+		"createCampaign": "Создать кампанию",
+		"goToCampaign": "Перейти к кампании"
+	},
+	"project": {
+		"title": "Проекты",
+		"createProject": "Новый проект",
+		"goToProject": "Перейти к проекту",
+		"showAllProjects": "Показать все проекты",
+		"otherProjects": "Другие проекты",
+		"myProject": "Мой проект"
+	},
 	"footer": {
 		"manual": "Руководство",
 		"privacy": "Конфиденциальность",
 		"reportBug": "Сообщить об ошибке",
-		"translate": "Перевести"
+		"translate": "Перевести",
+		"copyright": " 2025 <0>CampWiz NXT Team</0>"
 	},
 	"close": "Закрыть",
 	"next": "Далее",
@@ -37,7 +52,18 @@
 			"name": "Имя",
 			"preview": "Предпросмотр",
 			"action": "Действие"
-		}
+		},
+		"skip": "Пропустить",
+		"yes": "Да",
+		"no": "Нет"
+	},
+	"submission": {
+		"description": "Описание",
+		"author": "Автор",
+		"categories": "Категории",
+		"save": "Сохранить",
+		"cancel": "Отмена",
+		"skip": "Пропустить"
 	},
 	"languages": {
 		"en": "Английский (English)",

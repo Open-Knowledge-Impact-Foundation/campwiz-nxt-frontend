@@ -29,12 +29,24 @@
 	"login": {
 		"title": "চলুন শুরু করি",
 		"loginWithWikimedia": "উইকিমিডিয়া দিয়ে প্রবেশ করুন",
-		"afterLoginRedirect": "এই প্রক্রিয়ার পরে আপনাকে নিম্নলিখিত পৃষ্ঠায় পুনঃনির্দেশিত করা হবে:"
+		"afterLoginRedirect": "এই প্রক্রিয়ার পরে আপনাকে নিম্নলিখিত পৃষ্ঠায় পুনঃনির্দেশিত করা হবে:",
+		"loginDisclaimer": "প্রবেশ করার মাধ্যমে আপনি আমাদের <0>Terms of Service</0> ও <1>Privacy Policy</1> মেনে নিচ্ছেন।"
 	},
 	"campaign": {
 		"createCampaign": "প্রতিযোগিতা তৈরি করুন",
 		"goToCampaign": "প্রতিযোগিতায় চলুন",
 		"showAllCampaigns": "সব প্রতিযোগিতা দেখুন"
+	},
+	"project": {
+		"title": "প্রকল্পসমূহ",
+		"createProject": "নতুন প্রকল্প",
+		"goToProject": "প্রকল্পে যান",
+		"showAllProjects": "সকল প্রকল্প দেখান",
+		"projectLoading": "প্রকল্পের বিবরণ লোড হচ্ছে...",
+		"leads": "প্রকল্প পরিচালক",
+		"dashboard": "প্রকল্প ড্যাশবোর্ড",
+		"otherProjects": "অন্যান্য প্রকল্প",
+		"myProject": "আমার প্রকল্প"
 	},
 	"round": {
 		"status": {
@@ -57,7 +69,8 @@
 		"terms": "শর্তাবলী",
 		"privacy": "গোপনীয়তা",
 		"reportBug": "বাগ রিপোর্ট করুন",
-		"translate": "অনুবাদ"
+		"translate": "অনুবাদ",
+		"copyright": "© ২০২৫ <0>CampWiz NXT Team</0> কর্তৃক"
 	},
 	"error": {
 		"noAssignedCampaigns": "কোনও প্রতিযোগিতা নেই",
@@ -68,7 +81,10 @@
 		"noSubmissionAvailableForCategorization": "শ্রেণীবদ্ধকরণের জন্য কোনও ছবি পাওয়া যায় নি",
 		"noCategoriesSelected": "কোনও শ্রেনী নির্বাচন করা হয়নি",
 		"noCategoriesAvailable": "কোন বিষয়শ্রেণী পাওয়া যায় নি",
-		"noSubmissions": "কোনও জমা পাওয়া যায় নি"
+		"noSubmissions": "কোনও জমা পাওয়া যায় নি",
+		"noRunningCampaigns": "কোনও চলমান প্রতিযোগিতা নেই",
+		"loadingMyProject": "আপনার প্রোজেক্ট লোড করা যায়নি",
+		"loadingProjects": "প্রোজেক্ট লোড করা যায়নি"
 	},
 	"close": "বন্ধ করুন",
 	"previous": "পূর্ববর্তী",
@@ -129,6 +145,7 @@
 		"krc": "কারাচাই-বালকার (Къарачай-Малкъар)",
 		"xmf": "মিংরেলিয়ান (მარგალური)",
 		"lb": "লুক্সেমবার্গীয় (Letzeburgesch)",
-		"zh-hans": "সরলীকৃত চীনা (简体中文)"
+		"zh-hans": "সরলীকৃত চীনা (简体中文)",
+		"zh-hant": "ঐতিহ্যবাহী চীনা (繁體中文)"
 	}
 }

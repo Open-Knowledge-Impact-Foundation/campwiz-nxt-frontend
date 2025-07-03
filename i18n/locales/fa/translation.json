@@ -1,0 +1,115 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeeputer",
+			"Nokib Sarkar"
+		]
+	},
+	"home": {
+		"welcome": "خوش آمدید {{name}}",
+		"logout": "خروج",
+		"dashboard": "پیش‌خوان",
+		"login": "ورود"
+	},
+	"settings": {
+		"title": "تنظیمات",
+		"language": "زبان",
+		"darkMode": "حالت تاریک",
+		"lightMode": "حالت روشن",
+		"save": "ذخیره",
+		"cancel": "لغو",
+		"theme": "پوسته"
+	},
+	"login": {
+		"loginWithWikimedia": "ورود با ویکی‌پدیا"
+	},
+	"project": {
+		"title": "پروژه‌ها",
+		"createProject": "پروژهٔ جدید",
+		"goToProject": "رفتن به پروژه",
+		"showAllProjects": "نمایش تمام پروژه‌ها",
+		"projectLoading": "در حال بارگیری جزئیات پروژه...",
+		"dashboard": "پیشخوان",
+		"otherProjects": "سایر پروژه‌ها"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "فعال",
+			"PAUSED": "مکث",
+			"COMPLETED": "کامل‌شده",
+			"ARCHIVED": "بایگانی‌شده"
+		},
+		"assignments": "تکلیف‌ها"
+	},
+	"footer": {
+		"manual": "دستی",
+		"terms": "شرایط",
+		"privacy": "حریم خصوصی",
+		"reportBug": "گزارش یک اشکال",
+		"translate": "ترجمه"
+	},
+	"error": {
+		"loadingMyProject": "ناتوان در بارگیری پروژهٔ شما",
+		"loadingProjects": "ناتوان در بارگیری پروژه‌ها"
+	},
+	"close": "بستن",
+	"previous": "قبلی",
+	"next": "بعدی",
+	"return": "بازگشت",
+	"evaluation": {
+		"modifytable": {
+			"name": "نام",
+			"score": "امتیاز",
+			"preview": "پیش‌نمایش",
+			"action": "فعالیت"
+		},
+		"skip": "رها کردن",
+		"yes": "بله",
+		"no": "خیر"
+	},
+	"submission": {
+		"title": "عنوان",
+		"description": "توضیحات",
+		"author": "نویسنده",
+		"categories": "رده‌ها",
+		"selectCategories": "انتخاب رده‌ها",
+		"save": "ذخیره",
+		"cancel": "لغو",
+		"skip": "رها کردن",
+		"next": "بعدی",
+		"previous": "قبلی"
+	},
+	"languages": {
+		"en": "انگلیسی (English)",
+		"bn": "بنگالی (বাংলা)",
+		"ar": "عربی (العربیة)",
+		"hi": "هندی (हिन्दी)",
+		"es": "اسپانیایی (Español)",
+		"fr": "فرانسوی (Français)",
+		"de": "آلمانی (Deutsch)",
+		"it": "ایتالیایی (Italiano)",
+		"ja": "ژاپنی (日本語)",
+		"ko": "کره ای (한국어)",
+		"pt": "پرتغالی (Português)",
+		"ru": "روسی (Русский)",
+		"zh": "چینی (中文)",
+		"kn": "کنده (ಕನ್ನಡ)",
+		"mr": "مراثی (मराठी)",
+		"ta": "تامیل (தமிழ்)",
+		"ml": "مالایالام (മലയാളം)",
+		"ur": "اردو (اردو)",
+		"gu": "گجراتی (ગુજરાતી)",
+		"pa": "پنجابی (ਪੰਜਾਬੀ)",
+		"te": "تلوگو (తెలుగు)",
+		"ps": "پشتو (پښتو)",
+		"skr-arab": "ساراکی (سرائیکی)",
+		"skr-latn": "ساراکی (Saraiki)",
+		"pms": "پیمونت (Piemontèis)",
+		"mk": "مقدونی (Македонски)",
+		"krc": "کراچای بالکار (Къарачай-Малкъар)",
+		"xmf": "مینگرلی (მარგალური)",
+		"lb": "لوکزامبورگی (Letzeburgesch)",
+		"zh-hans": "چینی ساده (简体中文)",
+		"zh-hant": "چینی سنتی (繁體中文)"
+	}
+}

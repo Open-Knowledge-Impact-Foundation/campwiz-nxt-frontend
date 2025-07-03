@@ -10,6 +10,8 @@
 		"welcome": "Benvenuto {{name}}",
 		"yourCampaigns": "Le tue campagne",
 		"logout": "Esci",
+		"dashboard": "Cruscotto",
+		"doc": "Documentazione",
 		"login": "Entra"
 	},
 	"settings": {
@@ -30,12 +32,23 @@
 		"goToCampaign": "Vai alla campagna",
 		"showAllCampaigns": "Mostra tutte le campagne"
 	},
+	"project": {
+		"title": "Progetti",
+		"createProject": "Nuovo progetto",
+		"goToProject": "Vai al progetto",
+		"showAllProjects": "Mostra tutti i progetti",
+		"dashboard": "Cruscotto del progetto",
+		"otherProjects": "Altri progetti",
+		"myProject": "Il mio progetto"
+	},
 	"round": {
 		"status": {
 			"ACTIVE": "Attivo",
+			"PAUSED": "In pausa",
 			"COMPLETED": "Completato",
 			"ARCHIVED": "Archiviato"
-		}
+		},
+		"assignments": "Assegnazioni"
 	},
 	"footer": {
 		"manual": "Manuale",
@@ -108,6 +121,7 @@
 		"mk": "Macedone (Македонски)",
 		"krc": "Karachay-Balkar (Къарачай-Малкъар)",
 		"xmf": "Mingreliano (მარგალური)",
-		"lb": "Lussemburghese (Lëtzebuergesch)"
+		"lb": "Lussemburghese (Lëtzebuergesch)",
+		"zh-hant": "Cinese tradizionale (繁體中文)"
 	}
 }

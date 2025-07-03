@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Nokib Sarkar",
 			"Rajadvamshi"
 		]
 	},
@@ -23,7 +24,7 @@
 		"save": "దాచు",
 		"cancel": "రద్దు",
 		"theme": "నేపథ్యం",
-		"helpTranslation": "Please Help us translate to your language at {{link}}"
+		"helpTranslation": "దయచేసి <0>TranslateWiki</0>లో మీ భాషలోకి అనువదించడానికి మాకు సహాయం చేయండి"
 	},
 	"login": {
 		"title": "Let's get started",
@@ -66,7 +67,21 @@
 			"score": "Score",
 			"preview": "మునుజూపు",
 			"action": "Action"
-		}
+		},
+		"skip": "దాటవేయి",
+		"yes": "అవును",
+		"no": "కాదు"
+	},
+	"submission": {
+		"title": "శీర్షిక",
+		"description": "వివరణ",
+		"author": "రచయిత",
+		"categories": "వర్గాలు",
+		"save": "భద్రపరచు",
+		"cancel": "రద్దుచేయి",
+		"skip": "దాటవేయి",
+		"next": "తదుపరి",
+		"previous": "మునుపటి"
 	},
 	"languages": {
 		"en": "English",
@@ -88,6 +103,16 @@
 		"ml": "Malayalam (മലയാളം)",
 		"ur": "ఉర్దూ (اردو)",
 		"gu": "గుజరాతీ (ગુજરાતી)",
-		"pa": "పంజాబీ (ਪੰਜਾਬੀ)"
+		"pa": "పంజాబీ (ਪੰਜਾਬੀ)",
+		"te": "తెలుగు (తెలుగు)",
+		"ps": "పాష్టో (پښتو)",
+		"skr-arab": "సరైకి (سرايکی)",
+		"skr-latn": "సరైకి (లాటిన్)",
+		"pms": "పీడ్‌మాంటీస్ (పీమోంటీస్)",
+		"mk": "మాసిడోనియన్ (మాకెడోన్స్కి)",
+		"krc": "కరచాయ్-బల్కర్ (Къарачай-Малкъар)",
+		"xmf": "మింగ్రేలియన్ (მარგალური)",
+		"lb": "లక్సెంబర్గిష్ (Lëtzebuergesch)",
+		"zh-hans": "సరళీకృత చైనీస్ (简体中文)"
 	}
 }
