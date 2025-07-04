@@ -1,6 +1,11 @@
 import { WikimediaUsername } from "@/types/_"
 import { RoundStatus } from "../round/status"
-
+export enum CampaignType {
+    COMMONS = "commons",
+    WIKIPEDIA = "wikipedia",
+    WIKIDATA = "wikidata",
+    OTHER = "other"
+}
 export interface CampaignCreate {
     coordinators: WikimediaUsername[]
     description: string
@@ -13,6 +18,8 @@ export interface CampaignCreate {
     isPublic: boolean
     status: RoundStatus
     projectId: string
+    campaignType: CampaignType
+
 }
 export const initialCampaignCreate: CampaignCreate = {
     projectId: "",
@@ -25,7 +32,8 @@ export const initialCampaignCreate: CampaignCreate = {
     rules: "",
     startDate: (new Date()).toISOString(),
     isPublic: false,
-    status: RoundStatus.PENDING
+    status: RoundStatus.PENDING,
+    campaignType: CampaignType.COMMONS
 }
 export interface CampaignUpdate extends CampaignCreate {
     campaignId: string
