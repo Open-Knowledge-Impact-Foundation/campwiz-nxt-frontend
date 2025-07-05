@@ -5,7 +5,7 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from "@mui/material/Box";
 import Status, { getStatusColor, RoundStatusIcon } from "@/components/round/Status";
-import { Campaign, CampaignType } from "@/types";
+import { Campaign } from "@/types";
 import { Session } from "@/types/user/session";
 import ImportFromRoundDialog from "./round/import/round/_page";
 import LatestRoundActions from "./LatestRoundAction";
@@ -14,6 +14,7 @@ import SelectedRoundActionStatus from "./SelectedActionStatus";
 import ImportFromCommonsDialog from "./round/import/commons/_page";
 import DistributionDialog from "./round/distribute/DistributionWidget";
 import { useTranslation } from "@/i18n/client";
+import { CampaignType } from "@/types/campaign/campaignType";
 const RoundCreate = React.lazy(() => import("./RoundCreate"));
 const RoundEdit = React.lazy(() => import("./RoundEdit"));
 type RoundTimelineProps = {
@@ -37,7 +38,7 @@ function RoundTimeline({ rounds, campaign, session, isCoordinator, isArchived }:
     const [currentRound, setCurrentRound] = React.useState<Round | null>(rounds.length > 0 ? rounds[0] : null);
     const isUserEligibleToVote = currentRound !== null && currentRound.jury !== null && session !== null && Object.values(currentRound.jury).includes(session.username);
     const [selectedRoundAction, setSelectedRoundAction] = React.useState<SelectedRoundActionStatus>(SelectedRoundActionStatus.none);
-    const categorizerAvailable = campaign.campaignType === CampaignType.Category
+    const categorizerAvailable = campaign.campaignType === CampaignType.Categorization;
     return (
         <Box sx={{ ml: 1 }} component="div">
             {!isArchived && <LatestRoundActions
