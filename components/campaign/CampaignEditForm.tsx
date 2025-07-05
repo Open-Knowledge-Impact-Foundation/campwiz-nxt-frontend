@@ -9,7 +9,6 @@ import UserInput from "../user/UserInput";
 import CheckBox from '@mui/material/Checkbox';
 dayjs.extend(utc);
 const CampaignEditForm = ({ dispatch, loading, disabled = false, disableOnPrivate = false, ...campaign }: CampaignCreate & { dispatch: ActionDispatch<[Partial<CampaignCreate>]>, loading: boolean, disabled?: boolean, disableOnPrivate?: boolean }) => {
-    console.log(campaign.startDate, campaign.endDate)
     return (
         <LocalizationProvider dateAdapter={AdapterDayjs}>
             <TextField

@@ -2,6 +2,7 @@ import fetchAPIFromBackendSingleWithErrorHandling from "@/server";
 import { Campaign } from "@/types";
 import EditCampaign from "./_page";
 import fetchSession from "@/server/session";
+import { CampaignUpdate } from "@/types/campaign/create";
 
 const UpdateCampaign = async ({ params }: { params: Promise<{ campaignId: string }> }) => {
     const session = await fetchSession();
@@ -20,7 +21,7 @@ const UpdateCampaign = async ({ params }: { params: Promise<{ campaignId: string
     if (!isAdmin && !hasCampaignEditAccess) {
         return <div>Either Admin or Project Lead can edit this campaign</div>
     }
-    const initialCampaign = {
+    const initialCampaign: CampaignUpdate = {
         ...campaign,
         coordinators: campaign.coordinators || []
     }

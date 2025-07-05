@@ -1,6 +1,7 @@
 import { WikimediaUsername } from "../_"
 import { Round } from "../round"
 import { RoundStatus } from "../round/status"
+import { CampaignType } from "./campaignType"
 
 export interface Role {
     campaignId: string
@@ -13,13 +14,7 @@ export interface Role {
     type: string
     userId: string
 }
-export enum CampaignType {
-    Category = 'categorization',
-    Commons = 'commons',
-    Wikidata = 'wikidata',
-    Wikipedia = 'wikipedia',
-    Reference = 'reference',
-}
+
 export interface Campaign {
     campaignType: CampaignType
     projectId: string

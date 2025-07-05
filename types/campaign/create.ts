@@ -1,11 +1,7 @@
 import { WikimediaUsername } from "@/types/_"
 import { RoundStatus } from "../round/status"
-export enum CampaignType {
-    COMMONS = "commons",
-    WIKIPEDIA = "wikipedia",
-    WIKIDATA = "wikidata",
-    OTHER = "other"
-}
+import { CampaignType } from "./campaignType"
+
 export interface CampaignCreate {
     coordinators: WikimediaUsername[]
     description: string
