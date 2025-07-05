@@ -1,7 +1,7 @@
 "use client";
 
 import fetchAPIFromBackendSingleWithErrorHandling from "@/server";
-import { Campaign, CampaignType } from "@/types";
+import { Campaign } from "@/types";
 import { Category, Submission, SubmissionWithCategories } from "@/types/submission";
 import { Autocomplete, Button, Chip, LinearProgress, TextField } from "@mui/material";
 import Image from "next/image";
@@ -15,6 +15,7 @@ import Link from "next/link";
 import MuiLink from "@mui/material/Link";
 import { useTranslation } from "@/i18n/client";
 import { TFunction } from "i18next";
+import { CampaignType } from "@/types/campaign/campaignType";
 const getSummary = (t: TFunction, categories: Category[]) => {
     let summary = 'Added via [[Commons:CampWiz|CampWiz]] categorizer:\n';
     if (categories.length === 0) {
@@ -218,7 +219,7 @@ const CategorizerPage = ({ campaign, submissions }: { campaign: Campaign, submis
     if (!submissions || submissions.length === 0) {
         return <p>{t('error.noSubmissionAvailableForCategorization')}</p>;
     }
-    if (campaign.campaignType != CampaignType.Category) {
+    if (campaign.campaignType != CampaignType.Categorization) {
         return <p>{t('error.campaignCategoriesNotSupported')}</p>;
     }
     if (!currentSubmission) {

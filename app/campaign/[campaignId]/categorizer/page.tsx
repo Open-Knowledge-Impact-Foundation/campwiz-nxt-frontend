@@ -2,10 +2,11 @@
 import Footer from "@/components/home/Footer";
 import Header from "@/components/home/Header";
 import fetchAPIFromBackendSingleWithErrorHandling, { fetchAPIFromBackendListWithErrorHandling } from "@/server";
-import { Campaign, CampaignType } from "@/types";
+import { Campaign } from "@/types";
 import { Submission } from "@/types/submission";
 import { redirect } from "next/navigation";
 import CategorizerPage from "./_page";
+import { CampaignType } from "@/types/campaign/campaignType";
 
 const redirectForLogin = (campaignId: string) => {
     const qs = new URLSearchParams({
@@ -30,7 +31,7 @@ const Categorizer = async ({ params }: { params: Promise<{ campaignId: string }>
         return <p>Error : {campaignResponse.detail}</p>;
     }
     const campaign = campaignResponse.data;
-    if (campaign.campaignType !== CampaignType.Category) {
+    if (campaign.campaignType !== CampaignType.Categorization) {
         return <p>This page is only for campaigns which has enabled categorization.</p>;
     }
     const submissionResponse = await fetchAPIFromBackendListWithErrorHandling<Submission>(`/category/uncategorized/${campaignId}`);
