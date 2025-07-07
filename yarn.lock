@@ -8317,10 +8317,10 @@ next-video@^2.1.0:
     undici "^5.28.4"
     yargs "^17.7.2"
 
-next-ws@^2.0.8:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/next-ws/-/next-ws-2.0.9.tgz#845591a79886984a783785efe169ff8f8db71a2f"
-  integrity sha512-+wKdFqyHqJZ7s2y71TwuWLe8nv0g+9eVsNtaJCLr3v5rxmDx7yqhQsITghnaSZlzTkOhVfFvAjfDJ644utaa1Q==
+next-ws@^2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/next-ws/-/next-ws-2.0.10.tgz#dc9017451049e94bcc7d97e9a4d4b65945be37e7"
+  integrity sha512-DZd4VXuMXbC8YKycz263uwtBMiQlNPdHxKkxpcdHEZbCyLJfiDO/DTjuqSgKHrg2jzfYDaXlhKLRcPTbOrv2gQ==
 
 next@15.3.5:
   version "15.3.5"
