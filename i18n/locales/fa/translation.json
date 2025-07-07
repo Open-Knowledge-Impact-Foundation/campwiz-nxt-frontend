@@ -21,6 +21,7 @@
 		"theme": "پوسته"
 	},
 	"login": {
+		"title": "بگذار شروع کنیم",
 		"loginWithWikimedia": "ورود با ویکی‌پدیا"
 	},
 	"project": {
@@ -29,7 +30,7 @@
 		"goToProject": "رفتن به پروژه",
 		"showAllProjects": "نمایش تمام پروژه‌ها",
 		"projectLoading": "در حال بارگیری جزئیات پروژه...",
-		"dashboard": "پیشخوان",
+		"dashboard": "داشبورد پروژه",
 		"otherProjects": "سایر پروژه‌ها"
 	},
 	"round": {
@@ -71,6 +72,7 @@
 		"title": "عنوان",
 		"description": "توضیحات",
 		"author": "نویسنده",
+		"viewOnCommons": "مشاهدهٔ در ویکی‌انبار",
 		"categories": "رده‌ها",
 		"selectCategories": "انتخاب رده‌ها",
 		"save": "ذخیره",

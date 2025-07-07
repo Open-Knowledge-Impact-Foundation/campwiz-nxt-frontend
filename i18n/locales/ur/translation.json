@@ -28,12 +28,24 @@
 	"login": {
 		"title": "آئیے شروعات کرتے ہیں",
 		"loginWithWikimedia": "ویکی میڈیا کے ساتھ لاگ ان کریں",
-		"afterLoginRedirect": " اس عمل کے بعد، آپ کو درج ذیل صفحے پر واپس بھیج دیا جائے گا:"
+		"afterLoginRedirect": " اس عمل کے بعد، آپ کو درج ذیل صفحے پر واپس بھیج دیا جائے گا:",
+		"loginDisclaimer": "لاگ ان کرکے، آپ ہماری <0>Terms of Service</0>  اور <1>Privacy Policy</1> سے اتفاق کرتے ہی ."
 	},
 	"campaign": {
 		"createCampaign": "مقابلہ بنائیں",
 		"goToCampaign": "مقابلے پر جائیں",
 		"showAllCampaigns": "تمام مقابلے دکھائیں"
+	},
+	"project": {
+		"title": "منصوبے",
+		"createProject": "نیا پروجیکٹ",
+		"goToProject": "پروجیکٹ پر جائیں۔",
+		"showAllProjects": "تمام منصوبے دکھائیں۔۔۔",
+		"projectLoading": "پروجیکٹ کی تفصیلات لوڈ ہو رہی ہیں...",
+		"leads": "پروجیکٹ لیڈز",
+		"dashboard": "پروجیکٹ ڈیش بورڈ",
+		"otherProjects": "دیگر منصوبے",
+		"myProject": "میرا پروجیکٹ"
 	},
 	"round": {
 		"status": {
@@ -56,7 +68,8 @@
 		"terms": "شرائط",
 		"privacy": "نجی نوعیت",
 		"reportBug": "خرابی کی اطلاع دیں",
-		"translate": "ترجمہ"
+		"translate": "ترجمہ",
+		"copyright": "© 2025 by <0>CampWiz NXT Team</0>"
 	},
 	"error": {
 		"noAssignedCampaigns": "کوئی مختص کردہ مقابلے نہیں",
@@ -67,7 +80,10 @@
 		"noSubmissionAvailableForCategorization": "درجہ بندی کے لیے کوئی جمع نہیں",
 		"noCategoriesSelected": "کوئی زمرہ منتخب نہیں کیا گیا۔",
 		"noCategoriesAvailable": "زمرہ جات میسر نہیں",
-		"noSubmissions": "کوئی گذارشات دستیاب نہیں ہیں۔"
+		"noSubmissions": "کوئی گذارشات دستیاب نہیں ہیں۔",
+		"noRunningCampaigns": "کوئی مہم نہیں چل رہی",
+		"loadingMyProject": "آپ کے پروجیکٹ کو لوڈ کرنے میں ناکام",
+		"loadingProjects": "پروجیکٹس لوڈ کرنے میں ناکام"
 	},
 	"close": "بند کریں",
 	"previous": "Previous",
@@ -127,6 +143,8 @@
 		"mk": "مقدونیائی (Македонски)",
 		"krc": "کاراچے-بالکر (Къарачай-Малкъар)",
 		"xmf": "منگریلین (მარგალური)",
-		"lb": "لکسمبرگش (Lëtzebuergesch)"
+		"lb": "لکسمبرگش (Lëtzebuergesch)",
+		"zh-hans": "آسان چینی (简体中文)",
+		"zh-hant": "روایتی چینی (繁體中文)"
 	}
 }

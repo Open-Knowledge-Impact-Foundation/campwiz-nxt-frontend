@@ -29,7 +29,8 @@
 	"login": {
 		"title": "Келигиз башлайыкъ",
 		"loginWithWikimedia": "Викимедианы юсю бла кир",
-		"afterLoginRedirect": "Бу процессден сора эндиги бетге кери джолланныкъсыз:"
+		"afterLoginRedirect": "Бу процессден сора эндиги бетге кери джолланныкъсыз:",
+		"loginDisclaimer": "Кириу этсегиз, бизни <0>Terms of Service</0> эм <1>Privacy Policy</1> бла разы боласыз."
 	},
 	"campaign": {
 		"createCampaign": "Компанияны къура",
@@ -43,8 +44,9 @@
 		"showAllProjects": "Бютеу проектлени кёргюз",
 		"projectLoading": "Проектлени юсюнден толу хапар джюкленеди...",
 		"leads": "Проектни башчылары",
-		"dashboard": "Адыр панель",
-		"otherProjects": "Башха проектле"
+		"dashboard": "Проектни адыр панели",
+		"otherProjects": "Башха проектле",
+		"myProject": "Проектим"
 	},
 	"round": {
 		"status": {

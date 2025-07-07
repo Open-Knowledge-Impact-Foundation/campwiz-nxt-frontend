@@ -1,26 +1,52 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kly",
 			"Nokib Sarkar"
 		]
 	},
 	"title": "CampWiz NXT",
 	"home": {
 		"welcome": "歡迎 {{name}}",
-		"subtitle": "將陪審團經驗提升到一個新的水平"
+		"subtitle": "提升評審經驗到新的層次",
+		"publicRunningCampaigns": "正在進行的公開活動",
+		"yourCampaigns": "您的活動",
+		"logout": "登出",
+		"dashboard": "功能面板",
+		"doc": "文件",
+		"login": "登入"
 	},
 	"settings": {
+		"title": "設定",
+		"language": "語言",
+		"darkMode": "暗黑模式",
+		"lightMode": "明亮模式",
 		"save": "儲存",
 		"cancel": "取消",
-		"theme": "主題"
+		"theme": "主題",
+		"helpTranslation": "請在 <0>TranslateWiki</0> 上幫助我們翻譯成您的語言"
 	},
 	"login": {
 		"title": "讓我們開始吧",
-		"loginWithWikimedia": "以維基媒體登入"
+		"loginWithWikimedia": "以維基媒體登入",
+		"afterLoginRedirect": "完成此程序後，您將被重新導向到以下頁面：",
+		"loginDisclaimer": "登入即表示您同意我們的服務條款（<0>Terms of Service</0>）和隱私權政策（<1>Privacy Policy</1>）。"
 	},
 	"campaign": {
 		"createCampaign": "建立活動",
-		"goToCampaign": "前往活動"
+		"goToCampaign": "前往活動",
+		"showAllCampaigns": "顯示所有活動"
+	},
+	"project": {
+		"title": "專案",
+		"createProject": "新專案",
+		"goToProject": "前往專案",
+		"showAllProjects": "顯示所有專案",
+		"projectLoading": "正在載入專案詳細資訊…",
+		"leads": "專案負責人",
+		"dashboard": "專案功能面板",
+		"otherProjects": "其他專案",
+		"myProject": "我的專案"
 	},
 	"round": {
 		"status": {
@@ -32,14 +58,33 @@
 			"DISTRIBUTING": "分布"
 		},
 		"submissions": "提交",
-		"assignments": "分配"
+		"assignments": "分配",
+		"evaluatedOutOf": "已評估：{{evaluated}}（總數：{{total}}）",
+		"evaluationArea": "評估區域",
+		"categorizer": "分類器"
 	},
 	"footer": {
+		"campwizNxtTeam": "Campwiz NXT Team",
 		"manual": "手動",
 		"terms": "條款",
 		"privacy": "隱私",
 		"reportBug": "回報程式錯誤",
-		"translate": "翻譯"
+		"translate": "翻譯",
+		"copyright": "© 2025 <0>CampWiz NXT Team</0> 製作"
+	},
+	"error": {
+		"noAssignedCampaigns": "未分配任何活動",
+		"loadingSubmissionDetails": "無法載入提交詳細資訊：{{error}}",
+		"categoriesNotLoaded": "尚未載入分類",
+		"campaignNotFound": "找不到活動",
+		"campaignCategoriesNotSupported": "不支援的活動分類",
+		"noSubmissionAvailableForCategorization": "沒有可用於分類的提交內容",
+		"noCategoriesSelected": "未選擇分類",
+		"noCategoriesAvailable": "沒有可用的分類",
+		"noSubmissions": "沒有可用的提交內容",
+		"noRunningCampaigns": "沒有正在進行的活動",
+		"loadingMyProject": "無法載入您的專案",
+		"loadingProjects": "無法載入專案"
 	},
 	"close": "關閉",
 	"previous": "上一個",
@@ -66,6 +111,41 @@
 		"selectCategories": "選擇分類",
 		"save": "儲存",
 		"cancel": "取消",
-		"skip": "略過"
+		"skip": "略過",
+		"next": "下一個",
+		"previous": "上一個"
+	},
+	"languages": {
+		"en": "英文（English）",
+		"bn": "孟加拉文（বাংলা）",
+		"ar": "阿拉伯文（العربية）",
+		"hi": "印地文（हिन्दी）",
+		"es": "西班牙文（Español）",
+		"fr": "法文（Français）",
+		"de": "德文（Deutsch）",
+		"it": "義大利文（Italiano）",
+		"ja": "日文（日本語）",
+		"ko": "韓文（한국어）",
+		"pt": "葡萄牙文（Português）",
+		"ru": "俄文（Русский）",
+		"zh": "中文",
+		"kn": "坎那達文（ಕನ್ನಡ）",
+		"mr": "馬拉地文（मराठी）",
+		"ta": "坦米爾文（தமிழ்）",
+		"ml": "馬來亞拉姆文（മലയാളം）",
+		"ur": "烏爾都文（اردو）",
+		"gu": "古吉拉特文（ગુજરાતી）",
+		"pa": "旁遮普文（ਪੰਜਾਬੀ）",
+		"te": "泰盧固文（తెలుగు）",
+		"ps": "普什圖文（پښتو）",
+		"skr-arab": "色萊基文（سرائیکی）",
+		"skr-latn": "色萊基文拉丁轉寫（Latin）",
+		"pms": "皮埃蒙特文（Piemontèis）",
+		"mk": "馬其頓文（Македонски）",
+		"krc": "卡拉恰伊-巴爾卡爾文（Къарачай-Малкъар）",
+		"xmf": "明格列爾文（მარგალური）",
+		"lb": "盧森堡文（Lëtzebuergesch）",
+		"zh-hans": "简体中文",
+		"zh-hant": "繁體中文"
 	}
 }

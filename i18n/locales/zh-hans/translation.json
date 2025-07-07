@@ -29,7 +29,8 @@
 	"login": {
 		"title": "让我们开始吧",
 		"loginWithWikimedia": "使用维基媒体登录",
-		"afterLoginRedirect": " 完成此过程后，您将被重定向回以下页面："
+		"afterLoginRedirect": " 完成此过程后，您将被重定向回以下页面：",
+		"loginDisclaimer": "登录即表示您同意我们的<0>Terms of Service</0>和<1>Privacy Policy</1>。"
 	},
 	"campaign": {
 		"createCampaign": "创建活动",

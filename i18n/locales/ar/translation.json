@@ -37,6 +37,15 @@
 		"goToCampaign": "الذهاب إلى المسابقة",
 		"showAllCampaigns": "عرض جميع المسابقات"
 	},
+	"project": {
+		"title": "مشاريع",
+		"createProject": "مشروع جديد",
+		"goToProject": "انتقل إلى المشروع",
+		"showAllProjects": "عرض جميع المشاريع",
+		"projectLoading": "جاري تحميل تفاصيل المشروع...",
+		"otherProjects": "مشاريع أخرى",
+		"myProject": "مشروعي"
+	},
 	"round": {
 		"status": {
 			"ACTIVE": "نشطة",
@@ -71,7 +80,9 @@
 		"noCategoriesSelected": "لم يتم تحديد أي فئات",
 		"noCategoriesAvailable": "لا توجد فئات متاحة",
 		"noSubmissions": "لا توجد طلبات متاحة",
-		"noRunningCampaigns": "لا توجد مسابقات جارية"
+		"noRunningCampaigns": "لا توجد مسابقات جارية",
+		"loadingMyProject": "فشل تحميل مشروعك",
+		"loadingProjects": "فشل تحميل المشاريع"
 	},
 	"close": "إغلاق",
 	"previous": "السابق",
@@ -132,6 +143,7 @@
 		"krc": "الكراشاي-بالكار (Къарачай-Малкъар)",
 		"xmf": "المينجريلية (მარგალური)",
 		"lb": "اللوكسمبورغية (Letzeburgesch)",
-		"zh-hans": "الصينية المبسطة (简体中文)"
+		"zh-hans": "الصينية المبسطة (简体中文)",
+		"zh-hant": "الصينية التقليدية (繁體中文)"
 	}
 }
