@@ -82,7 +82,7 @@ const RoundDetails = ({ round: c, t }: { round: Round, t: TFunction<string, unde
                     <Quorum quorum={c.quorum} t={t} />
                 </div>
             </Box>
-            <JuryList juryList={juryList} isPublicJury={c.isPublicJury} />
+            <JuryList juryList={juryList} isPublicJury={c.isPublicJury} t={t} />
         </Box>
     )
 }

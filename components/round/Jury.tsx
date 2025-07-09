@@ -3,7 +3,8 @@ import GavelIcon from '@mui/icons-material/Gavel';
 import { Box, Typography } from "@mui/material";
 import AccountIcon from '@mui/icons-material/AccountCircle';
 import LeaderBoardButton from "./LeaderBoardButton";
-const Jury = ({ jury }: { jury: RoleWithUsername }) => {
+import { TFunction } from "i18next";
+const Jury = ({ jury, t }: { jury: RoleWithUsername, t: TFunction }) => {
     const progress = jury.totalAssigned > 0 ? Math.floor(jury.totalEvaluated / jury.totalAssigned * 100) : 0;
     return (
         <Box sx={{
@@ -25,27 +26,27 @@ const Jury = ({ jury }: { jury: RoleWithUsername }) => {
                 {progress}%
             </Typography>
             <Typography variant="body1" sx={{ mb: 2, mt: -0.5, }} component='div'>
-                {jury.totalAssigned} assigned
+                {t('round.jury.totalAssigned', { count: jury.totalAssigned })}
             </Typography>
             <Typography variant="body1" sx={{ mb: 2, mt: -0.5, }} component='div'>
-                {jury.totalEvaluated} evaluated
+                {t('round.jury.evaluated', { count: jury.totalEvaluated })}
             </Typography>
 
-        </ Box>
+        </Box>
     );
 }
-const JuryList = ({ juryList, isPublicJury }: { juryList: RoleWithUsername[], isPublicJury: boolean }) => {
+const JuryList = ({ juryList, isPublicJury, t }: { juryList: RoleWithUsername[], isPublicJury: boolean, t: TFunction }) => {
     if (!isPublicJury)
         return (
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'left', position: 'relative', width: '100%' }}>
                 <GavelIcon sx={{ display: 'inline-block', mr: 1, }} fontSize="large" />
                 <div style={{ width: '100%' }}>
                     <Typography variant="h6" sx={{ mb: 0 }} component='div'>
-                        Jury
+                        {t('round.jury.title')}
                     </Typography>
                     <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'left', flexWrap: 'wrap', width: '100%' }}>
                         {juryList.map((jury, i) => (
-                            <Jury key={i} jury={jury} />
+                            <Jury key={i} jury={jury} t={t} />
                         ))}
                     </div>
                 </div>

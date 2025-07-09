@@ -84,7 +84,12 @@
         "quorum": "Quorum",
         "quorumRequired_one": "Single jury per submission is required",
         "quorumRequired_two": "Two juries per submission are required",
-        "quorumRequired_other": "{{count}} juries per submission are required"
+        "quorumRequired_other": "{{count}} juries per submission are required",
+        "jury": {
+            "title": "Jury",
+            "totalAssigned": "{{count}} assigned",
+            "evaluated": "{{count}} evaluated"
+        }
     },
     "footer": {
         "campwizNxtTeam": "Campwiz NXT Team",
