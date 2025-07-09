@@ -79,7 +79,7 @@ const RoundDetails = ({ round: c, t }: { round: Round, t: TFunction<string, unde
                         total: c.totalAssignments,
                         evaluated: c.totalEvaluatedAssignments
                     })} label={t('round.assignments')} Icon={HistoryEduIcon} />}
-                    <Quorum quorum={c.quorum} />
+                    <Quorum quorum={c.quorum} t={t} />
                 </div>
             </Box>
             <JuryList juryList={juryList} isPublicJury={c.isPublicJury} />

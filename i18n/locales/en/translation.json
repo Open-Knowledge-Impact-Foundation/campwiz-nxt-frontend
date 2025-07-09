@@ -80,7 +80,11 @@
         "deadLineInMinutes_one": "In a minute",
         "deadLineInMinutes_two": "In two minutes",
         "deadLineInMinutes_other": "In {{count}} minutes",
-        "deadLinePassed": "Deadline passed"
+        "deadLinePassed": "Deadline passed",
+        "quorum": "Quorum",
+        "quorumRequired_one": "Single jury per submission is required",
+        "quorumRequired_two": "Two juries per submission are required",
+        "quorumRequired_other": "{{count}} juries per submission are required"
     },
     "footer": {
         "campwizNxtTeam": "Campwiz NXT Team",
