@@ -1,4 +1,4 @@
-
+"use client";
 import { EvaluationType, Round } from "@/types/round"
 import Box from "@mui/material/Box";
 
@@ -15,16 +15,16 @@ import StarsIcon from '@mui/icons-material/Stars';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import RoundSummary from "./RoundSummary";
 import type { TFunction } from "i18next";
-const roundTypeIcon = (type: EvaluationType) => {
+const roundTypeIcon = (type: EvaluationType, t: TFunction) => {
     switch (type) {
         case EvaluationType.BINARY:
-            return <Description description='Yes/No' label="Type" Icon={LikeDislike} />
+            return <Description description={t('round.type.binary')} label={t('round.type.label')} Icon={LikeDislike} />
         case EvaluationType.RANKING:
-            return <Description description='Ranking' label="Type" Icon={MilitaryTechIcon} />
+            return <Description description={t('round.type.ranking')} label={t('round.type.label')} Icon={MilitaryTechIcon} />
         case EvaluationType.SCORE:
-            return <Description description='Rating' label="Type" Icon={StarsIcon} />
+            return <Description description={t('round.type.score')} label={t('round.type.label')} Icon={StarsIcon} />
         default:
-            return <Description description='Unknown, contact us' label="Type" Icon={QuestionMarkIcon} />
+            return <Description description={t('round.type.unknown')} label={t('round.type.label')} Icon={QuestionMarkIcon} />
     }
 }
 
@@ -68,9 +68,9 @@ const RoundDetails = ({ round: c, t }: { round: Round, t: TFunction<string, unde
             }}>
                 <RoundSummary c={c} />
                 <div>
-                    <Deadline deadline={c.endDate} />
-                    {roundTypeIcon(c.type)}
-                    <Description description={c.description} />
+                    <Deadline deadline={c.endDate} t={t} />
+                    {roundTypeIcon(c.type, t)}
+                    <Description description={c.description} label={t('round.description')} />
                     <Description description={t('round.evaluatedOutOf', {
                         total: c.totalSubmissions,
                         evaluated: c.totalEvaluatedSubmissions,

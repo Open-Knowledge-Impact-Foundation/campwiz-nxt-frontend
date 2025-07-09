@@ -55,7 +55,32 @@
         "assignments": "Assignments",
         "evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}",
         "evaluationArea": "Evaluation Area",
-        "categorizer": "Categorizer"
+        "categorizer": "Categorizer",
+        "type": {
+            "label": "Type",
+            "binary": "Yes/No",
+            "ranking": "Ranking",
+            "score": "Score",
+            "unknown": "Unknown, contact us"
+        },
+        "deadline": "Deadline",
+        "description": "Description",
+        "deadLineInMonths_one": "In a month",
+        "deadLineInMonths_two": "In two months",
+        "deadLineInMonths_other": "In {{count}} months",
+        "deadLineInWeeks_one": "In a week",
+        "deadLineInWeeks_two": "In two weeks",
+        "deadLineInWeeks_other": "In {{count}} weeks",
+        "deadLineInDays_one": "In a day",
+        "deadLineInDays_two": "In two days",
+        "deadLineInDays_other": "In {{count}} days",
+        "deadLineInHours_one": "In an hour",
+        "deadLineInHours_two": "In two hours",
+        "deadLineInHours_other": "In {{count}} hours",
+        "deadLineInMinutes_one": "In a minute",
+        "deadLineInMinutes_two": "In two minutes",
+        "deadLineInMinutes_other": "In {{count}} minutes",
+        "deadLinePassed": "Deadline passed"
     },
     "footer": {
         "campwizNxtTeam": "Campwiz NXT Team",

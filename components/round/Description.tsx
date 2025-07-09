@@ -1,3 +1,4 @@
+"use client";
 import Typography from "@mui/material/Typography";
 import DescriptionIcon from '@mui/icons-material/Description'
 
