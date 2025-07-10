@@ -23,7 +23,8 @@
 		"save": "Save",
 		"cancel": "Cancel",
 		"theme": "Theme",
-		"helpTranslation": "A request for users to help translate the application to their language. This label would be shown in the home page. The <code><0>TranslateWiki</0></code> is a link to the TranslateWiki website where users can contribute translations. Please keep  <code><0>TranslateWiki</0></code> as it is."
+		"helpTranslation": "A request for users to help translate the application to their language. This label would be shown in the home page. The <code><0>TranslateWiki</0></code> is a link to the TranslateWiki website where users can contribute translations. Please keep  <code><0>TranslateWiki</0></code> as it is.",
+		"translatewiki": "The Website <code>Translatewiki</code> where users can contribute translations for the application. This label would be shown in the home page. You can transliterate this to your language or keep it as it is.<br/>For example, in Bengali, it can be translated as <code>ট্রান্সলেটউইকি</code> or transliterated as <code>Translatewiki</code>. So, for transliterated version, it would show as \"অনুগ্রহপূর্বক আমাদেরকে ট্রান্সলেটউইকিতে আপনার ভাষায় অনুবাদ করতে সাহায্য করুন\""
 	},
 	"login": {
 		"title": "A proposal to Login",

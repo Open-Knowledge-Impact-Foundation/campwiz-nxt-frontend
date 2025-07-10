@@ -67,7 +67,7 @@ const LoginComponent = ({ isMobile }: { isMobile: boolean }) => {
                         style={{ textDecoration: 'none', color: 'blue' }}
                         className="translation-link"
                         target="_blank"
-                        rel="noopener noreferrer">{t('login.link')}</Link>]}
+                        rel="noopener noreferrer">{t('setting.translatewiki')}</Link>]}
                 />
             </Typography>
             <Button

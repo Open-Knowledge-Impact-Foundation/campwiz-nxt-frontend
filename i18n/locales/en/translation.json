@@ -18,7 +18,8 @@
         "save": "Save",
         "cancel": "Cancel",
         "theme": "Theme",
-        "helpTranslation": "Please Help us translate to your language at <0>TranslateWiki</0>"
+        "helpTranslation": "Please Help us translate to your language at <0>TranslateWiki</0>",
+        "translatewiki": "TranslateWiki"
     },
     "login": {
         "title": "Let's get started",
