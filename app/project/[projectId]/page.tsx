@@ -21,6 +21,7 @@ import projectAccessDeniedReason from "../projectAccessDeniedReason";
 import ArchiveIcon from "@mui/icons-material/Archive";
 import Footer from "@/components/home/Footer";
 import NokiberButton from "@/components/NokiberButton";
+import { uTranslation } from "@/i18n";
 
 
 
@@ -32,25 +33,26 @@ type DashboardProps = {
 
 const Dashboard = async ({ params }: DashboardProps) => {
 	const { projectId } = await params;
+	const { t } = await uTranslation();
 	const { canAccessOtherProject, reason } = await projectAccessDeniedReason(projectId);
 	if (reason) {
-		return <div>{reason}</div>
+		return <div>{t(reason)}</div>
 	}
 	const myProjectResponse = await fetchAPIFromBackendSingleWithErrorHandling<Project>(`/project/${projectId}?includeProjectLeads=true`);
 	if (!myProjectResponse) {
-		return <div>Failed to fetch your project</div>
+		return <div>{t('error.loadingProject')}</div>
 	}
 	if ('detail' in myProjectResponse) {
-		return <div>{myProjectResponse.detail}</div>
+		return <div>{t(myProjectResponse.detail)}</div>
 	}
 	const project = myProjectResponse.data;
 	const projectLeads = project.projectLeads || [];
 	const campaignListResponse = await fetchAPIFromBackendListWithErrorHandling<Campaign>(`/campaign/?projectId=${projectId}`);
 	if (!campaignListResponse) {
-		return <div>Failed to fetch campaigns</div>
+		return <div>{t('error.loadingCampaigns')}</div>
 	}
 	if ('detail' in campaignListResponse) {
-		return <div>{campaignListResponse.detail}</div>
+		return <div>{t(campaignListResponse.detail)}</div>
 	}
 	const campaigns = campaignListResponse.data.toSorted((a, b) => b.campaignId.localeCompare(a.campaignId));
 	return (<>
@@ -95,7 +97,7 @@ const Dashboard = async ({ params }: DashboardProps) => {
 							fontFamily: "Lora, serif",
 						}}
 					>
-						Welcome to {project.name}
+						{t('project.welcomeToProject', { project: project.name })}
 					</Typography>
 					{canAccessOtherProject &&
 						<Link href={`/project/${projectId}/edit`}>
@@ -109,7 +111,7 @@ const Dashboard = async ({ params }: DashboardProps) => {
 								}}
 								endIcon={<SettingsIcon />}
 							>
-								Settings
+								{t('project.editProject')}
 							</Button>
 						</Link>
 					}
@@ -130,7 +132,7 @@ const Dashboard = async ({ params }: DashboardProps) => {
 							variant="h5"
 							sx={{ fontWeight: "bold", fontFamily: "Lora, serif", }}
 						>
-							Active Campaigns
+							{t('campaign.activeCampaigns')}
 						</Typography>
 						<NokiberButton
 							variant="outlined"
@@ -138,24 +140,23 @@ const Dashboard = async ({ params }: DashboardProps) => {
 							startIcon={<ArchiveIcon />}
 							color="secondary"
 							link={`/campaign/?isClosed=true&projectId=${projectId}`}
-							label="Archived Campaigns"
+							label={t('campaign.archivedCampaigns')}
 						/>
 						<NokiberButton
 							variant="contained"
 							sx={{ borderRadius: 30 }}
 							startIcon={<Add />}
-							label="Create Campaign"
+							label={t('campaign.createCampaign')}
 							link={`/project/${projectId}/new`}
 						/>
 					</Box>
 					<Grid container spacing={3}>
-						{
-							campaigns.length === 0 &&
+						{campaigns.length === 0 &&
 							<Typography
 								variant="h5"
 								sx={{ fontWeight: "bold", fontFamily: "Lora, serif", }}
 							>
-								No Active Campaigns
+								{t('error.noRunningCampaigns')}
 							</Typography>
 						}
 						{campaigns.map((campaign) => (
@@ -193,7 +194,7 @@ const Dashboard = async ({ params }: DashboardProps) => {
 												}}
 												endIcon={<ArrowForward />}
 											>
-												Go to Campaign
+												{t('campaign.goToCampaign')}
 											</Button>
 										</Link>
 									</CardContent>

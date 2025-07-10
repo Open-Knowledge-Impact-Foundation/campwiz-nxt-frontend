@@ -30,7 +30,9 @@
     "campaign": {
         "createCampaign": "Create Campaign",
         "goToCampaign": "Go to Campaign",
-        "showAllCampaigns": "Show All Campaigns"
+        "showAllCampaigns": "Show All Campaigns",
+        "activeCampaigns": "Active Campaigns",
+        "archivedCampaigns": "Archived Campaigns"
     },
     "project": {
         "title": "Projects",
@@ -41,7 +43,9 @@
         "leads": "Project Leads",
         "dashboard": "Project Dashboard",
         "otherProjects": "Other Projects",
-        "myProject": "My Project"
+        "myProject": "My Project",
+        "welcomeToProject": "Welcome to {{project}}",
+        "editProject": "Edit"
     },
     "round": {
         "status": {

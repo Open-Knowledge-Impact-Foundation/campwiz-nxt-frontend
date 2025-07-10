@@ -22,7 +22,7 @@ const PublicRunningCampaigns = ({ limit }: PublicRunningCampaignProps) => {
     if (!publicCampaignResponse)
         return null;
     if ('detail' in publicCampaignResponse)
-        return <p>Error : {t(error.message)}</p>
+        return <p>Error : {t(publicCampaignResponse.detail)}</p>
     const campaigns = publicCampaignResponse.data
     return campaigns.length > 0 ? <div style={{
         display: 'flex', flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap',

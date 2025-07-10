@@ -36,7 +36,9 @@
 	"campaign": {
 		"createCampaign": "প্রতিযোগিতা তৈরি করুন",
 		"goToCampaign": "প্রতিযোগিতায় চলুন",
-		"showAllCampaigns": "সব প্রতিযোগিতা দেখুন"
+		"showAllCampaigns": "সব প্রতিযোগিতা দেখুন",
+		"activeCampaigns": "চলমান প্রতিযোগিতা",
+		"archivedCampaigns": "সংগ্রহশালায় জমা প্রতিযোগিতা"
 	},
 	"project": {
 		"title": "প্রকল্পসমূহ",
@@ -47,7 +49,9 @@
 		"leads": "প্রকল্প পরিচালক",
 		"dashboard": "প্রকল্প ড্যাশবোর্ড",
 		"otherProjects": "অন্যান্য প্রকল্প",
-		"myProject": "আমার প্রকল্প"
+		"myProject": "আমার প্রকল্প",
+		"editProject": "সম্পাদনা করুন",
+		"welcomeToProject": "{{project}} প্রকল্পে স্বাগতম"
 	},
 	"round": {
 		"status": {
