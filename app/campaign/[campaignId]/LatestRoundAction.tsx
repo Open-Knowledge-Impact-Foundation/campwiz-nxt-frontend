@@ -1,4 +1,4 @@
-
+"use client"
 import StopIcon from '@mui/icons-material/Pause';
 import Start from '@mui/icons-material/PlayArrow';
 import DoubleTickIcon from '@mui/icons-material/DoneAll';
@@ -20,6 +20,7 @@ import AddAsJuryButton from './AddAsJury';
 import CategoryIcon from '@mui/icons-material/Category';
 import { updateroundStatus } from './updateStatus';
 import { useTranslation } from '@/i18n/client';
+import { TFunction } from 'i18next';
 
 const CreateRoundButton = ({ onClick }: { onClick: () => void }) => (
     <Button
@@ -44,7 +45,7 @@ const EditRoundButton = ({ onClick }: { onClick: () => void }) => (
     </Button>
 )
 
-const MarkAsCompleteButton = ({ latestRound, setAction, refresh }: { latestRound: Round | null, setAction: (action: SelectedRoundActionStatus) => void, refresh: () => void }) => {
+const MarkAsCompleteButton = ({ latestRound, setAction, refresh, t }: { latestRound: Round | null, setAction: (action: SelectedRoundActionStatus) => void, refresh: () => void, t: TFunction }) => {
     if (!latestRound)
         return null
     if (![RoundStatus.ACTIVE, RoundStatus.PAUSED].includes(latestRound.status))
@@ -55,11 +56,12 @@ const MarkAsCompleteButton = ({ latestRound, setAction, refresh }: { latestRound
             roundId={latestRound.roundId}
             color="success" description=""
             icon={<DoubleTickIcon />}
-            label="Mark as complete"
+            label={t('round.markAsComplete')}
             status={RoundStatus.COMPLETED}
-            statusText="Completed"
+            statusText={t('round.status.COMPLETED')}
             onClick={() => setAction(SelectedRoundActionStatus.finalizing)}
             refresh={refresh}
+            t={t}
         />
     // otherwise, first pause the round, then mark as complete
     const markAsComplete = async (round: Round) => {
@@ -72,10 +74,11 @@ const MarkAsCompleteButton = ({ latestRound, setAction, refresh }: { latestRound
         roundId={latestRound.roundId}
         color="success" description=""
         icon={<DoubleTickIcon />}
-        label="Mark as complete"
+        label={t('round.markAsComplete')}
         status={RoundStatus.PAUSED}
-        statusText="paused then Completed"
+        statusText={t('round.status.pausedThenCompleted')}
         onClick={markAsComplete}
+        t={t}
     />
 }
 
@@ -129,7 +132,7 @@ const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refr
             // Add mark as complete irrespective of the status being other than completed
             // status can be paused or active
             if (latestRound.status !== RoundStatus.COMPLETED && latestRound.totalSubmissions === latestRound.totalEvaluatedSubmissions) {
-                buttons.push(<MarkAsCompleteButton latestRound={latestRound} setAction={setAction} refresh={refresh} />);
+                buttons.push(<MarkAsCompleteButton latestRound={latestRound} setAction={setAction} refresh={refresh} t={t} />);
             }
             if (latestRound.status === RoundStatus.COMPLETED) {
                 buttons.push(<ExportToCSVButton roundId={latestRound.roundId} />);
@@ -144,11 +147,13 @@ const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refr
                     status={RoundStatus.PAUSED}
                     onClick={() => setAction(SelectedRoundActionStatus.finalizing)}
                     refresh={refresh}
+                    t={t}
                 />);
             } else if (latestRound.status === RoundStatus.PAUSED) {
                 buttons.push(<DeleteButton
                     roundId={latestRound.roundId}
                     refresh={refresh}
+                    t={t}
                 />);
                 if (latestRound.totalSubmissions == 0) {
                     buttons.push(
@@ -174,6 +179,7 @@ const LatestRoundActions = ({ latestRound, setAction, isJury, judgableLink, refr
                     status={RoundStatus.ACTIVE}
                     onClick={() => setAction(SelectedRoundActionStatus.finalizing)}
                     refresh={refresh}
+                    t={t}
                 />);
             }
         }

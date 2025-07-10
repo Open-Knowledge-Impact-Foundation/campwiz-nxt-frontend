@@ -1,14 +1,16 @@
-
+"use client"
 import React from "react"
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, LinearProgress, Typography } from "@mui/material"
 import deleteRound from "./deleteRound"
+import { TFunction } from "i18next";
 
 type DeleteButtonProps = {
     roundId: string
     refresh: () => void
+    t: TFunction
 }
-const DeleteButton = ({ roundId, refresh }: DeleteButtonProps) => {
+const DeleteButton = ({ roundId, refresh, t }: DeleteButtonProps) => {
     const [showDialog, setShowDialog] = React.useState(false);
     const [loading, setLoading] = React.useState(false);
     const finalize = async () => {
@@ -40,7 +42,7 @@ const DeleteButton = ({ roundId, refresh }: DeleteButtonProps) => {
             loading={loading}
             disabled={showDialog}
         >
-            Delete
+            {t('round.deleteRoundButton')}
         </Button>
         <React.Suspense fallback={<LinearProgress />}>
             {showDialog && <Dialog open={showDialog} onClose={() => setShowDialog(false)}>

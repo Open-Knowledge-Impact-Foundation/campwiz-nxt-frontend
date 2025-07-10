@@ -41,7 +41,9 @@
         "rules": "Rules",
         "publicVisibilityDisclaimer": "This Campaign would shown to the public (people other than coordinators, jury, project leaders)",
         "privateCampaign": "Private Campaign",
-        "wikiProject": "Wiki Project"
+        "wikiProject": "Wiki Project",
+        "duration": "Duration",
+        "edit": "Edit"
     },
     "project": {
         "title": "Projects",
@@ -57,13 +59,18 @@
         "editProject": "Edit"
     },
     "round": {
+        "addMyselfAsJury": "Add myself as jury",
+        "deleteRoundButton": "Delete",
+        "confirmChangeStatus": "Are you sure you want to mark this round as {{status}}?",
+        "markAsComplete": "Mark as Complete",
         "status": {
             "ACTIVE": "Active",
             "PAUSED": "Paused",
             "COMPLETED": "Completed",
             "ARCHIVED": "Archived",
             "IMPORTING": "Importing",
-            "DISTRIBUTING": "Distributing"
+            "DISTRIBUTING": "Distributing",
+            "pausedThenCompleted": "Paused then Completed"
         },
         "submissions": "Submissions",
         "assignments": "Assignments",

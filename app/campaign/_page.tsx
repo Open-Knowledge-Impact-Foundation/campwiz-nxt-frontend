@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import CList from "./campaignList";
 import { RoundStatus } from "@/types/round/status";
+import { useTranslation } from "@/i18n/client";
 // import { useRouter } from "next/router";
 type CampaignListProps = {
     initialCampaigns: Campaign[]
@@ -13,6 +14,7 @@ type CampaignListProps = {
 const CampaignList = ({ }: CampaignListProps) => {
     // const router = useRouter();
     // const pathname = usePathname();
+    const { t } = useTranslation();
     const searchParams = useSearchParams();
     const [isClosed, setIsClosed] = useState<boolean | undefined>(searchParams.get('isClosed') === null ? undefined : searchParams.get('isClosed') == 'true');
     const [isHidden, setIsHidden] = useState<boolean | undefined>(searchParams.get('isHidden') === null ? undefined : searchParams.get('isHidden') == 'true');
@@ -21,7 +23,7 @@ const CampaignList = ({ }: CampaignListProps) => {
     return <Paper sx={{ my: 1, p: 1, textAlign: 'center' }} elevation={0}>
         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', mb: 1 }}>
             <TextField
-                label="Limit"
+                label={t('limit')}
                 type="number"
                 value={limit}
                 onChange={(e) => {

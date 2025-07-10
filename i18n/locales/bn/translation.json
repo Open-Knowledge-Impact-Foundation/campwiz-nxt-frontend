@@ -62,6 +62,7 @@
 			"IMPORTING": "আমদানি হচ্ছে",
 			"DISTRIBUTING": "বণ্টন হচ্ছে"
 		},
+		"deleteRoundButton": "মুছুন",
 		"submissions": "জমা",
 		"assignments": "অ্যাসাইনমেন্ট",
 		"evaluatedOutOf": "{{total}}টির মধ্যে {{evaluated}}টি মূল্যায়িত",

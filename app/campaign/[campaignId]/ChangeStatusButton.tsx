@@ -1,8 +1,10 @@
+"use client"
 import { Round } from "@/types/round"
 import { RoundStatus } from "@/types/round/status"
 import React from "react"
 import { updateroundStatus } from "./updateStatus"
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, LinearProgress, Typography } from "@mui/material"
+import { TFunction } from "i18next"
 
 type ChangeStatusButtonProps = {
     status: RoundStatus
@@ -14,8 +16,9 @@ type ChangeStatusButtonProps = {
     roundId: string
     refresh?: () => void
     statusText?: string
+    t: TFunction
 }
-const ChangeStatusButton = ({ roundId, onClick, status, label, color, description, icon, refresh, statusText }: ChangeStatusButtonProps) => {
+const ChangeStatusButton = ({ roundId, onClick, status, label, color, description, icon, refresh, statusText, t }: ChangeStatusButtonProps) => {
     const [showDialog, setShowDialog] = React.useState(false);
     const [loading, setLoading] = React.useState(false);
     const doThing = async () => {
@@ -59,13 +62,13 @@ const ChangeStatusButton = ({ roundId, onClick, status, label, color, descriptio
             {showDialog && <Dialog open={showDialog} onClose={() => setShowDialog(false)}>
                 <DialogTitle>{label}</DialogTitle>
                 <DialogContent>
-                    <Typography>Are you sure you want to mark this round as {statusText || status}?</Typography>
+                    <Typography>{t('round.confirmChangeStatus', { status: t(`round.status.${statusText || status}`) })}</Typography>
                     <Typography>{description}</Typography>
                     {loading && <LinearProgress />}
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={() => setShowDialog(false)} variant="outlined" color="error" disabled={loading}>No</Button>
-                    <Button onClick={doThing} variant="contained" color="success" disabled={loading} loading={loading}>Yes</Button>
+                    <Button onClick={() => setShowDialog(false)} variant="outlined" color="error" disabled={loading}>{t('no')}</Button>
+                    <Button onClick={doThing} variant="contained" color="success" disabled={loading} loading={loading}>{t('yes')}</Button>
                 </DialogActions>
             </Dialog>}
         </React.Suspense>

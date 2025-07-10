@@ -1,3 +1,4 @@
+"use client";
 // import { getRawAPIPath } from "@/server";
 import { Button } from "@mui/material";
 import React from "react";

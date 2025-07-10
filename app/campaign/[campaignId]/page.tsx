@@ -11,6 +11,8 @@ import Description from "@/components/round/Description";
 import Header from "@/components/home/Header";
 import ArchiveUnArchiveButton from "./ArchiveUnArchiveButton";
 import Footer from "@/components/home/Footer";
+import { uTranslation } from "@/i18n";
+import { TFunction } from "i18next";
 
 type CampaignViewPageProps = {
     params: Promise<{
@@ -29,8 +31,9 @@ const CampaignViewPage = async ({ params }: CampaignViewPageProps) => {
     if (!campaignResponse) {
         return null;
     }
+    const { t } = await uTranslation();
     if ('detail' in campaignResponse) {
-        return <p>Error : {campaignResponse.detail}</p>
+        return <p>{t(campaignResponse.detail)}</p>
     }
     const campaign = campaignResponse.data;
     const isArchived = campaign.archivedAt !== null;
@@ -69,11 +72,11 @@ const CampaignViewPage = async ({ params }: CampaignViewPageProps) => {
                 <br />
                 <Description
                     description={`${new Date(campaign.startDate).toDateString()} - ${new Date(campaign.endDate).toDateString()}`}
-                    label="Duration" Icon={DateRangeIcon}
+                    label={t('campaign.duration')} Icon={DateRangeIcon}
                 />
-                <Description description={campaign.description} label="Description" />
-                <Description description={campaign.rules} label="Rules" Icon={RuleIcon} />
-                <CoordinatorList coordinators={campaign.coordinators} />
+                <Description description={campaign.description} label={t('campaign.description')} />
+                <Description description={campaign.rules} label={t('campaign.rules')} Icon={RuleIcon} />
+                <CoordinatorList coordinators={campaign.coordinators} t={t} />
                 <br />
                 {/* {campaign.campaignType === CampaignType.Commons && */}
                 <RoundTimeline rounds={campaign.rounds} campaign={campaign} session={session}
@@ -86,11 +89,11 @@ const CampaignViewPage = async ({ params }: CampaignViewPageProps) => {
         </>
     );
 };
-const CoordinatorList = ({ coordinators }: { coordinators: WikimediaUsername[] | null }) => {
-    if (!coordinators) return <Typography variant="h4">No coordinators</Typography>
+const CoordinatorList = ({ coordinators, t }: { coordinators: WikimediaUsername[] | null, t: TFunction }) => {
+    if (!coordinators) return <Typography variant="h4">{t('error.noCoordinators')}</Typography>
     return (
         <Typography variant="h6">
-            Coordinators: &nbsp;
+            {t('campaign.coordinators')}: &nbsp;
             {coordinators.map((c, i) => (
                 <Chip key={i} label={c} sx={{ m: 0.5 }} />
             ))}

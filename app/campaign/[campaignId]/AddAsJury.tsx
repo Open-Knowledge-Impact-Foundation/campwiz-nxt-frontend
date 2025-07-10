@@ -3,9 +3,11 @@ import { Button } from "@mui/material"
 import AddIcon from '@mui/icons-material/Add';
 import addMyselfAsPublicJury from "./addMyselfAsPublicJury";
 import { useState } from "react";
+import { useTranslation } from "@/i18n/client";
 
 const AddAsJuryButton = ({ roundId, refresh }: { roundId: string, refresh: () => void }) => {
     const [adding, setAdding] = useState(false);
+    const { t } = useTranslation();
     const submit = async () => {
         try {
             setAdding(true);
@@ -32,7 +34,7 @@ const AddAsJuryButton = ({ roundId, refresh }: { roundId: string, refresh: () =>
             onClick={submit}
             sx={{ m: 1, px: 3, borderRadius: 3, }}
         >
-            Add myself as jury
+            {t('round.addMyselfAsJury')}
         </Button>
     )
 }
