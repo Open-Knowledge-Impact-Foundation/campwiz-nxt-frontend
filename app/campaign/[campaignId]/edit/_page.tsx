@@ -11,6 +11,7 @@ import LoginBackground from "@/public/snowy-hill.svg";
 import Logo from "@/components/Logo";
 import SaveIcon from '@mui/icons-material/Save';
 import updateCampaign from "./action";
+import { useTranslation } from "@/i18n/client";
 const CampaignCreationSuccess = lazy(() => import('@/app/project/[projectId]/new/success'));
 const EditCampaign = ({ initialCampaign }: { initialCampaign: CampaignUpdate }) => {
     const [error, setError] = useState<Error | null>(null);
@@ -18,6 +19,7 @@ const EditCampaign = ({ initialCampaign }: { initialCampaign: CampaignUpdate }) 
     const { data: updatedCampaign = null, trigger, isMutating: loading } = useSWRMutation<Campaign | undefined>(`/api/campaign/${initialCampaign.campaignId}`, updateCampaign.bind(null, campaign as CampaignUpdate), {
         onError: setError,
     });
+    const { t } = useTranslation();
     return (
         <div style={{
             // position: 'absolute', 
@@ -44,7 +46,7 @@ const EditCampaign = ({ initialCampaign }: { initialCampaign: CampaignUpdate }) 
                                 Update Campaign
                             </Typography>
                             {loading && <LoadingPopup />}
-                            <CampaignEditForm {...campaign} loading={loading} dispatch={campaignDispatch} disableOnPrivate />
+                            <CampaignEditForm {...campaign} loading={loading} dispatch={campaignDispatch} disableOnPrivate t={t} />
                             {error && <Typography variant="body1" color="error" sx={{ mb: 1 }}>{error.message}</Typography>}
                             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
                                 <ReturnButton disabled={loading} sx={{ m: 0, borderRadius: 10, px: 2 }} />
