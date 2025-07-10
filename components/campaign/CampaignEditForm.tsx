@@ -7,12 +7,13 @@ import dayjs from "dayjs";
 import { ActionDispatch } from "react";
 import UserInput from "../user/UserInput";
 import CheckBox from '@mui/material/Checkbox';
+import { t, type TFunction } from "i18next";
 dayjs.extend(utc);
-const CampaignEditForm = ({ dispatch, loading, disabled = false, disableOnPrivate = false, ...campaign }: CampaignCreate & { dispatch: ActionDispatch<[Partial<CampaignCreate>]>, loading: boolean, disabled?: boolean, disableOnPrivate?: boolean }) => {
+const CampaignEditForm = ({ dispatch, loading, disabled = false, disableOnPrivate = false, ...campaign }: CampaignCreate & { dispatch: ActionDispatch<[Partial<CampaignCreate>]>, loading: boolean, disabled?: boolean, disableOnPrivate?: boolean, t: TFunction }) => {
     return (
         <LocalizationProvider dateAdapter={AdapterDayjs}>
             <TextField
-                label="Name"
+                label={t('campaign.name')}
                 variant="outlined"
                 sx={{ mb: 2, width: '100%' }}
                 onChange={(e) => dispatch({ name: e.target.value })}
@@ -24,18 +25,17 @@ const CampaignEditForm = ({ dispatch, loading, disabled = false, disableOnPrivat
                     options={[
                         'commons'
                     ]}
-                    renderInput={(params) => <TextField {...params} label="WikiProject" variant="outlined" />}
+                    renderInput={(params) => <TextField {...params} label={t('campaign.wikiProject')} variant="outlined" />}
                     sx={{ width: { xs: '100%', sm: '40%' }, mb: 1 }}
                     value={campaign.language}
                     onChange={(e, value) => dispatch({ language: value as string })}
                     disabled={loading || disabled}
-
                 />
                 <DatePicker
                     onChange={(date) => dispatch({ startDate: date?.toISOString() })}
                     value={dayjs(campaign.startDate)}
                     sx={{ width: { xs: '100%', sm: '27%' }, mb: 1 }}
-                    label="Campaign Start Date"
+                    label={t('campaign.startDate')}
                     disabled={loading || disabled}
                     timezone="UTC"
 
@@ -44,7 +44,7 @@ const CampaignEditForm = ({ dispatch, loading, disabled = false, disableOnPrivat
                     onChange={(date) => dispatch({ endDate: date?.toISOString() })}
                     value={dayjs(campaign.endDate)}
                     sx={{ width: { xs: '100%', sm: '27%' }, mb: 1 }}
-                    label="Campaign End Date"
+                    label={t('campaign.endDate')}
                     disabled={loading || disabled}
                     timezone="UTC"
                 />
@@ -53,14 +53,14 @@ const CampaignEditForm = ({ dispatch, loading, disabled = false, disableOnPrivat
             <UserInput
                 value={campaign.coordinators}
                 onChange={(coordinators) => dispatch({ coordinators })}
-                label="Coordinators"
+                label={t('campaign.coordinators')}
                 disabled={loading || disabled}
                 sx={{ mb: 2 }}
 
             />
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flexFlow: 'wrap' }}>
                 <TextField
-                    label="Description"
+                    label={t('campaign.description')}
                     variant="outlined"
                     sx={{ mb: 1, width: { xs: '100%', sm: '49%' } }}
                     onChange={(e) => dispatch({ description: e.target.value })}
@@ -70,7 +70,7 @@ const CampaignEditForm = ({ dispatch, loading, disabled = false, disableOnPrivat
                     disabled={loading || disabled}
                 />
                 <TextField
-                    label="Rules"
+                    label={t('campaign.rules')}
                     variant="outlined"
                     sx={{ mb: 1, width: { xs: '100%', sm: '49%' } }}
                     onChange={(e) => dispatch({ rules: e.target.value })}
@@ -92,7 +92,7 @@ const CampaignEditForm = ({ dispatch, loading, disabled = false, disableOnPrivat
                 sx={{ my: 2 }}
                 label={
                     <Typography variant="body1" color="textSecondary">
-                        This Campaign would shown to the public (people other than coordinators, jury, project leaders)
+                        {t('campaign.publicVisibilityDisclaimer')}
                     </Typography>
                 }
             />

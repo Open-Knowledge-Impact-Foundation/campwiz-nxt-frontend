@@ -46,7 +46,7 @@ const CreateCampaign_ = ({ projectLeads, projectId }: { projectLeads: string[], 
                             {t('campaign.createCampaign')}
                         </Typography>
                         {loading && <LoadingPopup src="/lottie/creating.lottie" />}
-                        <CampaignEditForm {...campaign} loading={loading} dispatch={campaignDispatch} />
+                        <CampaignEditForm {...campaign} loading={loading} dispatch={campaignDispatch} t={t} />
                         {error && <Typography variant="body1" color="error" sx={{ mb: 1 }}>{t(error.message)}</Typography>}
                         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
                             <ReturnButton disabled={loading} sx={{ m: 0, borderRadius: 10, px: 2 }} />

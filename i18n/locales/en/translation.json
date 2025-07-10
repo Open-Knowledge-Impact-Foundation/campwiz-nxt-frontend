@@ -32,7 +32,16 @@
         "goToCampaign": "Go to Campaign",
         "showAllCampaigns": "Show All Campaigns",
         "activeCampaigns": "Active Campaigns",
-        "archivedCampaigns": "Archived Campaigns"
+        "archivedCampaigns": "Archived Campaigns",
+        "name": "Name",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "coordinators": "Coordinators",
+        "description": "Description",
+        "rules": "Rules",
+        "publicVisibilityDisclaimer": "This Campaign would shown to the public (people other than coordinators, jury, project leaders)",
+        "privateCampaign": "Private Campaign",
+        "wikiProject": "Wiki Project"
     },
     "project": {
         "title": "Projects",
@@ -117,7 +126,11 @@
         "noSubmissions": "No submissions available",
         "noRunningCampaigns": "No running campaigns",
         "loadingMyProject": "Failed to load your project",
-        "loadingProjects": "Failed to load projects"
+        "loadingProjects": "Failed to load projects",
+        "accessDeniedToProject": "You don't have access to this project",
+        "failedToFetchProject": "Failed to fetch your project",
+        "failedToFetchCampaign": "Failed to fetch campaign details",
+        "failedToFetchRound": "Failed to fetch round details"
     },
     "close": "Close",
     "previous": "Previous",
