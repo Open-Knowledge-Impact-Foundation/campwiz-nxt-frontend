@@ -30,7 +30,9 @@
 	"project": {
 		"title": "프로젝트",
 		"createProject": "새 프로젝트",
-		"otherProjects": "다른 프로젝트"
+		"dashboard": "프로젝트 대시보드",
+		"otherProjects": "다른 프로젝트",
+		"myProject": "내 프로젝트"
 	},
 	"round": {
 		"status": {

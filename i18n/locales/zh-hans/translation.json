@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aoum",
 			"GuoPC",
 			"Nokib Sarkar"
 		]
@@ -61,7 +62,9 @@
 		"assignments": "分配内容",
 		"evaluatedOutOf": "已评估 {{evaluated}} 个，共需评估 {{total}} 个",
 		"evaluationArea": "评估区域",
-		"categorizer": "分类器"
+		"categorizer": "分类器",
+		"deadLineInMonths_two": "两个月内",
+		"quorum": "最低出席人数"
 	},
 	"footer": {
 		"campwizNxtTeam": "Campwiz NXT 团队",

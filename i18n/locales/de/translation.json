@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"*surak*",
 			"MoritzMT20",
 			"Nokib Sarkar",
 			"Nortix"
@@ -36,6 +37,9 @@
 		"createCampaign": "Kampagne erstellen",
 		"goToCampaign": "Zur Kampagne",
 		"showAllCampaigns": "Alle Kampagnen anzeigen"
+	},
+	"project": {
+		"myProject": "Eigenes Projekt"
 	},
 	"round": {
 		"status": {

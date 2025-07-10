@@ -60,7 +60,12 @@
 		"assignments": "Assignassion",
 		"evaluatedOutOf": "{{evaluated}} valutà su {{total}}",
 		"evaluationArea": "Spassi ëd valutassion",
-		"categorizer": "Spassi ëd categorisassion"
+		"categorizer": "Spassi ëd categorisassion",
+		"type": {
+			"label": "Sòrt",
+			"binary": "É/Nò",
+			"ranking": "Classìfica"
+		}
 	},
 	"footer": {
 		"campwizNxtTeam": "Echip ëd Campwiz NXT",

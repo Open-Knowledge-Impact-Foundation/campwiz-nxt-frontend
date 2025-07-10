@@ -28,12 +28,24 @@
 	"login": {
 		"title": "Да почнеме",
 		"loginWithWikimedia": "Најава со Википедија",
-		"afterLoginRedirect": "По оваа постапка, ќе бидете пренасочени назад кон следнава страница:"
+		"afterLoginRedirect": "По оваа постапка, ќе бидете пренасочени назад кон следнава страница:",
+		"loginDisclaimer": "Најавувајќи се, се согласувате со нашите <0>Terms of Service</0> и <1>Privacy Policy</1>."
 	},
 	"campaign": {
 		"createCampaign": "Создај поход",
 		"goToCampaign": "Оди на походот",
 		"showAllCampaigns": "Сите походи"
+	},
+	"project": {
+		"title": "Проекти",
+		"createProject": "Нов проект",
+		"goToProject": "Оди на проектот",
+		"showAllProjects": "Прикажи ги сите проекти",
+		"projectLoading": "Ги вчитувам проектните поединости...",
+		"leads": "Проектни раководители",
+		"dashboard": "Проектна управувачница",
+		"otherProjects": "Други проекти",
+		"myProject": "Мој проект"
 	},
 	"round": {
 		"status": {
@@ -46,7 +58,9 @@
 		},
 		"submissions": "Поднесоци",
 		"assignments": "Задачи",
-		"evaluatedOutOf": "Оценети {{evaluated}} од вкупно {{total}}"
+		"evaluatedOutOf": "Оценети {{evaluated}} од вкупно {{total}}",
+		"evaluationArea": "Проценителено подрачје",
+		"categorizer": "Категоризатор"
 	},
 	"footer": {
 		"campwizNxtTeam": "Екипата на Campwiz NXT",
@@ -54,21 +68,51 @@
 		"terms": "Услови",
 		"privacy": "Лични податоци",
 		"reportBug": "Пријавете грешка",
-		"translate": "Преведи"
+		"translate": "Преведи",
+		"copyright": "© 2025 од <0>CampWiz NXT Team</0>"
 	},
 	"error": {
-		"noAssignedCampaigns": "Нема доделени походи"
+		"noAssignedCampaigns": "Нема доделени походи",
+		"loadingSubmissionDetails": "Не можев да ги вчитам поединостита на поднесокот: {{error}}",
+		"categoriesNotLoaded": "Категориите сè уште не се вчитани",
+		"campaignNotFound": "Походот не е пронајден",
+		"campaignCategoriesNotSupported": "Категориите за походи не се поддржани",
+		"noSubmissionAvailableForCategorization": "Нема поднесоци за категоризирање",
+		"noCategoriesSelected": "Нема избрани категории",
+		"noCategoriesAvailable": "Нема категории на располагање",
+		"noSubmissions": "Нема поднесоци на располагање",
+		"noRunningCampaigns": "Нема тековни походи",
+		"loadingMyProject": "Не успеав да го вчитам вашиот проект",
+		"loadingProjects": "Не успеав да ги вчитам проектите"
 	},
 	"close": "Затвори",
 	"previous": "Претходно",
 	"next": "Следно",
+	"return": "Назад",
 	"evaluation": {
 		"modifytable": {
 			"name": "Назив",
 			"score": "Оценка",
 			"preview": "Преглед",
 			"action": "Дејство"
-		}
+		},
+		"skip": "Прескокни",
+		"edit": "Измени гласови",
+		"yes": "Да",
+		"no": "Не"
+	},
+	"submission": {
+		"title": "Наслов",
+		"description": "Опис",
+		"author": "Автор",
+		"viewOnCommons": "Погл. на Ризницата",
+		"categories": "Категории",
+		"selectCategories": "Изберете категории",
+		"save": "Зачувај",
+		"cancel": "Откажи",
+		"skip": "Прескокни",
+		"next": "Следно",
+		"previous": "Претходно"
 	},
 	"languages": {
 		"en": "англиски (English)",
@@ -90,6 +134,17 @@
 		"ml": "малајалски (മലയാളം)",
 		"ur": "урду (اردو)",
 		"gu": "гуџаратски (ગુજરાતી)",
-		"pa": "пенџапски (ਪੰਜਾਬੀ)"
+		"pa": "пенџапски (ਪੰਜਾਬੀ)",
+		"te": "телушки (తెలుగు)",
+		"ps": "паштунски (پښتو)",
+		"skr-arab": "сирајки (سرائیکی)",
+		"skr-latn": "сирајки (латиница)",
+		"pms": "пиемонтски (Piemontèis)",
+		"mk": "македонски",
+		"krc": "карачајско-балкарски (къарачай-малкъар)",
+		"xmf": "мингрелски (მარგალური)",
+		"lb": "луксембуршки (Lëtzebuergesch)",
+		"zh-hans": "упростен кинески (简体中文)",
+		"zh-hant": "традиционален кинески (繁體中文)"
 	}
 }

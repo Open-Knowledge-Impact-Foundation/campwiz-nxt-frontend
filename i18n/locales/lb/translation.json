@@ -42,6 +42,30 @@
 			"PAUSED": "Pauséiert",
 			"COMPLETED": "Fäerdeg",
 			"ARCHIVED": "Archivéiert"
+		},
+		"type": {
+			"label": "Typ",
+			"binary": "Jo/Neen",
+			"unknown": "Onbekannt, kontaktéiert eis"
+		},
+		"description": "Beschreiwung",
+		"deadLineInMonths_one": "An engem Mount",
+		"deadLineInMonths_two": "An zwee Méint",
+		"deadLineInMonths_other": "A(n) {{count}} Méint",
+		"deadLineInWeeks_one": "An enger Woch",
+		"deadLineInWeeks_two": "An zwou Wochen",
+		"deadLineInWeeks_other": "A(n) {{count}} Wochen",
+		"deadLineInDays_one": "An engem Dag",
+		"deadLineInDays_two": "An zwee Deeg",
+		"deadLineInDays_other": "A(n) {{count}} Deeg",
+		"deadLineInHours_one": "An enger Stonn",
+		"deadLineInHours_two": "An zwou Stonnen",
+		"deadLineInHours_other": "A(n) {{count}} Stonnen",
+		"deadLineInMinutes_one": "An enger Minutt",
+		"deadLineInMinutes_two": "An zwou Minutten",
+		"deadLineInMinutes_other": "A(n) {{count}} Minutten",
+		"jury": {
+			"title": "Jury"
 		}
 	},
 	"footer": {

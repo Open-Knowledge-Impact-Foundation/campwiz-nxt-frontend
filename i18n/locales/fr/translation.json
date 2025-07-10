@@ -62,7 +62,41 @@
 		"assignments": "Affectations",
 		"evaluatedOutOf": "{{evaluated}} évalué(s) sur {{total}}",
 		"evaluationArea": "Espace d’évaluation",
-		"categorizer": "Espace de catégorisation"
+		"categorizer": "Espace de catégorisation",
+		"type": {
+			"label": "Type",
+			"binary": "Oui/Non",
+			"ranking": "Classement",
+			"score": "Score",
+			"unknown": "Inconnu, contactez-nous"
+		},
+		"deadline": "Échéance",
+		"description": "Description",
+		"deadLineInMonths_one": "Dans un mois",
+		"deadLineInMonths_two": "Dans deux mois",
+		"deadLineInMonths_other": "Dans {{count}} mois",
+		"deadLineInWeeks_one": "Dans une semaine",
+		"deadLineInWeeks_two": "Dans deux semaines",
+		"deadLineInWeeks_other": "Dans {{count}} semaines",
+		"deadLineInDays_one": "Dans un jour",
+		"deadLineInDays_two": "Dans deux jours",
+		"deadLineInDays_other": "Dans {{count}} jours",
+		"deadLineInHours_one": "Dans une heure",
+		"deadLineInHours_two": "Dans deux heures",
+		"deadLineInHours_other": "Dans {{count}} heures",
+		"deadLineInMinutes_one": "Dans une minute",
+		"deadLineInMinutes_two": "Dans deux minutes",
+		"deadLineInMinutes_other": "Dans {{count}} minutes",
+		"deadLinePassed": "Échéance dépassée",
+		"quorum": "Quorum",
+		"quorumRequired_one": "Un seul membre doit composer le jury de chaque soumission",
+		"quorumRequired_two": "Deux membres doivent composer le jury de chaque soumission",
+		"quorumRequired_other": "{{count}} membres doivent composer le jury de chaque soumission",
+		"jury": {
+			"title": "Jury",
+			"totalAssigned": "{{count}} affecté(s)",
+			"evaluated": "{{count}} évalué(s)"
+		}
 	},
 	"footer": {
 		"campwizNxtTeam": "Équipe de Campwiz NXT",
@@ -74,7 +108,7 @@
 		"copyright": "© 2025 par <0>CampWiz NXT Team</0>"
 	},
 	"error": {
-		"noAssignedCampaigns": "Aucune campagne attribuée",
+		"noAssignedCampaigns": "Aucune campagne affectée",
 		"loadingSubmissionDetails": "Impossible de charger les détails de la soumission : {{error}}",
 		"categoriesNotLoaded": "Les catégories ne sont pas encore chargées",
 		"campaignNotFound": "Campagne non trouvée",

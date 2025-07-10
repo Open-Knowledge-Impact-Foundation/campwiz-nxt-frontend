@@ -30,7 +30,8 @@
 	"login": {
 		"title": "فلنبدأ",
 		"loginWithWikimedia": "تسجيل الدخول عبر ويكيبيديا",
-		"afterLoginRedirect": " بعد هذه العملية، سيتم توجيهك مرة أخرى إلى الصفحة التالية:"
+		"afterLoginRedirect": " بعد هذه العملية، سيتم توجيهك مرة أخرى إلى الصفحة التالية:",
+		"loginDisclaimer": "بتسجيل الدخول، فإنك توافق على <0>Terms of Service</0> و <1>Privacy Policy</1>."
 	},
 	"campaign": {
 		"createCampaign": "إنشاء مسابقة",
@@ -43,6 +44,8 @@
 		"goToProject": "انتقل إلى المشروع",
 		"showAllProjects": "عرض جميع المشاريع",
 		"projectLoading": "جاري تحميل تفاصيل المشروع...",
+		"leads": "قادة المشروع",
+		"dashboard": "لوحة معلومات المشروع",
 		"otherProjects": "مشاريع أخرى",
 		"myProject": "مشروعي"
 	},
@@ -59,7 +62,17 @@
 		"assignments": "المهام",
 		"evaluatedOutOf": "{{evaluated}} تم تقييمها من أصل {{total}}",
 		"evaluationArea": "منطقة التقييم",
-		"categorizer": "مُصنِّف"
+		"categorizer": "مُصنِّف",
+		"type": {
+			"binary": "نعم/لا",
+			"score": "النتيجة"
+		},
+		"deadline": "موعد نهائي",
+		"description": "الوصف",
+		"deadLineInMonths_one": "في الشهر",
+		"jury": {
+			"title": "محلف"
+		}
 	},
 	"footer": {
 		"campwizNxtTeam": "فريق CampWiz NXT",
