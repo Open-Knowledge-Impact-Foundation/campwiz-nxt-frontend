@@ -12,7 +12,6 @@ import Logo from "@/components/Logo";
 import SaveIcon from '@mui/icons-material/Save';
 import updateCampaign from "./action";
 const CampaignCreationSuccess = lazy(() => import('@/app/project/[projectId]/new/success'));
-
 const EditCampaign = ({ initialCampaign }: { initialCampaign: CampaignUpdate }) => {
     const [error, setError] = useState<Error | null>(null);
     const [campaign, campaignDispatch] = useReducer(campaignReducer, initialCampaign);
