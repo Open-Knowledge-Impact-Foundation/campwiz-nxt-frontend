@@ -24,7 +24,8 @@
 		"save": "সংরক্ষণ",
 		"cancel": "বাতিল",
 		"theme": "থিম",
-		"helpTranslation": "অনুগ্রহপূর্বক আমাদেরকে <0>TranslateWiki</0>তে অনুবাদ করে সহযোগিতা করুন"
+		"helpTranslation": "অনুগ্রহপূর্বক আমাদেরকে <0>TranslateWiki</0>তে অনুবাদ করে সহযোগিতা করুন",
+		"translatewiki": "ট্রান্সলেটউইকি"
 	},
 	"login": {
 		"title": "চলুন শুরু করি",
