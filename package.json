@@ -18,7 +18,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.14.0",
-    "@lottiefiles/dotlottie-react": "^0.13.5",
+    "@lottiefiles/dotlottie-react": "^0.14.2",
     "@mui/icons-material": "^6.4.6",
     "@mui/material": "^6.4.6",
     "@mui/material-nextjs": "^7.1.1",
