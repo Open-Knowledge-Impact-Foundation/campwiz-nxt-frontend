@@ -55,7 +55,7 @@
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "eslint": "^9",
-    "eslint-config-next": "15.3.3",
+    "eslint-config-next": "15.3.5",
     "svg-inline-loader": "^0.8.2",
     "tailwindcss": "^4",
     "typescript": "^5",
