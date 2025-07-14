@@ -26,7 +26,16 @@
 	},
 	"campaign": {
 		"createCampaign": "Campagne uleeën",
-		"showAllCampaigns": "All Campagnë weisen"
+		"showAllCampaigns": "All Campagnë weisen",
+		"activeCampaigns": "Aktiv Campagnen",
+		"archivedCampaigns": "Archivéiert Campagnen",
+		"name": "Numm",
+		"description": "Beschreiwung",
+		"rules": "Reegelen",
+		"privateCampaign": "Privat Campagne",
+		"wikiProject": "Wiki-Projet",
+		"duration": "Dauer",
+		"edit": "Änneren"
 	},
 	"project": {
 		"title": "Projeten",
@@ -34,9 +43,12 @@
 		"showAllProjects": "All Projete weisen",
 		"projectLoading": "Projetsdetailer lueden…",
 		"otherProjects": "Aner Projeten",
-		"myProject": "Mäi Projet"
+		"myProject": "Mäi Projet",
+		"welcomeToProject": "Wëllkomm op {{project}}",
+		"editProject": "Änneren"
 	},
 	"round": {
+		"deleteRoundButton": "Läschen",
 		"status": {
 			"ACTIVE": "Aktiv",
 			"PAUSED": "Pauséiert",

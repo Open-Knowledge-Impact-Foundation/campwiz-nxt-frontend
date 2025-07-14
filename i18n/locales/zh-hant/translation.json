@@ -24,7 +24,8 @@
 		"save": "儲存",
 		"cancel": "取消",
 		"theme": "主題",
-		"helpTranslation": "請在 <0>TranslateWiki</0> 上幫助我們翻譯成您的語言"
+		"helpTranslation": "請在 <0>TranslateWiki</0> 上幫助我們翻譯成您的語言",
+		"translatewiki": "翻譯維基"
 	},
 	"login": {
 		"title": "讓我們開始吧",
@@ -35,7 +36,20 @@
 	"campaign": {
 		"createCampaign": "建立活動",
 		"goToCampaign": "前往活動",
-		"showAllCampaigns": "顯示所有活動"
+		"showAllCampaigns": "顯示所有活動",
+		"activeCampaigns": "有效活動",
+		"archivedCampaigns": "已存檔活動",
+		"name": "名稱",
+		"startDate": "開始日期",
+		"endDate": "結束日期",
+		"coordinators": "協調人",
+		"description": "描述",
+		"rules": "規則",
+		"publicVisibilityDisclaimer": "此活動將公開展示（除了協調人、評審團、專案負責人以外的人員）",
+		"privateCampaign": "非公開活動",
+		"wikiProject": "Wiki 專案",
+		"duration": "期間",
+		"edit": "編輯"
 	},
 	"project": {
 		"title": "專案",
@@ -46,16 +60,23 @@
 		"leads": "專案負責人",
 		"dashboard": "專案功能面板",
 		"otherProjects": "其他專案",
-		"myProject": "我的專案"
+		"myProject": "我的專案",
+		"welcomeToProject": "歡迎來到{{project}}",
+		"editProject": "編輯"
 	},
 	"round": {
+		"addMyselfAsJury": "把我自己加成評審",
+		"deleteRoundButton": "刪除",
+		"confirmChangeStatus": "您確定要將此回合標記為{{status}}嗎？",
+		"markAsComplete": "標記為完成",
 		"status": {
 			"ACTIVE": "有效",
 			"PAUSED": "暫停",
 			"COMPLETED": "已完成",
 			"ARCHIVED": "已存檔",
 			"IMPORTING": "匯入中...",
-			"DISTRIBUTING": "分布"
+			"DISTRIBUTING": "分布",
+			"pausedThenCompleted": "暫停後完成"
 		},
 		"submissions": "提交",
 		"assignments": "分配",
@@ -118,7 +139,11 @@
 		"noSubmissions": "沒有可用的提交內容",
 		"noRunningCampaigns": "沒有正在進行的活動",
 		"loadingMyProject": "無法載入您的專案",
-		"loadingProjects": "無法載入專案"
+		"loadingProjects": "無法載入專案",
+		"accessDeniedToProject": "您無權存取此專案",
+		"failedToFetchProject": "無法取得您的專案",
+		"failedToFetchCampaign": "無法取得活動詳情",
+		"failedToFetchRound": "無法取得回合詳情"
 	},
 	"close": "關閉",
 	"previous": "上一個",

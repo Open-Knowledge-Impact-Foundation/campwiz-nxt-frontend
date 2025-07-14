@@ -25,7 +25,8 @@
 		"save": "Enregistrer",
 		"cancel": "Annuler",
 		"theme": "Thème",
-		"helpTranslation": "N’hésitez pas à nous aider à traduire dans votre langue sur <0>TranslateWiki</0>"
+		"helpTranslation": "N’hésitez pas à nous aider à traduire dans votre langue sur <0>TranslateWiki</0>",
+		"translatewiki": "TranslateWiki"
 	},
 	"login": {
 		"title": "Commençons !",
@@ -36,7 +37,20 @@
 	"campaign": {
 		"createCampaign": "Créer la campagne",
 		"goToCampaign": "Accéder à la campagne",
-		"showAllCampaigns": "Afficher toutes les campagnes"
+		"showAllCampaigns": "Afficher toutes les campagnes",
+		"activeCampaigns": "Campagnes actives",
+		"archivedCampaigns": "Campagnes archivées",
+		"name": "Nom",
+		"startDate": "Date de début",
+		"endDate": "Date de fin",
+		"coordinators": "Coordinateurs",
+		"description": "Description",
+		"rules": "Règles",
+		"publicVisibilityDisclaimer": "Cette campagne serait visible pour le public (les autres personnes que les coordinateurs, le jury ou les chefs de projets)",
+		"privateCampaign": "Campagne privée",
+		"wikiProject": "Projet wiki",
+		"duration": "Durée",
+		"edit": "Modifier"
 	},
 	"project": {
 		"title": "Projets",
@@ -47,16 +61,23 @@
 		"leads": "Responsables du projet",
 		"dashboard": "Tableau de bord du projet",
 		"otherProjects": "Autres projets",
-		"myProject": "Mon projet"
+		"myProject": "Mon projet",
+		"welcomeToProject": "Bienvenue sur {{project}}",
+		"editProject": "Modifier"
 	},
 	"round": {
+		"addMyselfAsJury": "M’ajouter au jury",
+		"deleteRoundButton": "Supprimer",
+		"confirmChangeStatus": "Êtes-vous sûr de vouloir marquer ce tour comme {{status}} ?",
+		"markAsComplete": "Marquer comme terminée",
 		"status": {
 			"ACTIVE": "Active",
 			"PAUSED": "En pause",
 			"COMPLETED": "Terminée",
 			"ARCHIVED": "Archivée",
 			"IMPORTING": "Importation en cours",
-			"DISTRIBUTING": "Distribution en cours"
+			"DISTRIBUTING": "Distribution en cours",
+			"pausedThenCompleted": "En pause puis terminée"
 		},
 		"submissions": "Soumissions",
 		"assignments": "Affectations",
@@ -119,7 +140,11 @@
 		"noSubmissions": "Aucune soumission disponible",
 		"noRunningCampaigns": "Aucune campagne en cours",
 		"loadingMyProject": "Échec du chargement de votre projet",
-		"loadingProjects": "Échec du chargement des projets"
+		"loadingProjects": "Échec du chargement des projets",
+		"accessDeniedToProject": "Vous n’avez pas accès à ce projet",
+		"failedToFetchProject": "Échec de la récupération de votre projet",
+		"failedToFetchCampaign": "Échec de la récupération des détails sur campagne",
+		"failedToFetchRound": "Échec de la récupération des détails sur le tour"
 	},
 	"close": "Fermer",
 	"previous": "Précédent",

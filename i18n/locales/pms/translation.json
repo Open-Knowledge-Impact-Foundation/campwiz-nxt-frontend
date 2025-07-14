@@ -23,7 +23,8 @@
 		"save": "Argistré",
 		"cancel": "Anulé",
 		"theme": "Tema",
-		"helpTranslation": "Për piasì, ch'an giuta a volté an soa lenga a <0>TranslateWiki</0>"
+		"helpTranslation": "Për piasì, ch'an giuta a volté an soa lenga a <0>TranslateWiki</0>",
+		"translatewiki": "TranslateWiki"
 	},
 	"login": {
 		"title": "Ancaminoma!",
@@ -34,7 +35,20 @@
 	"campaign": {
 		"createCampaign": "Creé la campagna",
 		"goToCampaign": "Andé a la campagna",
-		"showAllCampaigns": "Smon-e tute le campagna"
+		"showAllCampaigns": "Smon-e tute le campagna",
+		"activeCampaigns": "Campagne ative",
+		"archivedCampaigns": "Campagne archivià",
+		"name": "Nòm",
+		"startDate": "Dàita d'inissi",
+		"endDate": "Dàita ëd fin",
+		"coordinators": "Coordinator",
+		"description": "Descrission",
+		"rules": "Régole",
+		"publicVisibilityDisclaimer": "Costa campagna a sarà visìbil al pùblich (an dzorpì dij coordinator, la giurìa, ij cap dël proget)",
+		"privateCampaign": "Campagna privà",
+		"wikiProject": "Proget Wiki",
+		"duration": "Durà",
+		"edit": "Modifiché"
 	},
 	"project": {
 		"title": "Proget",
@@ -45,16 +59,23 @@
 		"leads": "Cap dël proget",
 		"dashboard": "Cruscòt dël proget",
 		"otherProjects": "Àutri proget",
-		"myProject": "Mè proget"
+		"myProject": "Mè proget",
+		"welcomeToProject": "Bin-ëvnù a {{project}}",
+		"editProject": "Modifiché"
 	},
 	"round": {
+		"addMyselfAsJury": "Gionteme tanme giurà",
+		"deleteRoundButton": "Dëscancelé",
+		"confirmChangeStatus": "É-lo sigur ëd vorèj marché ës tor coma {{status}}?",
+		"markAsComplete": "Marché coma completà",
 		"status": {
 			"ACTIVE": "Ativa",
 			"PAUSED": "An pòsa",
 			"COMPLETED": "Livrà",
 			"ARCHIVED": "Archivià",
 			"IMPORTING": "An camin ch'as ampòrta",
-			"DISTRIBUTING": "An camin ch'as distribuiss"
+			"DISTRIBUTING": "An camin ch'as distribuiss",
+			"pausedThenCompleted": "An pòsa, peui completà"
 		},
 		"submissions": "Spedission",
 		"assignments": "Assignassion",
@@ -64,8 +85,28 @@
 		"type": {
 			"label": "Sòrt",
 			"binary": "É/Nò",
-			"ranking": "Classìfica"
-		}
+			"ranking": "Classìfica",
+			"score": "Pontegg",
+			"unknown": "Dësconossù, ch'an contata"
+		},
+		"deadline": "Scadensa",
+		"description": "Descrission",
+		"deadLineInMonths_one": "Da-sì un mèis",
+		"deadLineInMonths_two": "Da-sì doi mèis",
+		"deadLineInMonths_other": "Da-sì {{count}} mèis",
+		"deadLineInWeeks_one": "Da-sì na sman-a",
+		"deadLineInWeeks_two": "Da-sì doe sman-e",
+		"deadLineInWeeks_other": "Da-sì {{count}} sman-e",
+		"deadLineInDays_one": "Da-sì un di",
+		"deadLineInDays_two": "Da-sì doi di",
+		"deadLineInDays_other": "Da-sì {{count}} di",
+		"deadLineInHours_one": "Da-sì n'ora",
+		"deadLineInHours_two": "Da-sì doe ore",
+		"deadLineInHours_other": "Da-sì {{count}} ore",
+		"deadLineInMinutes_one": "Da-sì na minuta",
+		"deadLineInMinutes_two": "Da-sì doe minute",
+		"deadLineInMinutes_other": "Da-sì {{count}} minute",
+		"deadLinePassed": "Scadensa passà"
 	},
 	"footer": {
 		"campwizNxtTeam": "Echip ëd Campwiz NXT",

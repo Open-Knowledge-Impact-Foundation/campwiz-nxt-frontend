@@ -20,7 +20,8 @@
 		"save": "Salva",
 		"cancel": "Annulla",
 		"theme": "Tema",
-		"helpTranslation": "Aiutaci a tradurre nella tua lingua su <0>TranslateWiki</0>"
+		"helpTranslation": "Aiutaci a tradurre nella tua lingua su <0>TranslateWiki</0>",
+		"translatewiki": "TraduciWiki"
 	},
 	"login": {
 		"title": "Cominciamo",
@@ -30,7 +31,19 @@
 	"campaign": {
 		"createCampaign": "Crea campagna",
 		"goToCampaign": "Vai alla campagna",
-		"showAllCampaigns": "Mostra tutte le campagne"
+		"showAllCampaigns": "Mostra tutte le campagne",
+		"activeCampaigns": "Campagne attive",
+		"archivedCampaigns": "Campagne archiviate",
+		"name": "Nome",
+		"startDate": "Data inizio",
+		"endDate": "Data fine",
+		"coordinators": "Coordinatori",
+		"description": "Descrizione",
+		"rules": "Regole",
+		"privateCampaign": "Campagna privata",
+		"wikiProject": "Progetto wiki",
+		"duration": "Durata",
+		"edit": "Modifica"
 	},
 	"project": {
 		"title": "Progetti",
@@ -39,16 +52,34 @@
 		"showAllProjects": "Mostra tutti i progetti",
 		"dashboard": "Cruscotto del progetto",
 		"otherProjects": "Altri progetti",
-		"myProject": "Il mio progetto"
+		"myProject": "Il mio progetto",
+		"welcomeToProject": "Benvenuto in {{project}}",
+		"editProject": "Modifica"
 	},
 	"round": {
+		"deleteRoundButton": "Cancella",
+		"markAsComplete": "Contrassegna come completato",
 		"status": {
 			"ACTIVE": "Attivo",
 			"PAUSED": "In pausa",
 			"COMPLETED": "Completato",
 			"ARCHIVED": "Archiviato"
 		},
-		"assignments": "Assegnazioni"
+		"assignments": "Assegnazioni",
+		"type": {
+			"label": "Tipo",
+			"binary": "Si/No",
+			"score": "Punteggio"
+		},
+		"deadline": "Scadenza",
+		"description": "Descrizione",
+		"deadLineInDays_one": "In un giorno",
+		"deadLineInHours_two": "Tra due ore",
+		"deadLineInHours_other": "Tra {{count}} ore",
+		"deadLineInMinutes_one": "In un minuto",
+		"deadLineInMinutes_two": "In due minuti",
+		"deadLinePassed": "Scadenza superata",
+		"quorum": "Quorum"
 	},
 	"footer": {
 		"manual": "Manuale",
@@ -61,7 +92,8 @@
 		"categoriesNotLoaded": "Le categorie non sono ancora state caricate",
 		"campaignNotFound": "Campagna non trovata",
 		"noCategoriesSelected": "Nessuna categoria selezionata",
-		"noCategoriesAvailable": "Nessuna categoria disponibile"
+		"noCategoriesAvailable": "Nessuna categoria disponibile",
+		"accessDeniedToProject": "Non hai accesso a questo progetto"
 	},
 	"close": "Chiudi",
 	"previous": "Precedente",
@@ -122,6 +154,7 @@
 		"krc": "Karachay-Balkar (Къарачай-Малкъар)",
 		"xmf": "Mingreliano (მარგალური)",
 		"lb": "Lussemburghese (Lëtzebuergesch)",
+		"zh-hans": "Cinese semplificato (简体中文)",
 		"zh-hant": "Cinese tradizionale (繁體中文)"
 	}
 }

@@ -25,7 +25,8 @@
 		"save": "保存",
 		"cancel": "キャンセル",
 		"theme": "テーマ",
-		"helpTranslation": "<0>TranslateWiki</0> であなたの言語への翻訳にご協力ください"
+		"helpTranslation": "<0>TranslateWiki</0> であなたの言語への翻訳にご協力ください",
+		"translatewiki": "翻訳Wiki"
 	},
 	"login": {
 		"title": "最初の一歩を踏み出そう",
@@ -37,6 +38,10 @@
 		"goToCampaign": "キャンペーンへ移動",
 		"showAllCampaigns": "全キャンペーンを表示"
 	},
+	"project": {
+		"title": "プロジェクト",
+		"createProject": "新しいプロジェクト"
+	},
 	"round": {
 		"status": {
 			"ACTIVE": "アクティブ",
@@ -47,7 +52,15 @@
 		},
 		"submissions": "提出",
 		"assignments": "割り当て",
-		"evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}"
+		"evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}",
+		"type": {
+			"label": "タイプ",
+			"binary": "はい/いいえ",
+			"score": "点数"
+		},
+		"description": "説明",
+		"deadLineInMinutes_one": "1分後",
+		"deadLineInMinutes_two": "2分で"
 	},
 	"footer": {
 		"campwizNxtTeam": "キャンプウィズNXTチーム",
@@ -69,7 +82,23 @@
 			"score": "点数",
 			"preview": "プレビュー",
 			"action": "操作"
-		}
+		},
+		"skip": "スキップ",
+		"yes": "はい",
+		"no": "いいえ"
+	},
+	"submission": {
+		"title": "タイトル",
+		"description": "説明",
+		"author": "作者",
+		"viewOnCommons": "コモンズで閲覧",
+		"categories": "カテゴリ",
+		"selectCategories": "カテゴリ選択",
+		"save": "保存",
+		"cancel": "キャンセル",
+		"skip": "スキップ",
+		"next": "次へ",
+		"previous": "前へ"
 	},
 	"languages": {
 		"en": "英語 (English)",
@@ -91,6 +120,17 @@
 		"ml": "マラヤーラム語 (മലയാളം)",
 		"ur": "ウルドゥー語 (اردو)",
 		"gu": "グジャラート語 (ગુજરાતી)",
-		"pa": "パンジャーブ語 (ਪੰਜਾਬੀ)"
+		"pa": "パンジャーブ語 (ਪੰਜਾਬੀ)",
+		"te": "テルグ語（తెలుగు）",
+		"ps": "パシュトー語（پښتو）",
+		"skr-arab": "サライキ（سرائیکی）",
+		"skr-latn": "サライキ（Saraiki）",
+		"pms": "ピアモント (Piemontèis)",
+		"mk": "マケドニア語 (Македонски)",
+		"krc": "カラチャイ-バルカル (Къарачай-Малкъар)",
+		"xmf": "ミングレリアン (მარგალური)",
+		"lb": "ルクセンブルク語 (Lëtzebuergesch)",
+		"zh-hans": "簡体字中国語 (简体中文)",
+		"zh-hant": "繁体字中国語 (繁體中文)"
 	}
 }

@@ -23,7 +23,8 @@
 		"save": "Guardar",
 		"cancel": "Cancelar",
 		"theme": "Tema",
-		"helpTranslation": "Ayúdenos a traducir a su idioma en <0>TranslateWiki</0>"
+		"helpTranslation": "Ayúdenos a traducir a su idioma en <0>TranslateWiki</0>",
+		"translatewiki": "TranslateWiki"
 	},
 	"login": {
 		"title": "Comencemos",
@@ -33,7 +34,12 @@
 	"campaign": {
 		"createCampaign": "Crear campaña",
 		"goToCampaign": "Ve a Campaña",
-		"showAllCampaigns": "Mostrar todas las campañas"
+		"showAllCampaigns": "Mostrar todas las campañas",
+		"name": "Nombre",
+		"startDate": "Fecha de inicio",
+		"endDate": "Fecha de finalización",
+		"description": "Descripción",
+		"rules": "Reglas"
 	},
 	"round": {
 		"status": {

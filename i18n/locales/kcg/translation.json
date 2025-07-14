@@ -1,0 +1,89 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kambai Akau"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "Aba̱n/Tyebaa ang {{name}}",
+		"logout": "Ghwut",
+		"login": "Nwuo"
+	},
+	"settings": {
+		"title": "A̱yaaseti",
+		"language": "A̱lyem",
+		"save": "Sak",
+		"cancel": "Lyang",
+		"theme": "A̱pyia̱ a̱lyiat",
+		"helpTranslation": "Ma̱sa̱kut Beang a bwuak a tyia̱ da̱ a̱lyem ang ka mi̱ <0>TranslateWiki</0>"
+	},
+	"login": {
+		"title": "Ka̱di zi̱ tsa"
+	},
+	"project": {
+		"title": "Nta̱m",
+		"createProject": "Ta̱m Fai",
+		"goToProject": "Nat ma̱ Ta̱m hu",
+		"showAllProjects": "Tyai A̱mgba̱m Nta̱m na",
+		"projectLoading": "Á̱ shyia̱ di̱ nyia̱ lodi a̱kyokyuat nkhang ta̱m wu...",
+		"leads": "A̱yaakwak A̱son Ta̱m ba",
+		"myProject": "Ta̱m Nung hu"
+	},
+	"round": {
+		"status": {
+			"ACTIVE": "A̱ shyia̱ di̱ nyian ta̱m"
+		},
+		"deadLineInMonths_one": "Mi̱ zwat jhyiung",
+		"deadLineInMonths_two": "Mi̱ zwát sweang",
+		"deadLineInMonths_other": "Mi̱ zwát {{count}}",
+		"deadLineInWeeks_one": "Mi̱ sati nyiung",
+		"deadLineInWeeks_two": "Mi̱ sati nfeang",
+		"deadLineInWeeks_other": "Mi̱ nsati {{count}}",
+		"deadLineInDays_one": "Mi̱ mam nyiung",
+		"deadLineInDays_two": "Mi̱ mmam nfeang",
+		"deadLineInDays_other": "Mi̱ mmam {{count}}"
+	},
+	"footer": {
+		"translate": "Bwuak"
+	},
+	"close": "Nyim",
+	"evaluation": {
+		"yes": "Ii",
+		"no": "Kaai"
+	},
+	"submission": {
+		"title": "A̱lyoot",
+		"description": "Wa̱i-a̱lyiat",
+		"author": "A̱tyulyuut",
+		"save": "Sak",
+		"cancel": "Lyang",
+		"skip": "Fi̱p"
+	},
+	"languages": {
+		"en": "Shong",
+		"bn": "Benggali (বাংলা)",
+		"ar": "La̱ra̱ba (العربية)",
+		"hi": "Hindi (हिन्दी)",
+		"es": "Si̱pen (Español)",
+		"fr": "Fi̱ransa (Français)",
+		"de": "Jaman (Deutsch)",
+		"it": "Italya (Italiano)",
+		"ja": "Ja̱pan (日本語)",
+		"ko": "Kworiya (한국어)",
+		"pt": "Potugyit (Português)",
+		"ru": "Roshya (Русский)",
+		"zh": "Caina (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Ma̱rati (मराठी)",
+		"ta": "Tamit (தமிழ்)",
+		"ml": "Ma̱layalam (മലയാളം)",
+		"ur": "Uri̱du (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)",
+		"te": "Telugu (తెలుగు)",
+		"ps": "Pashi̱to (پښتو)",
+		"skr-arab": "Sa̱raiki (سرائیکی)",
+		"skr-latn": "Sa̱raiki (Latin)"
+	}
+}

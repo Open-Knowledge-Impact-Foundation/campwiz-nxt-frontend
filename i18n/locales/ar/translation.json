@@ -25,7 +25,8 @@
 		"save": "حفظ",
 		"cancel": "إلغاء",
 		"theme": "السمة",
-		"helpTranslation": "من فضلك ساعدنا في الترجمة إلى لغتك في <0>TranslateWiki</0>"
+		"helpTranslation": "من فضلك ساعدنا في الترجمة إلى لغتك في <0>TranslateWiki</0>",
+		"translatewiki": "ترجمة ويكي"
 	},
 	"login": {
 		"title": "فلنبدأ",
@@ -36,7 +37,14 @@
 	"campaign": {
 		"createCampaign": "إنشاء مسابقة",
 		"goToCampaign": "الذهاب إلى المسابقة",
-		"showAllCampaigns": "عرض جميع المسابقات"
+		"showAllCampaigns": "عرض جميع المسابقات",
+		"name": "الاسم",
+		"startDate": "تاريخ البدء",
+		"endDate": "تاريخ الانتهاء",
+		"description": "الوصف",
+		"rules": "القواعد",
+		"duration": "المدة",
+		"edit": "تعديل"
 	},
 	"project": {
 		"title": "مشاريع",
@@ -47,9 +55,12 @@
 		"leads": "قادة المشروع",
 		"dashboard": "لوحة معلومات المشروع",
 		"otherProjects": "مشاريع أخرى",
-		"myProject": "مشروعي"
+		"myProject": "مشروعي",
+		"welcomeToProject": "مرحباً بكم في {{project}}",
+		"editProject": "تعديل"
 	},
 	"round": {
+		"deleteRoundButton": "حذف",
 		"status": {
 			"ACTIVE": "نشطة",
 			"PAUSED": "متوقفة مؤقتًا",
@@ -64,14 +75,34 @@
 		"evaluationArea": "منطقة التقييم",
 		"categorizer": "مُصنِّف",
 		"type": {
+			"label": "النوع",
 			"binary": "نعم/لا",
-			"score": "النتيجة"
+			"ranking": "تصنيف",
+			"score": "النتيجة",
+			"unknown": "غير معروف، اتصل بنا"
 		},
 		"deadline": "موعد نهائي",
 		"description": "الوصف",
 		"deadLineInMonths_one": "في الشهر",
+		"deadLineInMonths_two": "في شهرين",
+		"deadLineInMonths_other": "في {{count}} شهرًا",
+		"deadLineInWeeks_one": "في اسبوع",
+		"deadLineInWeeks_two": "في اسبوعين",
+		"deadLineInWeeks_other": "في {{count}} أسابيع",
+		"deadLineInDays_one": "في يوم واحد",
+		"deadLineInDays_two": "في يومين",
+		"deadLineInDays_other": "في {{count}} يوم",
+		"deadLineInHours_one": "في ساعة واحدة",
+		"deadLineInHours_two": "في ساعتين",
+		"deadLineInHours_other": "في {{count}} ساعة",
+		"deadLineInMinutes_one": "في دقيقة واحدة",
+		"deadLineInMinutes_two": "في دقيقتين",
+		"deadLineInMinutes_other": "في {{count}} دقيقة",
+		"quorum": "النصاب القانوني",
 		"jury": {
-			"title": "محلف"
+			"title": "محلف",
+			"totalAssigned": "تم تعيين {{count}}",
+			"evaluated": "تم تقييم {{count}}"
 		}
 	},
 	"footer": {

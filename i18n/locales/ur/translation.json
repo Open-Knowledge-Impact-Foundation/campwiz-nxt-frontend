@@ -23,7 +23,8 @@
 		"save": "محفوظ",
 		"cancel": "منسوخ",
 		"theme": "تھیم",
-		"helpTranslation": "براہ کرم <0>TranslateWiki</0> پر اپنی زبان میں ترجمہ کرنے میں ہماری مدد کریں۔"
+		"helpTranslation": "براہ کرم <0>TranslateWiki</0> پر اپنی زبان میں ترجمہ کرنے میں ہماری مدد کریں۔",
+		"translatewiki": "ترجمہ وکی"
 	},
 	"login": {
 		"title": "آئیے شروعات کرتے ہیں",
@@ -34,7 +35,15 @@
 	"campaign": {
 		"createCampaign": "مقابلہ بنائیں",
 		"goToCampaign": "مقابلے پر جائیں",
-		"showAllCampaigns": "تمام مقابلے دکھائیں"
+		"showAllCampaigns": "تمام مقابلے دکھائیں",
+		"name": "نام",
+		"startDate": "تاریخ شروع",
+		"endDate": "تاریخ اختتام",
+		"description": "وضاحت",
+		"rules": "قوانین",
+		"wikiProject": "وکی پروجیکٹ",
+		"duration": "دورانیہ",
+		"edit": "ترمیم"
 	},
 	"project": {
 		"title": "منصوبے",
@@ -45,9 +54,13 @@
 		"leads": "پروجیکٹ لیڈز",
 		"dashboard": "پروجیکٹ ڈیش بورڈ",
 		"otherProjects": "دیگر منصوبے",
-		"myProject": "میرا پروجیکٹ"
+		"myProject": "میرا پروجیکٹ",
+		"welcomeToProject": "{{project}} میں خوش آمدید",
+		"editProject": "ترمیم"
 	},
 	"round": {
+		"addMyselfAsJury": "اپنے آپ کو بطور جیوری شامل کریں",
+		"deleteRoundButton": "حذف",
 		"status": {
 			"ACTIVE": "فعال",
 			"PAUSED": "روکیں",
@@ -60,7 +73,31 @@
 		"assignments": "تفویضات",
 		"evaluatedOutOf": "{{total}} میں سے {{evaluated}} کی جانچ کی گئی",
 		"evaluationArea": "تشخیص کا علاقہ",
-		"categorizer": "زمرہ بندی"
+		"categorizer": "زمرہ بندی",
+		"type": {
+			"label": "قسم",
+			"binary": "ہاں/نہیں",
+			"score": "سکور",
+			"unknown": "نامعلوم، ہم سے رابطہ کریں"
+		},
+		"description": "وضاحت",
+		"deadLineInMonths_one": "ایک مہینے میں",
+		"deadLineInMonths_two": "دو ماہ میں",
+		"deadLineInMonths_other": "{{count}} مہینوں میں",
+		"deadLineInWeeks_one": "ایک ہفتے میں",
+		"deadLineInWeeks_two": "دو ہفتوں میں",
+		"deadLineInWeeks_other": "{{count}} ہفتوں میں",
+		"deadLineInDays_one": "ایک دن میں",
+		"deadLineInDays_two": "دو دن میں",
+		"deadLineInDays_other": "{{count}} دنوں میں",
+		"deadLineInHours_one": "ایک گھنٹے میں",
+		"deadLineInHours_two": "دو گھنٹے میں",
+		"deadLineInHours_other": "{{count}} گھنٹے میں",
+		"deadLineInMinutes_one": "ایک منٹ میں",
+		"deadLineInMinutes_two": "دو منٹ میں",
+		"deadLineInMinutes_other": "{{count}} منٹ میں",
+		"deadLinePassed": "آخری تاریخ گزر گئی",
+		"quorum": "کورم"
 	},
 	"footer": {
 		"campwizNxtTeam": "CampWiz NXT ٹیم",

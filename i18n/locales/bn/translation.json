@@ -38,7 +38,18 @@
 		"goToCampaign": "প্রতিযোগিতায় চলুন",
 		"showAllCampaigns": "সব প্রতিযোগিতা দেখুন",
 		"activeCampaigns": "চলমান প্রতিযোগিতা",
-		"archivedCampaigns": "সংগ্রহশালায় জমা প্রতিযোগিতা"
+		"archivedCampaigns": "সংগ্রহশালায় জমা প্রতিযোগিতা",
+		"name": "নাম",
+		"startDate": "শুরুর তারিখ",
+		"endDate": "শেষের তারিখ",
+		"coordinators": "সমন্বয়কারী",
+		"description": "বিবরণ",
+		"rules": "নিয়মাবলী",
+		"publicVisibilityDisclaimer": "এই প্রতিযোগিতা জনসাধারণকে দেখানো হবে (সমন্বয়কারী, জুরি, প্রকল্প নেতা ছাড়া অন্যরা)",
+		"privateCampaign": "গোপন প্রতিযোগিতা",
+		"wikiProject": "উইকি প্রকল্প",
+		"duration": "সময়কাল",
+		"edit": "সম্পাদনা"
 	},
 	"project": {
 		"title": "প্রকল্পসমূহ",
@@ -50,19 +61,23 @@
 		"dashboard": "প্রকল্প ড্যাশবোর্ড",
 		"otherProjects": "অন্যান্য প্রকল্প",
 		"myProject": "আমার প্রকল্প",
-		"editProject": "সম্পাদনা করুন",
-		"welcomeToProject": "{{project}} প্রকল্পে স্বাগতম"
+		"welcomeToProject": "{{project}} প্রকল্পে স্বাগতম",
+		"editProject": "সম্পাদনা করুন"
 	},
 	"round": {
+		"addMyselfAsJury": "নিজেকে বিচারক হিসেবে যুক্ত করুন",
+		"deleteRoundButton": "মুছুন",
+		"confirmChangeStatus": "আপনি কি নিশ্চিত যে আপনি এই রাউন্ডটিকে {{status}} হিসেবে চিহ্নিত করতে চান?",
+		"markAsComplete": "সম্পূর্ণ হিসেবে চিহ্নিত করুন",
 		"status": {
 			"ACTIVE": "চলমান",
 			"PAUSED": "স্থগিত",
 			"COMPLETED": "সম্পন্ন",
 			"ARCHIVED": "সংগ্রহশালায় জমা",
 			"IMPORTING": "আমদানি হচ্ছে",
-			"DISTRIBUTING": "বণ্টন হচ্ছে"
+			"DISTRIBUTING": "বণ্টন হচ্ছে",
+			"pausedThenCompleted": "স্থগিত করে পরে সম্পূর্ণ"
 		},
-		"deleteRoundButton": "মুছুন",
 		"submissions": "জমা",
 		"assignments": "অ্যাসাইনমেন্ট",
 		"evaluatedOutOf": "{{total}}টির মধ্যে {{evaluated}}টি মূল্যায়িত",
@@ -124,7 +139,11 @@
 		"noSubmissions": "কোনও জমা পাওয়া যায় নি",
 		"noRunningCampaigns": "কোনও চলমান প্রতিযোগিতা নেই",
 		"loadingMyProject": "আপনার প্রোজেক্ট লোড করা যায়নি",
-		"loadingProjects": "প্রোজেক্ট লোড করা যায়নি"
+		"loadingProjects": "প্রোজেক্ট লোড করা যায়নি",
+		"accessDeniedToProject": "এই প্রকল্পে আপনার প্রবেশাধিকার নেই",
+		"failedToFetchProject": "আপনার প্রকল্পটি আনা যায়নি",
+		"failedToFetchCampaign": "প্রতিযোগিতার বিবরণ আনা যায় নি",
+		"failedToFetchRound": "রাউন্ডের বিবরণ আনা যায়নি"
 	},
 	"close": "বন্ধ করুন",
 	"previous": "পূর্ববর্তী",
