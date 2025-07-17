@@ -1,11 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gwanki"
+			"Gwanki",
+			"Nokib Sarkar"
 		]
 	},
+	"home": {
+		"welcome": "Barka da {{name}}",
+		"logout": "Fita",
+		"login": "Shiga"
+	},
 	"settings": {
+		"title": "Saituttuka",
+		"language": "Harsuna",
+		"save": "Ajiye",
+		"cancel": "Soke",
+		"theme": "Jigo",
 		"translatewiki": "Fassara Wiki"
+	},
+	"login": {
+		"loginWithWikimedia": "Shiga da Wikimedia"
 	},
 	"campaign": {
 		"activeCampaigns": "Kamfen da ake kan yi",
@@ -32,6 +46,7 @@
 		"confirmChangeStatus": "Shin kun tabbata kuna son yiwa wannan zagaye alama a matsayin {{status}}?",
 		"markAsComplete": "Alama a a matsayin kammalalle",
 		"status": {
+			"PAUSED": "Dakata",
 			"pausedThenCompleted": "Dakatarwa sannan An Kammala"
 		},
 		"type": {
@@ -69,10 +84,63 @@
 			"evaluated": "{{count}} an kimanta"
 		}
 	},
+	"footer": {
+		"privacy": "Sirri",
+		"reportBug": "ka bada labarin duk wata matsala"
+	},
 	"error": {
 		"accessDeniedToProject": "Ba ku da damar shiga wannan aikin",
 		"failedToFetchProject": "An kasa fitar da aikin ku",
 		"failedToFetchCampaign": "An kasa fitar da bayanan yakin neman zabe",
 		"failedToFetchRound": "An kasa fitar da bayanan zagaye"
+	},
+	"close": "Rufe",
+	"next": "Gaba",
+	"evaluation": {
+		"modifytable": {
+			"name": "Suna"
+		},
+		"skip": "Tsallake",
+		"yes": "Eh",
+		"no": "A'a"
+	},
+	"submission": {
+		"title": "Take",
+		"description": "Bayani",
+		"author": "Marubucin",
+		"save": "Ajiye",
+		"cancel": "Soke",
+		"skip": "Tsallake",
+		"next": "Gaba"
+	},
+	"languages": {
+		"en": "turanci",
+		"bn": "Bengali (বাংলা)",
+		"ar": "Larabci (العربية)",
+		"hi": "Hindi (हिन्दी)",
+		"es": "Sifen (Español)",
+		"fr": "Faransanci (Faransa)",
+		"de": "Jamusanci (Deutsch)",
+		"it": "Italiyanci (Italiano)",
+		"ja": "Jafananci (日本語)",
+		"ko": "Yaren Koriya (한국어)",
+		"pt": "Portuguese (Português)",
+		"ru": "Rashanci (Русский)",
+		"zh": "Sinanci (中文)",
+		"kn": "Kannada (ಕನ್ನಡ)",
+		"mr": "Marathi (मराठी)",
+		"ta": "Tamil ( தமிழ் )",
+		"ml": "Malayalam (മലയാളം)",
+		"ur": "Urdu (اردو)",
+		"gu": "Gujarati (ગુજરાતી)",
+		"pa": "Punjabi (ਪੰਜਾਬੀ)",
+		"te": "Telugu (తెలుగు)",
+		"skr-arab": "Saraiki (سرائیکی)",
+		"skr-latn": "Saraki (Latin)",
+		"pms": "Piedmontese (Piemontéis)",
+		"krc": "Karachay-Balkar (Къарачай-Малкъар)",
+		"lb": "Luxembourgish (Lëtzebuergesch)",
+		"zh-hans": "Sinanci Sauƙaƙe (简体中文)",
+		"zh-hant": "Sinawa na gargajiya (繁體中文)"
 	}
 }

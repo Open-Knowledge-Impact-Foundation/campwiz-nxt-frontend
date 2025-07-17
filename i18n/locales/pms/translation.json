@@ -106,7 +106,16 @@
 		"deadLineInMinutes_one": "Da-sì na minuta",
 		"deadLineInMinutes_two": "Da-sì doe minute",
 		"deadLineInMinutes_other": "Da-sì {{count}} minute",
-		"deadLinePassed": "Scadensa passà"
+		"deadLinePassed": "Scadensa passà",
+		"quorum": "Seuli ëd validità",
+		"quorumRequired_one": "A-i é damanca mach d'un giurà pr'ëspedission",
+		"quorumRequired_two": "A-i é damanca ëd doi giurà pr'ëspedission",
+		"quorumRequired_other": "A-i é damanca ëd {{count}} giurà pr'ëspedission",
+		"jury": {
+			"title": "Giurìa",
+			"totalAssigned": "{{count}} assignà",
+			"evaluated": "{{count}} valutà"
+		}
 	},
 	"footer": {
 		"campwizNxtTeam": "Echip ëd Campwiz NXT",
@@ -129,7 +138,11 @@
 		"noSubmissions": "Gnun-e spedission disponìbij",
 		"noRunningCampaigns": "Gnun-e campagne an cors",
 		"loadingMyProject": "Falì a carié sò proget",
-		"loadingProjects": "Falì a carié ij proget"
+		"loadingProjects": "Falì a carié ij proget",
+		"accessDeniedToProject": "A l'ha pa acess a cost proget",
+		"failedToFetchProject": "Falì a arcuperé sò proget",
+		"failedToFetchCampaign": "Falì a arcuperé ij detaj dla campagna",
+		"failedToFetchRound": "Falì a arcuperé ij detaj an sël tor"
 	},
 	"close": "Saré",
 	"previous": "Prima",

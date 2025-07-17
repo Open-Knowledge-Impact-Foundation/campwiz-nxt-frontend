@@ -23,7 +23,8 @@
 		"save": "Зачувај",
 		"cancel": "Откажи",
 		"theme": "Изглед",
-		"helpTranslation": "Помогнете ни да ја преведеме алаткава на вашиот јазик на <0>TranslateWiki</0>"
+		"helpTranslation": "Помогнете ни да ја преведеме алаткава на вашиот јазик на <0>TranslateWiki</0>",
+		"translatewiki": "TranslateWiki"
 	},
 	"login": {
 		"title": "Да почнеме",
@@ -34,7 +35,20 @@
 	"campaign": {
 		"createCampaign": "Создај поход",
 		"goToCampaign": "Оди на походот",
-		"showAllCampaigns": "Сите походи"
+		"showAllCampaigns": "Сите походи",
+		"activeCampaigns": "Тековни походи",
+		"archivedCampaigns": "Архивирани походи",
+		"name": "Име",
+		"startDate": "Почетен датум",
+		"endDate": "Завршен датум",
+		"coordinators": "Координатори",
+		"description": "Опис",
+		"rules": "Правила",
+		"publicVisibilityDisclaimer": "Овој Поход ќе ѝ се прикажува на јавноста (луѓе кои не се координатори, жири, проектни водачи)",
+		"privateCampaign": "Личен поход",
+		"wikiProject": "Википроект",
+		"duration": "Траење",
+		"edit": "Уреди"
 	},
 	"project": {
 		"title": "Проекти",
@@ -45,22 +59,63 @@
 		"leads": "Проектни раководители",
 		"dashboard": "Проектна управувачница",
 		"otherProjects": "Други проекти",
-		"myProject": "Мој проект"
+		"myProject": "Мој проект",
+		"welcomeToProject": "Добре дојдовте на {{project}}",
+		"editProject": "Уреди"
 	},
 	"round": {
+		"addMyselfAsJury": "Додај ме во жирито",
+		"deleteRoundButton": "Избриши",
+		"confirmChangeStatus": "Дали сигурно сакате да го означите овој круг како {{status}}?",
+		"markAsComplete": "Означи како завршено",
 		"status": {
 			"ACTIVE": "Активно",
 			"PAUSED": "Запрено",
 			"COMPLETED": "Завршено",
 			"ARCHIVED": "Архивирано",
 			"IMPORTING": "Се увезува",
-			"DISTRIBUTING": "Се распределува"
+			"DISTRIBUTING": "Се распределува",
+			"pausedThenCompleted": "Запрено, па Завршено"
 		},
 		"submissions": "Поднесоци",
 		"assignments": "Задачи",
 		"evaluatedOutOf": "Оценети {{evaluated}} од вкупно {{total}}",
 		"evaluationArea": "Проценителено подрачје",
-		"categorizer": "Категоризатор"
+		"categorizer": "Категоризатор",
+		"type": {
+			"label": "Вид",
+			"binary": "Да/Не",
+			"ranking": "Рангирање",
+			"score": "Бодување",
+			"unknown": "Непознато, контактирајте нè"
+		},
+		"deadline": "Краен рок",
+		"description": "Опис",
+		"deadLineInMonths_one": "За еден месец",
+		"deadLineInMonths_two": "За два месеца",
+		"deadLineInMonths_other": "За {{count}} месеци",
+		"deadLineInWeeks_one": "За една недела",
+		"deadLineInWeeks_two": "За две недели",
+		"deadLineInWeeks_other": "За {{count}} недели",
+		"deadLineInDays_one": "За еден ден",
+		"deadLineInDays_two": "За два дена",
+		"deadLineInDays_other": "За {{count}} дена",
+		"deadLineInHours_one": "За еден час",
+		"deadLineInHours_two": "За два часа",
+		"deadLineInHours_other": "За {{count}} часа",
+		"deadLineInMinutes_one": "За една минута",
+		"deadLineInMinutes_two": "За две минути",
+		"deadLineInMinutes_other": "За {{count}} минути",
+		"deadLinePassed": "Крајниот рок помина",
+		"quorum": "Кворум",
+		"quorumRequired_one": "Потребно е едно жири по поднесок",
+		"quorumRequired_two": "Потребни се две жирија по поднесок",
+		"quorumRequired_other": "Потребни се {{count}} жирија по поднесок",
+		"jury": {
+			"title": "Жири",
+			"totalAssigned": "Доделени {{count}}",
+			"evaluated": "Оценети {{count}}"
+		}
 	},
 	"footer": {
 		"campwizNxtTeam": "Екипата на Campwiz NXT",
@@ -83,7 +138,11 @@
 		"noSubmissions": "Нема поднесоци на располагање",
 		"noRunningCampaigns": "Нема тековни походи",
 		"loadingMyProject": "Не успеав да го вчитам вашиот проект",
-		"loadingProjects": "Не успеав да ги вчитам проектите"
+		"loadingProjects": "Не успеав да ги вчитам проектите",
+		"accessDeniedToProject": "Немате пристап до тој проект",
+		"failedToFetchProject": "Не успеав да го добијам вашиот проект",
+		"failedToFetchCampaign": "Не успеав да ги добијам поединостите за походот",
+		"failedToFetchRound": "Не успеав да ги добијам поединостите за кругот"
 	},
 	"close": "Затвори",
 	"previous": "Претходно",

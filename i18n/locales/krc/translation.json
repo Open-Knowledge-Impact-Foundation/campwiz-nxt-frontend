@@ -24,7 +24,8 @@
 		"save": "Сакъландыр",
 		"cancel": "Ызына ал",
 		"theme": "Тема",
-		"helpTranslation": "Тилигизге <0>TranslateWiki</0> сайтны кёчюрюрге болушугъуз"
+		"helpTranslation": "Тилигизге <0>TranslateWiki</0> сайтны кёчюрюрге болушугъуз",
+		"translatewiki": "TranslateWiki"
 	},
 	"login": {
 		"title": "Келигиз башлайыкъ",
@@ -35,7 +36,20 @@
 	"campaign": {
 		"createCampaign": "Компанияны къура",
 		"goToCampaign": "Компаниягъа бар",
-		"showAllCampaigns": "Бютеу Компанияланы кёргюз"
+		"showAllCampaigns": "Бютеу Компанияланы кёргюз",
+		"activeCampaigns": "Актив Компанияла",
+		"archivedCampaigns": "Архивдеги Компанияла",
+		"name": "Ат",
+		"startDate": "Башлау дата",
+		"endDate": "Бошалыу дата",
+		"coordinators": "Координаторла",
+		"description": "Ачыкълау",
+		"rules": "Джорукъла",
+		"publicVisibilityDisclaimer": "Бу Компания ачыкъ болургъа керекди (координаторладан башха адамла, жюри, проект алчыла)",
+		"privateCampaign": "Таша Компания",
+		"wikiProject": "Википроект",
+		"duration": "Созулгъаны",
+		"edit": "Тюзет"
 	},
 	"project": {
 		"title": "Проектле",
@@ -46,22 +60,63 @@
 		"leads": "Проектни башчылары",
 		"dashboard": "Проектни адыр панели",
 		"otherProjects": "Башха проектле",
-		"myProject": "Проектим"
+		"myProject": "Проектим",
+		"welcomeToProject": "{{project}} проектге хош кел",
+		"editProject": "Тюзет"
 	},
 	"round": {
+		"addMyselfAsJury": "Кесинги проектге къош",
+		"deleteRoundButton": "Кетер",
+		"confirmChangeStatus": "Бу раундну {{status}} кибик белгилерге излегенигизден ишексизмисиз?",
+		"markAsComplete": "Тындырылгъанча белгиле",
 		"status": {
 			"ACTIVE": "Актив",
 			"PAUSED": "Туракълатылды",
 			"COMPLETED": "Тамамланды",
 			"ARCHIVED": "Архив",
 			"IMPORTING": "Импорт этиу",
-			"DISTRIBUTING": "Джайыу"
+			"DISTRIBUTING": "Джайыу",
+			"pausedThenCompleted": "Тохтатылгъанды, андан сора Тындырылгъанды"
 		},
 		"submissions": "Материалла",
 		"assignments": "Джумушла",
 		"evaluatedOutOf": "{{total}}-ден {{evaluated}}-и къыймат бичилди",
 		"evaluationArea": "Багъа Бичиу Бёлге",
-		"categorizer": "Категориялашдырыучу"
+		"categorizer": "Категориялашдырыучу",
+		"type": {
+			"label": "Тип",
+			"binary": "Хоу/Огъай",
+			"ranking": "Рейтинг",
+			"score": "Эсеб",
+			"unknown": "Танылмагъан, бизни бла байлам къур"
+		},
+		"deadline": "Ахыр болджал",
+		"description": "Ачыкълау",
+		"deadLineInMonths_one": "Айда",
+		"deadLineInMonths_two": "Эки айда",
+		"deadLineInMonths_other": "{{count}} айда",
+		"deadLineInWeeks_one": "Ыйыкъда",
+		"deadLineInWeeks_two": "Эки ыйыкъда",
+		"deadLineInWeeks_other": "{{count}} ыйыкъда",
+		"deadLineInDays_one": "Кюнде",
+		"deadLineInDays_two": "Эки кюнде",
+		"deadLineInDays_other": "{{count}} кюнде",
+		"deadLineInHours_one": "Сагъатда",
+		"deadLineInHours_two": "Эки сагъатда",
+		"deadLineInHours_other": "{{count}} сагъатда",
+		"deadLineInMinutes_one": "Минутда",
+		"deadLineInMinutes_two": "Эки минутда",
+		"deadLineInMinutes_other": "{{count}} минутда",
+		"deadLinePassed": "Ахыр боджал чыкъгъанды",
+		"quorum": "Кворум",
+		"quorumRequired_one": "Излемни берир ючюн бир жюри",
+		"quorumRequired_two": "Излемни алыр ючюн эки жюри",
+		"quorumRequired_other": "Излемни алыр ючюн {{count}} жюри",
+		"jury": {
+			"title": "Жюри",
+			"totalAssigned": "{{count}} берилгенди",
+			"evaluated": "{{count}} багъа бичилгенди"
+		}
 	},
 	"footer": {
 		"campwizNxtTeam": "Campwiz NXT Team",
@@ -84,7 +139,11 @@
 		"noSubmissions": "Джетиширча материалла джокъдула",
 		"noRunningCampaigns": "Джюртюудеги компанияла",
 		"loadingMyProject": "Проектигизни джюклеуде халат",
-		"loadingProjects": "Проектлени джюклеуде халат"
+		"loadingProjects": "Проектлени джюклеуде халат",
+		"accessDeniedToProject": "Бу проектге къошулаллыкъ тюлсе",
+		"failedToFetchProject": "Проектигиз джюкленалмады",
+		"failedToFetchCampaign": "Компанияны юсюнден толу джюкленалмады",
+		"failedToFetchRound": "Раундну юсюнден толу джюкленалмады"
 	},
 	"close": "Джаб",
 	"previous": "Аллындагъы",
