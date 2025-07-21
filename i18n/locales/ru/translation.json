@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Mitte27",
+			"Nokib Sarkar",
 			"Okras"
 		]
 	},
 	"title": "CampWiz NXT",
 	"home": {
 		"welcome": "Добро пожаловать на {{name}}",
+		"subtitle": "Вывод опыта работы присяжных на новый уровень",
 		"yourCampaigns": "Ваши кампании",
 		"logout": "Выйти",
 		"dashboard": "Панель инструментов",
@@ -28,7 +30,13 @@
 	},
 	"campaign": {
 		"createCampaign": "Создать кампанию",
-		"goToCampaign": "Перейти к кампании"
+		"goToCampaign": "Перейти к кампании",
+		"name": "Имя",
+		"startDate": "Дата начала",
+		"endDate": "Дата окончания",
+		"description": "Описание",
+		"rules": "Правила",
+		"duration": "Длительность"
 	},
 	"project": {
 		"title": "Проекты",
@@ -36,7 +44,11 @@
 		"goToProject": "Перейти к проекту",
 		"showAllProjects": "Показать все проекты",
 		"otherProjects": "Другие проекты",
-		"myProject": "Мой проект"
+		"myProject": "Мой проект",
+		"editProject": "Править"
+	},
+	"round": {
+		"deleteRoundButton": "Удалить"
 	},
 	"footer": {
 		"manual": "Руководство",

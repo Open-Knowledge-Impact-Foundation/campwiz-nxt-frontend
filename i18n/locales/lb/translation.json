@@ -30,6 +30,8 @@
 		"activeCampaigns": "Aktiv Campagnen",
 		"archivedCampaigns": "Archivéiert Campagnen",
 		"name": "Numm",
+		"startDate": "Ufanksdatum",
+		"endDate": "Schlussdatum",
 		"description": "Beschreiwung",
 		"rules": "Reegelen",
 		"privateCampaign": "Privat Campagne",
@@ -57,7 +59,7 @@
 		},
 		"type": {
 			"label": "Typ",
-			"binary": "Jo/Neen",
+			"binary": "Jo/Nee",
 			"unknown": "Onbekannt, kontaktéiert eis"
 		},
 		"description": "Beschreiwung",
@@ -90,7 +92,8 @@
 		"campaignCategoriesNotSupported": "Campagnëkategorië ginn net ënnerstëtzt",
 		"noCategoriesAvailable": "Keng Kategorien disponibel",
 		"loadingMyProject": "Äre Projet konnt net geluede ginn",
-		"loadingProjects": "Projete konnten net geluede ginn"
+		"loadingProjects": "Projete konnten net geluede ginn",
+		"accessDeniedToProject": "Dir hutt keen Zougrëff op dëse Projet"
 	},
 	"close": "Zoumaachen",
 	"previous": "Vireg",
@@ -103,7 +106,7 @@
 		},
 		"skip": "Iwwersprangen",
 		"yes": "Jo",
-		"no": "Neen"
+		"no": "Nee"
 	},
 	"submission": {
 		"title": "Titel",
@@ -144,6 +147,7 @@
 		"mk": "Mezedonesch (Македонски)",
 		"lb": "Lëtzebuergesch (Lëtzebuergesch)",
 		"zh-hans": "Vereinfacht Chineesesch (简体中文)",
-		"zh-hant": "Traditionellt Chineesesch (繁體中文)"
+		"zh-hant": "Traditionellt Chineesesch (繁體中文)",
+		"ha": "Hausa"
 	}
 }

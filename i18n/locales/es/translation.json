@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"JorgeElias2302",
 			"Nokib Sarkar"
 		]
 	},
@@ -133,6 +134,8 @@
 		"mk": "Macedonio (Македонски)",
 		"krc": "Karachay-Balkar (Къарачай-Малкъар)",
 		"xmf": "Mingreliano (მარგალური)",
-		"lb": "Luxemburgués"
+		"lb": "Luxemburgués",
+		"ha": "Hausa",
+		"kcg": "Tyap (tiv)"
 	}
 }

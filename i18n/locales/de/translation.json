@@ -4,7 +4,8 @@
 			"*surak*",
 			"MoritzMT20",
 			"Nokib Sarkar",
-			"Nortix"
+			"Nortix",
+			"Simon04"
 		]
 	},
 	"title": "CampWiz NXT",
@@ -54,7 +55,13 @@
 		"assignments": "Zuweisungen",
 		"evaluatedOutOf": "{{evaluated}} ausgewertet von {{total}}",
 		"evaluationArea": "Auswertungsserver",
-		"categorizer": "Kategorisierer"
+		"categorizer": "Kategorisierer",
+		"deadLineInMonths_other": "In {{count}} Monaten",
+		"deadLineInWeeks_other": "In {{count}} Wochen",
+		"deadLineInDays_two": "In zwei Tagen",
+		"deadLineInDays_other": "In {{count}} Tagen",
+		"deadLineInHours_other": "In {{count}} Stunden",
+		"deadLineInMinutes_one": "In einer Minute"
 	},
 	"footer": {
 		"campwizNxtTeam": "Campwiz NXT Team",
