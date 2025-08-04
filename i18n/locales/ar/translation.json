@@ -38,11 +38,17 @@
 		"createCampaign": "إنشاء مسابقة",
 		"goToCampaign": "الذهاب إلى المسابقة",
 		"showAllCampaigns": "عرض جميع المسابقات",
+		"activeCampaigns": "الحملات النشطة",
+		"archivedCampaigns": "الحملات المؤرشفة",
 		"name": "الاسم",
 		"startDate": "تاريخ البدء",
 		"endDate": "تاريخ الانتهاء",
+		"coordinators": "المنسقين",
 		"description": "الوصف",
 		"rules": "القواعد",
+		"publicVisibilityDisclaimer": "سيتم عرض هذه الحملة على الجمهور (أشخاص غير المنسقين ولجنة التحكيم وقادة المشاريع)",
+		"privateCampaign": "حملة خاصة",
+		"wikiProject": "مشروع ويكي",
 		"duration": "المدة",
 		"edit": "تعديل"
 	},
@@ -60,14 +66,18 @@
 		"editProject": "تعديل"
 	},
 	"round": {
+		"addMyselfAsJury": "أضف نفسي كعضو في هيئة المحلفين",
 		"deleteRoundButton": "حذف",
+		"confirmChangeStatus": "هل أنت متأكد أنك تريد وضع علامة على هذه الجولة كـ {{status}}؟",
+		"markAsComplete": "وضع علامة على أنه مكتمل",
 		"status": {
 			"ACTIVE": "نشطة",
 			"PAUSED": "متوقفة مؤقتًا",
 			"COMPLETED": "مكتملة",
 			"ARCHIVED": "مؤرشفة",
 			"IMPORTING": "جارٍ الاستيراد",
-			"DISTRIBUTING": "توزيع"
+			"DISTRIBUTING": "توزيع",
+			"pausedThenCompleted": "متوقفة ثم مكتملة"
 		},
 		"submissions": "المشاركات",
 		"assignments": "المهام",
@@ -98,7 +108,11 @@
 		"deadLineInMinutes_one": "في دقيقة واحدة",
 		"deadLineInMinutes_two": "في دقيقتين",
 		"deadLineInMinutes_other": "في {{count}} دقيقة",
+		"deadLinePassed": "لقد انتهى الموعد النهائي",
 		"quorum": "النصاب القانوني",
+		"quorumRequired_one": "مطلوب لجنة تحكيم واحدة لكل مشاركة",
+		"quorumRequired_two": "مطلوب لجنتان تحكيم لكل مشاركة",
+		"quorumRequired_other": "مطلوب {{count}} من المحكمين لكل مشاركة",
 		"jury": {
 			"title": "محلف",
 			"totalAssigned": "تم تعيين {{count}}",
@@ -126,7 +140,11 @@
 		"noSubmissions": "لا توجد طلبات متاحة",
 		"noRunningCampaigns": "لا توجد مسابقات جارية",
 		"loadingMyProject": "فشل تحميل مشروعك",
-		"loadingProjects": "فشل تحميل المشاريع"
+		"loadingProjects": "فشل تحميل المشاريع",
+		"accessDeniedToProject": "ليس لديك حق الوصول إلى هذا المشروع",
+		"failedToFetchProject": "فشل في جلب مشروعك",
+		"failedToFetchCampaign": "فشل في جلب تفاصيل الحملة",
+		"failedToFetchRound": "فشل في جلب تفاصيل الجولة"
 	},
 	"close": "إغلاق",
 	"previous": "السابق",
@@ -188,6 +206,8 @@
 		"xmf": "المينجريلية (მარგალური)",
 		"lb": "اللوكسمبورغية (Letzeburgesch)",
 		"zh-hans": "الصينية المبسطة (简体中文)",
-		"zh-hant": "الصينية التقليدية (繁體中文)"
+		"zh-hant": "الصينية التقليدية (繁體中文)",
+		"ha": "الهاوسا",
+		"kcg": "تياب (تيف)"
 	}
 }

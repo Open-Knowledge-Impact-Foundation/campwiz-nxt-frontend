@@ -1,0 +1,109 @@
+{
+	"@metadata": {
+		"authors": [
+			"ABPMAB"
+		]
+	},
+	"home": {
+		"logout": "Uitloggen",
+		"dashboard": "Dashboard",
+		"login": "Inloggen"
+	},
+	"settings": {
+		"title": "Instellingen",
+		"language": "Taal",
+		"darkMode": "Donkere modus",
+		"save": "Opslaan",
+		"cancel": "Annuleren",
+		"theme": "Thema",
+		"translatewiki": "TranslateWiki"
+	},
+	"campaign": {
+		"name": "Naam",
+		"startDate": "Startdatum",
+		"endDate": "Einddatum",
+		"coordinators": "Coördinatoren",
+		"description": "Beschrijving",
+		"rules": "Regels",
+		"duration": "Duur",
+		"edit": "Bewerken"
+	},
+	"project": {
+		"title": "Projecten",
+		"createProject": "Nieuw Project",
+		"goToProject": "Ga naar Project",
+		"showAllProjects": "Alle projecten weergeven",
+		"projectLoading": "Projectdetails worden geladen...",
+		"otherProjects": "Andere Projecten",
+		"myProject": "Mijn Project",
+		"welcomeToProject": "Welkom bij {{project}}",
+		"editProject": "Bewerken"
+	},
+	"round": {
+		"addMyselfAsJury": "Voeg mezelf toe als jury",
+		"deleteRoundButton": "Verwijderen",
+		"status": {
+			"ACTIVE": "Actief",
+			"PAUSED": "Gepauzeerd",
+			"COMPLETED": "Voltooid",
+			"ARCHIVED": "Gearchiveerd",
+			"IMPORTING": "Importeren"
+		},
+		"type": {
+			"label": "Type",
+			"binary": "Ja/Nee",
+			"score": "Score",
+			"unknown": "Onbekend, neem contact met ons op"
+		},
+		"deadline": "Deadline",
+		"description": "Beschrijving",
+		"deadLineInMonths_one": "Over een maand",
+		"deadLineInMonths_two": "Over twee maanden",
+		"deadLineInMonths_other": "In {{count}} maanden",
+		"deadLineInWeeks_one": "Over een week",
+		"deadLineInWeeks_two": "Over twee weken",
+		"deadLineInWeeks_other": "Over {{count}} weken",
+		"deadLineInDays_one": "Over een dag",
+		"deadLineInDays_two": "Over twee dagen",
+		"deadLineInDays_other": "Over {{count}} dagen",
+		"deadLineInHours_one": "Over een uur",
+		"deadLineInHours_two": "Over twee uur",
+		"deadLineInHours_other": "Over {{count}} uur",
+		"deadLineInMinutes_one": "Over een minuut",
+		"deadLineInMinutes_two": "Over twee minuten",
+		"deadLineInMinutes_other": "Over {{count}} minuten",
+		"deadLinePassed": "Deadline verstreken"
+	},
+	"evaluation": {
+		"yes": "Ja",
+		"no": "Nee"
+	},
+	"submission": {
+		"title": "Titel",
+		"description": "Beschrijving",
+		"author": "Auteur",
+		"categories": "Categorieën",
+		"selectCategories": "Selecteer categorieën",
+		"save": "Opslaan",
+		"cancel": "Annuleren",
+		"skip": "Overslaan",
+		"next": "Volgende",
+		"previous": "Vorige"
+	},
+	"languages": {
+		"en": "Engels (English)",
+		"bn": "Bengaals (বাংলা)",
+		"ar": "Arabisch (العربية)",
+		"hi": "Hindi (हिन्दी)",
+		"es": "Spaans (Español)",
+		"fr": "Frans (Français)",
+		"de": "Duits (Deutsch)",
+		"it": "Italiaans (Italiano)",
+		"ja": "Japans (日本語)",
+		"ko": "Koreaans (한국어)",
+		"pt": "Portugees (Português)",
+		"ru": "Russisch (Русский)",
+		"zh": "Chinees (中文)",
+		"lb": "Luxemburgs (Lëtzebuergesch)"
+	}
+}
