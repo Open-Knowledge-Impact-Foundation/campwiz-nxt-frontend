@@ -25,7 +25,7 @@
     "@mui/x-date-pickers": "^8.9.2",
     "@next/bundle-analyzer": "^15.3.3",
     "@noxfed/lottie-webpack-loader": "^1.0.1",
-    "@sentry/nextjs": "^9.27.0",
+    "@sentry/nextjs": "^10.0.0",
     "@svgr/webpack": "^8.1.0",
     "accept-language": "^3.0.20",
     "array-move": "^4.0.0",
