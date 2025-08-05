@@ -203,7 +203,7 @@
 		"krc": "Karachay-Balkar (Къарачай-Малкъар). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Karachay-Balkar, it should be \"<Translation of the name Karachay-Balkar in your language> (Къарачай-Малкъар)\"",
 		"xmf": "Mingrelian (მარგალური). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Mingrelian, it should be \"<Translation of the name Mingrelian in your language> (მარგალური)\"",
 		"lb": "Luxembourgish (Lëtzebuergesch). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Luxembourgish, it should be \"<Translation of the name Luxembourgish in your language> (Lëtzebuergesch)\"",
-		"zh-hans": "For Simple Chinese",
+		"zh-hans": "For Simple Chinese. Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Simplified Chinese, it should be \"<Translation of the name Simplified Chinese in your language> (简体中文)\"",
 		"zh-hant": "Traditional Chinese (繁體中文). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Traditional Chinese, it should be \"<Translation of the name Traditional Chinese in your language> (繁體中文)\""
 	}
 }
