@@ -36,11 +36,16 @@
 		"createCampaign": "مقابلہ بنائیں",
 		"goToCampaign": "مقابلے پر جائیں",
 		"showAllCampaigns": "تمام مقابلے دکھائیں",
+		"activeCampaigns": "فعال مہمات",
+		"archivedCampaigns": "محفوظ شدہ مہمات",
 		"name": "نام",
 		"startDate": "تاریخ شروع",
 		"endDate": "تاریخ اختتام",
+		"coordinators": "کوآرڈینیٹرز",
 		"description": "وضاحت",
 		"rules": "قوانین",
+		"publicVisibilityDisclaimer": "یہ مہم عوام کو دکھائی جائے گی (کوآرڈینیٹرز، جیوری، پروجیکٹ لیڈروں کے علاوہ)",
+		"privateCampaign": "مقابلہ بنائیں",
 		"wikiProject": "وکی پروجیکٹ",
 		"duration": "دورانیہ",
 		"edit": "ترمیم"
@@ -61,13 +66,16 @@
 	"round": {
 		"addMyselfAsJury": "اپنے آپ کو بطور جیوری شامل کریں",
 		"deleteRoundButton": "حذف",
+		"confirmChangeStatus": "کیا آپ واقعی اس راؤنڈ کو {{status}} کے بطور نشان زد کرنا چاہتے ہیں؟",
+		"markAsComplete": "مکمل کے بطور نشان زد کریں۔",
 		"status": {
 			"ACTIVE": "فعال",
 			"PAUSED": "روکیں",
 			"COMPLETED": "مکمل",
 			"ARCHIVED": "محفوظ شدہ",
 			"IMPORTING": "درآمد کر رہا ہے",
-			"DISTRIBUTING": "تقسیم ہو رہا ہے"
+			"DISTRIBUTING": "تقسیم ہو رہا ہے",
+			"pausedThenCompleted": "موقوف پھر مکمل ہوا۔"
 		},
 		"submissions": "گذارشات",
 		"assignments": "تفویضات",
@@ -80,6 +88,7 @@
 			"score": "سکور",
 			"unknown": "نامعلوم، ہم سے رابطہ کریں"
 		},
+		"deadline": "آخری تاریخ",
 		"description": "وضاحت",
 		"deadLineInMonths_one": "ایک مہینے میں",
 		"deadLineInMonths_two": "دو ماہ میں",
@@ -97,7 +106,15 @@
 		"deadLineInMinutes_two": "دو منٹ میں",
 		"deadLineInMinutes_other": "{{count}} منٹ میں",
 		"deadLinePassed": "آخری تاریخ گزر گئی",
-		"quorum": "کورم"
+		"quorum": "کورم",
+		"quorumRequired_one": "جمع کرانے کے لیے سنگل جیوری کی ضرورت ہے۔",
+		"quorumRequired_two": "دو جیوری فی جمع کی ضرورت ہے۔",
+		"quorumRequired_other": "{{count}} جیوری فی جمع کی ضرورت ہے۔",
+		"jury": {
+			"title": "جیوری",
+			"totalAssigned": "{{count}} تفویض کیا گیا۔",
+			"evaluated": "{{count}} کا جائزہ لیا گیا۔"
+		}
 	},
 	"footer": {
 		"campwizNxtTeam": "CampWiz NXT ٹیم",
@@ -120,7 +137,11 @@
 		"noSubmissions": "کوئی گذارشات دستیاب نہیں ہیں۔",
 		"noRunningCampaigns": "کوئی مہم نہیں چل رہی",
 		"loadingMyProject": "آپ کے پروجیکٹ کو لوڈ کرنے میں ناکام",
-		"loadingProjects": "پروجیکٹس لوڈ کرنے میں ناکام"
+		"loadingProjects": "پروجیکٹس لوڈ کرنے میں ناکام",
+		"accessDeniedToProject": "آپ کو اس پروجیکٹ تک رسائی حاصل نہیں ہے۔",
+		"failedToFetchProject": "آپ کے پروجیکٹ کو حاصل کرنے میں ناکام",
+		"failedToFetchCampaign": "مہم کی تفصیلات حاصل کرنے میں ناکام",
+		"failedToFetchRound": "راؤنڈ تفصیلات حاصل کرنے میں ناکام"
 	},
 	"close": "بند کریں",
 	"previous": "Previous",
@@ -182,6 +203,8 @@
 		"xmf": "منگریلین (მარგალური)",
 		"lb": "لکسمبرگش (Lëtzebuergesch)",
 		"zh-hans": "آسان چینی (简体中文)",
-		"zh-hant": "روایتی چینی (繁體中文)"
+		"zh-hant": "روایتی چینی (繁體中文)",
+		"ha": "ہاؤسا (Hausa)",
+		"kcg": "Tyap (Tiv)"
 	}
 }

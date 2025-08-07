@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Nokib Sarkar"
+		]
 	},
 	"title": "CampWiz NXT",
 	"home": {
@@ -8,14 +10,14 @@
 		"subtitle": "Taking jury experience to another level",
 		"publicRunningCampaigns": "Public Running Campaigns",
 		"yourCampaigns": "Your Campaigns",
-		"logout": "Logout",
+		"logout": "ꯊꯣꯛꯂꯛꯄꯥ",
 		"dashboard": "Dashboard",
 		"doc": "Doc",
-		"login": "Login"
+		"login": "ꯆꯪꯁꯤꯟꯕꯥ"
 	},
 	"settings": {
-		"title": "Settings",
-		"language": "Language",
+		"title": "ꯁꯦꯝꯐꯝ",
+		"language": "ꯂꯣꯟ",
 		"darkMode": "Dark Mode",
 		"lightMode": "Light Mode",
 		"save": "Save",

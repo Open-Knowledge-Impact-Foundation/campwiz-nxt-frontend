@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ABPMAB"
+			"ABPMAB",
+			"Nokib Sarkar"
 		]
 	},
 	"home": {
@@ -13,10 +14,14 @@
 		"title": "Instellingen",
 		"language": "Taal",
 		"darkMode": "Donkere modus",
+		"lightMode": "Lichtmodus",
 		"save": "Opslaan",
 		"cancel": "Annuleren",
 		"theme": "Thema",
 		"translatewiki": "TranslateWiki"
+	},
+	"login": {
+		"loginWithWikimedia": "Aanmelden met Wikimedia"
 	},
 	"campaign": {
 		"name": "Naam",
@@ -42,6 +47,7 @@
 	"round": {
 		"addMyselfAsJury": "Voeg mezelf toe als jury",
 		"deleteRoundButton": "Verwijderen",
+		"markAsComplete": "Markeer als voltooid",
 		"status": {
 			"ACTIVE": "Actief",
 			"PAUSED": "Gepauzeerd",
