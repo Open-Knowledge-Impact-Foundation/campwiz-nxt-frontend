@@ -36,11 +36,19 @@
 	"campaign": {
 		"createCampaign": "新しい告知の作成",
 		"goToCampaign": "キャンペーンへ移動",
-		"showAllCampaigns": "全キャンペーンを表示"
+		"showAllCampaigns": "全キャンペーンを表示",
+		"activeCampaigns": "実施中のキャンペーン",
+		"archivedCampaigns": "アーカイブされた告知",
+		"name": "名前",
+		"startDate": "開始日",
+		"endDate": "終了日",
+		"edit": "編集"
 	},
 	"project": {
 		"title": "プロジェクト",
-		"createProject": "新しいプロジェクト"
+		"createProject": "新しいプロジェクト",
+		"showAllProjects": "すべてのプロジェクトを表示",
+		"editProject": "編集"
 	},
 	"round": {
 		"status": {

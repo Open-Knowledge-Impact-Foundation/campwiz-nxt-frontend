@@ -8,6 +8,7 @@
 	},
 	"home": {
 		"welcome": "{{name}}님, 환영합니다",
+		"yourCampaigns": "내 캠페인",
 		"logout": "로그아웃",
 		"dashboard": "대시보드",
 		"login": "로그인"
@@ -16,6 +17,7 @@
 		"title": "설정",
 		"language": "언어",
 		"darkMode": "다크 모드",
+		"lightMode": "라이트 모드",
 		"save": "저장",
 		"cancel": "취소",
 		"theme": "테마"
@@ -26,6 +28,9 @@
 	},
 	"campaign": {
 		"goToCampaign": "캠페인으로 이동",
+		"showAllCampaigns": "모든 캠페인 보기",
+		"activeCampaigns": "진행중인 캠페인",
+		"archivedCampaigns": "진행중인 캠페인",
 		"name": "이름",
 		"startDate": "시작일",
 		"endDate": "종료일",
@@ -59,6 +64,7 @@
 		},
 		"submissions": "제출",
 		"type": {
+			"label": "유형",
 			"binary": "예/아니요",
 			"score": "점수"
 		}
