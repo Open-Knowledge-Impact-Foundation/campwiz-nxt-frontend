@@ -33,9 +33,16 @@
 	"campaign": {
 		"createCampaign": "Create Campaign",
 		"goToCampaign": "Go to Campaign",
-		"showAllCampaigns": "Show All Campaigns"
+		"showAllCampaigns": "Show All Campaigns",
+		"name": "ꯃꯃꯤꯡ",
+		"description": "ꯁꯟꯗꯣꯛꯅꯥ ꯇꯥꯛꯄꯥ",
+		"edit": "ꯁꯦꯝꯒꯠꯄꯥ"
+	},
+	"project": {
+		"editProject": "ꯁꯦꯝꯒꯠꯄꯥ"
 	},
 	"round": {
+		"deleteRoundButton": "ꯀꯛꯊꯠꯄꯥ",
 		"status": {
 			"ACTIVE": "Active",
 			"PAUSED": "Paused",
@@ -44,7 +51,10 @@
 		},
 		"submissions": "Submissions",
 		"assignments": "Assignments",
-		"evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}"
+		"evaluatedOutOf": "{{evaluated}} evaluated out of {{total}}",
+		"type": {
+			"binary": "ꯍꯣꯏ/ꯂꯩꯇꯦ"
+		}
 	},
 	"footer": {
 		"campwizNxtTeam": "Campwiz NXT Team",

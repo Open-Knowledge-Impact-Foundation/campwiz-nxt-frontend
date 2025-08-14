@@ -8,6 +8,7 @@
 	"title": "CampWiz NXT",
 	"home": {
 		"welcome": "{{name}} ښه راغلاست",
+		"yourCampaigns": "ستاسو ټاکنيزې‌سيالۍ",
 		"logout": "وتل",
 		"dashboard": "ټينگدړه",
 		"doc": "لاسوند",
@@ -20,7 +21,8 @@
 		"lightMode": "روښانه ونگ‌ډول",
 		"save": "خوندي‌کول",
 		"cancel": "ناگارل",
-		"theme": "شاليد"
+		"theme": "شاليد",
+		"translatewiki": "ويکي‌ژباړه"
 	},
 	"login": {
 		"title": "راځه چې پيل يې کړو!",
@@ -28,13 +30,39 @@
 		"afterLoginRedirect": "د دې بهير څخه وروسته به تاسو لاندې مخونو ته مخگرځ شئ:",
 		"loginDisclaimer": "په ننوتلو سره تاسو زموږ <0>Terms of Service</0> او <1>Privacy Policy</1> سره د همغږۍ ښودنه کوئ."
 	},
+	"campaign": {
+		"createCampaign": "ټاکنيزه‌سيالۍ جوړول",
+		"goToCampaign": "ټاکنيزې‌سيالۍ ته ورتلل",
+		"showAllCampaigns": "ټولې ټاکنيزه‌سيالۍ ښودل",
+		"activeCampaigns": "کارنده ټاکنيزې‌سيالۍ",
+		"archivedCampaigns": "خونديځ‌شوې ټاکنيزې‌سيالۍ",
+		"name": "نوم",
+		"startDate": "پيل نېټه",
+		"endDate": "پای نېټه",
+		"coordinators": "همغږي کوونکي",
+		"description": "څرگنداوی",
+		"rules": "قوانين",
+		"privateCampaign": "ځانواله ټاکنيزه‌سيالۍ",
+		"wikiProject": "ويکي پروژه",
+		"duration": "موده",
+		"edit": "سمول"
+	},
 	"project": {
 		"title": "پروژې",
 		"createProject": "نوې پروژه",
+		"goToProject": "پروژې ته ورتلل",
+		"showAllProjects": "ټولې پروژې ښودل",
+		"projectLoading": "د پروژې سپيناوی بارېږي...",
+		"leads": "پروژې مشران",
 		"dashboard": "پروژې ليددړه",
-		"myProject": "زما پروژه"
+		"otherProjects": "نورې پروژې",
+		"myProject": "زما پروژه",
+		"welcomeToProject": "{{project}} ته ښه راغلاست",
+		"editProject": "سمول"
 	},
 	"round": {
+		"addMyselfAsJury": "ځان د پرېکړه‌وال په توگه ورگډول",
+		"deleteRoundButton": "ړنگول",
 		"status": {
 			"ACTIVE": "کارنده",
 			"PAUSED": "درول‌شوی",

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nokeoo"
+			"Nokeoo",
+			"Nokib Sarkar"
 		]
 	},
 	"title": "CampWiz NXT",
@@ -206,6 +207,7 @@
 		"zh-hans": "Supaprastinta kinų (简体中文)",
 		"zh-hant": "Tradicinė kinų (繁體中文)",
 		"ha": "Hausų",
-		"kcg": "Tyap (Tiv)"
+		"kcg": "Tyap (Tiv)",
+		"lt": "Lietuvių"
 	}
 }
