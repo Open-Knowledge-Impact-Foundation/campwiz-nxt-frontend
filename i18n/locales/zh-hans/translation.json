@@ -9,7 +9,7 @@
 	"title": "CampWiz NXT",
 	"home": {
 		"welcome": "欢迎 {{name}}",
-		"subtitle": "提升陪审团经验到新的水平",
+		"subtitle": "提升评审经验到新的水平",
 		"publicRunningCampaigns": "正在开展的公开活动",
 		"yourCampaigns": "您的活动",
 		"logout": "退出",
@@ -25,18 +25,32 @@
 		"save": "保存",
 		"cancel": "取消",
 		"theme": "主题",
-		"helpTranslation": "请帮助我们在 <0>TranslateWiki</0> 上翻译成您的语言"
+		"helpTranslation": "请帮助我们在 <0>TranslateWiki</0> 上翻译成您的语言",
+		"translatewiki": "TranslateWiki"
 	},
 	"login": {
 		"title": "让我们开始吧",
 		"loginWithWikimedia": "使用维基媒体登录",
 		"afterLoginRedirect": " 完成此过程后，您将被重定向回以下页面：",
-		"loginDisclaimer": "登录即表示您同意我们的<0>Terms of Service</0>和<1>Privacy Policy</1>。"
+		"loginDisclaimer": "登录即表示您同意我们的服务条款（<0>Terms of Service</0>）和隐私政策（<1>Privacy Policy</1>）。"
 	},
 	"campaign": {
 		"createCampaign": "创建活动",
 		"goToCampaign": "前往活动",
-		"showAllCampaigns": "显示所有活动"
+		"showAllCampaigns": "显示所有活动",
+		"activeCampaigns": "活跃的活动",
+		"archivedCampaigns": "已存档活动",
+		"name": "名称",
+		"startDate": "开始日期",
+		"endDate": "结束日期",
+		"coordinators": "协调人",
+		"description": "描述",
+		"rules": "规则",
+		"publicVisibilityDisclaimer": "此活动将公开展示（除协调人、评审团、项目负责人以外的人员）",
+		"privateCampaign": "非公开活动",
+		"wikiProject": "wiki项目",
+		"duration": "期限",
+		"edit": "编辑"
 	},
 	"project": {
 		"title": "项目",
@@ -47,24 +61,63 @@
 		"leads": "项目负责人",
 		"dashboard": "仪表板",
 		"otherProjects": "其他项目",
-		"myProject": "按项目"
+		"myProject": "按项目",
+		"welcomeToProject": "欢迎来到{{project}}",
+		"editProject": "编辑"
 	},
 	"round": {
+		"addMyselfAsJury": "添加我自己为评审",
+		"deleteRoundButton": "删除",
+		"confirmChangeStatus": "您确定要将此回合标记为{{status}}吗？",
+		"markAsComplete": "标记为完成",
 		"status": {
 			"ACTIVE": "活跃",
 			"PAUSED": "已暂停",
 			"COMPLETED": "已完成",
 			"ARCHIVED": "已存档",
 			"IMPORTING": "正在导入",
-			"DISTRIBUTING": "正在分发"
+			"DISTRIBUTING": "正在分发",
+			"pausedThenCompleted": "暂停后完成"
 		},
 		"submissions": "提交内容",
 		"assignments": "分配内容",
 		"evaluatedOutOf": "已评估 {{evaluated}} 个，共需评估 {{total}} 个",
 		"evaluationArea": "评估区域",
 		"categorizer": "分类器",
-		"deadLineInMonths_two": "两个月内",
-		"quorum": "最低出席人数"
+		"type": {
+			"label": "类型",
+			"binary": "是/否",
+			"ranking": "排名",
+			"score": "分数",
+			"unknown": "未知，请联系我们"
+		},
+		"deadline": "截止期限",
+		"description": "描述",
+		"deadLineInMonths_one": "1 个月内",
+		"deadLineInMonths_two": "2 个月内",
+		"deadLineInMonths_other": "{{count}} 个月内",
+		"deadLineInWeeks_one": "1 周内",
+		"deadLineInWeeks_two": "2 周内",
+		"deadLineInWeeks_other": "{{count}} 周内",
+		"deadLineInDays_one": "1 天内",
+		"deadLineInDays_two": "2 天内",
+		"deadLineInDays_other": "{{count}} 天内",
+		"deadLineInHours_one": "1 小时内",
+		"deadLineInHours_two": "2 小时内",
+		"deadLineInHours_other": "{{count}} 小时内",
+		"deadLineInMinutes_one": "1 分钟内",
+		"deadLineInMinutes_two": "2 分钟内",
+		"deadLineInMinutes_other": "{{count}} 分钟内",
+		"deadLinePassed": "截止期限已过",
+		"quorum": "最低人数",
+		"quorumRequired_one": "每份提交作品需要有 1 名评审",
+		"quorumRequired_two": "每份提交作品需要有 2 名评审",
+		"quorumRequired_other": "每份提交作品需要有 {{count}} 名评审",
+		"jury": {
+			"title": "评审",
+			"totalAssigned": "已分配 {{count}} 个",
+			"evaluated": "已评估 {{count}} 个"
+		}
 	},
 	"footer": {
 		"campwizNxtTeam": "Campwiz NXT 团队",
@@ -87,7 +140,11 @@
 		"noSubmissions": "无可用提交内容",
 		"noRunningCampaigns": "无正在开展的活动",
 		"loadingMyProject": "无法加载您的项目",
-		"loadingProjects": "无法加载项目"
+		"loadingProjects": "无法加载项目",
+		"accessDeniedToProject": "您无权访问此项目",
+		"failedToFetchProject": "无法获取您的项目",
+		"failedToFetchCampaign": "无法获取活动详情",
+		"failedToFetchRound": "无法获取回合详情"
 	},
 	"close": "关闭",
 	"previous": "上一个",
@@ -149,6 +206,9 @@
 		"xmf": "明格里利亚文 (მარგალური)",
 		"lb": "卢森堡文 (Lëtzebuergesch)",
 		"zh-hans": "简体中文",
-		"zh-hant": "繁体中文 (繁體中文)"
+		"zh-hant": "繁体中文 (繁體中文)",
+		"ha": "豪萨文",
+		"kcg": "蒂亚普文 (Tiv)",
+		"lt": "立陶宛文 (Lietuvių)"
 	}
 }

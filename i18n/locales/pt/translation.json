@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"ItsaMeSandy",
 			"Mansil alfalb",
 			"Nokib Sarkar"
 		]
@@ -147,6 +148,7 @@
 		"xmf": "Mingreliano (მარგალური)",
 		"lb": "Luxemburguês (Lëtzebuergesch)",
 		"zh-hans": "Chinês Simplificado (简体中文)",
-		"zh-hant": "Chinês Tradicional (繁體中文)"
+		"zh-hant": "Chinês Tradicional (繁體中文)",
+		"lt": "Lituano (Lietuvių)"
 	}
 }

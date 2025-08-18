@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"JorgeElias2302",
+			"Laranxa",
 			"Nokib Sarkar"
 		]
 	},
@@ -45,7 +46,7 @@
 		"coordinators": "Coordinadores",
 		"description": "Descripción",
 		"rules": "Reglas",
-		"publicVisibilityDisclaimer": "Esta campaña se mostrará al público (personas distintas a coordinadores, jurado, líderes del proyecto)",
+		"publicVisibilityDisclaimer": "Esta campaña se mostrará al público (personas distintas a coordinadores, jurado, líderes de proyecto)",
 		"privateCampaign": "Campaña privada",
 		"wikiProject": "Proyecto Wiki",
 		"duration": "Duración",
@@ -60,7 +61,7 @@
 		"leads": "Líderes de proyecto",
 		"dashboard": "Panel de control del proyecto",
 		"otherProjects": "Otros proyectos",
-		"myProject": "Mi proyecto",
+		"myProject": "Mis proyectos",
 		"welcomeToProject": "Bienvenido a {{project}}",
 		"editProject": "Editar"
 	},
