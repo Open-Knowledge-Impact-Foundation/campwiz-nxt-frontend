@@ -39,7 +39,7 @@
     "next-ws": "^2.0.10",
     "react": "19.1.0",
     "react-audio-spectrum": "^0.1.5",
-    "react-datepicker": "^8.1.0",
+    "react-datepicker": "^8.5.0",
     "react-dom": "19.1.0",
     "react-easy-sort": "^1.6.0",
     "react-h5-audio-player": "^3.10.0",
