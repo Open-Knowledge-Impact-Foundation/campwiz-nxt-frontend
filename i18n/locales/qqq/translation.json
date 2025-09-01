@@ -207,6 +207,7 @@
 		"zh-hant": "Traditional Chinese (繁體中文). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Traditional Chinese, it should be \"<Translation of the name Traditional Chinese in your language> (繁體中文)\"",
 		"ha": "Hausa . Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Hausa, it should be \"<Translation of the name Hausa in your language> (Hausa)\"",
 		"kcg": "Tyap (Tiv). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Tyap, it should be \"<Translation of the name Tyap in your language> (Tiv)\"",
-		"lt": "Lithuanian (Lietuvių). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Lithuanian, it should be \"<Translation of the name Lithuanian in your language> (Lietuvių)\""
+		"lt": "Lithuanian (Lietuvių). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Lithuanian, it should be \"<Translation of the name Lithuanian in your language> (Lietuvių)\"",
+		"tr": "Turkish (Türkçe). Please keep the language name in your language and then add \"(<Original language name in that language alphabet>)\" at the end of the name. For example, if the language is Turkish, it should be \"<Translation of the name Turkish in your language> (Türkçe)\""
 	}
 }
