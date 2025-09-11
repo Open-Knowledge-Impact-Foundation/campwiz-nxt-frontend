@@ -29,6 +29,7 @@
 		"loginWithWikimedia": "위키미디어로 로그인"
 	},
 	"campaign": {
+		"createCampaign": "캠페인 만들기",
 		"goToCampaign": "캠페인으로 이동",
 		"showAllCampaigns": "모든 캠페인 보기",
 		"activeCampaigns": "진행중인 캠페인",
@@ -36,6 +37,7 @@
 		"name": "이름",
 		"startDate": "시작일",
 		"endDate": "종료일",
+		"coordinators": "관리자",
 		"description": "설명",
 		"rules": "규칙",
 		"wikiProject": "위키 프로젝트",

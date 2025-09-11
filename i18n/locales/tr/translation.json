@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hedda"
+			"Hedda",
+			"Nokib Sarkar"
 		]
 	},
 	"title": "CampWiz NXT",
@@ -207,6 +208,7 @@
 		"zh-hant": "Geleneksel Çince (繁體中文)",
 		"ha": "Hausaca",
 		"kcg": "Tyap (Tiv)",
-		"lt": "Litvanyaca (Lietuvių)"
+		"lt": "Litvanyaca (Lietuvių)",
+		"tr": "Türkçe"
 	}
 }
