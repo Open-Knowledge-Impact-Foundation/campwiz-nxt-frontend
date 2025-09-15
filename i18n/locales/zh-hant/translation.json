@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kly",
-			"Nokib Sarkar"
+			"Nokib Sarkar",
+			"臺灣象象"
 		]
 	},
 	"title": "CampWiz NXT",
@@ -19,8 +20,8 @@
 	"settings": {
 		"title": "設定",
 		"language": "語言",
-		"darkMode": "暗黑模式",
-		"lightMode": "明亮模式",
+		"darkMode": "夜間模式",
+		"lightMode": "淺色模式",
 		"save": "儲存",
 		"cancel": "取消",
 		"theme": "主題",
@@ -37,7 +38,7 @@
 		"createCampaign": "建立活動",
 		"goToCampaign": "前往活動",
 		"showAllCampaigns": "顯示所有活動",
-		"activeCampaigns": "有效活動",
+		"activeCampaigns": "活躍中的活動",
 		"archivedCampaigns": "已存檔活動",
 		"name": "名稱",
 		"startDate": "開始日期",
@@ -47,7 +48,7 @@
 		"rules": "規則",
 		"publicVisibilityDisclaimer": "此活動將公開展示（除了協調人、評審團、專案負責人以外的人員）",
 		"privateCampaign": "非公開活動",
-		"wikiProject": "Wiki 專案",
+		"wikiProject": "維基專案",
 		"duration": "期間",
 		"edit": "編輯"
 	},
