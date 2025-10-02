@@ -2,10 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"ABPMAB",
+			"McDutchie",
 			"Nokib Sarkar"
 		]
 	},
+	"title": "CampWiz NXT",
 	"home": {
+		"welcome": "Welkom {{name}}",
+		"subtitle": "Jury-ervaring naar een hoger niveau tillen",
 		"logout": "Uitloggen",
 		"dashboard": "Dashboard",
 		"login": "Inloggen"
