@@ -1,0 +1,121 @@
+{
+	"@metadata": {
+		"authors": [
+			"Letra.berdi",
+			"Waldyrious"
+		]
+	},
+	"title": "CampWiz NXT",
+	"home": {
+		"welcome": "Benvindu, {{name}}",
+		"publicRunningCampaigns": "Kanpanhas Públiku",
+		"yourCampaigns": "Bus Kanpanha",
+		"logout": "Termina seson",
+		"dashboard": "Painel",
+		"doc": "Duk",
+		"login": "Inísia seson"
+	},
+	"settings": {
+		"title": "Konfigurason",
+		"language": "Língua",
+		"darkMode": "Fundu di Téla Sukuru",
+		"lightMode": "Fundu di Téla Klaru",
+		"save": "Guarda",
+		"cancel": "Kansela",
+		"theme": "Téma",
+		"translatewiki": "TranslateWiki"
+	},
+	"login": {
+		"loginWithWikimedia": "Inísia seson trabés di Uikipédia",
+		"afterLoginRedirect": "Dipos di es prusésu, bu ta bolta pa es pájina li:"
+	},
+	"campaign": {
+		"createCampaign": "Kiria Kanpanha",
+		"goToCampaign": "Bai pa Kanpanha",
+		"showAllCampaigns": "Mostra Tudu Kanpanhas",
+		"activeCampaigns": "Kanpanhas Ativu",
+		"archivedCampaigns": "Kanpanhas Arkivadu",
+		"name": "Nómi",
+		"startDate": "Data di Inísiu",
+		"endDate": "Data di Fin",
+		"coordinators": "Kordenador",
+		"description": "Diskrison",
+		"rules": "Régras",
+		"privateCampaign": "Kanpanha Privadu",
+		"wikiProject": "Prujétu di Uiki",
+		"duration": "Durason",
+		"edit": "Idita"
+	},
+	"project": {
+		"title": "Prujétus",
+		"createProject": "Prujétu Nobu",
+		"goToProject": "Bai pa Prujétu",
+		"showAllProjects": "Mostra Tudu Prujétus",
+		"dashboard": "Painel di Prujétu",
+		"otherProjects": "Otus Prujétu",
+		"myProject": "Nha Prujétu",
+		"editProject": "Idita"
+	},
+	"round": {
+		"deleteRoundButton": "Sklui",
+		"status": {
+			"ACTIVE": "Ativu",
+			"PAUSED": "Pozadu",
+			"COMPLETED": "Konplétu",
+			"ARCHIVED": "Arkivadu"
+		},
+		"type": {
+			"binary": "Aian/Non",
+			"ranking": "Klasifikason",
+			"unknown": "Diskonhisidu, kontata-nu"
+		}
+	},
+	"footer": {
+		"terms": "Régras",
+		"privacy": "Privasidadi",
+		"reportBug": "Raporta un éru",
+		"translate": "Traduzi",
+		"copyright": "© 2025 pa <0>CampWiz NXT Team</0>"
+	},
+	"error": {
+		"noAssignedCampaigns": "Nin un kanpanha atribuídu",
+		"categoriesNotLoaded": "Es katigurias inda ka foi karagadu",
+		"campaignNotFound": "Es kanpanha ka foi nkontradu",
+		"campaignCategoriesNotSupported": "Es katigurias di kanpanha ka é saportadu",
+		"noSubmissionAvailableForCategorization": "Nin un subimison disponivi pa katigurizason",
+		"noCategoriesSelected": "Nin un katiguria selesionadu",
+		"noCategoriesAvailable": "Nin un katiguria disponivi",
+		"noSubmissions": "Nin un subimison disponivi",
+		"noRunningCampaigns": "Nin un kanpanha ta ser izekutadu",
+		"loadingMyProject": "Okóre un fadja na karagamentu di bu prujétu"
+	},
+	"submission": {
+		"categories": "Katigurias",
+		"selectCategories": "Selesiona Katigurias",
+		"save": "Guarda",
+		"cancel": "Kansela",
+		"next": "Prósimu"
+	},
+	"languages": {
+		"en": "<Inglês> (English)\"",
+		"bn": "<Bengali> (বাংলা)\"",
+		"ar": "<Árabi> (العربية)",
+		"hi": "<Hindi> (हिन्दी)",
+		"es": "<Spanhol> (Español)",
+		"fr": "<Fransês> (Français)",
+		"de": "<Alimon> (Deutsch)",
+		"it": "<Italianu> (Italiano)",
+		"ja": "<Djapunês> (日本語)",
+		"pt": "<Purtugês> (Português)",
+		"ru": "<Rusu> (Русский)",
+		"zh": "<Xinês> (中文)",
+		"kn": "<Kanará> (ಕನ್ನಡ)",
+		"pa": "<Pundjabi> (ਪੰਜਾਬੀ)",
+		"mk": "<Masedóni> (Македонски)",
+		"lb": "<Luxenburgês> (Lëtzebuergesch)",
+		"zh-hans": "<Xinês Sinplifikadu> (简体中文)",
+		"zh-hant": "<Xinês Tradisional> (繁體中文)",
+		"lt": "<Lituanu> (Lietuvių)",
+		"tr": "<Turku> (Türkçe)"
+	}
+}
