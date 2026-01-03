@@ -8412,10 +8412,10 @@ next-video@^2.1.0:
     undici "^5.28.4"
     yargs "^17.7.2"
 
-next-ws@^2.0.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/next-ws/-/next-ws-2.1.10.tgz#08d51ccaac87cad4a7529247f44e639d0e327627"
-  integrity sha512-cSp11LFPIXpbfx5z+fhREtPbytIoyPwNAaoKHonlGYMvi1n9Qix7box6LCFoJ8z/zK+oMP8HQ7aunYikaxyPUw==
+next-ws@^2.1.11:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/next-ws/-/next-ws-2.1.11.tgz#69b9ae1aeeb7ae8bfe65c1423ff454adf2ba5896"
+  integrity sha512-dhQyOumO13KGvDf//0Nj5uDlnt3kv6BO3OqW2wkqy8N/jpcSLKZ96tH6cT8/K8lqKzUIvp6anNOA8DGvOBKTGQ==
   dependencies:
     jscodeshift "^17.3.0"
     minimist "^1.2.8"
