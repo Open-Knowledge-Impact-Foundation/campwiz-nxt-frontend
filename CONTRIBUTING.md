@@ -1,4 +1,5 @@
+## Setup Environment
 - Clone the Repository
-- Fill `.env.local` out
+- Run `cp .env.example .env.local`
 - Run `yarn install`
-- Run `yarn dev`
+- Run `yarn start`
