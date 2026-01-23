@@ -2,8 +2,6 @@
 'use client';
 import { createTheme } from '@mui/material/styles';
 
-// Import Cormorant Garamond from Google Fonts
-import '@fontsource/cormorant-garamond';
 
 declare module '@mui/material/styles' {
   interface Palette {
