@@ -30,5 +30,5 @@ Reduction in production size from 2.5 GB (approximately) to 137 MB (approximatel
 
 After A lot of effort, I was able to deploy the frontend server to Toolforge ([campwiz.toolforge.org](https://campwiz.toolforge.org)). The deployment process was quite challenging, but I learned a lot along the way. I had to make several changes to the codebase to make it compatible with Toolforge's environment. Thank You very much @dhinus for your support. 
 
-My development was using nodejs version 22 but the toolforge environment was using nodejs version 18. Anyway, I built the project using github actions on nodejs version 22 and then uploaded the build using rsync + ssh to `~/www/js/` as `standalone` build. On that folder, I created `.env` file and added the environment variables. The nextjs frontend server is still running on nodejs 18, though the code was built on nodejs 22. I am not sure if it will work or not. Let's hope for the best.
+The project is built and run using Node.js version 18 to ensure compatibility with the Toolforge environment. Both the build process (via GitLab CI) and the runtime environment on Toolforge use Node.js 18. The project is built as a `standalone` build, uploaded to `~/www/js/`, where a `.env` file is created with the necessary environment variables.
 ### 16-05-2025 03:15 PM BST: Issue with Toolforge
