@@ -1,6 +1,6 @@
 # GitLab CI/CD Pipeline for Deploy to Server
 variables:
-  NODE_VERSION: "22"
+  NODE_VERSION: "18"
   YARN_CACHE_FOLDER: ".yarn-cache"
   NEXT_CACHE_FOLDER: ".next/cache"
 
@@ -16,7 +16,7 @@ build:
     - when: never
   # This stage installs dependencies, builds the application, and prepares it for deployment.
   stage: build
-  image: node:22
+  image: node:18
   tags:
     - wmcs
   cache:
