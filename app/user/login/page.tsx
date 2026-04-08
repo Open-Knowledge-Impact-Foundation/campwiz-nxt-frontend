@@ -33,14 +33,19 @@ const LoginComponent = ({ isMobile }: { isMobile: boolean }) => {
             height: '100%',
             position: 'fixed',
             right: 0,
+            zIndex: 2,
             backgroundColor: (theme) => {
                 const mode = theme.palette.mode;
                 if (mode === 'dark') {
-                    return isMobile ? 'rgba(0,0,0, 0.95)' : 'rgba(0,0,0, 0.9)';
+                    return isMobile ? 'rgba(18, 18, 18, 0.98)' : 'rgba(18, 18, 18, 0.95)';
                 } else if (mode === 'light') {
-                    return isMobile ? 'rgba(255,255,255, 0.95)' : 'rgba(255,255,255, 0.9)';
+                    return isMobile ? 'rgba(255, 255, 255, 0.98)' : 'rgba(255, 255, 255, 0.95)';
                 }
             },
+            backdropFilter: 'blur(10px)',
+            boxShadow: (theme) => theme.palette.mode === 'dark'
+                ? '0 8px 32px rgba(0, 0, 0, 0.4)'
+                : '0 8px 32px rgba(0, 0, 0, 0.1)',
             width: {
                 xs: '100%',
                 sm: '70%',
@@ -64,7 +69,16 @@ const LoginComponent = ({ isMobile }: { isMobile: boolean }) => {
                     components={[<Link
                         key="1"
                         href={translationLink}
-                        style={{ textDecoration: 'none', color: 'blue' }}
+                        sx={{
+                            textDecoration: 'none',
+                            color: (theme) => theme.palette.mode === 'dark'
+                                ? theme.palette.primary.light
+                                : theme.palette.primary.main,
+                            '&:hover': {
+                                textDecoration: 'underline',
+                                color: (theme) => theme.palette.primary.light
+                            }
+                        }}
                         className="translation-link"
                         target="_blank"
                         rel="noopener noreferrer">{t('setting.translatewiki')}</Link>]}
@@ -101,8 +115,34 @@ const LoginComponent = ({ isMobile }: { isMobile: boolean }) => {
                     i18nKey={'login.loginDisclaimer'}
                     t={t}
                     components={[
-                        <Link key="terms" style={{ color: 'blue' }} href="/policy/terms">Terms of Service</Link>,
-                        <Link key="privacy" style={{ color: 'blue' }} href="/policy/privacy">Privacy Policy</Link>
+                        <Link
+                            key="terms"
+                            href="/policy/terms"
+                            sx={{
+                                textDecoration: 'none',
+                                color: (theme) => theme.palette.mode === 'dark'
+                                    ? theme.palette.primary.light
+                                    : theme.palette.primary.main,
+                                '&:hover': {
+                                    textDecoration: 'underline',
+                                    color: (theme) => theme.palette.primary.light
+                                }
+                            }}
+                        >Terms of Service</Link>,
+                        <Link
+                            key="privacy"
+                            href="/policy/privacy"
+                            sx={{
+                                textDecoration: 'none',
+                                color: (theme) => theme.palette.mode === 'dark'
+                                    ? theme.palette.primary.light
+                                    : theme.palette.primary.main,
+                                '&:hover': {
+                                    textDecoration: 'underline',
+                                    color: (theme) => theme.palette.primary.light
+                                }
+                            }}
+                        >Privacy Policy</Link>
                     ]}
                 />
             </Typography>
@@ -126,7 +166,6 @@ const LoginPage = ({ }) => {
         },
         backgroundRepeat: 'no-repeat',
         backgroundPositionY: 'center',
-        // backgroundSize: 'cover',
         position: 'fixed',
         top: 0,
         left: 0,
@@ -137,7 +176,21 @@ const LoginPage = ({ }) => {
         p: 0,
         m: 0,
         border: 0,
-    }}>
+        filter: (theme) => theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: (theme) => theme.palette.mode === 'dark'
+                ? 'rgba(0, 0, 0, 0.4)'
+                : 'transparent',
+            pointerEvents: 'none',
+            zIndex: 1,
+        }
+    }}>>
         <LoginComponent isMobile={isMobile} />
     </Paper>
     )

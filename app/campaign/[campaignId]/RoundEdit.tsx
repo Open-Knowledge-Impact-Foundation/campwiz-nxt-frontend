@@ -31,22 +31,23 @@ const EditDialog = ({ campaignId, onClose, existingRound, setUpdatedRound, setSt
 
 
     // Detect whether the jury has changed
-    const needRedistribution = useMemo(() => {
-        // public jury does not need redistribution
-        if (round.isPublicJury) {
-            return false;
-        }
-        if (existingRound.quorum !== round.quorum) {
-            return true;
-        }
-        const existingJury = new Set(Object.values(existingRound.jury || {}))
-        if (round.jury.length !== existingJury.size) {
-            return true;
-        }
-        const newJury = new Set(round.jury || [])
-        const intersection = existingJury.intersection(newJury);
-        return intersection.size !== existingJury.size;
-    }, [existingRound.jury, existingRound.quorum, round.isPublicJury, round.jury, round.quorum]);
+    // const needRedistribution = useMemo(() => {
+    //     // public jury does not need redistribution
+    //     if (round.isPublicJury) {
+    //         return false;
+    //     }
+    //     if (existingRound.quorum !== round.quorum) {
+    //         return true;
+    //     }
+    //     const existingJury = new Set(Object.values(existingRound.jury || {}))
+    //     if (round.jury.length !== existingJury.size) {
+    //         return true;
+    //     }
+    //     const newJury = new Set(round.jury || [])
+    //     const intersection = existingJury.intersection(newJury);
+    //     return intersection.size !== existingJury.size;
+    // }, [existingRound.jury, existingRound.quorum, round.isPublicJury, round.jury, round.quorum]);
+    // console.log('needRedistribution', needRedistribution)
     const updateRoundClient = useCallback(async () => {
         setLoading(true);
         try {
@@ -60,20 +61,13 @@ const EditDialog = ({ campaignId, onClose, existingRound, setUpdatedRound, setSt
             }
             const updatedRound = updatedRoundResponse.data as Round;
             setUpdatedRound(updatedRound);
-            if (needRedistribution) {
-                setStage(Stage.DISTRIBUTE);
-            } else {
-                setStage(Stage.SUCCESS);
-            }
-
-            // onAfterCreationSuccess(newRoundResponse.data as Round);
         } catch (e) {
             console.error(e);
             setError((e as Error).message);
         } finally {
             setLoading(false);
         }
-    }, [existingRound.roundId, needRedistribution, round, setStage, setUpdatedRound]);
+    }, [existingRound.roundId, round, setStage, setUpdatedRound]);
     return (<Dialog open={true}
         sx={{
             width: {
