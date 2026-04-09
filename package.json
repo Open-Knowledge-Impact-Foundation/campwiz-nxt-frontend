@@ -36,7 +36,7 @@
     "i18next-resources-to-backend": "^1.2.1",
     "next": "15.4.10",
     "next-video": "^2.1.0",
-    "next-ws": "^2.0.10",
+    "next-ws": "^2.1.11",
     "react": "19.1.0",
     "react-audio-spectrum": "^0.1.5",
     "react-datepicker": "^8.5.0",
